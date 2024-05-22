@@ -8,6 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@components": path.resolve(__dirname, "./src/ts/components"),
+      "@pages": path.resolve(__dirname, "./src/ts/pages"),
       "@scss": path.resolve(__dirname, "./src/scss"),
     }
   }

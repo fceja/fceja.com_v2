@@ -1,0 +1,7 @@
+@import "@scss/Global.scss";
+
+main {
+    p {
+        @include text-p;
+    }
+}
