@@ -8,14 +8,17 @@ body {
 @mixin text-h1 {
     color: rgb(238, 238, 238);
     font-weight: 500;
+    margin: 0;
 }
 
 @mixin text-h3 {
     color: rgb(191, 191, 191);
     font-weight: 300;
+    margin: 0;
 }
 
 @mixin text-p {
     color: rgb(147, 147, 147);
     font-weight: 100;
+    margin: 10px 0 0 0;
 }
