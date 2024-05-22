@@ -1,0 +1,18 @@
+@import "@scss/Global.scss";
+
+header {
+    h {
+        &1 {
+            @include text-h1;
+        }
+
+        &3 {
+            @include text-h3;
+        }
+    }
+
+    p {
+        @include text-p;
+
+    }
+}

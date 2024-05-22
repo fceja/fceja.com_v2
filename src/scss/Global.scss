@@ -1,0 +1,21 @@
+$app-background-color: #212121;
+
+body {
+    font-family: sans-serif, ui-sans-serif, Arial, Helvetica, system-ui, Helvetica;
+    background-color: $app-background-color;
+}
+
+@mixin text-h1 {
+    color: rgb(238, 238, 238);
+    font-weight: 500;
+}
+
+@mixin text-h3 {
+    color: rgb(191, 191, 191);
+    font-weight: 300;
+}
+
+@mixin text-p {
+    color: rgb(147, 147, 147);
+    font-weight: 100;
+}
