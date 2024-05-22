@@ -1,6 +1,10 @@
 @import "@scss/Global.scss";
 
 main {
+    h2 {
+        @include text-h2
+    }
+
     p {
         @include text-p;
     }

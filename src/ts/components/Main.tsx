@@ -1,7 +1,9 @@
 import "@scss/components/Main.scss"
+
 const Main = () => {
     return (
-        <main>
+        <main className="sm:mt-3 md:mt-3 lg:w-50 lg:mlr-auto">
+            <h2>About</h2>
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,

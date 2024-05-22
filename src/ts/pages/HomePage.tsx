@@ -3,10 +3,10 @@ import Main from "@components/Main";
 
 const HomePage = () => {
     return (
-        <div className="homepage">
+        <div className="homepage p-4 lg:gap-2 lg:flex">
             <Header />
             <Main />
-        </div>
+        </div >
     )
 }
 export default HomePage
