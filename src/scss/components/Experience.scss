@@ -4,9 +4,4 @@
     h2 {
         @include text-h2
     }
-
-    li {
-        @include text-li;
-        list-style: none;
-    }
 }

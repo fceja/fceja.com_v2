@@ -22,15 +22,15 @@ const cardsData = [
 
 const Cards = () => {
     return (
-        <ol className="cards-list p-0">
+        <ol className="p-0">
             {
                 cardsData.map((elem, i) => {
                     return (
-                        <li key={`li-${i}`} className="mt-3 gap-3 md:flex lg:flex">
-                            <div className="card-year" style={{ width: "150px" }}>{elem.year}</div>
+                        <li key={`li-${i}`} className={`exp-li-${i} mt-3 gap-3 md:flex lg:flex`}>
+                            <div className="card-year" style={{ minWidth: "125px" }}>{elem.year}</div>
                             <div className="card-desc w-100">
                                 <div className="card-title">{elem.title}</div>
-                                <div className="card-paragraph mt-4">{elem.paragraph}</div>
+                                <p className="card-p mt-4">{elem.paragraph}</p>
                                 <Tags tagData={elem.tags} parentIndex={i} />
                             </div>
                         </li>

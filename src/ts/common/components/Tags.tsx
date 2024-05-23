@@ -11,7 +11,15 @@ const Tags = (props: TagsProps) => {
     return (
         <div className="tags my-3 d-flex flex-wrap">
             {tagData.map((elem, i) => {
-                return < span key={`tag-${parentIndex}-${i}`} className="p-2 m-1">{elem}</span>
+                return (
+                    <span
+                        key={`tag-${parentIndex}-${i}`}
+                        className="p-2"
+                        style={{ margin: "3px 10px 3px 0" }}
+                    >
+                        {elem}
+                    </span>
+                )
             })}
         </div>
     )

@@ -1,5 +1,6 @@
 @import "@scss/Global.scss";
 
+
 .projects {
     h2 {
         @include text-h2
@@ -8,8 +9,9 @@
 
 .proj-desc {
 
-    span,
-    p {
+    .proj-title,
+    .proj-arrow,
+    .proj-p {
         @include text-p
     }
 }
