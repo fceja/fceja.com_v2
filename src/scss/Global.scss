@@ -107,6 +107,11 @@ body {
         display: flex
     }
 
+    .md\:flex-row-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
     .md\:mt-3 {
         margin-top: 3em;
     }
@@ -116,6 +121,11 @@ body {
 @media (min-width: 1024px) {
     .lg\:flex {
         display: flex
+    }
+
+    .lg\:flex-row-reverse {
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .lg\:gap- {
