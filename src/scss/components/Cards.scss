@@ -1,0 +1,10 @@
+@import "@scss/Global.scss";
+
+.tags {
+    span {
+        background-color: gray;
+        color: $app-background-color;
+        margin-right: 10px;
+        border-radius: 25px;
+    }
+}
