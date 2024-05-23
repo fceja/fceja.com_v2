@@ -1,21 +1,13 @@
 @import "@scss/Global.scss";
 
-li {
-    width: 100%;
-}
-
 .card-year {
-    width: 150px;
-
+    white-space: nowrap;
 }
 
 .tags {
-    display: flex;
-    flex-wrap: wrap;
-
     span {
-        color: $app-background-color;
-        margin: 3px 10px 3px 0;
+        background-color: gray;
         border-radius: 25px;
+        color: $app-background-color;
     }
 }

@@ -3,44 +3,44 @@ $linked-in-blue: rgb(0, 119, 181);
 $github-purple-profile: rgb(71, 0, 146);
 
 body {
-    font-family: sans-serif, ui-sans-serif, Arial, Helvetica, system-ui, Helvetica;
     background-color: $app-background-color;
+    font-family: sans-serif, ui-sans-serif, Arial, Helvetica, system-ui, Helvetica;
     font-size: 16px;
 }
 
 @mixin text-h1 {
     color: rgb(238, 238, 238);
-    font-weight: 500;
     font-size: 2em;
+    font-weight: 500;
     margin: 0;
 }
 
 @mixin text-h2 {
     color: rgb(191, 191, 191);
-    font-weight: 300;
     font-size: 1.75em;
+    font-weight: 300;
     margin: 0;
 }
 
 @mixin text-h3 {
     color: rgb(191, 191, 191);
-    font-weight: 200;
     font-size: 1.5em;
+    font-weight: 200;
     margin: 0;
 }
 
 @mixin text-li {
     color: rgb(147, 147, 147);
+    font-size: 1em;
     font-weight: 100;
     margin: 10px 0 0 0;
-    font-size: 1em;
 }
 
 @mixin text-p {
     color: rgb(147, 147, 147);
+    font-size: 1em;
     font-weight: 100;
     margin: 10px 0 0 0;
-    font-size: 1em;
 }
 
 .mlr-auto {
@@ -58,6 +58,18 @@ body {
 
     &-3 {
         gap: 3em;
+    }
+
+    &-4 {
+        gap: 4em;
+    }
+
+    &-5 {
+        gap: 5em;
+    }
+
+    &-6 {
+        gap: 6em;
     }
 }
 

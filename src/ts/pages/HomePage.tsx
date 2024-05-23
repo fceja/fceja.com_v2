@@ -3,12 +3,7 @@ import Main from "@components/Main";
 
 const HomePage = () => {
     return (
-        <div
-            className="homepage p-4 lg:gap-2 lg:flex"
-            style={{
-                gap: "5em"
-            }}
-        >
+        <div className="homepage p-4 gap-6 lg:gap-2 lg:flex">
             <Header />
             <Main />
         </div >

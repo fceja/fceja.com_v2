@@ -21,29 +21,18 @@ const cardsData = [
 
 const Cards = () => {
     return (
-        <ol className="cards-list">
+        <ol className="cards-list p-0">
             {
                 cardsData.map((elem, i) => {
                     return (
                         <li key={`li-${i}`} className="mt-3 gap-3 md:flex lg:flex">
-                            <div
-                                className="card-year"
-                                style={{
-                                    whiteSpace: "nowrap",
-
-                                }}
-                            >{elem.year}</div>
-                            <div
-                                className="card-desc"
-                                style={{
-                                    width: "100%",
-                                }}
-                            >
+                            <div className="card-year" style={{ width: "150px" }}>{elem.year}</div>
+                            <div className="card-desc w-100">
                                 <div className="card-title">{elem.title}</div>
                                 <div className="card-paragraph mt-4">{elem.paragraph}</div>
-                                <div className="tags my-3">
+                                <div className="tags my-3 d-flex flex-wrap">
                                     {elem.tags.map((tagElem) => {
-                                        return < span key={`tag-${i}-${tagElem}`} className="p-2" > {tagElem}</span>
+                                        return < span key={`tag-${i}-${tagElem}`} className="p-2 m-1" > {tagElem}</span>
                                     })}
                                 </div>
                             </div>
