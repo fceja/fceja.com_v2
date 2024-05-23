@@ -1,4 +1,5 @@
 import "@scss/components/Cards.scss"
+import Tags from "@common/components/Tags"
 
 const cardsData = [
     {
@@ -30,11 +31,7 @@ const Cards = () => {
                             <div className="card-desc w-100">
                                 <div className="card-title">{elem.title}</div>
                                 <div className="card-paragraph mt-4">{elem.paragraph}</div>
-                                <div className="tags my-3 d-flex flex-wrap">
-                                    {elem.tags.map((tagElem) => {
-                                        return < span key={`tag-${i}-${tagElem}`} className="p-2 m-1" > {tagElem}</span>
-                                    })}
-                                </div>
+                                <Tags tagData={elem.tags} parentIndex={i} />
                             </div>
                         </li>
                     )
