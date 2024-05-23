@@ -5,6 +5,7 @@ $github-purple-profile: rgb(71, 0, 146);
 body {
     font-family: sans-serif, ui-sans-serif, Arial, Helvetica, system-ui, Helvetica;
     background-color: $app-background-color;
+    font-size: 16px;
 }
 
 @mixin text-h1 {
@@ -44,10 +45,6 @@ body {
 
 .mlr-auto {
     margin: 0 auto 0 auto;
-}
-
-.w-80 {
-    width: 70%;
 }
 
 .gap {
