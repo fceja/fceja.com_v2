@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 import About from "@components/About"
 import Experience from "@components/Experience"
 import HomeProjects from "@components/HomeProjects"
@@ -11,6 +13,7 @@ const Main = () => {
             <About />
             <Experience />
             <HomeProjects />
+            <Link to="/projects">Archived Projects</Link>
         </main>
     )
 }
