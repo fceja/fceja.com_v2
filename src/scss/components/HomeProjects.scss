@@ -1,0 +1,20 @@
+@import "@scss/Global.scss";
+
+.home-projects {
+    h2 {
+        @include text-h2
+    }
+}
+
+.proj-p {
+    color: rgb(147, 147, 147);
+    font-size: 1em;
+    font-weight: 100;
+    margin: 10px 0 0 0;
+}
+
+.proj-title {
+    color: rgb(147, 147, 147);
+    font-size: 1em;
+    font-weight: 100;
+}
