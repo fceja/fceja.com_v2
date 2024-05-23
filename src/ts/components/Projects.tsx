@@ -16,7 +16,7 @@ const Projects = () => {
             <>
                 {projectData.map((elem, i) => {
                     return (
-                        <>
+                        <div key={`proj-${i}`}>
                             <h2>Projects</h2>
                             <div className={`project-${i} d-flex gap-3 mt-3`}>
                                 <div
@@ -40,7 +40,7 @@ const Projects = () => {
                                 </div>
 
                             </div>
-                        </>
+                        </div>
                     )
                 })}
             </>
