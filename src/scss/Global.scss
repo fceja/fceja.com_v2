@@ -1,6 +1,8 @@
 $app-background-color: #212121;
 $linked-in-blue: rgb(0, 119, 181);
 $github-purple-profile: rgb(71, 0, 146);
+$github-gray-project: rgb(116, 116, 116);
+$web-url-light-blue: rgb(151, 212, 243);
 
 body {
     background-color: $app-background-color;
@@ -87,6 +89,10 @@ body {
         &-2 {
             gap: 2em;
         }
+    }
+
+    .sm\:mt-10px {
+        margin-top: 10px;
     }
 
     .sm\:mt-3 {

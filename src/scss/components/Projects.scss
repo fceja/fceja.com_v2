@@ -1,17 +1,20 @@
 @import "@scss/Global.scss";
 
-
 .projects {
     h2 {
         @include text-h2
     }
 }
 
-.proj-desc {
+.proj-p {
+    color: rgb(147, 147, 147);
+    font-size: 1em;
+    font-weight: 100;
+    margin: 10px 0 0 0;
+}
 
-    .proj-title,
-    .proj-arrow,
-    .proj-p {
-        @include text-p
-    }
+.proj-title {
+    color: rgb(147, 147, 147);
+    font-size: 1em;
+    font-weight: 100;
 }
