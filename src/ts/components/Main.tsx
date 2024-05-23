@@ -1,6 +1,6 @@
 import About from "@components/About"
 import Experience from "@components/Experience"
-import Projects from "@components/Projects"
+import HomeProjects from "@components/HomeProjects"
 
 
 const Main = () => {
@@ -10,7 +10,7 @@ const Main = () => {
             style={{ maxWidth: "1000px" }}>
             <About />
             <Experience />
-            <Projects />
+            <HomeProjects />
         </main>
     )
 }
