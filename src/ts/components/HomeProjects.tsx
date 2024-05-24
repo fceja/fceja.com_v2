@@ -9,8 +9,10 @@ const projectData = [
         tags: [
             "TypeScript", "React JS", "Redux JS", "Bootstrap", "AWS:S3"
         ],
-        gitHubLink: "https://github.com/fceja/profile_app",
-        urlLink: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/"
+        links: [
+            { type: "github", url: "https://github.com/fceja/profile_app" },
+            { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/" }
+        ]
     },
     {
         title: 'Profile App II',
@@ -18,8 +20,10 @@ const projectData = [
         tags: [
             "TypeScript II", "React JS II", "Redux JS II", "Bootstrap II", "AWS:S3 II"
         ],
-        gitHubLink: "https://github.com/fceja/profile_app",
-        urlLink: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/"
+        links: [
+            { type: "github", url: "https://github.com/fceja/profile_app" },
+            { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/" }
+        ]
     }
 ]
 
@@ -36,7 +40,7 @@ const HomeProjects = () => {
                                     <div className="proj-title ">
                                         {elem.title}
                                     </div>
-                                    <ProjectLinks gitHubLink={elem.gitHubLink} urlLink={elem.urlLink} className={"home-page"} />
+                                    <ProjectLinks className={"projects-page"} linkData={elem.links} />
                                 </div>
                                 <p className="proj-p mt-4">{elem.paragraph}</p>
                                 <Tags className={"home-page"} tagData={elem.tags} parentIndex={i} />
