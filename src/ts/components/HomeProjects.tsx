@@ -39,7 +39,7 @@ const HomeProjects = () => {
                                     <ProjectLinks gitHubLink={elem.gitHubLink} urlLink={elem.urlLink} className={"home-page"} />
                                 </div>
                                 <p className="proj-p mt-4">{elem.paragraph}</p>
-                                <Tags tagData={elem.tags} parentIndex={i} />
+                                <Tags className={"home-page"} tagData={elem.tags} parentIndex={i} />
                             </div>
                             <div
                                 className="proj-img"

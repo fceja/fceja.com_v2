@@ -2,11 +2,12 @@ import "@scss/common/components/Tags.scss"
 
 interface TagsProps {
     tagData: string[],
-    parentIndex: number
+    parentIndex: number,
+    className: string
 }
 
 const Tags = (props: TagsProps) => {
-    const { tagData, parentIndex } = props
+    const { className, tagData, parentIndex } = props
 
     return (
         <div className="tags my-3 d-flex flex-wrap">
@@ -14,7 +15,7 @@ const Tags = (props: TagsProps) => {
                 return (
                     <span
                         key={`tag-${parentIndex}-${i}`}
-                        className="p-2"
+                        className={`${className}-tag`}
                         style={{ margin: "3px 10px 3px 0" }}
                     >
                         {elem}

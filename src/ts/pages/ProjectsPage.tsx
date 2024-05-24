@@ -4,8 +4,6 @@ import "@scss/pages/ProjectsPage.scss"
 import Tags from "@common/components/Tags"
 import ProjectLinks from "@components/ProjectLinks"
 
-const parentIndex = 1
-
 const projectData = [
     {
         year: "2023",
@@ -64,7 +62,7 @@ const Projects = () => {
                                     </td>
                                     <td className="t-row-built sm:d-none md:d-none">
                                         <Tags
-                                            tagData={elem.tags} parentIndex={parentIndex} />
+                                            className={"projects-page"} tagData={elem.tags} parentIndex={i} />
                                     </td>
                                     <td className="t-row-link sm:d-none">
                                         <span className="hover-text">

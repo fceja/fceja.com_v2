@@ -1,11 +1,22 @@
 @import "@scss/Global.scss";
 
-.tags {
-    span {
-        background-color: gray;
-        border-radius: 25px;
-        color: $app-background-color;
-        font-size: 1em;
-        font-weight: 100;
-    }
+/* home page styles */
+.home-page-tag {
+    padding: 5px 10px 5px 10px;
+    border-radius: 25px;
+    background-color: rgb(162, 162, 162);
+    font-size: 1em;
+    font-weight: 100;
+
+}
+
+/* projects page styles */
+.projects-page-tag {
+    padding: 7px 6px 5px 7px;
+    background-color: rgb(162, 162, 162);
+    border-radius: 25px;
+    color: $app-background-color;
+    font-size: 1em;
+    font-weight: 100;
+
 }
