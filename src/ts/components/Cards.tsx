@@ -31,7 +31,7 @@ const Cards = () => {
                             <div className="card-desc w-100">
                                 <div className="card-title">{elem.title}</div>
                                 <p className="card-p mt-4">{elem.paragraph}</p>
-                                <Tags tagData={elem.tags} parentIndex={i} />
+                                <Tags className="experience" tagData={elem.tags} parentIndex={i} />
                             </div>
                         </li>
                     )
