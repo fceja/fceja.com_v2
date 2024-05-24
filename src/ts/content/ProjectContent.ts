@@ -1,3 +1,31 @@
+export const projectData = [
+    {
+        year: "2023",
+        name: "Emerson Collective",
+        tags: ["JavaScript", "HTML", "React Native", "Next.js", "TypeScript", "JavaScript", "HTML", "React Native", "Next.js", "TypeScript"],
+        links: [
+            { type: "github", url: "https://github.com/fceja/profile_app" },
+            { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/" }
+        ]
+    },
+    {
+        year: "2023",
+        name: "Emerson Collective II",
+        tags: ["JavaScript", "HTML", "React Native", "Next.js", "TypeScript", "JavaScript", "HTML", "React Native", "Next.js", "TypeScript"],
+        links: [
+            { type: "github", url: "https://github.com/fceja/profile_app" },
+        ]
+    },
+    {
+        year: "2023",
+        name: "Emerson Collective III",
+        tags: ["JavaScript", "HTML", "React Native", "Next.js", "TypeScript", "JavaScript", "HTML", "React Native", "Next.js", "TypeScript"],
+        links: [
+            { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/" }
+        ]
+    }
+]
+
 export const projectLinkSvgData = {
     github: {
         xmlns: "http://www.w3.org/2000/svg",
