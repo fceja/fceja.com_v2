@@ -102,13 +102,16 @@ body {
     .sm\:mt-3 {
         margin-top: 3em;
     }
-
 }
 
 
 @media (min-width: 576px) and (max-width: 1024px) {
     .md\:flex {
         display: flex
+    }
+
+    .md\:d-none {
+        display: none
     }
 
     .md\:flex-row-reverse {
@@ -119,10 +122,13 @@ body {
     .md\:mt-3 {
         margin-top: 3em;
     }
-
 }
 
 @media (min-width: 1024px) {
+    .lg\:d-none {
+        display: none
+    }
+
     .lg\:flex {
         display: flex
     }

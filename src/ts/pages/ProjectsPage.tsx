@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 
 import "@scss/pages/ProjectsPage.scss"
 import Tags from "@common/components/Tags"
+import ProjectLinks from "@components/ProjectLinks"
 
 const parentIndex = 1
 
@@ -10,19 +11,24 @@ const projectData = [
         year: "2023",
         name: "Emerson Collective",
         tags: ["JavaScript", "HTML", "React Native", "Next.js", "TypeScript", "JavaScript", "HTML", "React Native", "Next.js", "TypeScript"],
-        link: "www.facebook.com"
+        link: "www.facebook.com",
+        gitHubLink: "https://github.com/fceja/profile_app",
+        urlLink: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/"
     },
     {
         year: "2023",
         name: "Emerson Collective II",
         tags: ["JavaScript", "HTML", "React Native", "Next.js", "TypeScript", "JavaScript", "HTML", "React Native", "Next.js", "TypeScript"],
-        link: "www.facebook.com"
+        link: "www.facebook.com",
+        gitHubLink: "https://github.com/fceja/profile_app",
     },
     {
         year: "2023",
         name: "Emerson Collective III",
         tags: ["JavaScript", "HTML", "React Native", "Next.js", "TypeScript", "JavaScript", "HTML", "React Native", "Next.js", "TypeScript"],
-        link: "www.facebook.com"
+        link: "www.facebook.com",
+        gitHubLink: "https://github.com/fceja/profile_app",
+        urlLink: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/"
     }
 ]
 
@@ -40,7 +46,7 @@ const Projects = () => {
                         <th className="t-row-proj">
                             Project
                         </th>
-                        <th className="t-row-built sm:d-none">Built With</th>
+                        <th className="t-row-built sm:d-none md:d-none">Built With</th>
                         <th className="t-row-link sm:d-none">Link</th>
                     </tr>
                 </thead>
@@ -51,11 +57,12 @@ const Projects = () => {
                                 <tr key={`row-${i}`} className={`t-row-${i} t-row`}>
                                     <td className="t-row-year py-3">{elem.year}</td>
                                     <td className="t-row-proj">
-                                        <span className="hover-text">
+                                        <span className="hover-text d-flex flex-start">
                                             {elem.name}
+                                            <ProjectLinks gitHubLink={elem.gitHubLink} urlLink={elem.urlLink} className={"projects-page"} />
                                         </span>
                                     </td>
-                                    <td className="t-row-built sm:d-none">
+                                    <td className="t-row-built sm:d-none md:d-none">
                                         <Tags
                                             tagData={elem.tags} parentIndex={parentIndex} />
                                     </td>

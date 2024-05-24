@@ -1,16 +1,44 @@
 @import "@scss/Global.scss";
 
-.link-proj-webpage {
+/* home page component */
+.home-page-proj-links {
+    margin: 0 0 0 30px;
+    width: 60px;
+}
+
+.home-page-proj-webpage {
     height: 100%;
     fill: $web-url-light-blue;
 }
 
-.link-proj-github {
+.home-page-proj-github {
     height: 100%;
     fill: $github-purple-profile
 }
 
-.a-svg {
+.home-page-a-svg {
+    height: 100%;
+    padding: 1px;
+}
+
+
+/* projects page component */
+.projects-page-proj-links {
+    margin: 0 0 0 10px;
+    width: 60px;
+}
+
+.projects-page-proj-webpage {
+    height: 100%;
+    fill: $web-url-light-blue;
+}
+
+.projects-page-proj-github {
+    height: 100%;
+    fill: $github-purple-profile
+}
+
+.projects-page-a-svg {
     height: 100%;
     padding: 1px;
 }
