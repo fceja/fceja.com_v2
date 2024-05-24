@@ -32,22 +32,26 @@ const Projects = () => {
                                     <td className="t-row-proj">
                                         <span className="hover-text d-flex flex-start">
                                             {elem.name}
-                                            <span className="md:d-none lg:d-none">
-                                                <ProjectLinks className={"projects-page"} linkData={elem.links} />
-                                            </span>
                                         </span>
                                     </td>
                                     <td className="t-row-built sm:d-none md:d-none">
                                         <Tags
                                             className={"projects-page"} tagData={elem.tags} parentIndex={i} />
                                     </td>
-                                    <td className="t-row-link sm:d-none">
-                                        <ProjectLinks className={"projects-page"} linkData={elem.links} />
+                                    <td className="t-row-link">
                                         <>
                                             {elem.links.map((linkData, iLink) => {
-                                                return <div key={`proj-${i}-${iLink}`} className="hover-text">
-                                                    {linkData.url}
-                                                </div>
+                                                return (
+                                                    <>
+                                                        <div key={`link-${i}-${iLink}`} className="d-flex">
+                                                            <ProjectLinks className={"projects-page"} linkData={linkData} />
+                                                            <span className="sm:d-none md:d-none">
+                                                                {linkData.url}
+
+                                                            </span>
+                                                        </div>
+                                                    </>
+                                                )
                                             })
                                             }
                                         </>
