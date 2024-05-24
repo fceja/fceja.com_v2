@@ -44,8 +44,8 @@ const Projects = () => {
                                     <td className="t-row-link sm:d-none">
                                         <ProjectLinks className={"projects-page"} linkData={elem.links} />
                                         <>
-                                            {elem.links.map((linkData) => {
-                                                return <div className="hover-text">
+                                            {elem.links.map((linkData, iLink) => {
+                                                return <div key={`proj-${i}-${iLink}`} className="hover-text">
                                                     {linkData.url}
                                                 </div>
                                             })

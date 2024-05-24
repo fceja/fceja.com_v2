@@ -16,10 +16,10 @@ const ProjectLinks = (props: ProjectLinksProps) => {
 
     return (
         <>
-            {linkData.map((link) => {
+            {linkData.map((link, i) => {
                 const svgData = projectLinkSvgData[`${link.type}`]
                 return (
-                    <div className={`${className}-proj-links d-flex align-items-center justify-content-around`}>
+                    <div key={`${className}-link-${i}`} className={`${className}-proj-links d-flex align-items-center justify-content-around`}>
                         <a
                             href={link.url}
                             target="_blank"
