@@ -29,6 +29,9 @@
       "@components/*": [
         "./src/ts/components/*"
       ],
+      "@content/*": [
+        "./src/ts/content/*"
+      ],
       "@pages/*": [
         "./src/ts/pages/*"
       ],
