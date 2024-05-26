@@ -1,16 +1,6 @@
 import "@scss/components/ProjectLinks.scss";
 import { projectLinkSvgData } from "@content/ProjectContent"
 
-// type linkDataT = {
-//     type: string
-//     url: string
-// }
-
-// export type ProjectLinksProps = {
-//     className: string | null;
-//     linkData: linkDataT[]
-// };
-
 export type ProjectLinksProps = {
     className: string | null;
     linkData: {
@@ -26,7 +16,7 @@ const ProjectLinks = (props: ProjectLinksProps) => {
 
     return (
         <>
-            <div key={`${className}-link`} className={`${className}-proj-links d-flex align-items-center justify-content-around`}>
+            <div className={`${className}-proj-links d-flex align-items-center justify-content-around`}>
                 <a
                     href={linkData.url}
                     target="_blank"

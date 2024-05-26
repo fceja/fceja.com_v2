@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 
 import "@scss/pages/ProjectsPage.scss"
-import Tags from "@common/components/Tags"
-import ProjectLinks from "@components/ProjectLinks"
 import { projectData } from "@content/ProjectContent"
+import ProjectLinks from "@components/ProjectLinks"
+import Tags from "@common/components/Tags"
 
 const Projects = () => {
     return (
@@ -25,36 +25,30 @@ const Projects = () => {
                 </thead>
                 <tbody>
                     <>
-                        {projectData.map((elem, i) => {
+                        {projectData.map((proj, i) => {
                             return (
                                 <tr key={`row-${i}`} className={`t-row-${i} t-row`}>
-                                    <td className="t-row-year py-3">{elem.year}</td>
+                                    <td className="t-row-year py-3">{proj.year}</td>
                                     <td className="t-row-proj">
                                         <span className="hover-text d-flex flex-start">
-                                            {elem.name}
+                                            {proj.title}
                                         </span>
                                     </td>
                                     <td className="t-row-built sm:d-none md:d-none">
                                         <Tags
-                                            className={"projects-page"} tagData={elem.tags} parentIndex={i} />
+                                            className={"projects-page"} tagData={proj.tags} parentIndex={i} />
                                     </td>
                                     <td className="t-row-link">
-                                        <>
-                                            {elem.links.map((linkData, iLink) => {
-                                                return (
-                                                    <>
-                                                        <div key={`link-${i}-${iLink}`} className="d-flex">
-                                                            <ProjectLinks className={"projects-page"} linkData={linkData} />
-                                                            <span className="sm:d-none md:d-none">
-                                                                {linkData.url}
-
-                                                            </span>
-                                                        </div>
-                                                    </>
-                                                )
-                                            })
-                                            }
-                                        </>
+                                        {proj.links.map((linkData, iLink) => {
+                                            return (
+                                                <div key={`link-${i}-${iLink}`} className="d-flex">
+                                                    <ProjectLinks className={"projects-page"} linkData={linkData} />
+                                                    <span className="sm:d-none md:d-none">
+                                                        {linkData.url}
+                                                    </span>
+                                                </div>
+                                            )
+                                        })}
                                     </td>
                                 </tr>
                             )

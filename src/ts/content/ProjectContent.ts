@@ -1,29 +1,36 @@
-export const projectData = [
+export const pinnedProjectData = [
     {
         year: "2023",
-        name: "Emerson Collective",
+        title: "Emerson Collective",
         tags: ["JavaScript", "HTML", "React Native", "Next.js", "TypeScript", "JavaScript", "HTML", "React Native", "Next.js", "TypeScript"],
         links: [
             { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/" },
             { type: "github", url: "https://github.com/fceja/profile_app" }
-        ]
+        ],
+        paragraph: "A web app that can be used for a user/company profile."
     },
     {
         year: "2023",
-        name: "Emerson Collective II",
+        title: "Emerson Collective II",
         tags: ["JavaScript", "HTML", "React Native", "Next.js", "TypeScript", "JavaScript", "HTML", "React Native", "Next.js", "TypeScript"],
         links: [
             { type: "github", url: "https://github.com/fceja/profile_app" },
-        ]
+        ],
+        paragraph: "A web II app that can be used for a user/company profile."
     },
     {
         year: "2023",
-        name: "Emerson Collective III",
+        title: "Emerson Collective III",
         tags: ["JavaScript", "HTML", "React Native", "Next.js", "TypeScript", "JavaScript", "HTML", "React Native", "Next.js", "TypeScript"],
         links: [
             { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/" }
-        ]
+        ],
+        paragraph: "A web III app that can be used for a user/company profile."
     }
+]
+
+export const projectData = [
+    ...pinnedProjectData
 ]
 
 export const projectLinkSvgData = {
