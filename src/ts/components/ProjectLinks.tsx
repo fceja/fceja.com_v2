@@ -16,23 +16,21 @@ const ProjectLinks = (props: ProjectLinksProps) => {
 
     return (
         <>
-            <div className={`${className}-proj-links d-flex align-items-center justify-content-around`}>
-                <a
-                    href={linkData.url}
-                    target="_blank"
-                    className={`${className}-proj-${linkData.type} d-flex`}
+            <a
+                href={linkData.url}
+                target="_blank"
+                className={`${className}-proj-${linkData.type}`}
+            >
+                <svg
+                    xmlns={svgData.xmlns}
+                    viewBox={svgData.viewBox}
+                    height={svgData.height}
+                    className={`${className}-a-svg`}
                 >
-                    <svg
-                        xmlns={svgData.xmlns}
-                        viewBox={svgData.viewBox}
-                        height={svgData.height}
-                        className={`${className}-a-svg`}
-                    >
-                        <path
-                            d={svgData.path} />
-                    </svg>
-                </a>
-            </ div >
+                    <path
+                        d={svgData.path} />
+                </svg>
+            </a>
         </>
     )
 };

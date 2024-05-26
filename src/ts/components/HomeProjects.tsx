@@ -1,3 +1,5 @@
+import React from "react";
+
 import "@scss/components/HomeProjects.scss"
 import { pinnedProjectData } from "@content/ProjectContent"
 import ProjectLinks from "@components/ProjectLinks"
@@ -17,13 +19,15 @@ const HomeProjects = () => {
                                     <div className="proj-title ">
                                         {proj.title}
                                     </div>
-                                    {proj.links.map((linkData, j) => {
-                                        return (
-                                            <span key={`link-${i}-${j}`}>
-                                                <ProjectLinks className={"projects-page"} linkData={linkData} />
-                                            </span>
-                                        )
-                                    })}
+                                    <div className="d-flex ms-4">
+                                        {proj.links.map((linkData, j) => {
+                                            return (
+                                                <React.Fragment key={`link-${i}-${j}`}>
+                                                    <ProjectLinks className={"home-page"} linkData={linkData} />
+                                                </React.Fragment>
+                                            )
+                                        })}
+                                    </div>
                                 </div>
                                 <p className="proj-p mt-4">{proj.paragraph}</p>
                                 <Tags className={"home-page"} tagData={proj.tags} parentIndex={i} />
