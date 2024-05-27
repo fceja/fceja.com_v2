@@ -1,4 +1,4 @@
-import "@scss/components/HomeHeader.scss"
+import "@scss/components/home/semantic/HomeHeader.scss"
 import SocialLinks from "@components/home/SocialLinks"
 
 const HomeHeader = () => {

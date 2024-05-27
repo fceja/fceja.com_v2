@@ -1,7 +1,5 @@
-import "@scss/components/Cards.scss"
-import Tags from "@common/components/Tags"
 
-const cardsData = [
+export const experienceCardsData = [
     {
         year: '2024 - Present',
         title: "Frontend Engineer",
@@ -19,25 +17,3 @@ const cardsData = [
         ]
     }
 ]
-
-const Cards = () => {
-    return (
-        <ol className="p-0">
-            {
-                cardsData.map((elem, i) => {
-                    return (
-                        <li key={`li-${i}`} className={`exp-li-${i} mt-3 md:flex lg:flex`}>
-                            <div className="card-year" style={{ minWidth: "125px" }}>{elem.year}</div>
-                            <div className="card-desc w-100">
-                                <div className="card-title">{elem.title}</div>
-                                <p className="card-p mt-4">{elem.paragraph}</p>
-                                <Tags className="experience" tagData={elem.tags} parentIndex={i} />
-                            </div>
-                        </li>
-                    )
-                })
-            }
-        </ol>
-    )
-}
-export default Cards

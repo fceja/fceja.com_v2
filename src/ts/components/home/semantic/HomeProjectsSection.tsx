@@ -1,12 +1,12 @@
 import React from "react";
 
-import "@scss/components/HomeProjects.scss"
+import "@scss/components/home/semantic/HomeProjectsSection.scss"
 import { pinnedProjectData } from "@content/ProjectContent"
 import ProjectLinks from "@common/components/ProjectLinks"
 import Tags from "@common/components/Tags"
 
 
-const HomeProjects = () => {
+const HomeProjectsSection = () => {
     return (
         <section className="home-projects mt-5">
             <h2>Projects</h2>
@@ -50,4 +50,4 @@ const HomeProjects = () => {
         </section >
     )
 }
-export default HomeProjects
+export default HomeProjectsSection

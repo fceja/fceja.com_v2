@@ -1,6 +1,6 @@
-import "@scss/components/About.scss"
+import "@scss/components/home/semantic/HomeAboutSection.scss"
 
-const About = () => {
+const HomeAboutSection = () => {
     return (
         <section className="about">
             <h2>About</h2>
@@ -17,4 +17,4 @@ const About = () => {
         </section>
     )
 }
-export default About
+export default HomeAboutSection
