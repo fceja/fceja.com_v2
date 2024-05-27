@@ -6,7 +6,7 @@ const HomePage = () => {
     return (
         <>
             <Spotlight />
-            <div className="homepage p-4 gap-6 lg:gap-2 lg:flex">
+            <div className="homepage p-4 lg:flex">
                 <Header />
                 <Main />
             </div >

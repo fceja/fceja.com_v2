@@ -26,7 +26,7 @@ const Cards = () => {
             {
                 cardsData.map((elem, i) => {
                     return (
-                        <li key={`li-${i}`} className={`exp-li-${i} mt-3 gap-3 md:flex lg:flex`}>
+                        <li key={`li-${i}`} className={`exp-li-${i} mt-3 md:flex lg:flex`}>
                             <div className="card-year" style={{ minWidth: "125px" }}>{elem.year}</div>
                             <div className="card-desc w-100">
                                 <div className="card-title">{elem.title}</div>

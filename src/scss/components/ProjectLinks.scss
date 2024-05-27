@@ -33,6 +33,16 @@
     height: 100%;
     fill: $github-purple-profile;
 
+    &:hover {
+        .projects-page-a-svg {
+            filter: drop-shadow(0 0 1em #ffffff);
+            animation: jump 0.3s ease-in-out forwards;
+        }
+
+        &~.url-link {
+            border-bottom: 1px solid white;
+        }
+    }
 }
 
 .projects-page-proj-website {
@@ -44,29 +54,29 @@
             filter: drop-shadow(0 0 1em #ffffff);
             animation: jump 0.3s ease-in-out forwards;
         }
-    }
-}
 
-.projects-page-proj-github {
-    height: 100%;
-    fill: $github-purple-profile;
+        &~.url-link {
+            border-bottom: 1px solid white;
+        }
+    }
 
     &:hover {
         .projects-page-a-svg {
-            animation: jump 0.3s ease-in-out forwards;
             filter: drop-shadow(0 0 1em #ffffff);
+            animation: jump 0.3s ease-in-out forwards;
+        }
+
+        &~.url-link {
+            border-bottom: 1px solid white;
         }
     }
 }
 
-@keyframes jump {
+.url-link {
+    text-decoration: none;
+    color: inherit;
 
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-10px);
+    &:hover {
+        border-bottom: 1px solid white;
     }
 }

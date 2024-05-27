@@ -13,7 +13,7 @@ const HomeProjects = () => {
             {pinnedProjectData.map((proj, i) => {
                 return (
                     <div key={`proj-${i}`}>
-                        <div className={`project-${i} gap-3 mt-3 md:flex-row-reverse lg:flex-row-reverse`}>
+                        <div className={`project-${i} mt-3 md:flex-row-reverse lg:flex-row-reverse`}>
                             <div className="proj-details w-100 sm:mt-10px">
                                 <div className="proj-header d-flex">
                                     <div className="proj-title ">

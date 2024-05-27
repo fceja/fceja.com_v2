@@ -31,6 +31,13 @@ const ProjectLinks = (props: ProjectLinksProps) => {
                         d={svgData.path} />
                 </svg>
             </a>
+            <span className="sm:d-none md:d-none ms-2">-</span>
+            <a
+                href={linkData.url}
+                target="_blank"
+                className="url-link sm:d-none md:d-none ms-2"
+            >
+                {linkData.url}</a>
         </>
     )
 };

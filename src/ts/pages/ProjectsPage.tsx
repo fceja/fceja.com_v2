@@ -82,10 +82,11 @@ const Projects = () => {
                                     <td id="row-links" className="t-row-link">
                                         {proj.links.map((linkData, iLink) => {
                                             return (
-                                                <div key={`link-${i}-${iLink}`} className="d-flex">
-                                                    <ProjectLinks className={"projects-page"} linkData={linkData} />
-                                                    <span className="sm:d-none md:d-none ms-2">-</span>
-                                                    <span className="sm:d-none md:d-none ms-2">{linkData.url}</span>
+                                                <div key={`link-${i}-${iLink}`} className="proj-links d-flex">
+                                                    <ProjectLinks
+                                                        className={"projects-page"}
+                                                        linkData={linkData}
+                                                    />
                                                 </div>
                                             )
                                         })}
