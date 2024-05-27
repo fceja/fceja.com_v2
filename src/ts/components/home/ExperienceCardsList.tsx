@@ -1,12 +1,12 @@
 import "@scss/components/home/ExperienceCards.scss"
+import { experienceCardsContent } from "@content/HomeContent"
 import Tags from "@common/components/Tags"
-import { experienceCardsData } from "@content/ExperienceCardContent"
 
-const ExperienceCards = () => {
+const ExperienceCardsList = () => {
     return (
         <ol className="p-0">
             {
-                experienceCardsData.map((elem, i) => {
+                experienceCardsContent.map((elem, i) => {
                     return (
                         <li key={`li-${i}`} className={`exp-li-${i} mt-3 md:flex lg:flex`}>
                             <div className="card-year" style={{ minWidth: "125px" }}>{elem.year}</div>
@@ -22,4 +22,4 @@ const ExperienceCards = () => {
         </ol>
     )
 }
-export default ExperienceCards
+export default ExperienceCardsList

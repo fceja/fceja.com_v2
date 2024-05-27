@@ -1,5 +1,5 @@
 import "@scss/common/components/ProjectLinks.scss";
-import { projectLinkSvgData } from "@content/ProjectContent"
+import { projectLinkSvgData } from "@content/ProjectsContent"
 
 export type ProjectLinksProps = {
     className: string | null;

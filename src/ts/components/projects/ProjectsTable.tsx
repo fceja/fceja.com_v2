@@ -1,5 +1,5 @@
 import "@scss/components/ProjectsTable.scss"
-import { projectData } from "@content/ProjectContent"
+import { projectContent } from "@content/ProjectsContent"
 import ProjectLinks from "@common/components/ProjectLinks"
 import Tags from "@common/components/Tags"
 import { useHighlightJump } from "@hooks/UseHightlightJump"
@@ -18,7 +18,7 @@ const ProjectsTable = () => {
                 </tr>
             </thead>
             <tbody>
-                {projectData.map((proj, i) => {
+                {projectContent.map((proj, i) => {
                     return (
                         <tr
                             key={`row-${i}`}
@@ -26,7 +26,6 @@ const ProjectsTable = () => {
                             id={`t-row-${i}`}
                         >
                             <td className="t-row-year py-3">{proj.year}</td>
-
                             <td className="t-row-proj">
                                 <span
                                     className="hover-text d-flex flex-start me-3"
@@ -36,14 +35,12 @@ const ProjectsTable = () => {
                                     {proj.title}
                                 </span>
                             </td>
-
                             <td className="t-row-built sm:d-none">
                                 <div className="tags my-3 me-3  d-flex flex-wrap">
                                     <Tags
                                         className={"projects-page"} tagData={proj.tags} parentIndex={i} />
                                 </div>
                             </td>
-
                             <td id="row-links" className="t-row-link">
                                 {proj.links.map((linkData, iLink) => {
                                     return (

@@ -1,11 +1,11 @@
 import "@scss/components/home/semantic/HomeExperienceSection.scss"
-import ExperienceCards from "@components/home/ExperienceCards"
+import ExperienceCardsList from "@components/home/ExperienceCardsList"
 
 const HomeExperienceSection = () => {
     return (
         <section className="experience mt-5">
             <h2>Experience</h2>
-            <ExperienceCards />
+            <ExperienceCardsList />
         </section>
     )
 }

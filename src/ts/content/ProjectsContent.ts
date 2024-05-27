@@ -1,4 +1,4 @@
-export const pinnedProjectData = [
+export const projectContent = [
     {
         year: "2023",
         title: "Emerson Collective",
@@ -27,10 +27,6 @@ export const pinnedProjectData = [
         ],
         paragraph: "A web III app that can be used for a user/company profile."
     }
-]
-
-export const projectData = [
-    ...pinnedProjectData
 ]
 
 export const projectLinkSvgData = {

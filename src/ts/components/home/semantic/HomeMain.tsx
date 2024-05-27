@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 import HomeAboutSection from "@components/home/semantic/HomeAboutSection"
 import HomeExperienceSection from "@components/home/semantic/HomeExperienceSection"
-import HomeProjectsSection from "@components/home/semantic/HomeProjectsSection"
+import HomePinnedProjectsSection from "@components/home/semantic/HomePinnedProjectsSection"
 
 
 const HomeMain = () => {
@@ -12,7 +12,7 @@ const HomeMain = () => {
             style={{ maxWidth: "1000px" }}>
             <HomeAboutSection />
             <HomeExperienceSection />
-            <HomeProjectsSection />
+            <HomePinnedProjectsSection />
             <Link to="/projects">Archived Projects</Link>
         </main>
     )
