@@ -16,11 +16,9 @@ const Projects = () => {
                 <thead className="t-row">
                     <tr>
                         <th className="t-row-year py-3 pe-4">Year</th>
-                        <th className="t-row-proj">
-                            Project
-                        </th>
-                        <th className="t-row-built sm:d-none md:d-none">Built With</th>
-                        <th className="t-row-link sm:d-none">Link</th>
+                        <th className="t-row-proj me-3">Project</th>
+                        <th className="t-row-built sm:d-none me-3">Built With</th>
+                        <th className="t-row-link">Link</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,12 +27,12 @@ const Projects = () => {
                             return (
                                 <tr key={`row-${i}`} className={`t-row-${i} t-row`}>
                                     <td className="t-row-year py-3">{proj.year}</td>
-                                    <td className="t-row-proj">
-                                        <span className="hover-text d-flex flex-start">
+                                    <td className="t-row-proj me-3">
+                                        <span className="hover-text d-flex flex-start me-3">
                                             {proj.title}
                                         </span>
                                     </td>
-                                    <td className="t-row-built sm:d-none md:d-none">
+                                    <td className="t-row-built sm:d-none">
                                         <Tags
                                             className={"projects-page"} tagData={proj.tags} parentIndex={i} />
                                     </td>
@@ -43,9 +41,8 @@ const Projects = () => {
                                             return (
                                                 <div key={`link-${i}-${iLink}`} className="d-flex">
                                                     <ProjectLinks className={"projects-page"} linkData={linkData} />
-                                                    <span className="sm:d-none md:d-none">
-                                                        {linkData.url}
-                                                    </span>
+                                                    <span className="sm:d-none md:d-none ms-2">-</span>
+                                                    <span className="sm:d-none md:d-none ms-2">{linkData.url}</span>
                                                 </div>
                                             )
                                         })}

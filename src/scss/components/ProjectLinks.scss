@@ -29,17 +29,44 @@
     width: 60px;
 }
 
+.projects-page-proj-github {
+    height: 100%;
+    fill: $github-purple-profile;
+
+}
+
 .projects-page-proj-website {
     height: 100%;
     fill: $web-url-light-blue;
+
+    &:hover {
+        .projects-page-a-svg {
+            filter: drop-shadow(0 0 1em #ffffff);
+            animation: jump 0.3s ease-in-out forwards;
+        }
+    }
 }
 
 .projects-page-proj-github {
     height: 100%;
-    fill: $github-purple-profile
+    fill: $github-purple-profile;
+
+    &:hover {
+        .projects-page-a-svg {
+            animation: jump 0.3s ease-in-out forwards;
+            filter: drop-shadow(0 0 1em #ffffff);
+        }
+    }
 }
 
-.projects-page-a-svg {
-    height: 100%;
-    padding: 1px;
+@keyframes jump {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
