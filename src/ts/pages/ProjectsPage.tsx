@@ -1,3 +1,4 @@
+import { useEffect, useState, useRef } from "react"
 import { Link } from "react-router-dom"
 
 import "@scss/pages/ProjectsPage.scss"
@@ -6,6 +7,32 @@ import ProjectLinks from "@components/ProjectLinks"
 import Tags from "@common/components/Tags"
 
 const Projects = () => {
+    const [isRowHovered, setIsRowHovered] = useState({ isHovered: false, rowI: null })
+    const rowFirstLinkRef = useRef(null)
+
+    useEffect(() => {
+        if (isRowHovered.isHovered) {
+            const rowLinks = document.getElementById(`t-row-${isRowHovered.rowI}`)
+
+            if (rowLinks) {
+                // find and return first link
+                const firstLink = (Array.from(rowLinks.childNodes).find(
+                    (elem) => (elem as HTMLElement).id === "row-links"
+                )).childNodes[0]
+
+                rowFirstLinkRef.current = firstLink as HTMLElement
+                rowFirstLinkRef.current.classList.add('target-icon')
+            }
+        }
+
+        return () => {
+            if (rowFirstLinkRef.current) {
+                rowFirstLinkRef.current.classList.remove('target-icon')
+            }
+        }
+
+    }, [isRowHovered])
+
     return (
         <div className="projects-page p-4">
             <div className="heading">
@@ -25,10 +52,18 @@ const Projects = () => {
                     <>
                         {projectData.map((proj, i) => {
                             return (
-                                <tr key={`row-${i}`} className={`t-row-${i} t-row`}>
+                                <tr
+                                    key={`row-${i}`}
+                                    className={`t-row-${i} t-row`}
+                                    id={`t-row-${i}`}
+                                >
                                     <td className="t-row-year py-3">{proj.year}</td>
                                     <td className="t-row-proj me-3">
-                                        <span className="hover-text d-flex flex-start me-3">
+                                        <span
+                                            className="hover-text d-flex flex-start me-3"
+                                            onMouseEnter={() => { setIsRowHovered({ isHovered: true, rowI: i }) }}
+                                            onMouseLeave={() => { setIsRowHovered({ isHovered: false, rowI: i }) }}
+                                        >
                                             {proj.title}
                                         </span>
                                     </td>
@@ -36,7 +71,7 @@ const Projects = () => {
                                         <Tags
                                             className={"projects-page"} tagData={proj.tags} parentIndex={i} />
                                     </td>
-                                    <td className="t-row-link">
+                                    <td id="row-links" className="t-row-link">
                                         {proj.links.map((linkData, iLink) => {
                                             return (
                                                 <div key={`link-${i}-${iLink}`} className="d-flex">

@@ -28,11 +28,6 @@ table {
         min-width: 70px;
     }
 
-    &-proj {
-        // max-width: 170px;
-        // min-width: 170px;
-    }
-
     &-built {
         max-width: 250px;
     }
@@ -44,4 +39,12 @@ table {
 
 .hover-text:hover {
     color: rgb(255, 72, 72);
+}
+
+.target-icon {
+    filter: drop-shadow(0 0 1em #ffffff);
+
+    a {
+        animation: jump 0.3s ease-in-out forwards;
+    }
 }
