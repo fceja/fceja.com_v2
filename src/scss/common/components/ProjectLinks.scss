@@ -40,7 +40,7 @@
         }
 
         &~.url-link {
-            border-bottom: 1px solid white;
+            filter: drop-shadow(0 0 1em #ffffff);
         }
     }
 }
@@ -56,27 +56,7 @@
         }
 
         &~.url-link {
-            border-bottom: 1px solid white;
-        }
-    }
-
-    &:hover {
-        .projects-page-a-svg {
             filter: drop-shadow(0 0 1em #ffffff);
-            animation: jump 0.3s ease-in-out forwards;
         }
-
-        &~.url-link {
-            border-bottom: 1px solid white;
-        }
-    }
-}
-
-.url-link {
-    text-decoration: none;
-    color: inherit;
-
-    &:hover {
-        border-bottom: 1px solid white;
     }
 }

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 
-import About from "@components/About"
-import Experience from "@components/Experience"
-import HomeProjects from "@components/HomeProjects"
+import About from "@components/home/About"
+import Experience from "@components/home/Experience"
+import HomeProjects from "@components/home/HomeProjects"
 
 
-const Main = () => {
+const HomeMain = () => {
     return (
         <main
             className="w-100 sm:mt-3 md:mt-3 lg:mlr-auto"
@@ -17,4 +17,4 @@ const Main = () => {
         </main>
     )
 }
-export default Main
+export default HomeMain

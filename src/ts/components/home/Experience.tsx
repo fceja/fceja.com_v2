@@ -1,5 +1,5 @@
 import "@scss/components/Experience.scss"
-import Cards from "@components/Cards"
+import Cards from "@components/home/Cards"
 
 const Experience = () => {
     return (

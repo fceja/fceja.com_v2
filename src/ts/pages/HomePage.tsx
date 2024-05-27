@@ -1,14 +1,14 @@
-import Header from "@components/Header";
-import Main from "@components/Main";
-import Spotlight from "@components/Spotlight";
+import HomeHeader from "@components/home/semantic/HomeHeader";
+import HomeMain from "@components/home/semantic/HomeMain";
+import Spotlight from "@common/components/Spotlight";
 
 const HomePage = () => {
     return (
         <>
             <Spotlight />
             <div className="homepage p-4 lg:flex">
-                <Header />
-                <Main />
+                <HomeHeader />
+                <HomeMain />
             </div >
         </>
     )

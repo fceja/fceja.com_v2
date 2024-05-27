@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import '@scss/components/Spotlight.scss';
+import '@scss/common/components/Spotlight.scss';
 
 interface Position {
     x: number;

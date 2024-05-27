@@ -1,4 +1,4 @@
-import "@scss/components/ProjectLinks.scss";
+import "@scss/common/components/ProjectLinks.scss";
 import { projectLinkSvgData } from "@content/ProjectContent"
 
 export type ProjectLinksProps = {
@@ -11,7 +11,6 @@ export type ProjectLinksProps = {
 
 const ProjectLinks = (props: ProjectLinksProps) => {
     const { className, linkData } = props
-
     const svgData = projectLinkSvgData[`${linkData.type}`]
 
     return (
@@ -32,12 +31,7 @@ const ProjectLinks = (props: ProjectLinksProps) => {
                 </svg>
             </a>
             <span className="sm:d-none md:d-none ms-2">-</span>
-            <a
-                href={linkData.url}
-                target="_blank"
-                className="url-link sm:d-none md:d-none ms-2"
-            >
-                {linkData.url}</a>
+            <span className="url-link sm:d-none md:d-none ms-2">{linkData.url}</span>
         </>
     )
 };

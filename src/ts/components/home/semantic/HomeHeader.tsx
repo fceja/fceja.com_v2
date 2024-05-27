@@ -1,7 +1,7 @@
-import "@scss/components/Header.scss"
-import SocialLinks from "@components/SocialLinks"
+import "@scss/components/HomeHeader.scss"
+import SocialLinks from "@components/home/SocialLinks"
 
-const Header = () => {
+const HomeHeader = () => {
     return (
         <header>
             <h1>Francisco Ceja</h1>
@@ -11,4 +11,4 @@ const Header = () => {
         </header>
     )
 }
-export default Header
+export default HomeHeader

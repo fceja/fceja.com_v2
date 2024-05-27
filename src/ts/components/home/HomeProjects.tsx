@@ -2,7 +2,7 @@ import React from "react";
 
 import "@scss/components/HomeProjects.scss"
 import { pinnedProjectData } from "@content/ProjectContent"
-import ProjectLinks from "@components/ProjectLinks"
+import ProjectLinks from "@common/components/ProjectLinks"
 import Tags from "@common/components/Tags"
 
 
