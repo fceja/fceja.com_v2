@@ -1,5 +1,5 @@
 import "@scss/components/ProjectsTable.scss"
-import { projectContent } from "@content/ProjectsContent"
+import { projectContent } from "@content/ProjectsPageContent"
 import ProjectLinks from "@common/components/ProjectLinks"
 import Tags from "@common/components/Tags"
 import { useHighlightJump } from "@hooks/UseHightlightJump"

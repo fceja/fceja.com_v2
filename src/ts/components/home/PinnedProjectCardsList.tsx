@@ -1,4 +1,4 @@
-import { pinnedProjectContent } from "@content/HomeContent"
+import { pinnedProjectContent } from "@content/HomePageContent"
 import PinnedProjectCardDetails from "@components/home/PinnedProjectCardDetails"
 import PinnedProjectCardImage from "@components/home/PinnedProjectCardImage"
 

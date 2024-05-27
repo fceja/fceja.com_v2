@@ -1,5 +1,5 @@
 import "@scss/components/home/ExperienceCardsList.scss"
-import { experienceCardsContent } from "@content/HomeContent"
+import { experienceCardsContent } from "@content/HomePageContent"
 import Tags from "@common/components/Tags"
 
 const ExperienceCardsList = () => {
