@@ -1,15 +1,12 @@
+import "@scss/components/home/PinnedProjectCardImage.scss"
+
 const PinnedProjectCardImage = () => {
     return (
-        <div
-            className="proj-img"
-            style={{
-                backgroundColor: "lightgray",
-                height: "100px",
-                minWidth: "125px",
-                maxWidth: "125px",
-            }}
-        >
-            [Image container]
+        <div className="img-container">
+            < img
+                className="proj-img"
+                src="src/assets/github-logo.png"
+            />
         </div>
     )
 }

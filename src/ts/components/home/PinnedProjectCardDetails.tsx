@@ -22,7 +22,7 @@ const PinnedProjectCardDetails = (props: PinnedProjectCardDetailsI) => {
     const { projectDetails, parentIndex } = props
 
     return (
-        <div className="proj-details w-100 sm:mt-10px">
+        <div className="proj-details sm:mt-10px">
             <div className="proj-header d-flex">
                 <div className="proj-title ">
                     {projectDetails.title}
@@ -38,7 +38,7 @@ const PinnedProjectCardDetails = (props: PinnedProjectCardDetailsI) => {
                 </div>
             </div>
             <p className="proj-p mt-4">{projectDetails.paragraph}</p>
-            <Tags className={"home-page"} tagData={projectDetails.tags} parentIndex={parentIndex} />
+            <Tags className={"home-proj"} tagData={projectDetails.tags} parentIndex={parentIndex} />
         </div>
     )
 }

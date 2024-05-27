@@ -36,10 +36,8 @@ const ProjectsTable = () => {
                                 </span>
                             </td>
                             <td className="t-row-built sm:d-none">
-                                <div className="tags my-3 me-3  d-flex flex-wrap">
-                                    <Tags
-                                        className={"projects-page"} tagData={proj.tags} parentIndex={i} />
-                                </div>
+                                <Tags
+                                    className={"projects-table"} tagData={proj.tags} parentIndex={i} />
                             </td>
                             <td id="row-links" className="t-row-link">
                                 {proj.links.map((linkData, iLink) => {

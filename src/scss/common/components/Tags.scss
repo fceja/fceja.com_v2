@@ -1,7 +1,7 @@
 @import "@scss/Global.scss";
 
-/* home page styles */
-.experience-tag {
+/* home-page styles */
+.home-exp-tag {
     padding: 5px 10px 5px 10px;
     border-radius: 25px;
     background-color: rgb(162, 162, 162);
@@ -10,7 +10,7 @@
 }
 
 /* home page styles */
-.home-page-tag {
+.home-proj-tag {
     padding: 5px 10px 5px 10px;
     border-radius: 25px;
     background-color: rgb(162, 162, 162);
@@ -18,8 +18,8 @@
     font-weight: 100;
 }
 
-/* projects page styles */
-.projects-page-tag {
+/* projects-page styles */
+.projects-table-tag {
     padding: 7px 6px 5px 7px;
     background-color: rgb(162, 162, 162);
     border-radius: 25px;

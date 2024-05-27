@@ -23,6 +23,9 @@
     "noFallthroughCasesInSwitch": false,
     /* Alias paths */
     "paths": {
+      "@assets/*": [
+        "./src/assets/*"
+      ],
       "@common/*": [
         "./src/ts/common/*"
       ],
