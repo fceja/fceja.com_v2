@@ -41,10 +41,12 @@ table {
     color: rgb(255, 72, 72);
 }
 
-.target-icon {
+.target-highlight {
     filter: drop-shadow(0 0 1em #ffffff);
 
-    a {
-        animation: jump 0.3s ease-in-out forwards;
-    }
+}
+
+.target-jump {
+
+    animation: jump 0.3s ease-in-out forwards;
 }
