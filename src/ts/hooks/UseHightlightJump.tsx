@@ -6,8 +6,10 @@ export const useHighlightJump = () => {
     const linkUrlRef = useRef(null)
 
     useEffect(() => {
-        if (isRowHovered.isHovered) {
-            const rowLinks = document.getElementById(`t-row-${isRowHovered.rowI}`)
+        const { isHovered, rowI } = isRowHovered
+
+        if (isHovered) {
+            const rowLinks = document.getElementById(`t-row-${rowI}`)
 
             if (rowLinks) {
                 // find and return first link
