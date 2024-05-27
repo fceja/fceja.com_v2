@@ -41,11 +41,11 @@ const ProjectsTable = () => {
 
     return (
         <table className="table-data">
-            <thead className="t-row">
+            <thead className="t-row t">
                 <tr>
                     <th className="t-row-year py-3 pe-4">Year</th>
                     <th className="t-row-proj me-3">Project</th>
-                    <th className="t-row-built sm:d-none me-3">Built With</th>
+                    <th className="t-row-built sm:d-none me-5">Built With</th>
                     <th className="t-row-link">Link</th>
                 </tr>
             </thead>
@@ -59,7 +59,8 @@ const ProjectsTable = () => {
                                 id={`t-row-${i}`}
                             >
                                 <td className="t-row-year py-3">{proj.year}</td>
-                                <td className="t-row-proj me-3">
+
+                                <td className="t-row-proj">
                                     <span
                                         className="hover-text d-flex flex-start me-3"
                                         onMouseEnter={() => { setIsRowHovered({ isHovered: true, rowI: i }) }}
@@ -68,10 +69,15 @@ const ProjectsTable = () => {
                                         {proj.title}
                                     </span>
                                 </td>
+
+
                                 <td className="t-row-built sm:d-none">
-                                    <Tags
-                                        className={"projects-page"} tagData={proj.tags} parentIndex={i} />
+                                    <div className="tags my-3 me-3  d-flex flex-wrap">
+                                        <Tags
+                                            className={"projects-page"} tagData={proj.tags} parentIndex={i} />
+                                    </div>
                                 </td>
+
                                 <td id="row-links" className="t-row-link">
                                     {proj.links.map((linkData, iLink) => {
                                         return (
