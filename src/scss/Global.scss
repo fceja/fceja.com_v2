@@ -6,18 +6,21 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
 
+/* colors */
 $app-background-color: #212121;
 $linked-in-blue: rgb(0, 119, 181);
 $github-purple-profile: rgb(71, 0, 146);
 $github-gray-project: rgb(116, 116, 116);
 $web-url-light-blue: rgb(151, 212, 243);
 
+/* app */
 body {
     background-color: $app-background-color;
     font-family: sans-serif, ui-sans-serif, Arial, Helvetica, system-ui, Helvetica;
     font-size: 16px;
 }
 
+/* text decorations */
 @mixin text-h1 {
     color: rgb(238, 238, 238);
     font-size: 2em;
@@ -51,74 +54,6 @@ body {
     font-size: 1em;
     font-weight: 100;
     margin: 10px 0 0 0;
-}
-
-.mlr-auto {
-    margin: 0 auto 0 auto;
-}
-
-@media (max-width: 576px) {
-    .sm\:block {
-        display: block
-    }
-
-    .sm\:d-none {
-        display: none
-    }
-
-    .sm\:flex {
-        display: flex
-    }
-
-    .sm\:mt-10px {
-        margin-top: 10px;
-    }
-
-    .sm\:mt-3 {
-        margin-top: 3em;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 1024px) {
-    .md\:flex {
-        display: flex
-    }
-
-    .md\:d-none {
-        display: none
-    }
-
-    .md\:flex-row-reverse {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    .md\:mt-3 {
-        margin-top: 3em;
-    }
-}
-
-@media (min-width: 1024px) {
-    .lg\:d-none {
-        display: none
-    }
-
-    .lg\:flex {
-        display: flex
-    }
-
-    .lg\:flex-row-reverse {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    .lg\:mlr-auto {
-        margin: 0 auto 0 auto;
-    }
-
-    .lg\:w-50 {
-        width: 50%;
-    }
 }
 
 /* animations */

@@ -1,36 +1,15 @@
-.t-row-link {
-    max-width: 300px;
-}
-
-
-table {
-    width: 100%;
-}
-
 .table-data {
     color: rgb(238, 238, 238);
     font-size: 1.2em;
     font-weight: 300;
 }
 
-.t-row {
+.th-row,
+.tr {
     border-bottom-width: 1px;
 
     &:last-child {
         border-style: None;
-    }
-
-    &-year {
-        max-width: 70px;
-        min-width: 70px;
-    }
-
-    &-built {
-        max-width: 250px;
-    }
-
-    &-link {
-        margin: 0 0 0 20px;
     }
 }
 

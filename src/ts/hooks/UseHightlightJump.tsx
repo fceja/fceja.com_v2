@@ -9,12 +9,12 @@ export const useHighlightJump = () => {
         const { isHovered, rowI } = isRowHovered
 
         if (isHovered) {
-            const rowLinks = document.getElementById(`t-row-${rowI}`)
+            const rowLinks = document.getElementById(`tr-${rowI}`)
 
             if (rowLinks) {
                 // find and return first link
                 const firstLink = (Array.from(rowLinks.childNodes).find(
-                    (elem) => (elem as HTMLElement).id === "row-links"
+                    (elem) => (elem as HTMLElement).id === "tr-links"
                 )).childNodes[0]
 
                 const aLink = firstLink.childNodes[0]
