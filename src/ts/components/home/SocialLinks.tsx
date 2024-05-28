@@ -1,4 +1,4 @@
-import "@scss/components/SocialLinks.scss";
+import "@scss/components/home/SocialLinks.scss";
 
 const svgStyle = {
     height: "100%",

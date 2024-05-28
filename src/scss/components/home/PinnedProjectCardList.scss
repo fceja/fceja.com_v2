@@ -13,3 +13,11 @@
     font-size: 1em;
     font-weight: 100;
 }
+
+.proj-img-container {
+    overflow: hidden;
+}
+
+.proj-img {
+    object-fit: cover;
+}

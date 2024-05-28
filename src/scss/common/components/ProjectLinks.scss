@@ -1,17 +1,17 @@
 @import "@scss/Global.scss";
 
 /* home page component */
-.home-page-proj-links {
+.home-proj-links {
     margin: 0 0 0 30px;
     width: 60px;
 }
 
-.home-page-proj-website {
+.home-proj-website {
     height: 100%;
     fill: $web-url-light-blue;
 
     &:hover {
-        .home-page-a-svg {
+        .home-proj-a-svg {
             filter: drop-shadow(0 0 1em #ffffff);
             animation: jump 0.3s ease-in-out forwards;
         }
@@ -22,12 +22,12 @@
     }
 }
 
-.home-page-proj-github {
+.home-proj-github {
     height: 100%;
     fill: $github-purple-profile;
 
     &:hover {
-        .home-page-a-svg {
+        .home-proj-a-svg {
             filter: drop-shadow(0 0 1em #ffffff);
             animation: jump 0.3s ease-in-out forwards;
         }
@@ -38,7 +38,7 @@
     }
 }
 
-.home-page-a-svg {
+.home-proj-a-svg {
     height: 100%;
     max-height: 50px;
     margin: 0 10px 0 0;
@@ -46,18 +46,18 @@
 
 
 /* projects page component */
-.projects-page-proj-links {
+.projects-proj-links {
     margin: 0 0 0 10px;
     width: 60px;
 }
 
-.projects-page-proj-github {
+.projects-proj-github {
     height: 100%;
     fill: $github-purple-profile;
     margin-right: 10px;
 
     &:hover {
-        .projects-page-a-svg {
+        .projects-proj-a-svg {
             filter: drop-shadow(0 0 1em #ffffff);
             animation: jump 0.3s ease-in-out forwards;
         }
@@ -68,13 +68,13 @@
     }
 }
 
-.projects-page-proj-website {
+.projects-proj-website {
     height: 100%;
     fill: $web-url-light-blue;
     margin-right: 10px;
 
     &:hover {
-        .projects-page-a-svg {
+        .projects-proj-a-svg {
             filter: drop-shadow(0 0 1em #ffffff);
             animation: jump 0.3s ease-in-out forwards;
         }

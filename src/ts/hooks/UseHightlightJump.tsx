@@ -1,41 +1,34 @@
 import { useEffect, useState, useRef } from "react"
 
 export const useHighlightJump = () => {
-    const [isRowHovered, setIsRowHovered] = useState({ isHovered: false, rowI: null })
     const linkIconRef = useRef(null)
     const linkUrlRef = useRef(null)
+    const [isTriggerElemHovered, setIsTriggerElemHovered] =
+        useState<{ isHovered: boolean, targetElem: null | Element }>(
+            { isHovered: false, targetElem: null, }
+        )
 
     useEffect(() => {
-        const { isHovered, rowI } = isRowHovered
+        const { isHovered, targetElem } = isTriggerElemHovered
+        if (!isHovered || !targetElem) return;
 
-        if (isHovered) {
-            const rowLinks = document.getElementById(`tr-${rowI}`)
+        const aLink = targetElem.childNodes[0]
+        linkIconRef.current = aLink
 
-            if (rowLinks) {
-                // find and return first link
-                const firstLink = (Array.from(rowLinks.childNodes).find(
-                    (elem) => (elem as HTMLElement).id === "tr-links"
-                )).childNodes[0]
+        const linkUrl = targetElem.childNodes[targetElem.childNodes.length - 1]
+        linkUrlRef.current = linkUrl
 
-                const aLink = firstLink.childNodes[0]
-                linkIconRef.current = aLink as HTMLElement
-
-                const linkUrl = firstLink.childNodes[firstLink.childNodes.length - 1]
-                linkUrlRef.current = linkUrl as HTMLElement
-
-                linkIconRef.current.classList.add('target-highlight', 'target-jump')
-                linkUrlRef.current.classList.add('target-highlight')
-            }
-        }
-
+        linkIconRef.current.classList.add('target-highlight', 'target-jump')
+        linkUrlRef.current.classList.add('target-highlight')
         return () => {
+
             if (linkIconRef.current) {
                 linkIconRef.current.classList.remove('target-highlight', 'target-jump')
                 linkUrlRef.current.classList.remove('target-highlight')
             }
         }
 
-    }, [isRowHovered])
+    }, [isTriggerElemHovered])
 
-    return setIsRowHovered
+    return setIsTriggerElemHovered
 }

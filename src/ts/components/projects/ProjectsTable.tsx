@@ -1,11 +1,18 @@
-import "@scss/components/ProjectsTable.scss"
+import "@scss/components/projects/ProjectsTable.scss"
 import { projectContent } from "@content/ProjectsPageContent"
 import ProjectLinks from "@common/components/ProjectLinks"
 import Tags from "@common/components/Tags"
 import { useHighlightJump } from "@hooks/UseHightlightJump"
 
+const COMMON_COMPONENT_CLASSNAME = 'projects-proj'
+
 const ProjectsTable = () => {
-    const setIsRowHovered = useHighlightJump()
+    const setIsTriggerElemHovered = useHighlightJump()
+
+    const handleHover = (isHovered: boolean, rowI: number) => {
+        const targetLink = document.querySelector(`.proj-link-${rowI}-0`)
+        setIsTriggerElemHovered({ isHovered: isHovered, targetElem: targetLink })
+    }
 
     return (
         <table className="table-data w-100">
@@ -29,8 +36,8 @@ const ProjectsTable = () => {
                             <td className="tr-proj">
                                 <span
                                     className="hover-text d-flex flex-start me-3"
-                                    onMouseEnter={() => { setIsRowHovered({ isHovered: true, rowI: i }) }}
-                                    onMouseLeave={() => { setIsRowHovered({ isHovered: false, rowI: i }) }}
+                                    onMouseEnter={() => { handleHover(true, i) }}
+                                    onMouseLeave={() => { handleHover(false, i) }}
                                 >
                                     {proj.title}
                                 </span>
@@ -39,24 +46,21 @@ const ProjectsTable = () => {
                                 className="tr-built d-none d-md-table-cell"
                                 style={{ maxWidth: "250px" }}
                             >
-                                <Tags
-                                    className={"projects-table"} tagData={proj.tags} parentIndex={i} />
+                                <Tags className={COMMON_COMPONENT_CLASSNAME} tagData={proj.tags} parentIndex={i}
+                                />
                             </td>
                             <td
                                 id="tr-links"
                                 className="tr-links"
                                 style={{ maxWidth: "300px" }}
                             >
-                                {proj.links.map((linkData, iLink) => {
+                                {proj.links.map((linkData, j) => {
                                     return (
                                         <div
-                                            key={`link-${i}-${iLink}`}
-                                            className="proj-link d-flex"
+                                            key={`link-${i}-${j}`}
+                                            className={`proj-link-${i}-${j} d-flex`}
                                         >
-                                            <ProjectLinks
-                                                className={"projects-page"}
-                                                linkData={linkData}
-                                            />
+                                            <ProjectLinks className={COMMON_COMPONENT_CLASSNAME} linkData={linkData} />
                                         </div>
                                     )
                                 })}
