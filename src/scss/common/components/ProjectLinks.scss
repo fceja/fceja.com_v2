@@ -9,17 +9,39 @@
 .home-page-proj-website {
     height: 100%;
     fill: $web-url-light-blue;
+
+    &:hover {
+        .home-page-a-svg {
+            filter: drop-shadow(0 0 1em #ffffff);
+            animation: jump 0.3s ease-in-out forwards;
+        }
+
+        &~.url-link {
+            filter: drop-shadow(0 0 1em #ffffff);
+        }
+    }
 }
 
 .home-page-proj-github {
     height: 100%;
-    fill: $github-purple-profile
+    fill: $github-purple-profile;
+
+    &:hover {
+        .home-page-a-svg {
+            filter: drop-shadow(0 0 1em #ffffff);
+            animation: jump 0.3s ease-in-out forwards;
+        }
+
+        &~.url-link {
+            filter: drop-shadow(0 0 1em #ffffff);
+        }
+    }
 }
 
 .home-page-a-svg {
     height: 100%;
     max-height: 50px;
-    margin-right: 10px;
+    margin: 0 10px 0 0;
 }
 
 

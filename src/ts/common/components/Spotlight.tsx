@@ -34,9 +34,12 @@ const Spotlight: React.FC = () => {
         <div
             className="spotlight"
             style={{
+                height: "100%",
                 left: `${position.x}px`,
-                top: `${position.y}px`,
                 opacity: visible ? 1 : 0,
+                position: "fixed",
+                top: `${position.y}px`,
+                width: "100%",
             }}
         ></div>
     );
