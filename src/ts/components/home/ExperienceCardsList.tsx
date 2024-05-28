@@ -7,7 +7,7 @@ const ExperienceCardsList = () => {
         <ol className="p-0">
             {experienceCardsContent.map((elem, i) => {
                 return (
-                    <li key={`li-${i}`} className={`exp-li-${i} mt-3 md:flex lg:flex`}>
+                    <li key={`li-${i}`} className={`exp-li-${i} mt-3 d-md-flex`}>
                         <div
                             className="card-year"
                             style={{ minWidth: "125px" }}

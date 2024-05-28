@@ -13,7 +13,7 @@ const ProjectsTable = () => {
                 <tr>
                     <th className="t-row-year py-3 pe-4">Year</th>
                     <th className="t-row-proj me-3">Project</th>
-                    <th className="t-row-built sm:d-none me-5">Built With</th>
+                    <th className="t-row-built d-sm-none me-5">Built With</th>
                     <th className="t-row-link">Link</th>
                 </tr>
             </thead>
@@ -35,7 +35,7 @@ const ProjectsTable = () => {
                                     {proj.title}
                                 </span>
                             </td>
-                            <td className="t-row-built sm:d-none">
+                            <td className="t-row-built d-sm-none">
                                 <Tags
                                     className={"projects-table"} tagData={proj.tags} parentIndex={i} />
                             </td>

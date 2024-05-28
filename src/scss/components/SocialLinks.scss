@@ -1,12 +1,6 @@
 @import "@scss/Global.scss";
 
-.social-links {
-    height: 60px;
-}
-
 [class^="link-icon"] {
-    height: 100%;
-    margin: 0 5px 0 5px;
 
     &.link-icon-linked-in {
         fill: $linked-in-blue;

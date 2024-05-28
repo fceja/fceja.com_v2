@@ -8,13 +8,14 @@ import HomePinnedProjectsSection from "@components/home/semantic/HomePinnedProje
 const HomeMain = () => {
     return (
         <main
-            className="w-100 sm:mt-3 md:mt-3 lg:mlr-auto"
-            style={{ maxWidth: "1000px" }}>
+            className="w-100 mt-3 mt-lg-0 mx-lg-auto"
+            style={{ maxWidth: "1000px" }}
+        >
             <HomeAboutSection />
             <HomeExperienceSection />
             <HomePinnedProjectsSection />
             <Link to="/projects">Archived Projects</Link>
-        </main>
+        </main >
     )
 }
 export default HomeMain

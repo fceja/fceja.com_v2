@@ -23,9 +23,14 @@ const PinnedProjectCardDetails = (props: PinnedProjectCardDetailsI) => {
     const { projectDetails, parentIndex } = props
 
     return (
-        <div className="proj-details sm:mt-10px">
+        <div className="proj-details">
             <div className="proj-header d-flex">
-                <div className="proj-title ">{projectDetails.title}</div>
+                <div
+                    className="proj-title "
+                    style={{ minWidth: "175px" }}
+                >
+                    {projectDetails.title}
+                </div>
                 <div className="proj-header-links d-flex d-md-block ms-4">
                     {projectDetails.links.map((linkData, j) => {
                         return (
@@ -36,7 +41,7 @@ const PinnedProjectCardDetails = (props: PinnedProjectCardDetailsI) => {
                     })}
                 </div>
             </div>
-            <p className="proj-p mt-4">{projectDetails.paragraph}</p>
+            <p className="proj-p mt-3">{projectDetails.paragraph}</p>
             <Tags className={"home-proj"} tagData={projectDetails.tags} parentIndex={parentIndex} />
         </div>
     )
