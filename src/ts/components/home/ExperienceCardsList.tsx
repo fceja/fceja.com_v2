@@ -8,7 +8,12 @@ const ExperienceCardsList = () => {
             {experienceCardsContent.map((elem, i) => {
                 return (
                     <li key={`li-${i}`} className={`exp-li-${i} mt-3 md:flex lg:flex`}>
-                        <div className="card-year" style={{ minWidth: "125px" }}>{elem.year}</div>
+                        <div
+                            className="card-year"
+                            style={{ minWidth: "125px" }}
+                        >
+                            {elem.year}
+                        </div>
                         <div className="card-desc w-100">
                             <div className="card-title">{elem.title}</div>
                             <p className="card-p mt-4">{elem.paragraph}</p>

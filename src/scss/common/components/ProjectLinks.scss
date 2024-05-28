@@ -32,6 +32,7 @@
 .projects-page-proj-github {
     height: 100%;
     fill: $github-purple-profile;
+    margin-right: 10px;
 
     &:hover {
         .projects-page-a-svg {
@@ -48,6 +49,7 @@
 .projects-page-proj-website {
     height: 100%;
     fill: $web-url-light-blue;
+    margin-right: 10px;
 
     &:hover {
         .projects-page-a-svg {

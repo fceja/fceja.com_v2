@@ -14,7 +14,7 @@ const ProjectLinks = (props: ProjectLinksProps) => {
     const svgData = projectLinkSvgData[`${linkData.type}`]
 
     return (
-        <>
+        <div className="link-container d-md-flex">
             <a
                 href={linkData.url}
                 target="_blank"
@@ -30,9 +30,9 @@ const ProjectLinks = (props: ProjectLinksProps) => {
                         d={svgData.path} />
                 </svg>
             </a>
-            <span className="sm:d-none md:d-none ms-2">-</span>
-            <span className="url-link sm:d-none md:d-none ms-2">{linkData.url}</span>
-        </>
+            <span className="hyphen d-none d-md-block">-</span>
+            <span className="url-link d-none d-md-block ms-2">{linkData.url}</span>
+        </div>
     )
 };
 

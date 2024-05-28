@@ -1,3 +1,11 @@
+/* breakpoints */
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
 $app-background-color: #212121;
 $linked-in-blue: rgb(0, 119, 181);
 $github-purple-profile: rgb(71, 0, 146);
@@ -56,6 +64,10 @@ body {
 
     .sm\:d-none {
         display: none
+    }
+
+    .sm\:flex {
+        display: flex
     }
 
     .sm\:mt-10px {
