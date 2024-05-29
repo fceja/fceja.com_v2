@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom"
+import HomeLink from "@components/projects/HomeLink"
 
 const ProjectsHeader = () => {
     return (
         <div className="heading">
-            <Link to="/">Homepage</Link>
+            <HomeLink />
             <h1>All Projects</h1>
         </div>
     )

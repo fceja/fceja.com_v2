@@ -3,18 +3,16 @@
     font-size: 1.5em;
     font-weight: 300;
     text-decoration: none;
+}
 
-    &:hover {
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
+.archived-projects-link:hover .archived-projects-arrow-svg {
+    transform: translateX(10px);
+}
 
-        .archived-projects-arrow-svg {
-            animation: jump-right 0.3s ease-in-out forwards;
-        }
-    }
+.archived-projects-arrow-svg {
+    transition: transform 0.2s ease-in-out;
 }
 
 .archived-projects-arrow-svg {
     fill: rgb(238, 238, 238);
-    // height: 30px;
 }

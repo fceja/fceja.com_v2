@@ -15,7 +15,7 @@ const ArchivedProjectsLink = () => {
                 to="/projects"
                 className="archived-projects-link d-flex align-items-center mx-auto"
             >
-                Archived Projects
+                View More Projects
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"

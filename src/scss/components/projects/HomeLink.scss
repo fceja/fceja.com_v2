@@ -1,0 +1,17 @@
+.home-page-link {
+    color: rgb(238, 238, 238);
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.home-page-link:hover .home-page-link-arrow-svg {
+    transform: translateX(-10px);
+}
+
+.home-page-link-arrow-svg {
+    transition: transform 0.2s ease-in-out;
+}
+
+.home-page-link-arrow-svg {
+    fill: rgb(238, 238, 238);
+}
