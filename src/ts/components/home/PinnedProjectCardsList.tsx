@@ -31,7 +31,7 @@ const PinnedProjectCardsList = () => {
                                     onMouseEnter={() => handleHover(true, i)}
                                     onMouseLeave={() => handleHover(false, i)}
                                 >
-                                    {proj.title}
+                                    <h5>{proj.title}</h5>
                                 </a>
                                 <div className="home-proj-header-links d-flex">
                                     {proj.links.map((linkData, j) => {

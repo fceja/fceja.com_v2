@@ -1,26 +1,30 @@
 @import "@scss/Global.scss";
 
 /* home page styles */
-.home-exp-tag {
-    background-color: rgb(162, 162, 162);
-    border-radius: 25px;
-    font-size: 1em;
-    font-weight: 100;
-}
-
+.home-exp-tag,
 .home-proj-tag {
-    background-color: rgb(162, 162, 162);
-    border-radius: 25px;
-    font-size: 1em;
-    font-weight: 100;
+    background-color: $tag-background-color;
+    color: $tag-color;
+
+    border-style: $tag-border-style;
+    border-width: $tag-border-width;
+    border-color: $tag-border-color;
+    border-radius: $tag-border-radius;
+
+    font-size: $tag-font-size;
+    font-weight: $tag-font-weight;
 }
 
 
 /* projects page styles */
 .projects-proj-tag {
-    background-color: rgb(162, 162, 162);
-    border-radius: 25px;
-    color: $app-background-color;
-    font-size: 1em;
-    font-weight: 100;
+    background-color: $tag-background-color;
+    color: $tag-color;
+
+    border-style: $tag-border-style;
+    border-width: $tag-border-width;
+    border-radius: $tag-border-radius;
+
+    font-size: .6em;
+    font-weight: $tag-font-weight;
 }

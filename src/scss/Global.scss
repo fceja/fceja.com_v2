@@ -7,11 +7,21 @@ $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
 
 /* colors */
-$app-background-color: #212121;
-$linked-in-blue: rgb(0, 119, 181);
-$github-purple-profile: rgb(71, 0, 146);
-$github-gray-project: rgb(116, 116, 116);
-$web-url-light-blue: rgb(151, 212, 243);
+$app-background-color: rgb(33, 33, 33);
+$github-purple-profile: rgb(162, 75, 255);
+$linked-in-blue: rgb(67, 169, 224);
+$proj-title-color: rgb(239, 203, 104);
+$web-url-light-blue: rgb(96, 210, 255);
+
+/* tag styles*/
+$tag-background-color: rgba(239, 203, 104, 0.08);
+$tag-color: rgb(239, 203, 104);
+$tag-border-color: rgb(149, 110, 0);
+$tag-border-radius: 25px;
+$tag-border-style: solid;
+$tag-border-width: 1px;
+$tag-font-size: 1em;
+$tag-font-weight: 200;
 
 /* app */
 body {
@@ -22,14 +32,14 @@ body {
 
 /* text decorations */
 @mixin text-h1 {
-    color: rgb(238, 238, 238);
+    color: rgb(255, 255, 255);
     font-size: 2em;
     font-weight: 500;
     margin: 0;
 }
 
 @mixin text-h2 {
-    color: rgb(191, 191, 191);
+    color: rgb(255, 255, 255);
     font-size: 1.75em;
     font-weight: 300;
     margin: 0;
