@@ -29,8 +29,8 @@ const ProjectLinks = (props: ProjectLinksProps) => {
                     <path d={svgData.path} />
                 </svg>
             </a>
-            <span className={`${className}-hyphen`}>-</span>
-            <span className={`${className}-url-link ms-2`}>{linkData.url}</span>
+            <span className={`${className}-hyphen d-none d-sm-block`}>-</span>
+            <span className={`${className}-url-link d-none d-sm-block ms-2`}>{linkData.url}</span>
         </>
     )
 };

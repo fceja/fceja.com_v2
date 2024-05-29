@@ -19,8 +19,18 @@ const ProjectsTable = () => {
             <thead className="th-row">
                 <tr>
                     <th className="th-year py-3 pe-4">Year</th>
-                    <th className="th-proj me-3">Project</th>
-                    <th className="th-built d-none d-md-table-cell  me-5">Built With</th>
+                    <th
+                        className="th-proj me-3"
+                        style={{ minWidth: "150px" }}
+                    >
+                        Project
+                    </th>
+                    <th
+                        className="th-built d-none d-md-table-cell  me-5"
+                        style={{ maxWidth: "500px" }}
+                    >
+                        Built With
+                    </th>
                     <th className="th-link">Link</th>
                 </tr>
             </thead>
@@ -42,23 +52,18 @@ const ProjectsTable = () => {
                                     {proj.title}
                                 </span>
                             </td>
-                            <td
-                                className="tr-built d-none d-md-table-cell"
-                                style={{ maxWidth: "250px" }}
-                            >
-                                <Tags className={COMMON_COMPONENT_CLASSNAME} tagData={proj.tags} parentIndex={i}
-                                />
+                            <td className="tr-built d-none d-md-table-cell py-3">
+                                <Tags className={COMMON_COMPONENT_CLASSNAME} tagData={proj.tags} parentIndex={i} />
                             </td>
                             <td
                                 id="tr-links"
-                                className="tr-links"
-                                style={{ maxWidth: "300px" }}
+                                className="tr-links pe-2"
                             >
                                 {proj.links.map((linkData, j) => {
                                     return (
                                         <div
                                             key={`link-${i}-${j}`}
-                                            className={`proj-link-${i}-${j} d-flex`}
+                                            className={`tr-proj-link-${i}-${j} tr-proj-link d-flex`}
                                         >
                                             <ProjectLinks className={COMMON_COMPONENT_CLASSNAME} linkData={linkData} />
                                         </div>

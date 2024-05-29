@@ -8,7 +8,7 @@ const svgStyle = {
 const SocialLinks = () => {
     return (
         <div
-            className="social-links mt-3"
+            className="social-links d-flex mt-3"
             style={{ height: "60px" }}
         >
             <a
