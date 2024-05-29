@@ -62,12 +62,11 @@ body {
 
 }
 
-.target-jump {
-
-    animation: jump 0.3s ease-in-out forwards;
+.target-jump-up {
+    animation: jump-up 0.3s ease-in-out forwards;
 }
 
-@keyframes jump {
+@keyframes jump-up {
 
     0%,
     100% {
@@ -76,5 +75,17 @@ body {
 
     50% {
         transform: translateY(-10px);
+    }
+}
+
+@keyframes jump-right {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
     }
 }

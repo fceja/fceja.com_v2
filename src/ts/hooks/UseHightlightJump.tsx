@@ -18,13 +18,13 @@ export const useHighlightJump = () => {
         const linkUrl = targetElem.childNodes[targetElem.childNodes.length - 1]
         linkUrlRef.current = linkUrl
 
-        linkIconRef.current.classList.add('target-highlight', 'target-jump')
+        linkIconRef.current.classList.add('target-highlight', 'target-jump-up')
         linkUrlRef.current.classList.add('target-highlight')
 
         return () => {
 
             if (linkIconRef.current) {
-                linkIconRef.current.classList.remove('target-highlight', 'target-jump')
+                linkIconRef.current.classList.remove('target-highlight', 'target-jump-up')
                 linkUrlRef.current.classList.remove('target-highlight')
             }
         }

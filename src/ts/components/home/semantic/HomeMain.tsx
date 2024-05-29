@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom"
-
-import HomeAboutSection from "@components/home/semantic/HomeAboutSection"
-import HomeExperienceSection from "@components/home/semantic/HomeExperienceSection"
-import HomePinnedProjectsSection from "@components/home/semantic/HomePinnedProjectsSection"
+import HomeAboutSection from "@components/home/semantic/AboutSection"
+import HomeExperienceSection from "@components/home/semantic/ExperienceSection"
+import HomePinnedProjectsSection from "@components/home/semantic/PinnedProjectsSection"
+import ArchivedProjectsLink from "@components/home/ArchivedProjectsLink"
 
 
 const HomeMain = () => {
@@ -14,7 +13,7 @@ const HomeMain = () => {
             <HomeAboutSection />
             <HomeExperienceSection />
             <HomePinnedProjectsSection />
-            <Link to="/projects">Archived Projects</Link>
+            <ArchivedProjectsLink />
         </main >
     )
 }

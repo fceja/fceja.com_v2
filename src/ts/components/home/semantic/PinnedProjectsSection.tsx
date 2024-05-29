@@ -1,4 +1,4 @@
-import "@scss/components/home/semantic/HomePinnedProjectsSection.scss"
+import "@scss/components/home/semantic/PinnedProjectsSection.scss"
 import PinnedProjectCardsList from "@components/home/PinnedProjectCardsList"
 
 const HomePinnedProjectsSection = () => {

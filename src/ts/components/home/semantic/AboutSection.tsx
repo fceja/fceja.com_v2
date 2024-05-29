@@ -1,4 +1,4 @@
-import "@scss/components/home/semantic/HomeAboutSection.scss"
+import "@scss/components/home/semantic/AboutSection.scss"
 import { aboutContent } from "@content/HomePageContent"
 
 const HomeAboutSection = () => {

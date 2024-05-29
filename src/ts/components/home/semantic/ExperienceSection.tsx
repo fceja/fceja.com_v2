@@ -1,4 +1,4 @@
-import "@scss/components/home/semantic/HomeExperienceSection.scss"
+import "@scss/components/home/semantic/ExperienceSection.scss"
 import ExperienceCardsList from "@components/home/ExperienceCardsList"
 
 const HomeExperienceSection = () => {
