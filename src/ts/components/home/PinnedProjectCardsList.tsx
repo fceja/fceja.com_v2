@@ -23,17 +23,17 @@ const PinnedProjectCardsList = () => {
                         id={`home-proj-card-${i}`}
                         className={"mt-3 d-md-flex flex-md-row-reverse"}>
                         <div className="home-proj-details">
-                            <div className="home-proj-header d-flex">
+                            <div className="home-proj-header d-flex flex-wrap">
                                 <a
                                     href={proj.links[0].url}
                                     target="_blank"
-                                    className="home-proj-title-link hover-text"
+                                    className="home-proj-title-link hover-text me-3"
                                     onMouseEnter={() => handleHover(true, i)}
                                     onMouseLeave={() => handleHover(false, i)}
                                 >
                                     {proj.title}
                                 </a>
-                                <div className="home-proj-header-links d-flex d-md-block ms-4">
+                                <div className="home-proj-header-links d-flex">
                                     {proj.links.map((linkData, j) => {
                                         return (
                                             <div

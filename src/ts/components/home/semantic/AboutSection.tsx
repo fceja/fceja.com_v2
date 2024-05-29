@@ -1,7 +1,7 @@
 import "@scss/components/home/semantic/AboutSection.scss"
 import { aboutContent } from "@content/HomePageContent"
 
-const HomeAboutSection = () => {
+const AboutSection = () => {
     return (
         <section className="about">
             <h2>About</h2>
@@ -9,4 +9,4 @@ const HomeAboutSection = () => {
         </section>
     )
 }
-export default HomeAboutSection
+export default AboutSection

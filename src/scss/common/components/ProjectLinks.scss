@@ -6,10 +6,10 @@
     width: 60px;
 }
 
-@media(min-width: $breakpoint-md) {
-    .home-proj-link:last-child {
-        margin: 10px 0 0 0;
-    }
+.home-proj-hyphen,
+.home-proj-url-link {
+    display: none;
+    background-color: yellow;
 }
 
 .home-proj-github-link {
