@@ -53,9 +53,21 @@
 
 
 /* projects page component */
+@media (max-width: $breakpoint-sm) {
+
+    .projects-proj-hyphen,
+    .projects-proj-url-link {
+        display: none;
+    }
+}
+
 .projects-proj-links {
     margin: 0 0 0 10px;
     width: 60px;
+}
+
+.projects-proj-hyphen {
+    margin: 0 10px 0 0;
 }
 
 .projects-proj-github-link {
