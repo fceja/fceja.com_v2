@@ -1,7 +1,5 @@
 .spotlight {
-  background: radial-gradient(600px at 50% 50%,
-      rgba(216, 29, 29, 0.12),
-      transparent 75%);
+  background: radial-gradient(600px at 50% 50%, rgba(150, 150, 150, 0.063), transparent 75%);
   pointer-events: none;
   transform: translate(-50%, -50%);
   transition: opacity 0.3s ease;

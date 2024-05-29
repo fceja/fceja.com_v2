@@ -21,7 +21,9 @@ const PinnedProjectCardsList = () => {
                     <div
                         key={`home-proj-card-${i}`}
                         id={`home-proj-card-${i}`}
-                        className={"mt-3 d-md-flex flex-md-row-reverse"}>
+                        className={"d-md-flex flex-md-row-reverse"}
+                        style={{ margin: "50px 0 0 0" }}
+                    >
                         <div className="home-proj-details">
                             <div className="home-proj-header d-flex flex-wrap">
                                 <a
