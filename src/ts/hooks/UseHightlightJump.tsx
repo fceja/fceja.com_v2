@@ -12,14 +12,15 @@ export const useHighlightJump = () => {
         const { isHovered, targetElem } = isTriggerElemHovered
         if (!isHovered || !targetElem) return;
 
-        const aLink = targetElem.childNodes[0]
-        linkIconRef.current = aLink
+        const svgIcon = targetElem.childNodes[0].childNodes[0]
+        linkIconRef.current = svgIcon
 
         const linkUrl = targetElem.childNodes[targetElem.childNodes.length - 1]
         linkUrlRef.current = linkUrl
 
         linkIconRef.current.classList.add('target-highlight', 'target-jump')
         linkUrlRef.current.classList.add('target-highlight')
+
         return () => {
 
             if (linkIconRef.current) {

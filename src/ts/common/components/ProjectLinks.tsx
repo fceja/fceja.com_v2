@@ -18,7 +18,7 @@ const ProjectLinks = (props: ProjectLinksProps) => {
             <a
                 href={linkData.url}
                 target="_blank"
-                className={`${className}-${linkData.type}`}
+                className={`${className}-${linkData.type}-link`}
             >
                 <svg
                     xmlns={svgData.xmlns}
@@ -26,8 +26,7 @@ const ProjectLinks = (props: ProjectLinksProps) => {
                     height={svgData.height}
                     className={`${className}-a-svg`}
                 >
-                    <path
-                        d={svgData.path} />
+                    <path d={svgData.path} />
                 </svg>
             </a>
             <span className="hyphen d-none d-md-block">-</span>

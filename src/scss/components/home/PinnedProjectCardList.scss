@@ -1,23 +1,26 @@
-.proj-title {
-    color: rgb(147, 147, 147);
-    font-size: 1em;
-    font-weight: 100;
+.home-proj {
+    &-title-link {
+        text-decoration: none;
+        color: rgb(147, 147, 147);
+        font-size: 1em;
+        font-weight: 100;
+    }
+
+    &-header-links {
+        color: rgb(147, 147, 147);
+    }
+
+    &-p {
+        color: rgb(147, 147, 147);
+        font-size: 1em;
+        font-weight: 100;
+    }
 }
 
-.proj-header-links {
-    color: rgb(147, 147, 147);
-}
-
-.proj-p {
-    color: rgb(147, 147, 147);
-    font-size: 1em;
-    font-weight: 100;
-}
-
-.proj-img-container {
+.home-proj-img-container {
     overflow: hidden;
 }
 
-.proj-img {
+.home-proj-img {
     object-fit: cover;
 }
