@@ -2,7 +2,7 @@ import "@scss/components/home/SocialLinks.scss";
 
 const svgStyle = {
     height: "100%",
-    margin: "0 5px 0 5px"
+    margin: "0 10px 0 0",
 }
 
 const SocialLinks = () => {

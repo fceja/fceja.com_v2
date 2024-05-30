@@ -1,21 +1,20 @@
 @import "@scss/Global.scss";
 
 /* home page component */
-.home-proj-links {
-    margin: 0 0 0 30px;
-    width: 60px;
-}
+.home-proj-header-links {}
 
 .home-proj-hyphen,
+
 .home-proj-url-link {
     display: none;
-    background-color: yellow;
 }
 
+$svg-icon-height: 12.5px;
+
 .home-proj-github-link {
-    display: block;
+    display: flex;
     fill: $github-purple-profile;
-    height: 25px;
+    height: $svg-icon-height;
 
     &:hover {
         .home-proj-a-svg {
@@ -30,9 +29,9 @@
 }
 
 .home-proj-website-link {
-    display: block;
+    display: flex;
     fill: $web-url-light-blue;
-    height: 25px;
+    height: $svg-icon-height;
 
     &:hover {
         .home-proj-a-svg {

@@ -1,22 +1,35 @@
 @import "@scss/Global.scss";
 
-.home-proj {
-    &-title-link {
-        text-decoration: none;
-        color: rgb(198, 198, 198);
-        font-size: 1em;
-        font-weight: 500;
-    }
+.proj-list {}
 
-    &-header-links {
-        color: rgb(147, 147, 147);
-    }
+.home-proj-card {
+    margin: 50px 0 0 0;
+}
 
-    &-p {
-        font-size: .875em;
-        color: rgb(178, 178, 178);
-        font-weight: none;
-    }
+.home-proj-details {
+    width: 100%;
+}
+
+.home-proj-header {}
+
+.home-proj-title-link {
+    text-decoration: none;
+    color: rgb(198, 198, 198);
+    font-size: 1em;
+    font-weight: 500;
+    margin: -5.15px 0 0 0;
+}
+
+.home-proj-title-link span {
+    display: inline-block;
+}
+
+.home-proj-header-links {}
+
+.home-proj-p {
+    font-size: .875em;
+    color: rgb(178, 178, 178);
+    font-weight: none;
 }
 
 .home-proj-img-container {
@@ -25,21 +38,4 @@
 
 .home-proj-img {
     object-fit: cover;
-}
-
-@media (min-width: $breakpoint-lg) {
-    [id^="home-proj-card-"] {
-        &:hover {
-            background: rgba(146, 146, 146, 0.1);
-            border-radius: 10px;
-            padding: 10px;
-            border: 1px solid rgba(91, 91, 91, 0.337);
-            box-shadow:
-                0 2px 1px rgba(0, 0, 0, 0.09),
-                0 4px 2px rgba(0, 0, 0, 0.09),
-                0 8px 4px rgba(0, 0, 0, 0.09),
-                0 16px 8px rgba(0, 0, 0, 0.09),
-                0 32px 16px rgba(0, 0, 0, 0.09);
-        }
-    }
 }

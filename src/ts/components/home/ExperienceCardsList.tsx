@@ -10,7 +10,7 @@ const ExperienceCardsList = () => {
                     <li key={`li-${i}`} className={`exp-li-${i} mt-4 d-md-flex`}>
                         <div
                             className="card-year"
-                            style={{ minWidth: "125px" }}
+                            style={{ margin: "1.5px 0 0 0", minWidth: "125px" }}
                         >
                             {elem.year}
                         </div>

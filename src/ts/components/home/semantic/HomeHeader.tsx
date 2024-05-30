@@ -6,7 +6,7 @@ const HomeHeader = () => {
         <header className="home-header w-lg-50 d-lg-flex">
             <div className="mx-auto">
                 <h1>Francisco Ceja</h1>
-                <h2>QA / Automater / Python Developer</h2>
+                <h2>QA / Automater / Python Dev</h2>
                 <p>I like to code apps and stuff.</p>
                 <SocialLinks />
             </div>
