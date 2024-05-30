@@ -17,8 +17,8 @@ const Tags = (props: TagsProps) => {
                         key={`tag-${parentIndex}-${i}`}
                         className={`${className}-tag`}
                         style={{
-                            margin: "3px 10px 3px 0",
-                            padding: "5px 10px 5px 10px"
+                            margin: "3px 7px 3px 0",
+                            padding: "4px 10px 4px 10px"
                         }}
                     >
                         {elem}

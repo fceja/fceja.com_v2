@@ -3,7 +3,9 @@
 .home-proj {
     &-title-link {
         text-decoration: none;
-        color: rgb(179, 177, 177);
+        color: rgb(198, 198, 198);
+        font-size: 1em;
+        font-weight: 500;
     }
 
     &-header-links {
@@ -11,9 +13,9 @@
     }
 
     &-p {
-        color: rgb(147, 147, 147);
-        font-size: 1em;
-        font-weight: 100;
+        font-size: .875em;
+        color: rgb(178, 178, 178);
+        font-weight: none;
     }
 }
 

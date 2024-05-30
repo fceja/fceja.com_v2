@@ -4,7 +4,7 @@ import { aboutContent } from "@content/HomePageContent"
 const AboutSection = () => {
     return (
         <section className="about">
-            <h2>About</h2>
+            <h2>ABOUT</h2>
             <p>{aboutContent}</p>
         </section>
     )

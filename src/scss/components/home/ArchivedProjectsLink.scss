@@ -1,18 +1,24 @@
+@import "@scss/Global.scss";
+
 .archived-projects-link {
-    color: rgb(238, 238, 238);
-    font-size: 1.5em;
-    font-weight: 300;
     text-decoration: none;
-}
+    color: rgb(198, 198, 198);
+    font-size: 1em;
+    font-weight: 500;
 
-.archived-projects-link:hover .archived-projects-arrow-svg {
-    transform: translateX(10px);
+    &:hover {
+        .view-more-link {
+            border-bottom: 1px solid $proj-title-color;
+        }
+
+        .archived-projects-arrow-svg {
+            fill: $proj-title-color;
+            transform: translateX(10px);
+        }
+    }
 }
 
 .archived-projects-arrow-svg {
-    transition: transform 0.2s ease-in-out;
-}
-
-.archived-projects-arrow-svg {
+    transition: transform 0.2s ease-in-out, fill 0.2s ease-in-out;
     fill: rgb(238, 238, 238);
 }

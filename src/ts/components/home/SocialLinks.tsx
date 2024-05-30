@@ -8,7 +8,7 @@ const svgStyle = {
 const SocialLinks = () => {
     return (
         <ul
-            className="social-links"
+            className="social-links d-flex"
             style={{
                 height: "60px",
                 margin: "50px 0 0 0",

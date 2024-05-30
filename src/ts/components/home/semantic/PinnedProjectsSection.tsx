@@ -4,7 +4,7 @@ import PinnedProjectCardsList from "@components/home/PinnedProjectCardsList"
 const PinnedProjectsSection = () => {
     return (
         <section className="home-projects mt-5">
-            <h2>Projects</h2>
+            <h2>PROJECTS</h2>
             <PinnedProjectCardsList />
         </section >
     )

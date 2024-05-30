@@ -20,8 +20,8 @@ $tag-border-color: rgb(149, 110, 0);
 $tag-border-radius: 25px;
 $tag-border-style: solid;
 $tag-border-width: 1px;
-$tag-font-size: 1em;
-$tag-font-weight: 200;
+$tag-font-size: .75em;
+$tag-font-weight: 500;
 
 /* app */
 body {
@@ -70,6 +70,12 @@ body {
     .w-lg-50 {
         width: 50%;
     }
+}
+
+.hover-text:hover {
+    color: $proj-title-color;
+    font-size: 1em;
+    font-weight: 500;
 }
 
 /* animations */
