@@ -3,7 +3,7 @@ import SocialLinks from "@components/home/SocialLinks"
 
 const HomeHeader = () => {
     return (
-        <header className="w-lg-50 d-lg-flex">
+        <header className="home-header w-lg-50 d-lg-flex">
             <div className="mx-auto">
                 <h1>Francisco Ceja</h1>
                 <h2>QA / Automater / Python Developer</h2>

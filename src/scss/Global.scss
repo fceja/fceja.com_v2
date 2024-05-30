@@ -73,6 +73,10 @@ body {
     }
 }
 
+.w-max {
+    max-width: $breakpoint-xl;
+}
+
 .hover-text:hover {
     color: $proj-title-color;
     font-size: 1em;

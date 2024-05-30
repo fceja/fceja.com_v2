@@ -1,0 +1,37 @@
+@import "@scss/Global.scss";
+
+@media (max-width: $breakpoint-sm) {
+    .projects-header {
+        h1 {
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            font-size: 2.25em;
+            letter-spacing: -.8px;
+        }
+    }
+
+}
+
+@media (min-width: #{$breakpoint-sm}) and (max-width: #{calc(#{$breakpoint-lg} - 1px)
+
+}) {
+    .projects-header {
+        h1 {
+            color: rgb(255, 255, 255);
+            font-size: 3em;
+            font-weight: 700;
+            letter-spacing: -1.1px;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-lg) {
+    .projects-header {
+        h1 {
+            color: rgb(255, 255, 255);
+            font-size: 3em;
+            font-weight: 700;
+            letter-spacing: -1.1px;
+        }
+    }
+}
