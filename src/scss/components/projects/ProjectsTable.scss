@@ -1,11 +1,5 @@
 @import "@scss/Global.scss";
 
-.table-data {
-    color: rgb(238, 238, 238);
-    font-size: 1.2em;
-    font-weight: 300;
-}
-
 .th-row,
 .tr {
     border-bottom-width: 1px;
@@ -13,4 +7,33 @@
     &:last-child {
         border-style: None;
     }
+}
+
+.th-row th {
+    color: rgb(238, 238, 238);
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.tr-year {
+    color: rgb(192, 191, 191);
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.tr-proj span {
+    color: rgb(238, 238, 238);
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.tr-built {
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.tr-proj-link {
+    color: rgb(192, 191, 191);
+    font-size: .875em;
+    font-weight: 500;
 }
