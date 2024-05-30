@@ -1,5 +1,9 @@
 @import "@scss/Global.scss";
 
+.social-links {
+    text-decoration: none;
+}
+
 [class^="link-icon"] {
 
     &.link-icon-linked-in {

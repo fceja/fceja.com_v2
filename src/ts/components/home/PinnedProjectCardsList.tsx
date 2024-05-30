@@ -21,7 +21,7 @@ const PinnedProjectCardsList = () => {
                     <div
                         key={`home-proj-card-${i}`}
                         id={`home-proj-card-${i}`}
-                        className={"d-md-flex flex-md-row-reverse"}
+                        className={"home-proj-card d-md-flex flex-md-row-reverse"}
                         style={{ margin: "50px 0 0 0" }}
                     >
                         <div className="home-proj-details">
@@ -65,7 +65,7 @@ const PinnedProjectCardsList = () => {
                     </div>
                 )
             })}
-        </div>
+        </div >
     )
 }
 export default PinnedProjectCardsList

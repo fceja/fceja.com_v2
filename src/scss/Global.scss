@@ -66,10 +66,15 @@ body {
     margin: 10px 0 0 0;
 }
 
+@media (min-width: $breakpoint-lg) {
+    .w-lg-50 {
+        width: 50%;
+    }
+}
+
 /* animations */
 .target-highlight {
     filter: drop-shadow(0 0 1em #ffffff);
-
 }
 
 .target-jump-up {

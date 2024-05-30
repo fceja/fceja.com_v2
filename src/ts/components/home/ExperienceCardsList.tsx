@@ -4,7 +4,7 @@ import Tags from "@common/components/Tags"
 
 const ExperienceCardsList = () => {
     return (
-        <ol className="p-0">
+        <ul className="exp-list p-0">
             {experienceCardsContent.map((elem, i) => {
                 return (
                     <li key={`li-${i}`} className={`exp-li-${i} mt-3 d-md-flex`}>
@@ -22,7 +22,7 @@ const ExperienceCardsList = () => {
                     </li>
                 )
             })}
-        </ol>
+        </ul>
     )
 }
 export default ExperienceCardsList

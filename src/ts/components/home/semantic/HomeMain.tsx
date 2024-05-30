@@ -6,10 +6,7 @@ import ArchivedProjectsLink from "@components/home/ArchivedProjectsLink"
 
 const HomeMain = () => {
     return (
-        <main
-            className="w-100 mt-3 mt-lg-0 mx-lg-auto"
-            style={{ maxWidth: "1000px" }}
-        >
+        <main className=" w-lg-50 mt-3 mt-lg-0 mx-lg-auto">
             <AboutSection />
             <ExperienceSection />
             <PinnedProjectsSection />
