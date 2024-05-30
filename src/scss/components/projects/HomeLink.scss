@@ -1,6 +1,8 @@
+@import "@scss/Global.scss";
+
 .home-page-link {
-    color: rgb(238, 238, 238);
-    font-weight: 300;
+    color: $app-text-color;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -9,9 +11,6 @@
 }
 
 .home-page-link-arrow-svg {
+    fill: $app-text-color;
     transition: transform 0.2s ease-in-out;
-}
-
-.home-page-link-arrow-svg {
-    fill: rgb(238, 238, 238);
 }

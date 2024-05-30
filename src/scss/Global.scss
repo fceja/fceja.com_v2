@@ -8,14 +8,15 @@ $breakpoint-xxl: 1400px;
 
 /* colors */
 $app-background-color: rgb(33, 33, 33);
+$app-text-color: rgb(239, 203, 104);
 $github-purple-profile: rgb(162, 75, 255);
 $linked-in-blue: rgb(67, 169, 224);
-$proj-title-color: rgb(239, 203, 104);
+$proj-title-color: $app-text-color;
 $web-url-light-blue: rgb(96, 210, 255);
 
 /* tag styles*/
 $tag-background-color: rgba(239, 203, 104, 0.08);
-$tag-color: rgb(239, 203, 104);
+$tag-color: $app-text-color;
 $tag-border-color: rgb(149, 110, 0);
 $tag-border-radius: 25px;
 $tag-border-style: solid;
