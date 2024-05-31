@@ -10,6 +10,7 @@ $breakpoint-xxl: 1400px;
 $app-background-color: rgb(33, 33, 33);
 $app-text-color: rgb(239, 203, 104);
 $github-purple-profile: rgb(198, 148, 251);
+$hover-text-color: $app-text-color;
 $linked-in-blue: rgb(67, 169, 224);
 $proj-title-color: $app-text-color;
 $web-url-light-blue: rgb(162, 229, 255);
@@ -43,9 +44,7 @@ body {
 }
 
 .hover-text:hover {
-    color: $proj-title-color;
-    font-size: 1em;
-    font-weight: 500;
+    color: $hover-text-color;
 }
 
 /* animations */

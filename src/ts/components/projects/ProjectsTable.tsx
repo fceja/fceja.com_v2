@@ -18,9 +18,9 @@ const ProjectsTable = () => {
         <table className="table-data w-100">
             <thead className="th-row">
                 <tr>
-                    <th className="th-year py-3 pe-4">Year</th>
+                    <th className="th-year">Year</th>
                     <th
-                        className="th-proj me-3"
+                        className="th-proj"
                         style={{ minWidth: "150px" }}
                     >
                         Project
@@ -42,10 +42,10 @@ const ProjectsTable = () => {
                             key={`tr-${i}`}
                             className={`tr tr-${i}`}
                         >
-                            <td className="tr-year py-3">{proj.year}</td>
+                            <td className="tr-year  py-3 pe-4">{proj.year}</td>
                             <td className="tr-proj">
                                 <span
-                                    className="hover-text d-flex flex-start me-3"
+                                    className="hover-text me-4"
                                     onMouseEnter={() => { handleHover(true, i) }}
                                     onMouseLeave={() => { handleHover(false, i) }}
                                 >
