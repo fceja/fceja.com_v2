@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from "react"
 
 export const useHighlightJump = () => {
-    const linkIconRef = useRef(null)
-    const linkUrlRef = useRef(null)
+    const iconRef = useRef(null)
+    const urlRef = useRef(null)
     const [isTriggerElemHovered, setIsTriggerElemHovered] =
         useState<{ isHovered: boolean, targetElem: null | Element }>(
             { isHovered: false, targetElem: null, }
@@ -12,20 +12,21 @@ export const useHighlightJump = () => {
         const { isHovered, targetElem } = isTriggerElemHovered
         if (!isHovered || !targetElem) return;
 
-        const svgIcon = targetElem.childNodes[0].childNodes[0]
-        linkIconRef.current = svgIcon
+        const iconUrlContainer = targetElem.childNodes[0]
 
-        const linkUrl = targetElem.childNodes[targetElem.childNodes.length - 1]
-        linkUrlRef.current = linkUrl
+        const svgIcon = iconUrlContainer.childNodes[0]
+        iconRef.current = svgIcon
 
-        linkIconRef.current.classList.add('target-highlight', 'target-jump-up')
-        linkUrlRef.current.classList.add('target-highlight')
+        const linkUrl = iconUrlContainer.childNodes[targetElem.childNodes[0].childNodes.length - 1]
+        urlRef.current = linkUrl
+
+        iconRef.current.classList.add('target-highlight', 'target-jump-up')
+        urlRef.current.classList.add('target-highlight')
 
         return () => {
-
-            if (linkIconRef.current) {
-                linkIconRef.current.classList.remove('target-highlight', 'target-jump-up')
-                linkUrlRef.current.classList.remove('target-highlight')
+            if (iconRef.current) {
+                iconRef.current.classList.remove('target-highlight', 'target-jump-up')
+                urlRef.current.classList.remove('target-highlight')
             }
         }
 
