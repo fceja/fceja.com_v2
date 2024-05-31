@@ -10,7 +10,7 @@ const ProjectsTable = () => {
     const setIsTriggerElemHovered = useHighlightJump()
 
     const handleHover = (isHovered: boolean, rowI: number) => {
-        const targetLink = document.querySelector(`.proj-link-${rowI}-0`)
+        const targetLink = document.querySelector(`.tr-proj-link-${rowI}-0`)
         setIsTriggerElemHovered({ isHovered: isHovered, targetElem: targetLink })
     }
 
@@ -38,9 +38,9 @@ const ProjectsTable = () => {
                 {projectContent.map((proj, i) => {
                     return (
                         <tr
+                            id={`tr-${i}`}
                             key={`tr-${i}`}
                             className={`tr tr-${i}`}
-                            id={`tr-${i}`}
                         >
                             <td className="tr-year py-3">{proj.year}</td>
                             <td className="tr-proj">

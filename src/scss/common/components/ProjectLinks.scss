@@ -1,15 +1,12 @@
 @import "@scss/Global.scss";
 
+$svg-icon-height: 100%;
+
 /* home page component */
-.home-proj-header-links {}
-
 .home-proj-hyphen,
-
 .home-proj-url-link {
     display: none;
 }
-
-$svg-icon-height: 12.5px;
 
 .home-proj-github-link {
     display: flex;
@@ -45,12 +42,6 @@ $svg-icon-height: 12.5px;
     }
 }
 
-.home-proj-a-svg {
-    height: 100%;
-    margin: 0 10px 0 0;
-}
-
-
 /* projects page component */
 @media (max-width: $breakpoint-sm) {
 
@@ -71,7 +62,7 @@ $svg-icon-height: 12.5px;
 
 .projects-proj-github-link {
     fill: $github-purple-profile;
-    height: 100%;
+    height: $svg-icon-height;
     margin-right: 10px;
 
     &:hover {
@@ -88,7 +79,7 @@ $svg-icon-height: 12.5px;
 
 .projects-proj-website-link {
     fill: $web-url-light-blue;
-    height: 100%;
+    height: $svg-icon-height;
     margin-right: 10px;
 
     &:hover {

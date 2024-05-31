@@ -1,7 +1,5 @@
 @import "@scss/Global.scss";
 
-.proj-list {}
-
 .home-proj-card {
     margin: 50px 0 0 0;
 }
@@ -10,21 +8,22 @@
     width: 100%;
 }
 
-.home-proj-header {}
+.home-proj-header {
+    margin: -5.74px 0 0 0;
+}
 
 .home-proj-title-link {
     text-decoration: none;
     color: rgb(198, 198, 198);
     font-size: 1em;
     font-weight: 500;
-    margin: -5.15px 0 0 0;
 }
 
-.home-proj-title-link span {
-    display: inline-block;
+.home-proj-header-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-
-.home-proj-header-links {}
 
 .home-proj-p {
     font-size: .875em;

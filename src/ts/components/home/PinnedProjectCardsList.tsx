@@ -25,29 +25,32 @@ const PinnedProjectCardsList = () => {
                         style={{ margin: "50px 0 0 0" }}
                     >
                         <div className="home-proj-details">
-                            <div className="home-proj-header d-flex flex-wrap">
-                                <a
-                                    href={proj.links[0].url}
-                                    target="_blank"
-                                    className="home-proj-title-link hover-text me-3"
-                                    onMouseEnter={() => handleHover(true, i)}
-                                    onMouseLeave={() => handleHover(false, i)}
-                                >
-                                    <span>{proj.title}</span>
-                                </a>
-                                <div className="home-proj-header-links d-flex">
+                            <div className="home-proj-header d-flex">
+                                <span>
+                                    <a
+                                        href={proj.links[0].url}
+                                        target="_blank"
+                                        className="home-proj-title-link hover-text me-3"
+                                        onMouseEnter={() => handleHover(true, i)}
+                                        onMouseLeave={() => handleHover(false, i)}
+                                    >
+                                        <span className="me-0">{proj.title}</span>
+
+                                    </a>
+                                </span>
+                                <span className="home-proj-header-links">
                                     {proj.links.map((linkData, j) => {
                                         return (
-                                            <div
+                                            <span
                                                 id={`home-proj-link-${i}-${j}`}
                                                 key={`home-proj-link-${i}-${j}`}
-                                                className={`home-proj-link-${i}-${j} home-proj-link d-md-flex`}
+                                                className={`home-proj-link-${i}-${j} home-proj-link`}
                                             >
                                                 <ProjectLinks className={COMMON_COMPENENT_CLASSNAME} linkData={linkData} />
-                                            </div>
+                                            </span>
                                         )
                                     })}
-                                </div>
+                                </span>
                             </div>
                             <p className="home-proj-p mt-3">{proj.paragraph}</p>
                             <Tags className={COMMON_COMPENENT_CLASSNAME} tagData={proj.tags} parentIndex={i} />
@@ -62,7 +65,7 @@ const PinnedProjectCardsList = () => {
                                 style={{ width: "100px" }}
                             />
                         </div>
-                    </div>
+                    </div >
                 )
             })}
         </div >

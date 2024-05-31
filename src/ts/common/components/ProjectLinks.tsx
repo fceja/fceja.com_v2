@@ -14,7 +14,7 @@ const ProjectLinks = (props: ProjectLinksProps) => {
     const svgData = projectLinkSvgData[`${linkData.type}`]
 
     return (
-        <>
+        <span className="icon-url-container d-flex">
             <a
                 href={linkData.url}
                 target="_blank"
@@ -31,7 +31,7 @@ const ProjectLinks = (props: ProjectLinksProps) => {
             </a>
             <span className={`${className}-hyphen`}>-</span>
             <span className={`${className}-url-link`}>{linkData.url}</span>
-        </>
+        </span>
     )
 };
 
