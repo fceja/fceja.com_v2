@@ -8,9 +8,17 @@
 
     &.link-icon-linked-in {
         fill: rgb(178, 178, 178);
+
+        &:hover {
+            fill: $linked-in-blue;
+        }
     }
 
     &.link-icon-github {
         fill: rgb(178, 178, 178);
+
+        &:hover {
+            fill: $github-purple-profile;
+        }
     }
 }
