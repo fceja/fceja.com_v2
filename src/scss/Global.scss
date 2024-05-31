@@ -32,41 +32,6 @@ body {
 }
 
 /* text decorations */
-@mixin text-h1 {
-    color: rgb(255, 255, 255);
-    font-size: 2em;
-    font-weight: 500;
-    margin: 0;
-}
-
-@mixin text-h2 {
-    color: rgb(255, 255, 255);
-    font-size: 1.75em;
-    font-weight: 300;
-    margin: 0;
-}
-
-@mixin text-h3 {
-    color: rgb(191, 191, 191);
-    font-size: 1.5em;
-    font-weight: 200;
-    margin: 0;
-}
-
-@mixin text-div {
-    color: rgb(147, 147, 147);
-    font-size: 1em;
-    font-weight: 100;
-    margin: 10px 0 0 0;
-}
-
-@mixin text-p {
-    color: rgb(147, 147, 147);
-    font-size: 1em;
-    font-weight: 100;
-    margin: 10px 0 0 0;
-}
-
 @media (min-width: $breakpoint-lg) {
     .w-lg-50 {
         width: 50%;
