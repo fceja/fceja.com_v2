@@ -8,9 +8,9 @@ $xOffset: 12px;
 
         &:hover {
             .mirror-container {
-                background: linear-gradient(to bottom,
+                background: linear-gradient(to bottom right,
                         rgba(174, 174, 174, 0),
-                        rgba(174, 174, 174, 0.05));
+                        rgba(174, 174, 174, 0.1));
                 border-radius: 10px;
                 box-shadow:
                     0 2px 1px rgba(0, 0, 0, 0.2),
@@ -34,7 +34,7 @@ $xOffset: 12px;
     margin: 60px 0 0 0;
 
     &:first-child {
-        margin: 20px 0 0 0;
+        margin: 30px 0 0 0;
     }
 }
 
