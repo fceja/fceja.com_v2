@@ -5,29 +5,26 @@ const SocialLinks = () => {
     return (
         <ul
             className="social-links d-flex"
-            style={{
-                height: "60px",
-                margin: "50px 0 0 0",
-                padding: "0",
-            }}
+            style={{ padding: "0" }}
         >
             {socialLinksContent.map((elem, i) => {
                 return (
-                    <span key={`${elem.name}-${i}`} className="me-2">
+                    <li key={`${elem.name}-${i}`}>
                         <a
                             href={elem.href}
                             target={elem.target}
+                            className={`social-link`}
                         >
                             <svg
                                 xmlns={elem.svgData.xmlns}
                                 viewBox={elem.svgData.viewBox}
-                                className={`link-icon-${elem.name}`}
+                                className={`social-link-svg-${elem.name}`}
                                 height={`${elem.svgData.height}`}
                             >
                                 <path d={`${elem.svgData.dPath}`} />
                             </svg>
                         </a>
-                    </span>
+                    </li>
                 )
             })}
         </ul>

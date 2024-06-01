@@ -43,7 +43,7 @@ const ProjectsTable = () => {
                             className={`tr tr-${i}`}
                         >
                             <td className="tr-year pe-4 py-2">{proj.year}</td>
-                            <td className="tr-proj py-2">
+                            <td className="tr-proj pe-2 py-2">
                                 <span
                                     className="hover-text me-4"
                                     onMouseEnter={() => { handleHover(true, i) }}

@@ -1,24 +1,30 @@
 @import "@scss/Global.scss";
 
+$icon-height: 50px;
+
 .social-links {
-    text-decoration: none;
+    margin: 50px 0 0 0;
+    // padding: 0;
+    height: $icon-height;
+
+    li {
+        list-style: none;
+
+        &:first-child {
+            margin: 0 10px 0 0;
+        }
+    }
+
+    svg {
+        width: $icon-height;
+        fill: rgb(178, 178, 178);
+    }
 }
 
-[class^="link-icon"] {
+.social-link-svg-linked-in:hover {
+    fill: $linked-in-blue;
+}
 
-    &.link-icon-linked-in {
-        fill: rgb(178, 178, 178);
-
-        &:hover {
-            fill: $linked-in-blue;
-        }
-    }
-
-    &.link-icon-github {
-        fill: rgb(178, 178, 178);
-
-        &:hover {
-            fill: $github-purple-profile;
-        }
-    }
+.social-link-svg-github:hover {
+    fill: $github-purple-profile;
 }

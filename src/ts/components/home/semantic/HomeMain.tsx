@@ -3,10 +3,9 @@ import ExperienceSection from "@components/home/semantic/ExperienceSection"
 import PinnedProjectsSection from "@components/home/semantic/PinnedProjectsSection"
 import ArchivedProjectsLink from "@components/home/ArchivedProjectsLink"
 
-
 const HomeMain = () => {
     return (
-        <main className=" w-lg-50 mt-3 mt-lg-0 mx-lg-auto">
+        <main className=" w-lg-50 mt-lg-0 mx-lg-auto">
             <AboutSection />
             <ExperienceSection />
             <PinnedProjectsSection />

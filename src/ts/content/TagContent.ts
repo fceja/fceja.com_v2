@@ -13,7 +13,7 @@ export const tagDataMap: Map<string, TagLinkI> = new Map([
     ["graphql", { name: "GraphQL", target: "_blank", url: "https://graphql.org/" }],
     ["googlemaps", { name: "GoogleMaps", target: "_blank", url: "https://developers.google.com/maps" }],
     ["groovy", { name: "Groovy", target: "_blank", url: "https://groovy-lang.org/" }],
-    ["html", { name: "HTML", target: "_blank", url: "https://www.w3.org/html/" }],
+    ["html", { name: "HTML", target: "_blank", url: "https://html.spec.whatwg.org/multipage/" }],
     ["javascript", { name: "JavaScript", target: "_blank", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" }],
     ["jest", { name: "Jest", target: "_blank", url: "https://jestjs.io/" }],
     ["jquery", { name: "JQuery", target: "_blank", url: "https://jquery.com/" }],
