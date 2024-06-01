@@ -42,8 +42,8 @@ const ProjectsTable = () => {
                             key={`tr-${i}`}
                             className={`tr tr-${i}`}
                         >
-                            <td className="tr-year pe-4">{proj.year}</td>
-                            <td className="tr-proj">
+                            <td className="tr-year pe-4 py-2">{proj.year}</td>
+                            <td className="tr-proj py-2">
                                 <span
                                     className="hover-text me-4"
                                     onMouseEnter={() => { handleHover(true, i) }}
@@ -57,7 +57,7 @@ const ProjectsTable = () => {
                             </td>
                             <td
                                 id="tr-links"
-                                className="tr-links pe-2"
+                                className="tr-links pe-2 py-2"
                             >
                                 {proj.links.map((linkData, j) => {
                                     return (

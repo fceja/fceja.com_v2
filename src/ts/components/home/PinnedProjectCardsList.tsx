@@ -15,16 +15,14 @@ const PinnedProjectCardsList = () => {
     }
 
     return (
-        <div className="project-list">
+        <ul className="project-list m-0 p-0">
             {pinnedProjectContent.map((proj, i) => {
                 return (
-                    < div
-                        key={`home-proj-card-${i}`
-                        }
-                        id={`home-proj-card-${i}`}
-                        className={"home-proj-card d-md-flex flex-md-row-reverse"}
+                    < li
+                        key={`home-proj-card-${i}`}
+                        className={`home-proj-card-${i} home-proj-card d-md-flex flex-md-row-reverse`}
                     >
-                        <div className={`mirror-container-${i}`}></div>
+                        <div className={"mirror-container"}></div>
                         <div className="home-proj-details">
                             <div className="home-proj-header d-flex">
                                 <span>
@@ -36,7 +34,6 @@ const PinnedProjectCardsList = () => {
                                         onMouseLeave={() => handleHover(false, i)}
                                     >
                                         <span className="me-0">{proj.title}</span>
-
                                     </a>
                                 </span>
                                 <span className="home-proj-header-links">
@@ -53,11 +50,11 @@ const PinnedProjectCardsList = () => {
                                     })}
                                 </span>
                             </div>
-                            <p className="home-proj-p mt-3">{proj.paragraph}</p>
+                            <p className="home-proj-p m-0 mt-2">{proj.paragraph}</p>
                             <Tags className={COMMON_COMPENENT_CLASSNAME} tagData={proj.tags} parentIndex={i} />
                         </div>
                         <div
-                            className="home-proj-img-container"
+                            className="home-proj-img-container mt-2 mt-md-0"
                             style={{ minWidth: "125px" }}
                         >
                             < img
@@ -66,10 +63,10 @@ const PinnedProjectCardsList = () => {
                                 style={{ width: "100px" }}
                             />
                         </div>
-                    </div >
+                    </li >
                 )
             })}
-        </div >
+        </ul >
     )
 }
 

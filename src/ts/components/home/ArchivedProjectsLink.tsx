@@ -8,7 +8,7 @@ const ArchivedProjectsLink = () => {
             className="archived-proj-link-container d-flex"
             style={{
                 height: "50px",
-                margin: "30px 0 0 0"
+                margin: "50px 0 0 0"
             }}
         >
             <Link

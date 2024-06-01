@@ -7,6 +7,14 @@
     list-style: none;
 }
 
+.exp-card {
+    margin: 40px 0 0 0;
+
+    &:first-child {
+        margin: 20px 0 0 0;
+    }
+}
+
 .card-year {
     color: rgb(135, 135, 135);
     white-space: nowrap;

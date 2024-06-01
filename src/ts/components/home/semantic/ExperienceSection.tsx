@@ -4,7 +4,7 @@ import ExperienceCardsList from "@components/home/ExperienceCardsList"
 const ExperienceSection = () => {
     return (
         <section className="experience mt-5">
-            <h2>EXPERIENCE</h2>
+            <h2 className="m-0">EXPERIENCE</h2>
             <ExperienceCardsList />
         </section>
     )

@@ -15,6 +15,7 @@ const Tags = (props: TagsProps) => {
             {tagData.map((elem, i) => {
                 return (
                     <a
+                        key={`${elem.name}-link-${i}`}
                         href={elem.url}
                         target={elem.target}
                         className={`${className}-tag-link`}
