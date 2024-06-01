@@ -1,7 +1,8 @@
 import "@scss/common/components/Tags.scss"
+import { TagLinkI } from "@content/TagContent"
 
 interface TagsProps {
-    tagData: string[],
+    tagData: TagLinkI[],
     parentIndex: number,
     className: string
 }
@@ -13,16 +14,20 @@ const Tags = (props: TagsProps) => {
         <div className={`${className}-tags-container d-flex flex-wrap`}>
             {tagData.map((elem, i) => {
                 return (
-                    <span
-                        key={`tag-${parentIndex}-${i}`}
-                        className={`${className}-tag`}
-                        style={{
-                            margin: "3px 7px 3px 0",
-                            padding: "4px 10px 4px 10px"
-                        }}
+                    <a
+                        href={elem.url}
+                        target={elem.target}
+                        className={`${className}-tag-link`}
+                        style={{ margin: "9px 9px 0 0" }}
                     >
-                        {elem}
-                    </span>
+                        <span
+                            key={`tag-${parentIndex}-${i}`}
+                            className={`${className}-tag`}
+                            style={{ padding: "3px 7px 3px 7px" }}
+                        >
+                            {elem.name}
+                        </span>
+                    </a>
                 )
             })}
         </div>

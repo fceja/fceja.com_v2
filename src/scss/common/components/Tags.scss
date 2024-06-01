@@ -1,30 +1,60 @@
 @import "@scss/Global.scss";
 
+/* tag styles */
+$tag-background-color: rgba(239, 203, 104, 0.08);
+$tag-border-color: rgba(149, 110, 0, 0.2);
+$tag-border-color-hover: rgba(149, 109, 0, 0.697);
+$tag-border-radius: 15px;
+$tag-border-style: solid;
+$tag-border-width: 1px;
+$tag-color: $app-text-color;
+$tag-font-size: .75em;
+$tag-font-weight: 500;
+
 /* home page styles */
+.home-exp-tag-link,
+.home-proj-tag-link {
+    border-radius: $tag-border-radius;
+    text-decoration: none;
+}
+
 .home-exp-tag,
 .home-proj-tag {
     background-color: $tag-background-color;
-    color: $tag-color;
-
-    border-style: $tag-border-style;
-    border-width: $tag-border-width;
     border-color: $tag-border-color;
     border-radius: $tag-border-radius;
-
+    border-style: $tag-border-style;
+    border-width: $tag-border-width;
+    color: $tag-color;
+    display: block;
     font-size: $tag-font-size;
     font-weight: $tag-font-weight;
+
+    &:hover {
+        border-color: $tag-border-color-hover;
+    }
 }
 
 
 /* projects page styles */
+.projects-proj-tag-link {
+    border-radius: $tag-border-radius;
+    text-decoration: none;
+}
+
 .projects-proj-tag {
     background-color: $tag-background-color;
-    color: $tag-color;
-
+    border-color: $tag-border-color;
+    border-radius: $tag-border-radius;
     border-style: $tag-border-style;
     border-width: $tag-border-width;
-    border-radius: $tag-border-radius;
-
-    font-size: .6em;
+    color: $tag-color;
+    display: block;
+    font-size: $tag-font-size;
     font-weight: $tag-font-weight;
+
+    &:hover {
+        border-color: $tag-border-color-hover;
+    }
+
 }

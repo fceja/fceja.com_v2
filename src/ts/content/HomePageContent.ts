@@ -1,3 +1,5 @@
+import { tagDataMap } from "@content/TagContent"
+
 export const aboutContent = `
     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -14,17 +16,13 @@ export const experienceCardsContent = [
         year: '2024 - Present',
         title: "Frontend Engineer",
         paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
-        tags: [
-            "JavaScript", "TypeScript", "React", "Node.js"
-        ]
+        tags: [tagDataMap.get('react'), tagDataMap.get('node'), tagDataMap.get('javascript'), tagDataMap.get('typescript')],
     },
     {
         year: '2022 - 2023',
         title: "Automation Engineer",
         paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
-        tags: [
-            "Python", "TypeScript"
-        ]
+        tags: [tagDataMap.get('python'), tagDataMap.get('javascript'), tagDataMap.get('jenkins'), tagDataMap.get('postman')],
     }
 ]
 
@@ -32,7 +30,7 @@ export const pinnedProjectContent = [
     {
         year: "2023",
         title: "Emerson Collective",
-        tags: ["JavaScript", "HTML", "React Native", "Next.js", "TypeScript", "JavaScript", "HTML", "React Native", "Next.js", "TypeScript"],
+        tags: [tagDataMap.get('python'), tagDataMap.get('html'), tagDataMap.get('sass'), tagDataMap.get('postman')],
         links: [
             { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/" },
             { type: "github", url: "https://github.com/fceja/profile_app" }
@@ -42,7 +40,7 @@ export const pinnedProjectContent = [
     {
         year: "2023",
         title: "Emerson Collective II",
-        tags: ["JavaScript", "HTML", "React Native", "Next.js", "TypeScript", "JavaScript", "HTML", "React Native", "Next.js", "TypeScript"],
+        tags: [tagDataMap.get('javascript'), tagDataMap.get('html'), tagDataMap.get('sass'), tagDataMap.get('typescript')],
         links: [
             { type: "github", url: "https://github.com/fceja/profile_app" },
         ],
@@ -51,13 +49,14 @@ export const pinnedProjectContent = [
     {
         year: "2023",
         title: "Emerson Collective III",
-        tags: ["JavaScript", "HTML", "React Native", "Next.js", "TypeScript", "JavaScript", "HTML", "React Native", "Next.js", "TypeScript"],
+        tags: [tagDataMap.get('node'), tagDataMap.get('express'), tagDataMap.get('sass'), tagDataMap.get('typescript')],
         links: [
             { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/" }
         ],
         paragraph: "A web III app that can be used for a user/company profile."
     }
 ]
+
 export const socialLinksContent = [
     {
         name: "linked-in",

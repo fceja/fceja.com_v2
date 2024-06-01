@@ -42,7 +42,7 @@ const ProjectsTable = () => {
                             key={`tr-${i}`}
                             className={`tr tr-${i}`}
                         >
-                            <td className="tr-year  py-3 pe-4">{proj.year}</td>
+                            <td className="tr-year pe-4">{proj.year}</td>
                             <td className="tr-proj">
                                 <span
                                     className="hover-text me-4"
@@ -52,7 +52,7 @@ const ProjectsTable = () => {
                                     {proj.title}
                                 </span>
                             </td>
-                            <td className="tr-built d-none d-md-table-cell py-3">
+                            <td className="tr-built d-none d-md-table-cell py-2">
                                 <Tags className={COMMON_COMPONENT_CLASSNAME} tagData={proj.tags} parentIndex={i} />
                             </td>
                             <td

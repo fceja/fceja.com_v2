@@ -24,7 +24,7 @@ const PinnedProjectCardsList = () => {
                         id={`home-proj-card-${i}`}
                         className={"home-proj-card d-md-flex flex-md-row-reverse"}
                     >
-                        <div className={`mirror-container-${i}`} />
+                        <div className={`mirror-container-${i}`}></div>
                         <div className="home-proj-details">
                             <div className="home-proj-header d-flex">
                                 <span>
