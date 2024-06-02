@@ -3,31 +3,167 @@ import { tagDataMap } from "@content/TagContent"
 export const projectContent = [
     {
         year: "2023",
-        title: "Emerson Collective",
-        tags: [tagDataMap.get('python'), tagDataMap.get('html'), tagDataMap.get('sass'), tagDataMap.get('postman')],
+        title: "User Forum App",
+        tags: [
+            tagDataMap.get('python'), tagDataMap.get('django'), tagDataMap.get('djangoCrispyForms'),
+            tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('css'),
+            tagDataMap.get('postgres'), tagDataMap.get('heroku'), tagDataMap.get('css')
+        ],
         links: [
-            { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/" },
+            { type: "website", url: "https://django-user-post-a42f5d79d28f.herokuapp.com" },
+            { type: "github", url: "https://github.com/fceja/user_post" }
+        ],
+        paragraph: "A forum-like app were Standard and Mod users can create and edit posts."
+    },
+    {
+        year: "2023",
+        title: "Emailer API",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('node'), tagDataMap.get('express'),
+            tagDataMap.get('nodemailer'), tagDataMap.get('aws'),
+        ],
+        links: [
+            { type: "github", url: "https://github.com/fceja/emailer_api" },
+        ],
+        paragraph: "A NodeJS / ExpressJS API that provides an endpoint for email generation."
+    },
+    {
+        year: "2023",
+        title: "Profile App",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
+            tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
+            tagDataMap.get('aws')
+        ],
+        links: [
+            { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com" },
             { type: "github", url: "https://github.com/fceja/profile_app" }
         ],
         paragraph: "A web app that can be used for a user/company profile."
     },
     {
         year: "2023",
-        title: "Emerson Collective II",
-        tags: [tagDataMap.get('javascript'), tagDataMap.get('react'), tagDataMap.get('sass'), tagDataMap.get('typescript')],
-        links: [
-            { type: "github", url: "https://github.com/fceja/profile_app" },
+        title: "Geolocation-IP App",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
+            tagDataMap.get('bootstrap'), tagDataMap.get('reactBootstrap'), tagDataMap.get('html'),
+            tagDataMap.get('sass'), tagDataMap.get('postgres'), tagDataMap.get('aws'), tagDataMap.get('webpack')
         ],
-        paragraph: "A web II app that can be used for a user/company profile."
+        links: [
+            { type: "website", url: "https://fceja-proj.com/" },
+            { type: "github", url: "https://github.com/fceja/login_form_geolocation_ip" }
+        ],
+        paragraph: "After logging in, clicking the 'Get My Location' button will retreive users\
+        geo-coordinates and IP info."
     },
     {
         year: "2023",
-        title: "Emerson Collective III",
-        tags: [tagDataMap.get('javascript'), tagDataMap.get('redux'), tagDataMap.get('react'), tagDataMap.get('sass'), tagDataMap.get('typescript')],
-        links: [
-            { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/" }
+        title: "Login JWT Auth API",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('node'), tagDataMap.get('express'),
+            tagDataMap.get('postgres'), tagDataMap.get('jwt')
         ],
-        paragraph: "A web III app that can be used for a user/company profile."
+        links: [
+            { type: "github", url: "https://github.com/fceja/login_auth_jwt_session_api" }
+        ],
+        paragraph: "An API that provides endpoints for: creating, retrieving, and logging-in users. \
+        Implemented with JWT authentication."
+    },
+    {
+        year: "2023",
+        title: "Economic Calendar - Automation",
+        tags: [
+            tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('pytest')
+        ],
+        links: [
+            { type: "github", url: "https://github.com/fceja/econ_calendar_automation" }
+        ],
+        paragraph: "Uses Selenium and Pytest to parse economic calendar data from investing.com. Also outputs the data into a csv."
+    },
+    {
+        year: "2023",
+        title: "Google Maps App",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
+            tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
+            tagDataMap.get('postgres'), tagDataMap.get('aws'), tagDataMap.get('webpack')
+        ],
+        links: [
+            { type: "website", url: "http://dev.client.google-maps.s3-website-us-west-1.amazonaws.com/" },
+            { type: "github", url: "https://github.com/fceja/google_maps_app" }
+        ],
+        paragraph: "After logging in, an interactive Google Map is populated."
+    },
+    {
+        year: "2023",
+        title: "Card Slider App",
+        tags: [
+            tagDataMap.get('javascript'), tagDataMap.get('react'), tagDataMap.get('html'),
+            tagDataMap.get('css')
+        ],
+        links: [
+            { type: "github", url: "https://github.com/fceja/card_slider" }
+        ],
+        paragraph: "A container featuring scrollable cards."
+    },
+    {
+        year: "2023",
+        title: "User vs A.I. Agent",
+        tags: [
+            tagDataMap.get('c++'),
+        ],
+        links: [
+            { type: "github", url: "https://github.com/fceja/ai_agent_4_in_a_row" }
+        ],
+        paragraph: "A 4-in-a-row game implementation using alpha beta search with pruning."
+    },
+    {
+        year: "2023",
+        title: "Dice Game",
+        tags: [
+            tagDataMap.get('java'), tagDataMap.get('javaFX'), tagDataMap.get('maven'),
+        ],
+        links: [
+            { type: "github", url: "https://github.com/fceja/dice_game" }
+        ],
+        paragraph: "A poker style game with dice."
+    },
+    {
+        year: "2023",
+        title: "Login JWT Auth API",
+        tags: [
+            tagDataMap.get('golang'), tagDataMap.get('jwt'), tagDataMap.get('postgres'),
+        ],
+        links: [
+            { type: "github", url: "https://github.com/fceja/jwt_auth_api" }
+        ],
+        paragraph: "An API that provides endpoints for: creating, retrieving, and logging-in users. \
+        Implemented with JWT authentication."
+    },
+    {
+        year: "2023",
+        title: "Bingo Card Game",
+        tags: [
+            tagDataMap.get('javascript'), tagDataMap.get('html'), tagDataMap.get('css'),
+            tagDataMap.get('aws')
+        ],
+        links: [
+            { type: "website", url: "http://dev.frontend.bingo.s3-website-us-west-1.amazonaws.com" },
+            { type: "github", url: "https://github.com/fceja/bingo_game" }
+        ],
+        paragraph: "Imitation of card game, where the game is won when a pre-determined pattern is selected."
+    },
+    {
+        year: "2023",
+        title: "Chipotle Mock",
+        tags: [
+            tagDataMap.get('javascript'), tagDataMap.get('jquery'), tagDataMap.get('html'),
+            tagDataMap.get('css')
+        ],
+        links: [
+            { type: "github", url: "https://github.com/fceja/chipotle_mock" }
+        ],
+        paragraph: "Mock webpage for Chipotle."
     }
 ]
 
