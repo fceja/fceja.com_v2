@@ -16,11 +16,51 @@
 }
 
 .card-year {
-    color: rgb(135, 135, 135);
+    color: rgba(168, 167, 167, 0.691);
     white-space: nowrap;
     font-size: .75em;
     font-weight: 600;
     letter-spacing: .3px;
+}
+
+.card-position {
+    color: rgb(198, 198, 198);
+    font-weight: 300;
+}
+
+.card-comp {
+    height: 1em;
+    padding: 0;
+    margin: 0;
+    color: rgb(198, 198, 198);
+    font-size: 1em;
+    font-weight: 500;
+    display: block;
+
+    a {
+        &:hover {
+            color: $proj-title-color;
+
+            svg {
+                transform: scaleX(1.2) scaleY(1.2);
+            }
+        }
+
+        color: rgb(198, 198, 198);
+        text-decoration: none;
+        height: inherit;
+        display: flex;
+        align-items: center;
+
+        svg {
+            height: .8em;
+            fill: $proj-title-color;
+            margin: 0 0 0 10px;
+            padding: 1px;
+        }
+
+    }
+
 }
 
 .card-title {

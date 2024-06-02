@@ -13,24 +13,51 @@ export const aboutContent = `
 
 export const experienceCardsContent = [
     {
-        year: '2024 - Present',
-        title: "Frontend Engineer",
+        year: 'MAY 2020 - JAN 2023',
+        position: "QA / Automation Engineer",
+        company: "Viking Cruises",
+        companyUrl: "https://www.vikingcruises.com/",
         paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
-        tags: [tagDataMap.get('react'), tagDataMap.get('node'), tagDataMap.get('javascript'), tagDataMap.get('typescript')],
+        tags: [
+            tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('aws'), tagDataMap.get('aem'),
+            tagDataMap.get('magnolia'), tagDataMap.get('jira')
+        ],
     },
     {
-        year: '2022 - 2023',
-        title: "Automation Engineer",
+        year: 'AUG 2020 - SEP 2020',
+        position: "Automation Engineer",
+        company: "Allē",
+        companyUrl: "https://alle.com/",
         paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
-        tags: [tagDataMap.get('python'), tagDataMap.get('javascript'), tagDataMap.get('jenkins'), tagDataMap.get('postman')],
+        tags: [tagDataMap.get('typescript'), tagDataMap.get('selenium')],
+    },
+    {
+        year: 'MAR 2020 - DEC 2020',
+        position: "Automation Engineer",
+        company: "MNTN ",
+        companyUrl: "https://mountain.com/",
+        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
+        tags: [
+            tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('graphql'),
+            tagDataMap.get('theTradeDesk')
+
+        ],
+    },
+    {
+        year: 'NOV 2019 - FEB 2020',
+        position: "Internship - QA Engineer",
+        company: "Hallmark Labs",
+        companyUrl: "https://www.hallmarklabs.com/",
+        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
+        tags: [tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('appium'), tagDataMap.get('jira')],
     }
 ]
 
 export const pinnedProjectContent = [
     {
         year: "2023",
-        title: "Emerson Collective",
-        tags: [tagDataMap.get('python'), tagDataMap.get('html'), tagDataMap.get('sass'), tagDataMap.get('postman')],
+        title: "Profile App",
+        tags: [tagDataMap.get('python'), tagDataMap.get('html'), tagDataMap.get('sass')],
         links: [
             { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/" },
             { type: "github", url: "https://github.com/fceja/profile_app" }

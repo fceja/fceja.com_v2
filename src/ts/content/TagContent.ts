@@ -6,6 +6,8 @@ export interface TagLinkI {
 
 export const tagDataMap: Map<string, TagLinkI> = new Map([
     // languages / libs / frameworks
+    ["aem", { name: "Adobe Experience Manager", target: "_blank", url: "https://business.adobe.com/products/experience-manager/adobe-experience-manager.html" }],
+    ["appium", { name: "Appium", target: "_blank", url: "https://appium.io/docs/en/latest/" }],
     ["bootstrap", { name: "Bootstrap", target: "_blank", url: "https://getbootstrap.com/" }],
     ["c++", { name: "C++", target: "_blank", url: "https://cplusplus.com/" }],
     ["css", { name: "CSS", target: "_blank", url: "https://developer.mozilla.org/en-US/docs/Web/CSS" }],
@@ -21,7 +23,9 @@ export const tagDataMap: Map<string, TagLinkI> = new Map([
     ["javaFX", { name: "JavaFX", target: "_blank", url: "https://openjfx.io/" }],
     ["javascript", { name: "JavaScript", target: "_blank", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" }],
     ["jest", { name: "Jest", target: "_blank", url: "https://jestjs.io/" }],
+    ["jira", { name: "Jira", target: "_blank", url: "https://www.atlassian.com/software/jira" }],
     ["jquery", { name: "JQuery", target: "_blank", url: "https://jquery.com/" }],
+    ["magnolia", { name: "Magnolia CMS", target: "_blank", url: "https://www.magnolia-cms.com/" }],
     ["maven", { name: "Maven", target: "_blank", url: "https://maven.apache.org/" }],
     ["node", { name: "Node JS", target: "_blank", url: "https://nodejs.org/en" }],
     ["nodemailer", { name: "Nodemailer", target: "_blank", url: "https://nodemailer.com/" }],
@@ -37,9 +41,10 @@ export const tagDataMap: Map<string, TagLinkI> = new Map([
     ["sass", { name: "SASS", target: "_blank", url: "https://sass-lang.com/" }],
     ["selenium", { name: "Selenium", target: "_blank", url: "https://www.selenium.dev/" }],
     ["typescript", { name: "TypeScript", target: "_blank", url: "https://www.typescriptlang.org/" }],
+    ["theTradeDesk", { name: "The Trade Desk", target: "_blank", url: "https://www.thetradedesk.com/us" }],
     // database
     ["mysql", { name: "MySQL", target: "_blank", url: "https://www.mysql.com/" }],
-    ["postgres", { name: "PostreSQL", target: "_blank", url: "https://www.postgresql.org/" }],
+    ["postgres", { name: "PostgreSQL", target: "_blank", url: "https://www.postgresql.org/" }],
     ["sqlite", { name: "SQLite", target: "_blank", url: "https://www.sqlite.org/index.html" }],
     // cloud
     ["aws", { name: "AWS", target: "_blank", url: "https://aws.amazon.com/" }],
