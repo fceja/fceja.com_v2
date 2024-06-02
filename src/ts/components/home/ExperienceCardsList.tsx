@@ -13,7 +13,7 @@ const ExperienceCardsList = () => {
                     >
                         <div
                             className="card-year"
-                            style={{ margin: "1.5px 0 0 0", minWidth: "125px" }}
+                            style={{ margin: "-2px 0 0 0", minWidth: "125px" }}
                         >
                             {elem.year}
                         </div>
