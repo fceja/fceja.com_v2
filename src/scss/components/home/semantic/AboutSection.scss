@@ -10,8 +10,18 @@
     }
 
     p {
-        color: rgb(178, 178, 178);
-        font-weight: none;
+        color: rgb(170, 170, 170);
+        font-weight: 300;
+    }
+
+    strong {
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+
+        a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
     }
 }
 
@@ -19,6 +29,17 @@
     .about {
         h2 {
             margin: 7px 0 0 0;
+        }
+    }
+
+    .plant-icon {
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+
+        &:hover {
+            color: rgb(182, 217, 88);
+            cursor: url("/src/assets/plant-icon.png"), auto;
+
         }
     }
 }
