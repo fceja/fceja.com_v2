@@ -1,4 +1,4 @@
-import "@scss/components/home/PinnedProjectCardList.scss"
+import "@scss/components/home/ProjectCardsList.scss"
 import { pinnedProjectContent } from "@content/HomePageContent"
 import ProjectLinks from "@common/components/ProjectLinks"
 import Tags from "@common/components/Tags"

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-import "@scss/components/home/ArchivedProjectsLink.scss"
+import "@scss/components/home/AllProjectsLink.scss"
 
 const ArchivedProjectsLink = () => {
     return (

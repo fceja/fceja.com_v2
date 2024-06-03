@@ -19,8 +19,10 @@ export const experienceCardsContent = [
         companyUrl: "https://www.vikingcruises.com/",
         paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
         tags: [
-            tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('aws'), tagDataMap.get('aem'),
-            tagDataMap.get('magnolia'), tagDataMap.get('jira')
+            tagDataMap.get('python'), tagDataMap.get('javascript'), tagDataMap.get('selenium'), tagDataMap.get('testRail'),
+            tagDataMap.get('sauceLabs'), tagDataMap.get('jenkins'), tagDataMap.get('flask'), tagDataMap.get('aws'), tagDataMap.get('azure'),
+            tagDataMap.get('microsoftServer'), tagDataMap.get('aem'), tagDataMap.get('magnolia'),
+            tagDataMap.get('figma'), tagDataMap.get('postman'), tagDataMap.get('agile'), tagDataMap.get('jira')
         ],
     },
     {
@@ -29,7 +31,11 @@ export const experienceCardsContent = [
         company: "Allē",
         companyUrl: "https://alle.com/",
         paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
-        tags: [tagDataMap.get('typescript'), tagDataMap.get('selenium')],
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('javascript'), tagDataMap.get('selenium'),
+            tagDataMap.get('graphql'), tagDataMap.get('postman'), tagDataMap.get('okta'), tagDataMap.get('oauth'),
+            tagDataMap.get('sauceLabs'),
+        ],
     },
     {
         year: 'MAR 2020 - DEC 2020',
@@ -38,8 +44,8 @@ export const experienceCardsContent = [
         companyUrl: "https://mountain.com/",
         paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
         tags: [
-            tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('graphql'),
-            tagDataMap.get('theTradeDesk')
+            tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('graphql'), tagDataMap.get('postman'),
+            tagDataMap.get('nose'), tagDataMap.get('pytest'), tagDataMap.get('theTradeDesk')
 
         ],
     },
@@ -49,7 +55,10 @@ export const experienceCardsContent = [
         company: "Hallmark Labs",
         companyUrl: "https://www.hallmarklabs.com/",
         paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
-        tags: [tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('appium'), tagDataMap.get('jira')],
+        tags: [
+            tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('appium'),
+            tagDataMap.get('nose'), tagDataMap.get('agile'), tagDataMap.get('jira')
+        ],
     }
 ]
 
@@ -57,7 +66,11 @@ export const pinnedProjectContent = [
     {
         year: "2023",
         title: "Profile App",
-        tags: [tagDataMap.get('python'), tagDataMap.get('html'), tagDataMap.get('sass')],
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
+            tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
+            tagDataMap.get('aws:s3')
+        ],
         links: [
             { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/" },
             { type: "github", url: "https://github.com/fceja/profile_app" }
@@ -66,21 +79,45 @@ export const pinnedProjectContent = [
     },
     {
         year: "2023",
-        title: "Emerson Collective II",
-        tags: [tagDataMap.get('javascript'), tagDataMap.get('html'), tagDataMap.get('sass'), tagDataMap.get('typescript')],
-        links: [
-            { type: "github", url: "https://github.com/fceja/profile_app" },
+        title: "Emailer API",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('node'), tagDataMap.get('express'),
+            tagDataMap.get('nodemailer'), tagDataMap.get('aws:apiGateway'), tagDataMap.get('aws:lambda')
         ],
-        paragraph: "A web II app that can be used for a user/company profile."
+        links: [
+            { type: "github", url: "https://github.com/fceja/emailer_api" },
+        ],
+        paragraph: "A Node / Express JS API that provides an endpoint for email generation. This is implemented and used in Profile App project."
     },
     {
         year: "2023",
-        title: "Emerson Collective III",
-        tags: [tagDataMap.get('node'), tagDataMap.get('express'), tagDataMap.get('sass'), tagDataMap.get('typescript')],
-        links: [
-            { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/" }
+        title: "User Forum App",
+        tags: [
+            tagDataMap.get('python'), tagDataMap.get('django'), tagDataMap.get('djangoCrispyForms'),
+            tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('css'),
+            tagDataMap.get('postgres'), tagDataMap.get('heroku')
         ],
-        paragraph: "A web III app that can be used for a user/company profile."
+        links: [
+            { type: "website", url: "https://django-user-post-a42f5d79d28f.herokuapp.com/" },
+            { type: "github", url: "https://github.com/fceja/user_post" }
+        ],
+        paragraph: "A forum-like app were Standard and Mod users can create and edit posts."
+    },
+    {
+        year: "2023",
+        title: "Geolocation / IP App",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
+            tagDataMap.get('bootstrap'), tagDataMap.get('reactBootstrap'), tagDataMap.get('html'),
+            tagDataMap.get('sass'), tagDataMap.get('postgres'), tagDataMap.get('aws:apiGateway'),
+            tagDataMap.get('aws:lambda'), tagDataMap.get('aws:rds'), tagDataMap.get('aws:cloudfront'),
+            tagDataMap.get('aws:route53'), tagDataMap.get('webpack')
+        ],
+        links: [
+            { type: "website", url: "https://fceja-proj.com/" },
+            { type: "github", url: "https://github.com/fceja/login_form_geolocation_ip" }
+        ],
+        paragraph: "After logging in, clicking the 'Get My Location' button will retreive users geo-coordinates and IP info."
     }
 ]
 

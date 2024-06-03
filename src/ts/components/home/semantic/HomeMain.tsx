@@ -1,7 +1,7 @@
 import AboutSection from "@components/home/semantic/AboutSection"
 import ExperienceSection from "@components/home/semantic/ExperienceSection"
 import PinnedProjectsSection from "@components/home/semantic/PinnedProjectsSection"
-import ArchivedProjectsLink from "@components/home/ArchivedProjectsLink"
+import ArchivedProjectsLink from "@components/home/AllProjectsLink"
 
 const HomeMain = () => {
     return (
