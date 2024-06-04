@@ -2,56 +2,68 @@ import { tagDataMap } from "@content/TagContent"
 
 export const experienceCardsContent = [
     {
-        year: 'MAY 2020 - JAN 2023',
-        position: "QA / Automation Engineer",
-        company: "Viking Cruises",
-        companyUrl: "https://www.vikingcruises.com/",
-        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
-        tags: [
-            tagDataMap.get('python'), tagDataMap.get('javascript'), tagDataMap.get('selenium'), tagDataMap.get('testRail'),
-            tagDataMap.get('sauceLabs'), tagDataMap.get('jenkins'), tagDataMap.get('flask'), tagDataMap.get('aws'), tagDataMap.get('azure'),
-            tagDataMap.get('microsoftServer'), tagDataMap.get('aem'), tagDataMap.get('magnolia'),
-            tagDataMap.get('figma'), tagDataMap.get('postman'), tagDataMap.get('agile'), tagDataMap.get('jira')
-        ],
-    },
-    {
-        year: 'AUG 2020 - SEP 2020',
-        position: "Automation Engineer",
-        company: "Allē",
-        companyUrl: "https://alle.com/",
-        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
-        tags: [
-            tagDataMap.get('typescript'), tagDataMap.get('javascript'), tagDataMap.get('selenium'),
-            tagDataMap.get('graphql'), tagDataMap.get('postman'), tagDataMap.get('okta'), tagDataMap.get('oauth'),
-            tagDataMap.get('sauceLabs'),
-        ],
-    },
-    {
-        year: 'MAR 2020 - DEC 2020',
-        position: "Automation Engineer",
-        company: "MNTN ",
-        companyUrl: "https://mountain.com/",
-        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
-        tags: [
-            tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('graphql'), tagDataMap.get('postman'),
-            tagDataMap.get('nose'), tagDataMap.get('pytest'), tagDataMap.get('theTradeDesk')
+        year: 'NOV 2019 - JAN 2023',
+        position: "Contractor / Python Developer",
+        company: "Value Stream Engineering",
+        companyUrl: "https://valuestreamengineering.com/",
+        paragraph: `Worked as a contractor for VSE. Undertook various projects for multiple clients.
+        Responsibilities included: QA, automation, software development, onboarding, and mentoring.
+        Client details are listed below.`,
+        tags: [],
+        clients: [
+            {
+                year: 'MAY 2020 - JAN 2023',
+                position: "QA / Automation Engineer",
+                company: "Viking Cruises",
+                companyUrl: "https://www.vikingcruises.com/",
+                paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
+                tags: [
+                    tagDataMap.get('python'), tagDataMap.get('javascript'), tagDataMap.get('selenium'), tagDataMap.get('testRail'),
+                    tagDataMap.get('sauceLabs'), tagDataMap.get('jenkins'), tagDataMap.get('flask'), tagDataMap.get('aws'), tagDataMap.get('azure'),
+                    tagDataMap.get('microsoftServer'), tagDataMap.get('aem'), tagDataMap.get('magnolia'),
+                    tagDataMap.get('figma'), tagDataMap.get('postman'), tagDataMap.get('agile'), tagDataMap.get('jira')
+                ],
+            },
+            {
+                year: 'AUG 2020 - SEP 2020',
+                position: "Automation Engineer",
+                company: "Allē",
+                companyUrl: "https://alle.com/",
+                paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
+                tags: [
+                    tagDataMap.get('typescript'), tagDataMap.get('javascript'), tagDataMap.get('selenium'),
+                    tagDataMap.get('graphql'), tagDataMap.get('postman'), tagDataMap.get('okta'), tagDataMap.get('oauth'),
+                    tagDataMap.get('sauceLabs'),
+                ],
+            },
+            {
+                year: 'MAR 2020 - DEC 2020',
+                position: "Automation Engineer",
+                company: "MNTN ",
+                companyUrl: "https://mountain.com/",
+                paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
+                tags: [
+                    tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('graphql'), tagDataMap.get('postman'),
+                    tagDataMap.get('nose'), tagDataMap.get('pytest'), tagDataMap.get('theTradeDesk')
 
-        ],
+                ],
+            },
+            {
+                year: 'NOV 2019 - FEB 2020',
+                position: "QA Engineer (Internship)",
+                company: "Hallmark Labs",
+                companyUrl: "https://www.hallmarklabs.com/",
+                paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
+                tags: [
+                    tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('appium'),
+                    tagDataMap.get('nose'), tagDataMap.get('agile'), tagDataMap.get('jira')
+                ],
+            }
+        ]
     },
-    {
-        year: 'NOV 2019 - FEB 2020',
-        position: "Internship - QA Engineer",
-        company: "Hallmark Labs",
-        companyUrl: "https://www.hallmarklabs.com/",
-        paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
-        tags: [
-            tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('appium'),
-            tagDataMap.get('nose'), tagDataMap.get('agile'), tagDataMap.get('jira')
-        ],
-    }
 ]
 
-export const pinnedProjectContent = [
+export const homeProjectContent = [
     {
         year: "2023",
         title: "Profile App",

@@ -77,3 +77,13 @@
     color: rgb(178, 178, 178);
     font-weight: none;
 }
+
+.clients {
+    font-size: .875em;
+    color: rgb(178, 178, 178);
+    font-weight: none;
+
+    &+li {
+        margin: 5px 0 0 0;
+    }
+}

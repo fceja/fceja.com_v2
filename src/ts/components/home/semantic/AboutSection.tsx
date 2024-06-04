@@ -13,7 +13,7 @@ const AboutSection = () => {
                 Through this experience, I've gained invaluable knowledge and skills.
             </p>
             <p>
-                Also, I've been expanding my skills by developing projects involving various
+                Also, I've been expanding my skill set by developing personal projects involving various
                 programming languages and frameworks.
                 At this point in my career, I am looking forward to pursuing a full-time <strong className="hover-text">software engineering</strong> role.
             </p>

@@ -1,42 +1,29 @@
 import "@scss/components/home/ExperienceCardsList.scss"
 import { experienceCardsContent } from "@content/HomePageContent"
-import Tags from "@common/components/Tags"
+import ExperienceCard from "@components/home/ExperienceCard"
 
 const ExperienceCardsList = () => {
     return (
         <ul className="exp-list p-0">
             {experienceCardsContent.map((elem, i) => {
+                {/* generate clients if they exist */ }
+                let clients = null;
+                if (elem.clients.length > 0) {
+                    clients = elem.clients.map((elem2, j) => {
+                        return < ExperienceCard cardData={elem2} parentIndex={`${i}-${j}`} />
+                    })
+                }
+
                 return (
-                    <li
-                        key={`li-${i}`}
-                        className={`exp-card-${i} exp-card d-md-flex`}
-                    >
-                        <div
-                            className="card-year"
-                            style={{ margin: "-2px 0 0 0", minWidth: "125px" }}
-                        >
-                            {elem.year}
-                        </div>
-                        <div className="card-desc w-100">
-                            <div className="card-comp m-0 p-0">
-                                <a
-                                    href={elem.companyUrl}
-                                    target="_blank"
-                                >
-                                    {elem.company}
-                                    {/* <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> */}
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 512 512">
-                                        <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z" />
-                                    </svg>
-                                </a>
-                            </div>
-                            <span className="card-position">{elem.position}</span>
-                            <p className="card-p m-0 mt-2">{elem.paragraph}</p>
-                            <Tags className="home-exp" tagData={elem.tags} parentIndex={i} />
-                        </div>
-                    </li>
+                    <>
+                        < ExperienceCard cardData={elem} parentIndex={`${i}`} />
+                        {clients && (
+                            <>
+                                <div className="clients mt-4">VSE Client Engagements </div>
+                                {clients}
+                            </>
+                        )}
+                    </>
                 )
             })}
         </ul>

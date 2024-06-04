@@ -1,5 +1,5 @@
 import "@scss/components/home/ProjectCardsList.scss"
-import { pinnedProjectContent } from "@content/HomePageContent"
+import { homeProjectContent } from "@content/HomePageContent"
 import ProjectLinks from "@common/components/ProjectLinks"
 import Tags from "@common/components/Tags"
 import { useHighlightJump } from "@hooks/UseHightlightJump"
@@ -16,7 +16,7 @@ const PinnedProjectCardsList = () => {
 
     return (
         <ul className="project-list m-0 p-0">
-            {pinnedProjectContent.map((proj, i) => {
+            {homeProjectContent.map((proj, i) => {
                 return (
                     < li
                         key={`home-proj-card-${i}`}
