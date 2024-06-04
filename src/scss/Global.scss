@@ -1,41 +1,28 @@
-/* breakpoints */
-$breakpoint-xs: 0;
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
-$breakpoint-xxl: 1400px;
+@import "@scss/Variables.scss";
 
-/* colors */
-$app-background-color: rgb(33, 33, 33);
-$app-text-color: rgb(239, 203, 104);
-$github-purple-profile: rgb(198, 148, 251);
-$hover-text-color: $app-text-color;
-$linked-in-blue: rgb(67, 169, 224);
-$proj-title-color: $app-text-color;
-$web-url-light-blue: rgb(162, 229, 255);
-
-/* app */
-body {
-    background-color: $app-background-color;
-    font-family: sans-serif, ui-sans-serif, Arial, Helvetica, system-ui, Helvetica;
-    font-size: 16px;
+/* defaults */
+:root {
+    --bs-body-bg: #{$app-background-color};
+    --bs-body-font-family: #{$app-font-family};
+    --bs-body-font-size: #{$app-font-size};
 }
 
-/* text decorations */
-@media (min-width: $breakpoint-lg) {
-    .w-lg-50 {
-        width: 50%;
-    }
+
+/* classes */
+.hover-text:hover {
+    color: $hover-text-color;
 }
 
 .w-max {
     max-width: $breakpoint-xl;
 }
 
-.hover-text:hover {
-    color: $hover-text-color;
+@media (min-width: $breakpoint-lg) {
+    .w-lg-50 {
+        width: 50%;
+    }
 }
+
 
 /* animations */
 .target-highlight {
