@@ -6,7 +6,7 @@ import { useHighlightJump } from "@hooks/UseHightlightJump"
 
 const COMMON_COMPENENT_CLASSNAME = 'home-proj'
 
-const PinnedProjectCardsList = () => {
+const ProjectCardsList = () => {
     const setIsTriggerElemHovered = useHighlightJump()
 
     const handleHover = (hover: boolean, i: number) => {
@@ -70,4 +70,4 @@ const PinnedProjectCardsList = () => {
     )
 }
 
-export default PinnedProjectCardsList
+export default ProjectCardsList

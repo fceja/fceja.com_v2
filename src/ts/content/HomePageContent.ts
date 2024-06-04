@@ -16,7 +16,12 @@ export const experienceCardsContent = [
                 position: "QA / Automation Engineer",
                 company: "Viking Cruises",
                 companyUrl: "https://www.vikingcruises.com/",
-                paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
+                paragraph: `
+                    Designed and implemented frontend and backend automation solutions for the product ecosystem.
+                    Developed frontend and backend internal tooling applications.
+                    Created extensive automation and system documentation for new team members and mentees.
+                    Daily stand-up resports. Collaborated with Director of Engineering for special projects. (Remote)
+                `,
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('javascript'), tagDataMap.get('selenium'), tagDataMap.get('testRail'),
                     tagDataMap.get('sauceLabs'), tagDataMap.get('jenkins'), tagDataMap.get('flask'), tagDataMap.get('aws'), tagDataMap.get('azure'),
@@ -29,10 +34,11 @@ export const experienceCardsContent = [
                 position: "Automation Engineer",
                 company: "Allē",
                 companyUrl: "https://alle.com/",
-                paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
+                paragraph: `
+                 A support role, where I joined team to help implement frontend automation using TypeScript. (Remote)
+                `,
                 tags: [
                     tagDataMap.get('typescript'), tagDataMap.get('javascript'), tagDataMap.get('selenium'),
-                    tagDataMap.get('graphql'), tagDataMap.get('postman'), tagDataMap.get('okta'), tagDataMap.get('oauth'),
                     tagDataMap.get('sauceLabs'),
                 ],
             },
@@ -41,7 +47,12 @@ export const experienceCardsContent = [
                 position: "Automation Engineer",
                 company: "MNTN ",
                 companyUrl: "https://mountain.com/",
-                paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
+                paragraph: `
+                    Collaborated closely with automation team to refine and optimize testing procedures.
+                    My responsibilities included performing manual functional testing, developed automation for MNTN's primary frontend product,
+                    developed automation for a GraphQL backend product, and also developed automation
+                    to validate analytics synchronization with The Trade Desk. (Remote)
+                `,
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('graphql'), tagDataMap.get('postman'),
                     tagDataMap.get('nose'), tagDataMap.get('pytest'), tagDataMap.get('theTradeDesk')
@@ -53,7 +64,11 @@ export const experienceCardsContent = [
                 position: "QA Engineer (Internship)",
                 company: "Hallmark Labs",
                 companyUrl: "https://www.hallmarklabs.com/",
-                paragraph: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.",
+                paragraph: `
+                    During my internship as a QA Engineer, I was part of an Agile team with daily stand ups, collaborating closely with project team members.
+                    I performed frontend, mobile, and physical device testing, and used Jira for issue tracking. I also worked on mobile automation
+                    for Android builds using Selenium WebDriver and Appium. (Onsite)
+                `,
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('appium'),
                     tagDataMap.get('nose'), tagDataMap.get('agile'), tagDataMap.get('jira')
