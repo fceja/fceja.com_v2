@@ -1,6 +1,13 @@
-.spotlight {
-  background: radial-gradient(600px at 50% 50%, rgba(150, 150, 150, 0.063), transparent 75%);
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s ease;
+@import "@scss/Variables.scss";
+
+/*
+* apply styles only to devices that support hover, have fine pointer, have screen size medium or greater
+*/
+@media (hover: hover) and (pointer: fine) and (min-width:$breakpoint-md) {
+  .spotlight {
+    background: radial-gradient(600px at 50% 50%, rgba(150, 150, 150, 0.063), transparent 75%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+  }
 }

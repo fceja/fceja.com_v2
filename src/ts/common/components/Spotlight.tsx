@@ -32,7 +32,7 @@ const Spotlight: React.FC = () => {
 
     return (
         <div
-            className="spotlight d-none d-md-block"
+            className="spotlight"
             style={{
                 height: "100%",
                 left: `${position.x}px`,
