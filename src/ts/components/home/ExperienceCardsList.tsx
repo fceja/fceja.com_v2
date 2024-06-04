@@ -19,7 +19,7 @@ const ExperienceCardsList = () => {
                         < ExperienceCard cardData={elem} parentIndex={`${i}`} />
                         {clients && (
                             <>
-                                <div className="clients mt-4">VSE Client Engagements </div>
+                                <div className="clients mt-4"><i>VSE Client Engagements</i></div>
                                 {clients}
                             </>
                         )}

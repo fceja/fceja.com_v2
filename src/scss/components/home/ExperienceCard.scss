@@ -1,0 +1,67 @@
+@import "@scss/Variables.scss";
+
+.exp-card {
+    margin: 40px 0 0 0;
+
+    &:first-child {
+        margin: 30px 0 0 0;
+    }
+}
+
+.card-year {
+    color: rgba(168, 167, 167, 0.691);
+    white-space: nowrap;
+    font-size: .75em;
+    font-weight: 500;
+    letter-spacing: .3px;
+    padding-right: 50px;
+    margin: 0;
+}
+
+.card-position {
+    color: rgb(198, 198, 198);
+    font-weight: 200;
+}
+
+.card-comp {
+    padding: 0;
+    margin: 0;
+    color: rgb(198, 198, 198);
+    font-size: 1em;
+    font-weight: 600;
+
+    a {
+        &:hover {
+            color: $proj-title-color;
+
+            svg {
+                transform: scaleX(1.2) scaleY(1.2);
+            }
+        }
+
+        color: rgb(198, 198, 198);
+        text-decoration: none;
+        height: inherit;
+
+        svg {
+            height: .8em;
+            fill: $proj-title-color;
+            padding: 1px;
+        }
+    }
+}
+
+.card-title {
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    color: rgb(198, 198, 198);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.card-p {
+    font-size: .875em;
+    color: rgb(178, 178, 178);
+    font-weight: none;
+}
