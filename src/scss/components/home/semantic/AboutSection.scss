@@ -6,7 +6,6 @@
         font-size: .875em;
         font-weight: 700;
         letter-spacing: 1.5px;
-        // margin: 100px 0 0 0;
         margin: 50px 0 0 0;
     }
 
@@ -26,21 +25,24 @@
     }
 }
 
+
 @media(min-width: $breakpoint-lg) {
     .about {
         h2 {
             margin: 7px 0 0 0;
         }
     }
+}
 
+@media (hover: hover) and (pointer: fine) {
     .plant-icon {
         color: rgb(255, 255, 255);
         font-weight: 600;
+        position: relative;
 
         &:hover {
             color: rgb(182, 217, 88);
             cursor: url("/src/assets/plant-icon.png"), auto;
-
         }
     }
 }
