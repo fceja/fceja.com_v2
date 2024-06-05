@@ -13,11 +13,16 @@ $icon-height: 50px;
         &:first-child {
             margin: 0 10px 0 0;
         }
-    }
 
-    svg {
-        width: $icon-height;
-        fill: rgb(178, 178, 178);
+        a {
+            display: inline-block;
+            height: 100%;
+        }
+
+        svg {
+            width: $icon-height;
+            fill: rgb(178, 178, 178);
+        }
     }
 }
 

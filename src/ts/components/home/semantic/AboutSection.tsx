@@ -15,7 +15,7 @@ const AboutSection = () => {
             <p>
                 Also, I've been expanding my skill set by developing personal projects involving various
                 programming languages and frameworks.
-                At this point in my career, I am looking forward to pursuing a full-time <strong className="hover-text">software engineering</strong> role.
+                At this point in my career, I am looking forward to pursuing a <strong className="hover-text">software engineering</strong> role.
             </p>
             <p>
                 When I'm away from the keyboard, I'm usually reading, running, hanging out

@@ -37,7 +37,6 @@ const Spotlight: React.FC = () => {
                 height: "100%",
                 left: `${position.x}px`,
                 opacity: visible ? 1 : 0,
-                position: "fixed",
                 top: `${position.y}px`,
                 width: "100%",
             }}
