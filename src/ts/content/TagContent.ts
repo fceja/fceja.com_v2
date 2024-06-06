@@ -9,6 +9,7 @@ export const tagDataMap: Map<string, TagLinkI> = new Map([
     ["aem", { name: "Adobe Experience Manager", target: "_blank", url: "https://business.adobe.com/products/experience-manager/adobe-experience-manager.html" }],
     ["agile", { name: "Agile", target: "_blank", url: "https://www.atlassian.com/agile" }],
     ["appium", { name: "Appium", target: "_blank", url: "https://appium.io/docs/en/latest/" }],
+    ["anime", { name: "Anime JS", target: "_blank", url: "https://animejs.com/" }],
     ["aws", { name: "AWS", target: "_blank", url: "https://aws.amazon.com/" }],
     ["aws:apiGateway", { name: "AWS: API Gateway", target: "_blank", url: "https://aws.amazon.com/api-gateway/" }],
     ["aws:cloudfront", { name: "AWS: CloudFront", target: "_blank", url: "https://aws.amazon.com/cloudfront/" }],
@@ -70,5 +71,6 @@ export const tagDataMap: Map<string, TagLinkI> = new Map([
     ["testRail", { name: "TestRail", target: "_blank", url: "https://www.testrail.com/" }],
     ["theTradeDesk", { name: "The Trade Desk", target: "_blank", url: "https://www.thetradedesk.com/us" }],
     ["typescript", { name: "TypeScript", target: "_blank", url: "https://www.typescriptlang.org/" }],
+    ["vite", { name: "Vite", target: "_blank", url: "https://vitejs.dev/" }],
     ["webpack", { name: "webpack", target: "_blank", url: "https://webpack.js.org" }],
 ])
