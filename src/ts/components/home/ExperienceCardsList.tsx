@@ -1,6 +1,8 @@
+import React from "react"
+
 import "@scss/components/home/ExperienceCardsList.scss"
-import { experienceCardsContent } from "@content/HomePageContent"
 import ExperienceCard from "@components/home/ExperienceCard"
+import { experienceCardsContent } from "@content/HomePageContent"
 
 const ExperienceCardsList = () => {
     return (
@@ -10,12 +12,16 @@ const ExperienceCardsList = () => {
                 let clients = null;
                 if (elem.clients.length > 0) {
                     clients = elem.clients.map((elem2, j) => {
-                        return < ExperienceCard cardData={elem2} parentIndex={`${i}-${j}`} />
+                        return (
+                            <React.Fragment key={`client-exp-card-${i}-${j}`}>
+                                < ExperienceCard cardData={elem2} parentIndex={`${i}-${j}`} />)
+                            </React.Fragment>
+                        )
                     })
                 }
 
                 return (
-                    <>
+                    <React.Fragment key={`exp-cards-${i}`}>
                         < ExperienceCard cardData={elem} parentIndex={`${i}`} />
                         {clients && (
                             <>
@@ -23,7 +29,7 @@ const ExperienceCardsList = () => {
                                 {clients}
                             </>
                         )}
-                    </>
+                    </React.Fragment>
                 )
             })}
         </ul>

@@ -35,7 +35,7 @@ export const experienceCardsContent = [
                 company: "Allē",
                 companyUrl: "https://alle.com/",
                 paragraph: `
-                 A support role, where I joined team to help implement frontend automation using TypeScript. (Remote)
+                    A support role, where I joined team to help implement frontend automation using TypeScript. (Remote)
                 `,
                 tags: [
                     tagDataMap.get('typescript'), tagDataMap.get('javascript'), tagDataMap.get('selenium'),
@@ -84,14 +84,19 @@ export const homeProjectContent = [
         title: "Profile App",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
-            tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
-            tagDataMap.get('aws:s3')
+            tagDataMap.get('googlemaps'), tagDataMap.get('bootstrap'), tagDataMap.get('html'),
+            tagDataMap.get('sass'), tagDataMap.get('aws:s3')
         ],
         links: [
             { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/" },
             { type: "github", url: "https://github.com/fceja/profile_app" }
         ],
-        paragraph: "A web app that can be used for a user/company profile."
+        projType: "Frontend",
+        paragraph: `
+            A web app that can be used for a user/company profile.
+            It contains a home page, gallery page, and a contact page.
+            The contact page contains a google map, and a form to submit contact info.
+        `
     },
     {
         year: "2023",
@@ -103,7 +108,13 @@ export const homeProjectContent = [
         links: [
             { type: "github", url: "https://github.com/fceja/emailer_api" },
         ],
-        paragraph: "A Node / Express JS API that provides an endpoint for email generation. This is implemented and used in Profile App project."
+        projType: "Backend",
+        paragraph: `
+            A Node / Express JS API that provides an endpoint for email generation.
+            Utilizes the Nodemailer library to generate and send an email.
+            The endpoint is setup in AWS using API Gateway and Lamdba services.
+            This is implemented and used in Profile App project.
+        `
     },
     {
         year: "2023",
@@ -117,7 +128,12 @@ export const homeProjectContent = [
             { type: "website", url: "https://django-user-post-a42f5d79d28f.herokuapp.com/" },
             { type: "github", url: "https://github.com/fceja/user_post" }
         ],
-        paragraph: "A forum-like app were Standard and Mod users can create and edit posts."
+        projType: "Full-stack",
+        paragraph: `
+            A forum-like app that handles account creation, login, and posts to a community home page.
+            It containts types of users - standard and moderators.
+            Standard users can post and delete their own messages, while moderators can do the same and also ban user.
+        `
     },
     {
         year: "2023",
@@ -133,7 +149,13 @@ export const homeProjectContent = [
             { type: "website", url: "https://fceja-proj.com/" },
             { type: "github", url: "https://github.com/fceja/login_form_geolocation_ip" }
         ],
-        paragraph: "After logging in, clicking the 'Get My Location' button will retreive users geo-coordinates and IP info."
+        projType: "Frontend",
+        paragraph: `
+            App that uses the browser API's to retreive users geo-coordinates and IP info.
+            A login in screen is populated, where after logging in, clicking the 'Get My Location'
+            button will ask for  user confirmation to to retreive users geo-coordinates and IP info.
+            Behind a login since it's a throttled api endpointed.
+        `
     }
 ]
 

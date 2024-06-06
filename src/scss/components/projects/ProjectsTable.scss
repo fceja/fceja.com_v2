@@ -21,10 +21,27 @@
     font-weight: 300;
 }
 
-.tr-proj span {
+.tr-proj-title {
     color: rgb(238, 238, 238);
     font-size: 1em;
     font-weight: 500;
+}
+
+.tr-proj {
+    hr {
+        color: rgb(255, 255, 255);
+        border-width: .5px;
+        width: 85%;
+        padding: 0;
+        margin: 5px 0 5px 0;
+    }
+}
+
+.tr-proj-type {
+    color: rgb(238, 238, 238);
+    font-size: .75em;
+    font-weight: 200;
+    letter-spacing: -.4px;
 }
 
 .tr-proj-link {

@@ -43,13 +43,17 @@ const ProjectsTable = () => {
                             className={`tr tr-${i}`}
                         >
                             <td className="tr-year pe-4 py-2">{proj.year}</td>
-                            <td className="tr-proj pe-2 py-2">
+                            <td className="tr-proj pe-2 py-2 ">
                                 <span
-                                    className="hover-text me-4"
+                                    className="tr-proj-title hover-text me-4"
                                     onMouseEnter={() => { handleHover(true, i) }}
                                     onMouseLeave={() => { handleHover(false, i) }}
                                 >
                                     {proj.title}
+                                </span>
+                                <hr></hr>
+                                <span className="tr-proj-type">
+                                    {proj.projType}
                                 </span>
                             </td>
                             <td className="tr-built d-none d-md-table-cell py-2">
@@ -77,4 +81,5 @@ const ProjectsTable = () => {
         </table>
     )
 }
+
 export default ProjectsTable

@@ -50,6 +50,7 @@ const ProjectCardsList = () => {
                                     })}
                                 </span>
                             </div>
+                            <span className="home-proj-type">{proj.projType}</span>
                             <p className="home-proj-p m-0 mt-2">{proj.paragraph}</p>
                             <Tags className={COMMON_COMPENENT_CLASSNAME} tagData={proj.tags} parentIndex={i} />
                         </div>

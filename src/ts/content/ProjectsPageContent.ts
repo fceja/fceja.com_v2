@@ -4,6 +4,7 @@ export const projectContent = [
     {
         year: "2023",
         title: "User Forum App",
+        projType: "Full-stack",
         tags: [
             tagDataMap.get('python'), tagDataMap.get('django'), tagDataMap.get('djangoCrispyForms'),
             tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('css'),
@@ -18,6 +19,7 @@ export const projectContent = [
     {
         year: "2023",
         title: "Emailer API",
+        projType: "Backend",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('node'), tagDataMap.get('express'),
             tagDataMap.get('nodemailer'), tagDataMap.get('aws'),
@@ -30,6 +32,7 @@ export const projectContent = [
     {
         year: "2023",
         title: "Profile App",
+        projType: "Frontend",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
             tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
@@ -44,6 +47,7 @@ export const projectContent = [
     {
         year: "2023",
         title: "Geolocation-IP App",
+        projType: "Frontend",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
             tagDataMap.get('bootstrap'), tagDataMap.get('reactBootstrap'), tagDataMap.get('html'),
@@ -59,6 +63,7 @@ export const projectContent = [
     {
         year: "2023",
         title: "Login JWT Auth API",
+        projType: "Backend",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('node'), tagDataMap.get('express'),
             tagDataMap.get('postgres'), tagDataMap.get('jwt')
@@ -71,7 +76,8 @@ export const projectContent = [
     },
     {
         year: "2023",
-        title: "Economic Calendar - Automation",
+        title: "Economic Calendar",
+        projType: "Automation",
         tags: [
             tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('pytest')
         ],
@@ -83,6 +89,7 @@ export const projectContent = [
     {
         year: "2023",
         title: "Google Maps App",
+        projType: "Frontend",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
             tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
@@ -97,6 +104,7 @@ export const projectContent = [
     {
         year: "2023",
         title: "Card Slider App",
+        projType: "Frontend",
         tags: [
             tagDataMap.get('javascript'), tagDataMap.get('react'), tagDataMap.get('html'),
             tagDataMap.get('css')
@@ -109,6 +117,7 @@ export const projectContent = [
     {
         year: "2023",
         title: "User vs A.I. Agent",
+        projType: "Desktop",
         tags: [
             tagDataMap.get('c++'),
         ],
@@ -120,6 +129,7 @@ export const projectContent = [
     {
         year: "2023",
         title: "Dice Game",
+        projType: "Desktop",
         tags: [
             tagDataMap.get('java'), tagDataMap.get('javaFX'), tagDataMap.get('maven'),
         ],
@@ -131,6 +141,7 @@ export const projectContent = [
     {
         year: "2023",
         title: "Login JWT Auth API",
+        projType: "Backend",
         tags: [
             tagDataMap.get('golang'), tagDataMap.get('jwt'), tagDataMap.get('postgres'),
         ],
@@ -143,6 +154,7 @@ export const projectContent = [
     {
         year: "2023",
         title: "Bingo Card Game",
+        projType: "Frontend",
         tags: [
             tagDataMap.get('javascript'), tagDataMap.get('html'), tagDataMap.get('css'),
             tagDataMap.get('aws')
@@ -156,6 +168,7 @@ export const projectContent = [
     {
         year: "2023",
         title: "Chipotle Mock",
+        projType: "Frontend",
         tags: [
             tagDataMap.get('javascript'), tagDataMap.get('jquery'), tagDataMap.get('html'),
             tagDataMap.get('css')
