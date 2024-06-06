@@ -1,3 +1,4 @@
+import Footer from "@common/components/semantic/Footer";
 import HomeHeader from "@components/home/semantic/HomeHeader";
 import HomeMain from "@components/home/semantic/HomeMain";
 import Spotlight from "@common/components/Spotlight";
@@ -13,6 +14,7 @@ const HomePage = () => {
                 <HomeHeader />
                 <HomeMain />
             </div >
+            <Footer />
         </>
     )
 }
