@@ -7,7 +7,7 @@ export const experienceCardsContent = [
         company: "Value Stream Engineering",
         companyUrl: "https://valuestreamengineering.com/",
         paragraph: `Worked as a contractor for VSE. Undertook various projects for multiple clients.
-        Responsibilities included: QA, automation, software development, onboarding, and mentoring.
+        Responsibilities included: QA, automation, software development, product documentation, onboarding, and mentoring.
         Client details are listed below.`,
         tags: [],
         clients: [
@@ -17,10 +17,9 @@ export const experienceCardsContent = [
                 company: "Viking Cruises",
                 companyUrl: "https://www.vikingcruises.com/",
                 paragraph: `
-                    Designed and implemented frontend and backend automation solutions for the product ecosystem.
+                    Designed and implemented frontend and backend automation solutions for the Viking Cruises product ecosystem.
                     Developed frontend and backend internal tooling applications.
-                    Created extensive automation and system documentation for new team members and mentees.
-                    Daily stand-up resports. Collaborated with Director of Engineering for special projects. (Remote)
+                    Collaborated with Director of Engineering for special projects. (Remote)
                 `,
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('javascript'), tagDataMap.get('selenium'), tagDataMap.get('testRail'),
@@ -35,7 +34,7 @@ export const experienceCardsContent = [
                 company: "Allē",
                 companyUrl: "https://alle.com/",
                 paragraph: `
-                    A support role, where I joined team to help implement frontend automation using TypeScript. (Remote)
+                    A support role, where I joined to help team implement frontend automation using TypeScript. (Remote)
                 `,
                 tags: [
                     tagDataMap.get('typescript'), tagDataMap.get('javascript'), tagDataMap.get('selenium'),
@@ -48,10 +47,9 @@ export const experienceCardsContent = [
                 company: "MNTN ",
                 companyUrl: "https://mountain.com/",
                 paragraph: `
-                    Collaborated closely with automation team to refine and optimize testing procedures.
-                    My responsibilities included performing manual functional testing, developed automation for MNTN's primary frontend product,
-                    developed automation for a GraphQL backend product, and also developed automation
-                    to validate analytics synchronization with The Trade Desk. (Remote)
+                    Refined and optimized existing automation procedures.
+                    Developed automation for primary frontend product,
+                    GraphQL backend product, and analytics synchronization validation for The Trade Desk service. (Remote)
                 `,
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('graphql'), tagDataMap.get('postman'),
@@ -65,8 +63,8 @@ export const experienceCardsContent = [
                 company: "Hallmark Labs",
                 companyUrl: "https://www.hallmarklabs.com/",
                 paragraph: `
-                    During my internship as a QA Engineer, I was part of an Agile team with daily stand ups, collaborating closely with project team members.
-                    I performed frontend, mobile, and physical device testing, and used Jira for issue tracking. I also worked on mobile automation
+                    Apart of an Agile team with daily stand ups, collaborating closely with project team members.
+                    Performed frontend, mobile, and physical device testing, and used Jira for issue tracking. Also worked on mobile automation
                     for Android builds using Selenium WebDriver and Appium. (Onsite)
                 `,
                 tags: [
@@ -110,10 +108,9 @@ export const homeProjectContent = [
         ],
         projType: "Backend",
         paragraph: `
-            A Node / Express JS API that provides an endpoint for email generation.
-            Utilizes the Nodemailer library to generate and send an email.
-            The endpoint is setup in AWS using API Gateway and Lamdba services.
-            This is implemented and used in Profile App project.
+            A Node.js API using the Express framework that generates an email using the Nodemailer library.
+            It is setup in AWS, where API Gateway provides an endpoint that triggers email generation through a Lambda function.
+            Used by Profile App project.
         `
     },
     {
@@ -130,9 +127,11 @@ export const homeProjectContent = [
         ],
         projType: "Full-stack",
         paragraph: `
-            A forum-like app that handles account creation, login, and posts to a community home page.
-            It containts types of users - standard and moderators.
-            Standard users can post and delete their own messages, while moderators can do the same and also ban user.
+            A forum-like app that handles account creation, login functionality,
+            and allows user to generate / modify / delete posts on a community home page.
+            There are two types of users: a standard user and moderator user.
+            Standard users can post or delete their own messages.
+            Moderator users can do the same, while also having the capablily of deleting anyones post, as well as banning users.
         `
     },
     {
@@ -151,10 +150,9 @@ export const homeProjectContent = [
         ],
         projType: "Frontend",
         paragraph: `
-            App that uses the browser API's to retreive users geo-coordinates and IP info.
-            A login in screen is populated, where after logging in, clicking the 'Get My Location'
-            button will ask for  user confirmation to to retreive users geo-coordinates and IP info.
-            Behind a login since it's a throttled api endpointed.
+            An app uses the browser API and third-party service to get your location and IP information.
+            After logging in, clicking the button will ask for permission to retrieve your location and IP info.
+            The login was implemented to prevent overuse, since retreiving IP information from API endpoint is throttled.
         `
     }
 ]

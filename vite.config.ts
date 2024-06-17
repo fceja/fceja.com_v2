@@ -15,5 +15,7 @@ export default defineConfig({
       "@pages": path.resolve(__dirname, "./src/ts/pages"),
       "@scss": path.resolve(__dirname, "./src/scss"),
     }
-  }
+  }, server: {
+    port: 3001, // Replace with your desired port number
+  },
 });
