@@ -8,9 +8,10 @@ export const projectContent = [
         title: "Inventory App - *Current*",
         projType: "Full-stack",
         tags: [
-            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('sass'),
-            tagDataMap.get('html'), tagDataMap.get('aws'), tagDataMap.get('bootstrap'),
-            tagDataMap.get('vite'),
+            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
+            tagDataMap.get('html'), tagDataMap.get('sass'), tagDataMap.get('node'),
+            tagDataMap.get('express'), tagDataMap.get('postgres'), tagDataMap.get('knex'),
+            tagDataMap.get('bootstrap'), tagDataMap.get('docker'), tagDataMap.get('vite'),
         ],
         links: [
             { type: "github", url: "https://github.com/fceja/inventory_front_end" },
@@ -21,7 +22,22 @@ export const projectContent = [
     },
     {
         year: "2024",
-        title: "fceja.com - V2",
+        title: "Profile App (V2)",
+        projType: "Frontend",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
+            tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
+            tagDataMap.get('aws'), tagDataMap.get('babel'), tagDataMap.get('vite'),
+        ],
+        links: [
+            { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com" },
+            { type: "github", url: "https://github.com/fceja/profile_app" }
+        ],
+        paragraph: "A web app that can be used for a user/company profile."
+    },
+    {
+        year: "2024",
+        title: "fceja.com (V2)",
         projType: "Frontend",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('sass'),
@@ -34,24 +50,9 @@ export const projectContent = [
         paragraph: "Version 2"
     },
     {
-        year: "2024",
-        title: "Profile App",
-        projType: "Frontend",
-        tags: [
-            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
-            tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
-            tagDataMap.get('aws')
-        ],
-        links: [
-            { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com" },
-            { type: "github", url: "https://github.com/fceja/profile_app" }
-        ],
-        paragraph: "A web app that can be used for a user/company profile."
-    },
-    {
         year: "2023",
         title: "Google Maps App",
-        projType: "Frontend",
+        projType: "Fullstack",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
             tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
@@ -65,7 +66,7 @@ export const projectContent = [
     },
     {
         year: "2023",
-        title: "fceja.com - V1",
+        title: "fceja.com (V1)",
         projType: "Frontend",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('sass'),
@@ -77,6 +78,37 @@ export const projectContent = [
             { type: "github", url: "https://github.com/fceja/user_post" }
         ],
         paragraph: "Version 1"
+    },
+    {
+        year: "2023",
+        title: "Geolocation-IP App",
+        projType: "Fullstack",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
+            tagDataMap.get('bootstrap'), tagDataMap.get('reactBootstrap'), tagDataMap.get('html'),
+            tagDataMap.get('sass'), tagDataMap.get('postgres'), tagDataMap.get('aws'), tagDataMap.get('webpack')
+        ],
+        links: [
+            { type: "website", url: "https://fceja-proj.com/" },
+            { type: "github", url: "https://github.com/fceja/login_form_geolocation_ip" }
+        ],
+        paragraph: "After logging in, clicking the 'Get My Location' button will retreive users\
+        geo-coordinates and IP info."
+    },
+    {
+        year: "2023",
+        title: "Profile App (V1)",
+        projType: "Frontend",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
+            tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
+            tagDataMap.get('aws')
+        ],
+        links: [
+            { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com" },
+            { type: "github", url: "https://github.com/fceja/profile_app" }
+        ],
+        paragraph: "A web app that can be used for a user/company profile."
     },
     {
         year: "2023",
@@ -108,23 +140,20 @@ export const projectContent = [
     },
     {
         year: "2023",
-        title: "Geolocation-IP App",
-        projType: "Frontend",
+        title: "Login Auth API (Golang)",
+        projType: "Backend",
         tags: [
-            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
-            tagDataMap.get('bootstrap'), tagDataMap.get('reactBootstrap'), tagDataMap.get('html'),
-            tagDataMap.get('sass'), tagDataMap.get('postgres'), tagDataMap.get('aws'), tagDataMap.get('webpack')
+            tagDataMap.get('golang'), tagDataMap.get('jwt'), tagDataMap.get('postgres'),
         ],
         links: [
-            { type: "website", url: "https://fceja-proj.com/" },
-            { type: "github", url: "https://github.com/fceja/login_form_geolocation_ip" }
+            { type: "github", url: "https://github.com/fceja/jwt_auth_api" }
         ],
-        paragraph: "After logging in, clicking the 'Get My Location' button will retreive users\
-        geo-coordinates and IP info."
+        paragraph: "An API that provides endpoints for: creating, retrieving, and logging-in users. \
+        Implemented with JWT authentication."
     },
     {
         year: "2023",
-        title: "Login Auth API - Node",
+        title: "Login Auth API (Node)",
         projType: "Backend",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('node'), tagDataMap.get('express'),
@@ -137,32 +166,7 @@ export const projectContent = [
         Implemented with JWT authentication."
     },
     {
-        year: "2023",
-        title: "Economic Calendar",
-        projType: "Automation",
-        tags: [
-            tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('pytest')
-        ],
-        links: [
-            { type: "github", url: "https://github.com/fceja/econ_calendar_automation" }
-        ],
-        paragraph: "Uses Selenium and Pytest to parse economic calendar data from investing.com. Also outputs the data into a csv."
-    },
-    {
-        year: "2023",
-        title: "Login Auth API - Go",
-        projType: "Backend",
-        tags: [
-            tagDataMap.get('golang'), tagDataMap.get('jwt'), tagDataMap.get('postgres'),
-        ],
-        links: [
-            { type: "github", url: "https://github.com/fceja/jwt_auth_api" }
-        ],
-        paragraph: "An API that provides endpoints for: creating, retrieving, and logging-in users. \
-                Implemented with JWT authentication."
-    },
-    {
-        year: "2023",
+        year: "2022",
         title: "Card Slider App",
         projType: "Frontend",
         tags: [
@@ -176,6 +180,18 @@ export const projectContent = [
     },
     {
         year: "2022",
+        title: "Economic Calendar",
+        projType: "Automation",
+        tags: [
+            tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('pytest')
+        ],
+        links: [
+            { type: "github", url: "https://github.com/fceja/econ_calendar_automation" }
+        ],
+        paragraph: "Uses Selenium and Pytest to parse economic calendar data from investing.com. Also outputs the data into a csv."
+    },
+    {
+        year: "2021",
         title: "Bingo Card Game",
         projType: "Frontend",
         tags: [
@@ -189,20 +205,19 @@ export const projectContent = [
         paragraph: "Imitation of card game, where the game is won when a pre-determined pattern is selected."
     },
     {
-        year: "2022",
-        title: "Chipotle Mock",
-        projType: "Frontend",
+        year: "2020",
+        title: "User vs A.I. Agent",
+        projType: "Desktop",
         tags: [
-            tagDataMap.get('javascript'), tagDataMap.get('jquery'), tagDataMap.get('html'),
-            tagDataMap.get('css')
+            tagDataMap.get('c++'),
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/chipotle_mock" }
+            { type: "github", url: "https://github.com/fceja/ai_agent_4_in_a_row" }
         ],
-        paragraph: "Mock webpage for Chipotle."
+        paragraph: "A 4-in-a-row game implementation using alpha beta search with pruning."
     },
     {
-        year: "2022",
+        year: "2019",
         title: "Dice Game",
         projType: "Desktop",
         tags: [
@@ -214,16 +229,17 @@ export const projectContent = [
         paragraph: "A poker style game with dice."
     },
     {
-        year: "2022",
-        title: "User vs A.I. Agent",
-        projType: "Desktop",
+        year: "2019",
+        title: "Chipotle Mock",
+        projType: "Frontend",
         tags: [
-            tagDataMap.get('c++'),
+            tagDataMap.get('javascript'), tagDataMap.get('jquery'), tagDataMap.get('html'),
+            tagDataMap.get('css')
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/ai_agent_4_in_a_row" }
+            { type: "github", url: "https://github.com/fceja/chipotle_mock" }
         ],
-        paragraph: "A 4-in-a-row game implementation using alpha beta search with pruning."
+        paragraph: "Mock webpage for Chipotle."
     },
 ]
 

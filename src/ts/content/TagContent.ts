@@ -43,6 +43,7 @@ export const tagDataMap: Map<string, TagLinkI> = new Map([
     ["jira", { name: "Jira", target: "_blank", url: "https://www.atlassian.com/software/jira" }],
     ["jquery", { name: "JQuery", target: "_blank", url: "https://jquery.com/" }],
     ["jwt", { name: "JWT", target: "_blank", url: "https://jwt.io/" }],
+    ["knex", { name: "Knex JS", target: "_blank", url: "https://knexjs.org/" }],
     ["linux", { name: "Linux", target: "_blank", url: "https://www.linux.org/" }],
     ["magnolia", { name: "Magnolia CMS", target: "_blank", url: "https://www.magnolia-cms.com/" }],
     ["maven", { name: "Maven", target: "_blank", url: "https://maven.apache.org/" }],
