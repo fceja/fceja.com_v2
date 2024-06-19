@@ -10,17 +10,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc",
+    "react": "19.0.0-rc-e684ca66ab-20240619",
+    "react-dom": "19.0.0-rc-e684ca66ab-20240619",
     "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "babel-plugin-react-compiler": "^0.0.0-experimental-938cd9a-20240601",
     "bootstrap": "^5.3.3",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
@@ -28,5 +29,9 @@
     "sass": "^1.77.2",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
+  },
+  "overrides": {
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc"
   }
 }
