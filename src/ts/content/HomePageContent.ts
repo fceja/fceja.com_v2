@@ -148,11 +148,12 @@ export const homeProjectContent = [
             { type: "website", url: "https://fceja-proj.com/" },
             { type: "github", url: "https://github.com/fceja/login_form_geolocation_ip" }
         ],
-        projType: "Frontend",
+        projType: "Fullstack",
         paragraph: `
             An app uses the browser API and third-party service to get your location and IP information.
             After logging in, clicking the button will ask for permission to retrieve your location and IP info.
             The login was implemented to prevent overuse, since retreiving IP information from API endpoint is throttled.
+            Deployed on AWS.
         `
     }
 ]
