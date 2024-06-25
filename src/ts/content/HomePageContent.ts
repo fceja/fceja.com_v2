@@ -132,6 +132,8 @@ export const homeProjectContent = [
             There are two types of users: a standard user and moderator user.
             Standard users can post or delete their own messages.
             Moderator users can do the same, while also having the capablily of deleting anyones post, as well as banning users.
+            Deployed on Heroku.
+            Demo credentials -> username: mary, password: LetMeIn2023$!%
         `
     },
     {
@@ -153,7 +155,7 @@ export const homeProjectContent = [
             An app uses the browser API and third-party service to get your location and IP information.
             After logging in, clicking the button will ask for permission to retrieve your location and IP info.
             The login was implemented to prevent overuse, since retreiving IP information from API endpoint is throttled.
-            Deployed on AWS.
+            Deployed on AWS. Demo credentials -> email: fc-geoip@email.com, password: letMeIn_geoip!
         `
     }
 ]

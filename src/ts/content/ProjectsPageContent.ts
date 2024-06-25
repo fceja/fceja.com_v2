@@ -1,7 +1,5 @@
 import { tagDataMap } from "@content/TagContent"
 
-
-// TODO - adjust year to actual
 export const projectContent = [
     {
         year: "2024",
@@ -30,8 +28,8 @@ export const projectContent = [
             tagDataMap.get('aws'), tagDataMap.get('babel'), tagDataMap.get('vite'),
         ],
         links: [
-            { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com" },
-            { type: "github", url: "https://github.com/fceja/profile_app" }
+            { type: "website", url: "http://dev.client.profile-app-v2.s3-website-us-west-1.amazonaws.com/" },
+            { type: "github", url: "https://github.com/fceja/profile_app_V2" }
         ],
         paragraph: "A web app that can be used for a user/company profile."
     },
@@ -45,13 +43,14 @@ export const projectContent = [
             tagDataMap.get('vite'),
         ],
         links: [
+            { type: "website", url: "http://fceja.com" },
             { type: "github", url: "https://github.com/fceja/fceja.com_V2" }
         ],
         paragraph: "Version 2"
     },
     {
         year: "2023",
-        title: "Google Maps App",
+        title: "Google Maps App", // TODO - need to info icon to projects page for demo creds
         projType: "Fullstack",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
@@ -74,8 +73,8 @@ export const projectContent = [
             tagDataMap.get('jest'), tagDataMap.get('jenkins')
         ],
         links: [
-            { type: "website", url: "https://django-user-post-a42f5d79d28f.herokuapp.com" },
-            { type: "github", url: "https://github.com/fceja/user_post" }
+            { type: "website", url: "http://dev.client.fceja.s3-website-us-west-1.amazonaws.com/" },
+            { type: "github", url: "https://github.com/fceja/fceja.com" }
         ],
         paragraph: "Version 1"
     },
@@ -152,6 +151,19 @@ export const projectContent = [
         Implemented with JWT authentication."
     },
     {
+        year: "2022",
+        title: "Card Slider App",
+        projType: "Frontend",
+        tags: [
+            tagDataMap.get('javascript'), tagDataMap.get('react'), tagDataMap.get('html'),
+            tagDataMap.get('css')
+        ],
+        links: [
+            { type: "github", url: "https://github.com/fceja/card_slider" }
+        ],
+        paragraph: "A container featuring scrollable cards."
+    },
+    {
         year: "2023",
         title: "Login Auth API (Node)",
         projType: "Backend",
@@ -164,19 +176,6 @@ export const projectContent = [
         ],
         paragraph: "An API that provides endpoints for: creating, retrieving, and logging-in users. \
         Implemented with JWT authentication."
-    },
-    {
-        year: "2022",
-        title: "Card Slider App",
-        projType: "Frontend",
-        tags: [
-            tagDataMap.get('javascript'), tagDataMap.get('react'), tagDataMap.get('html'),
-            tagDataMap.get('css')
-        ],
-        links: [
-            { type: "github", url: "https://github.com/fceja/card_slider" }
-        ],
-        paragraph: "A container featuring scrollable cards."
     },
     {
         year: "2022",
