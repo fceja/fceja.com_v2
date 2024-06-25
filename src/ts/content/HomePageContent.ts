@@ -80,13 +80,15 @@ export const homeProjectContent = [
     {
         year: "2023",
         title: "Profile App",
+        imageUrl: "src/assets/thumbnails/user-profile.png",
+        imageAlt: "user profile thumbnail image",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
             tagDataMap.get('googlemaps'), tagDataMap.get('bootstrap'), tagDataMap.get('html'),
             tagDataMap.get('sass'), tagDataMap.get('aws:s3')
         ],
         links: [
-            { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com/" },
+            { type: "website", url: "http://dev.client.profile-app-v2.s3-website-us-west-1.amazonaws.com/" },
             { type: "github", url: "https://github.com/fceja/profile_app" }
         ],
         projType: "Frontend",
@@ -99,6 +101,8 @@ export const homeProjectContent = [
     {
         year: "2023",
         title: "Emailer API",
+        imageUrl: "src/assets/thumbnails/email.png",
+        imageAlt: "email message thumbnail image",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('node'), tagDataMap.get('express'),
             tagDataMap.get('nodemailer'), tagDataMap.get('aws:apiGateway'), tagDataMap.get('aws:lambda')
@@ -116,6 +120,8 @@ export const homeProjectContent = [
     {
         year: "2023",
         title: "User Forum App",
+        imageUrl: "src/assets/thumbnails/message-bubbles.png",
+        imageAlt: "message bubbles thumbnail image",
         tags: [
             tagDataMap.get('python'), tagDataMap.get('django'), tagDataMap.get('djangoCrispyForms'),
             tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('css'),
@@ -139,6 +145,8 @@ export const homeProjectContent = [
     {
         year: "2023",
         title: "Geolocation / IP App",
+        imageUrl: "src/assets/thumbnails/world-magnifying-glass.png",
+        imageAlt: "world with magnifying glass thumbnail image",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
             tagDataMap.get('bootstrap'), tagDataMap.get('reactBootstrap'), tagDataMap.get('html'),

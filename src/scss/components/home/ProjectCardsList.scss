@@ -79,5 +79,7 @@ $xOffset: 12px;
 }
 
 .home-proj-img {
-    object-fit: cover;
+    width: 100px;
+    aspect-ratio: 16/9;
+    background-color: white;
 }

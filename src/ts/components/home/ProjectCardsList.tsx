@@ -60,9 +60,8 @@ const ProjectCardsList = () => {
                         >
                             < img
                                 className="home-proj-img"
-                                src="src/assets/github-logo.png"
-                                alt="github-logo"
-                                style={{ width: "100px" }}
+                                src={proj.imageUrl}
+                                alt={proj.imageAlt}
                             />
                         </div>
                     </li >
