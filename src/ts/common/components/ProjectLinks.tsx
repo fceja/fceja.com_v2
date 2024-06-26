@@ -1,5 +1,5 @@
 import "@scss/common/components/ProjectLinks.scss";
-import { projectLinkSvgData } from "@content/ProjectsPageContent"
+import { projectsSvgData } from "@content/ProjectsPageContent"
 
 export type ProjectLinksProps = {
     className: string | null;
@@ -11,7 +11,7 @@ export type ProjectLinksProps = {
 
 const ProjectLinks = (props: ProjectLinksProps) => {
     const { className, linkData } = props
-    const svgData = projectLinkSvgData[`${linkData.type}`]
+    const svgData = projectsSvgData[`${linkData.type}`]
 
     return (
         <span className="icon-url-container d-flex">

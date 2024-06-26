@@ -16,7 +16,7 @@ export const projectContent = [
             { type: "github", url: "https://github.com/fceja/inventory_api" },
             { type: "github", url: "https://github.com/fceja/inventory_db" }
         ],
-        paragraph: ""
+        tooltipMessage: "App that manages and organizes inventory items."
     },
     {
         year: "2024",
@@ -31,7 +31,7 @@ export const projectContent = [
             { type: "website", url: "http://dev.client.profile-app-v2.s3-website-us-west-1.amazonaws.com/" },
             { type: "github", url: "https://github.com/fceja/profile_app_V2" }
         ],
-        paragraph: "A web app that can be used for a user/company profile."
+        tooltipMessage: "Version 2 of web app that can be used for a user/company profile."
     },
     {
         year: "2024",
@@ -46,7 +46,7 @@ export const projectContent = [
             { type: "website", url: "http://fceja.com" },
             { type: "github", url: "https://github.com/fceja/fceja.com_V2" }
         ],
-        paragraph: "Version 2"
+        tooltipMessage: "Version 2 of my main website."
     },
     {
         year: "2023",
@@ -61,22 +61,7 @@ export const projectContent = [
             { type: "website", url: "http://dev.client.google-maps.s3-website-us-west-1.amazonaws.com/" },
             { type: "github", url: "https://github.com/fceja/google_maps_app" }
         ],
-        paragraph: "After logging in, an interactive Google Map is populated."
-    },
-    {
-        year: "2023",
-        title: "fceja.com (V1)",
-        projType: "Frontend",
-        tags: [
-            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('sass'),
-            tagDataMap.get('html'), tagDataMap.get('aws'), tagDataMap.get('anime'),
-            tagDataMap.get('jest'), tagDataMap.get('jenkins')
-        ],
-        links: [
-            { type: "website", url: "http://dev.client.fceja.s3-website-us-west-1.amazonaws.com/" },
-            { type: "github", url: "https://github.com/fceja/fceja.com" }
-        ],
-        paragraph: "Version 1"
+        tooltipMessage: "After logging in, an interactive Google Map is populated."
     },
     {
         year: "2023",
@@ -91,8 +76,22 @@ export const projectContent = [
             { type: "website", url: "https://fceja-proj.com/" },
             { type: "github", url: "https://github.com/fceja/login_form_geolocation_ip" }
         ],
-        paragraph: "After logging in, clicking the 'Get My Location' button will retreive users\
-        geo-coordinates and IP info."
+        tooltipMessage: "After logging in, clicking a button will retreive geo-coordinates and IP info."
+    },
+    {
+        year: "2023",
+        title: "fceja.com (V1)",
+        projType: "Frontend",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('sass'),
+            tagDataMap.get('html'), tagDataMap.get('aws'), tagDataMap.get('anime'),
+            tagDataMap.get('jest'), tagDataMap.get('jenkins')
+        ],
+        links: [
+            { type: "website", url: "http://dev.client.fceja.s3-website-us-west-1.amazonaws.com/" },
+            { type: "github", url: "https://github.com/fceja/fceja.com" }
+        ],
+        tooltipMessage: "First version of my main website."
     },
     {
         year: "2023",
@@ -107,7 +106,7 @@ export const projectContent = [
             { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com" },
             { type: "github", url: "https://github.com/fceja/profile_app" }
         ],
-        paragraph: "A web app that can be used for a user/company profile."
+        tooltipMessage: "First version of web app that can be used for a user/company profile."
     },
     {
         year: "2023",
@@ -120,7 +119,7 @@ export const projectContent = [
         links: [
             { type: "github", url: "https://github.com/fceja/emailer_api" },
         ],
-        paragraph: "A NodeJS / ExpressJS API that provides an endpoint for email generation."
+        tooltipMessage: "A Node JS / Express JS API that provides an endpoint for email generation."
     },
     {
         year: "2023",
@@ -135,7 +134,7 @@ export const projectContent = [
             { type: "website", url: "https://django-user-post-a42f5d79d28f.herokuapp.com" },
             { type: "github", url: "https://github.com/fceja/user_post" }
         ],
-        paragraph: "A forum-like app were Standard and Mod users can create and edit posts."
+        tooltipMessage: "A forum-like app were standard and moderator users can create and edit posts."
     },
     {
         year: "2023",
@@ -147,8 +146,7 @@ export const projectContent = [
         links: [
             { type: "github", url: "https://github.com/fceja/jwt_auth_api" }
         ],
-        paragraph: "An API that provides endpoints for: creating, retrieving, and logging-in users. \
-        Implemented with JWT authentication."
+        tooltipMessage: "An API that provides endpoints for: creating, retrieving, and logging-in users using JWT authentication. Implemented in Golang."
     },
     {
         year: "2022",
@@ -161,7 +159,7 @@ export const projectContent = [
         links: [
             { type: "github", url: "https://github.com/fceja/card_slider" }
         ],
-        paragraph: "A container featuring scrollable cards."
+        tooltipMessage: "Features scrollable cards."
     },
     {
         year: "2023",
@@ -174,8 +172,7 @@ export const projectContent = [
         links: [
             { type: "github", url: "https://github.com/fceja/login_auth_jwt_session_api" }
         ],
-        paragraph: "An API that provides endpoints for: creating, retrieving, and logging-in users. \
-        Implemented with JWT authentication."
+        tooltipMessage: "An API that provides endpoints for: creating, retrieving, and logging-in users using JWT authentication. Implemented in TypeScript."
     },
     {
         year: "2022",
@@ -187,7 +184,7 @@ export const projectContent = [
         links: [
             { type: "github", url: "https://github.com/fceja/econ_calendar_automation" }
         ],
-        paragraph: "Uses Selenium and Pytest to parse economic calendar data from investing.com. Also outputs the data into a csv."
+        tooltipMessage: "Uses Selenium and Pytest to parse economic calendar data from investing.com. Also outputs data into a csv."
     },
     {
         year: "2021",
@@ -201,7 +198,7 @@ export const projectContent = [
             { type: "website", url: "http://dev.frontend.bingo.s3-website-us-west-1.amazonaws.com" },
             { type: "github", url: "https://github.com/fceja/bingo_game" }
         ],
-        paragraph: "Imitation of card game, where the game is won when a pre-determined pattern is selected."
+        tooltipMessage: "Imitation of card game, where the game is won when a pre-determined pattern is selected."
     },
     {
         year: "2020",
@@ -213,7 +210,7 @@ export const projectContent = [
         links: [
             { type: "github", url: "https://github.com/fceja/ai_agent_4_in_a_row" }
         ],
-        paragraph: "A 4-in-a-row game implementation using alpha beta search with pruning."
+        tooltipMessage: "A 4-in-a-row game implementation using alpha beta search with pruning."
     },
     {
         year: "2019",
@@ -225,7 +222,7 @@ export const projectContent = [
         links: [
             { type: "github", url: "https://github.com/fceja/dice_game" }
         ],
-        paragraph: "A poker style game with dice."
+        tooltipMessage: "A poker style game with dice."
     },
     {
         year: "2019",
@@ -238,11 +235,11 @@ export const projectContent = [
         links: [
             { type: "github", url: "https://github.com/fceja/chipotle_mock" }
         ],
-        paragraph: "Mock webpage for Chipotle."
+        tooltipMessage: "Mock webpage for Chipotle."
     },
 ]
 
-export const projectLinkSvgData = {
+export const projectsSvgData = {
     github: {
         xmlns: "http://www.w3.org/2000/svg",
         viewBox: "-4 29 457 457",
@@ -256,5 +253,12 @@ export const projectLinkSvgData = {
         height: "1em",
         /* Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.  */
         path: "M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z"
+    },
+    info: {
+        xmlns: "http://www.w3.org/2000/svg",
+        viewBox: "0 0 512 512",
+        height: "1em",
+        /* Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.  */
+        path: "M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
     }
 }

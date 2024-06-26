@@ -1,4 +1,5 @@
 import "@scss/components/projects/ProjectsTable.scss"
+import InfoTooltip from "@components/projects/InfoTooltip"
 import { projectContent } from "@content/ProjectsPageContent"
 import ProjectLinks from "@common/components/ProjectLinks"
 import Tags from "@common/components/Tags"
@@ -54,6 +55,7 @@ const ProjectsTable = () => {
                                 <hr></hr>
                                 <span className="tr-proj-type">
                                     {proj.projType}
+                                    <InfoTooltip message={proj.tooltipMessage} />
                                 </span>
                             </td>
                             <td className="tr-built d-none d-md-table-cell py-2">

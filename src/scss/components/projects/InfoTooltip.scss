@@ -1,0 +1,23 @@
+.info-svg {
+    fill: rgb(134, 134, 134);
+
+    &:hover {
+        fill: white;
+        transform: scale(1.2);
+    }
+}
+
+
+.info-tooltip {
+    color: black;
+    background-color: white;
+    position: absolute;
+    padding: 8px;
+    text-align: center;
+    font-weight: 200;
+
+    &.hidden {
+        display: none;
+
+    }
+}
