@@ -9,11 +9,11 @@ const AboutSection = () => {
                 I am a python developer with a background in QA, Automation, and Software Development.
             </p>
             <p>
-                I've had the opportunity to work for a <strong><a href="https://valuestreamengineering.com/" target="_blank" className="hover-text">start-up</a></strong>, where I've had the privelage to work with multiple clients and tech stacks.
-                Through this experience, I've gained invaluable knowledge and skills.
+                I've had the opportunity to work for a <strong><a href="https://valuestreamengineering.com/" target="_blank" className="hover-text">start-up</a></strong>, where I've had the privelage to work with multiple clients and tech stacks
+                — gaining invaluable knowledge and skills.
             </p>
             <p>
-                Also, I've been expanding my skill set by developing personal projects involving various
+                Also, I've been expanding my skill set by developing projects involving various
                 programming languages and frameworks.
                 At this point in my career, I am looking forward to pursuing a <strong className="hover-text">software engineering</strong> role.
             </p>

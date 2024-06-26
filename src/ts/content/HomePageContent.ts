@@ -18,7 +18,7 @@ export const experienceCardsContent = [
                 companyUrl: "https://www.vikingcruises.com/",
                 paragraph: `
                     Designed and implemented frontend and backend automation solutions for the Viking Cruises product ecosystem.
-                    Developed frontend and backend internal tooling applications.
+                    Developed frontend and backend internal tooling applications. Part of an Agile team.
                     Collaborated with Director of Engineering for special projects. (Remote)
                 `,
                 tags: [
@@ -62,7 +62,7 @@ export const experienceCardsContent = [
                 company: "Hallmark Labs",
                 companyUrl: "https://www.hallmarklabs.com/",
                 paragraph: `
-                    Apart of an Agile team with daily stand ups, collaborating closely with project team members.
+                    Part of an Agile team with daily stand ups, collaborating closely with project team members.
                     Performed frontend, mobile, and physical device testing, and used Jira for issue tracking. Worked on mobile automation
                     for Android builds using Selenium WebDriver and Appium. (Onsite)
                 `,
@@ -111,7 +111,7 @@ export const homeProjectContent = [
             An API that provides an endpoint for email generation.
             Uses Node JS, Express JS and Nodemailer library.
             It is also setup in AWS through API Gateway and a Lambda function.
-            Used by Profile App project.
+            Leveraged by the Profile App project.
         `
     },
     {
