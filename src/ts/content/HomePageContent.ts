@@ -49,12 +49,11 @@ export const experienceCardsContent = [
                 paragraph: `
                     Refined and optimized existing automation procedures.
                     Developed automation for primary frontend product,
-                    GraphQL backend product, and analytics synchronization validation for The Trade Desk service. (Remote)
+                    GraphQL backend product, and validating analytics synchronization to The Trade Desk. (Remote)
                 `,
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('graphql'), tagDataMap.get('postman'),
                     tagDataMap.get('nose'), tagDataMap.get('pytest'), tagDataMap.get('theTradeDesk')
-
                 ],
             },
             {
@@ -64,7 +63,7 @@ export const experienceCardsContent = [
                 companyUrl: "https://www.hallmarklabs.com/",
                 paragraph: `
                     Apart of an Agile team with daily stand ups, collaborating closely with project team members.
-                    Performed frontend, mobile, and physical device testing, and used Jira for issue tracking. Also worked on mobile automation
+                    Performed frontend, mobile, and physical device testing, and used Jira for issue tracking. Worked on mobile automation
                     for Android builds using Selenium WebDriver and Appium. (Onsite)
                 `,
                 tags: [
@@ -78,7 +77,6 @@ export const experienceCardsContent = [
 
 export const homeProjectContent = [
     {
-        year: "2023",
         title: "Profile App",
         imageUrl: "src/assets/thumbnails/user-profile.png",
         imageAlt: "user profile thumbnail image",
@@ -89,17 +87,15 @@ export const homeProjectContent = [
         ],
         links: [
             { type: "website", url: "http://dev.client.profile-app-v2.s3-website-us-west-1.amazonaws.com/" },
-            { type: "github", url: "https://github.com/fceja/profile_app" }
+            { type: "github", url: "https://github.com/fceja/profile_app_V2" }
         ],
         projType: "Frontend",
         paragraph: `
-            A web app that can be used for a user/company profile.
-            It contains a home page, gallery page, and a contact page.
-            The contact page contains a google map, and a form to submit contact info.
+            A web app that can be used for a company/user profile.
+            It contains a home page, gallery page, and a contact page to submit contact information.
         `
     },
     {
-        year: "2023",
         title: "Emailer API",
         imageUrl: "src/assets/thumbnails/email.png",
         imageAlt: "email message thumbnail image",
@@ -112,14 +108,14 @@ export const homeProjectContent = [
         ],
         projType: "Backend",
         paragraph: `
-            A Node.js API using the Express framework that generates an email using the Nodemailer library.
-            It is setup in AWS, where API Gateway provides an endpoint that triggers email generation through a Lambda function.
+            An API that provides an endpoint for email generation.
+            Uses Node JS, Express JS and Nodemailer library.
+            It is also setup in AWS through API Gateway and a Lambda function.
             Used by Profile App project.
         `
     },
     {
-        year: "2023",
-        title: "User Forum App",
+        title: "Forum Post App",
         imageUrl: "src/assets/thumbnails/message-bubbles.png",
         imageAlt: "message bubbles thumbnail image",
         tags: [
@@ -133,17 +129,15 @@ export const homeProjectContent = [
         ],
         projType: "Full-stack",
         paragraph: `
-            A forum-like app that handles account creation, login functionality,
-            and allows user to generate / modify / delete posts on a community home page.
-            There are two types of users: a standard user and moderator user.
-            Standard users can post or delete their own messages.
-            Moderator users can do the same, while also having the capablily of deleting anyones post, as well as banning users.
-            Deployed on Heroku.
-            Demo credentials -> username: mary, password: LetMeIn2023$!%
+            A forum-like app that allows users to create, modify or delete posts on a community home page.
+            It handles account creation and login functionality.
+            Moderator users have the capability of deleting other users' posts, as well as banning them.
+        `,
+        paragraphTwo: `
+            Demo credentials — username: mary / password: LetMeIn2023$!%
         `
     },
     {
-        year: "2023",
         title: "Geolocation / IP App",
         imageUrl: "src/assets/thumbnails/world-magnifying-glass.png",
         imageAlt: "world with magnifying glass thumbnail image",
@@ -160,10 +154,12 @@ export const homeProjectContent = [
         ],
         projType: "Fullstack",
         paragraph: `
-            An app uses the browser API and third-party service to get your location and IP information.
-            After logging in, clicking the button will ask for permission to retrieve your location and IP info.
-            The login was implemented to prevent overuse, since retreiving IP information from API endpoint is throttled.
-            Deployed on AWS. Demo credentials -> email: fc-geoip@email.com, password: letMeIn_geoip!
+            An app that uses the browser's API and a third-party service.
+            After logging in, clicking the button will ask for user permission to retrieve geo-coordinates and IP info.
+            The login was implemented to prevent overuse, since third-party endpoint is throttled.
+        `,
+        paragraphTwo: `
+            Demo credentials — email: fc-geoip@email.com / password: letMeIn_geoip!
         `
     }
 ]

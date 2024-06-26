@@ -38,7 +38,7 @@ export const tagDataMap: Map<string, TagLinkI> = new Map([
     ["java", { name: "Java", target: "_blank", url: "https://www.java.com/en/" }],
     ["javaFX", { name: "JavaFX", target: "_blank", url: "https://openjfx.io/" }],
     ["javascript", { name: "JavaScript", target: "_blank", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" }],
-    ["jenkins", { name: "Jenkins", target: "_blank", url: "hhttps://www.jenkins.io" }],
+    ["jenkins", { name: "Jenkins", target: "_blank", url: "https://www.jenkins.io" }],
     ["jest", { name: "Jest", target: "_blank", url: "https://jestjs.io/" }],
     ["jira", { name: "Jira", target: "_blank", url: "https://www.atlassian.com/software/jira" }],
     ["jquery", { name: "JQuery", target: "_blank", url: "https://jquery.com/" }],
