@@ -78,7 +78,7 @@ export const experienceCardsContent = [
 export const homeProjectContent = [
     {
         title: "Profile App",
-        imageUrl: "src/assets/thumbnails/user-profile.png",
+        imageUrl: "/assets/thumbnails/user-profile.png",
         imageAlt: "user profile thumbnail image",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
@@ -97,7 +97,7 @@ export const homeProjectContent = [
     },
     {
         title: "Emailer API",
-        imageUrl: "src/assets/thumbnails/email.png",
+        imageUrl: "/assets/thumbnails/email.png",
         imageAlt: "email message thumbnail image",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('node'), tagDataMap.get('express'),
@@ -116,7 +116,7 @@ export const homeProjectContent = [
     },
     {
         title: "Forum Post App",
-        imageUrl: "src/assets/thumbnails/message-bubbles.png",
+        imageUrl: "/assets/thumbnails/message-bubbles.png",
         imageAlt: "message bubbles thumbnail image",
         tags: [
             tagDataMap.get('python'), tagDataMap.get('django'), tagDataMap.get('djangoCrispyForms'),
@@ -139,7 +139,7 @@ export const homeProjectContent = [
     },
     {
         title: "Geolocation / IP App",
-        imageUrl: "src/assets/thumbnails/world-magnifying-glass.png",
+        imageUrl: "/assets/thumbnails/world-magnifying-glass.png",
         imageAlt: "world with magnifying glass thumbnail image",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
@@ -152,7 +152,7 @@ export const homeProjectContent = [
             { type: "website", url: "https://fceja-proj.com/" },
             { type: "github", url: "https://github.com/fceja/login_form_geolocation_ip" }
         ],
-        projType: "Fullstack",
+        projType: "Full-stack",
         paragraph: `
             An app that uses the browser's API and a third-party service.
             After logging in, clicking the button will ask for user permission to retrieve geo-coordinates and IP info.

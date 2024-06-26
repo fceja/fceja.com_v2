@@ -51,7 +51,7 @@ export const projectContent = [
     {
         year: "2023",
         title: "Google Maps App", // TODO - need to info icon to projects page for demo creds
-        projType: "Fullstack",
+        projType: "Full-stack",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
             tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
@@ -81,7 +81,7 @@ export const projectContent = [
     {
         year: "2023",
         title: "Geolocation-IP App",
-        projType: "Fullstack",
+        projType: "Full-stack",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
             tagDataMap.get('bootstrap'), tagDataMap.get('reactBootstrap'), tagDataMap.get('html'),
@@ -124,7 +124,7 @@ export const projectContent = [
     },
     {
         year: "2023",
-        title: "User Forum App",
+        title: "Forum Post App",
         projType: "Full-stack",
         tags: [
             tagDataMap.get('python'), tagDataMap.get('django'), tagDataMap.get('djangoCrispyForms'),

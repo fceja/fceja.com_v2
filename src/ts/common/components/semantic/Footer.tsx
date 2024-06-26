@@ -13,8 +13,8 @@ const Footer = () => {
                     <a href="https://react.dev/" target="_blank">React</a>, { }
                     <a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML</a> { }
                     and <a href="https://sass-lang.com/" target="_blank">SASS</a>. { }
-                    Deployed with <a href="https://aws.amazon.com/" target="_blank">AWS</a>. { }
-                    View code on <a href="https://github.com/fceja/fceja.com_V2" target="_blank">GitHub</a>.
+                    Deployed with <a href="https://aws.amazon.com/" target="_blank">AWS</a>, { }
+                    view code on <a href="https://github.com/fceja/fceja.com_V2" target="_blank">GitHub</a>.
                 </i>
             </p>
             <Headlines />
