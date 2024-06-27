@@ -1,5 +1,9 @@
 import "@scss/components/home/semantic/AboutSection.scss"
 
+// pre-load cursor image to reduce delay
+const preLoadCursorImage = new Image()
+preLoadCursorImage.src = "/assets/cursor/plant-icon.png"
+
 const AboutSection = () => {
     return (
         <section className="about">
