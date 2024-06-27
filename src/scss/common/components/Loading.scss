@@ -1,5 +1,13 @@
+@import "@scss/Variables.scss";
+
 /* animations */
 /* credit: Tobias Ahlin, SpinKit */
+.loading-div.loading-headlines {
+  position: fixed;
+  bottom: 20px;
+}
+
+
 .loading-div {
   height: 60px;
   width: 60px;
@@ -13,7 +21,7 @@
   float: left;
   -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
   animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-  background-color: rgba(255, 255, 255, 0.714);
+  background-color: $app-text-color;
 
 
   &-7 {

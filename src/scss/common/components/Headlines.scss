@@ -1,55 +1,53 @@
+@import "@scss/Variables.scss";
+
 .headlines-container {
+  width: 100vw;
   color: white;
   white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: fixed;
   bottom: 0;
-  background-color: transparent;
   background: linear-gradient(to bottom,
       rgba(59, 59, 59, 0.018),
       rgb(69, 69, 69));
-
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
 }
 
-.link-list {
-  list-style: none;
-  text-align: right;
-  height: 70px;
+.headline-list {
+  height: 50px;
   margin: 0;
+  padding: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  animation: scrollLeft 80s linear infinite;
+  list-style: none;
+  animation: scrollLeft 200s linear infinite;
   animation-play-state: running;
+  width: max-content;
+
+  &:hover {
+    animation-play-state: paused;
+    overflow-x: auto;
+    cursor: pointer;
+  }
 }
 
 .headline-li {
-  margin: 0 40px;
+  margin: 0 70px 0 0;
   list-style: none;
   font-size: .9em;
   letter-spacing: -.3px;
 
   :hover {
-    border-bottom: .5px solid rgb(255, 255, 255);
+    border-bottom: .5px solid $app-text-color;
   }
 }
 
 .headline-link {
   color: white;
-
-  :hover {
-
-    background-color: blue;
-  }
-
 }
 
 @keyframes scrollLeft {
   0% {
-    transform: translateX(50%);
+    transform: translateX(4%);
   }
 
   100% {

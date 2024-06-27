@@ -1,8 +1,14 @@
 import "@scss/common/components/Loading.scss";
 
-const Loading = () => {
+interface LoadingI {
+  className?: string
+}
+
+const Loading = (props: LoadingI) => {
+  const { className } = props
+
   return (
-    <div className={`loading-div`}>
+    <div className={`loading-div ${className ? `loading-${className}` : ""}`}>
       <div className="cube cube-1" ></div>
       <div className="cube cube-2"></div>
       <div className="cube cube-3"></div>
