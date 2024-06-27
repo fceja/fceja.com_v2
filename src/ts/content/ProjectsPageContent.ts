@@ -16,7 +16,7 @@ export const projectContent = [
             { type: "github", url: "https://github.com/fceja/inventory_api" },
             { type: "github", url: "https://github.com/fceja/inventory_db" }
         ],
-        tooltipMessage: "App that manages and organizes inventory items."
+        tooltipMessage: "App that manages and organizes inventory items, with three different repositories: frontend, backend and database. Latest project, in progress."
     },
     {
         year: "2024",
@@ -46,11 +46,11 @@ export const projectContent = [
             { type: "website", url: "http://fceja.com" },
             { type: "github", url: "https://github.com/fceja/fceja.com_V2" }
         ],
-        tooltipMessage: "Version 2 of my main website."
+        tooltipMessage: "Version 2 of fceja.com"
     },
     {
         year: "2023",
-        title: "Google Maps App", // TODO - need to info icon to projects page for demo creds
+        title: "Google Maps App",
         projType: "Full-stack",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
@@ -76,7 +76,7 @@ export const projectContent = [
             { type: "website", url: "https://fceja-proj.com/" },
             { type: "github", url: "https://github.com/fceja/login_form_geolocation_ip" }
         ],
-        tooltipMessage: "After logging in, clicking a button will retreive geo-coordinates and IP info."
+        tooltipMessage: "After logging in, clicking a button will retrieve geo-coordinates and IP info."
     },
     {
         year: "2023",
@@ -91,7 +91,7 @@ export const projectContent = [
             { type: "website", url: "http://dev.client.fceja.s3-website-us-west-1.amazonaws.com/" },
             { type: "github", url: "https://github.com/fceja/fceja.com" }
         ],
-        tooltipMessage: "First version of my main website."
+        tooltipMessage: "First version of fceja.com"
     },
     {
         year: "2023",
@@ -184,7 +184,7 @@ export const projectContent = [
         links: [
             { type: "github", url: "https://github.com/fceja/econ_calendar_automation" }
         ],
-        tooltipMessage: "Uses Selenium and Pytest to parse economic calendar data from investing.com. Also outputs data into a csv."
+        tooltipMessage: "Uses Selenium and pytest to parse economic calendar data from investing.com. Also outputs data into a csv."
     },
     {
         year: "2021",

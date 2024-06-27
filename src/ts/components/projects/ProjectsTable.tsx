@@ -3,7 +3,7 @@ import InfoTooltip from "@components/projects/InfoTooltip"
 import { projectContent } from "@content/ProjectsPageContent"
 import ProjectLinks from "@common/components/ProjectLinks"
 import Tags from "@common/components/Tags"
-import { useHighlightJump } from "@hooks/UseHightlightJump"
+import { useHighlightJump } from "@hooks/UseHighlightJump"
 
 const COMMON_COMPONENT_CLASSNAME = 'projects-proj'
 
@@ -49,8 +49,7 @@ const ProjectsTable = () => {
                                     className="tr-proj-title hover-text me-4"
                                     onMouseEnter={() => { handleHover(true, i) }}
                                     onMouseLeave={() => { handleHover(false, i) }}
-                                >
-                                    {proj.title}
+                                ><a href={proj.links[0].url} target="_blank" rel="noreferrer">{proj.title}</a>
                                 </span>
                                 <hr></hr>
                                 <span className="tr-proj-type">

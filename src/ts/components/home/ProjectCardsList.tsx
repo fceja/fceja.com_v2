@@ -2,7 +2,7 @@ import "@scss/components/home/ProjectCardsList.scss"
 import { homeProjectContent } from "@content/HomePageContent"
 import ProjectLinks from "@common/components/ProjectLinks"
 import Tags from "@common/components/Tags"
-import { useHighlightJump } from "@hooks/UseHightlightJump"
+import { useHighlightJump } from "@hooks/UseHighlightJump"
 
 const COMMON_COMPENENT_CLASSNAME = 'home-proj'
 

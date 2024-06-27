@@ -24,7 +24,7 @@ const InfoTooltip = (props: InfoTooltipI) => {
                 xmlns={projectsSvgData.info.xmlns}
                 viewBox={projectsSvgData.info.viewBox}
                 height={projectsSvgData.info.height}
-                className="info-svg"
+                className="info-svg d-flex"
                 onMouseEnter={() => handleHover(true)}
                 onMouseLeave={() => handleHover(false)}
             >

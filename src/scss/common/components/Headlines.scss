@@ -47,7 +47,7 @@
 
 @keyframes scrollLeft {
   0% {
-    transform: translateX(4%);
+    transform: translateX(calc(100vw + 5px));
   }
 
   100% {

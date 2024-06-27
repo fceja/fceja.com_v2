@@ -23,32 +23,40 @@
     font-weight: 200;
 }
 
+.comp-link {
+    cursor: pointer;
+
+    a {
+        color: rgb(233, 233, 233);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    svg {
+        height: .9em;
+        fill: $proj-title-color;
+        padding: 1px;
+        margin-left: 10px;
+
+    }
+
+    &:hover {
+        a {
+            color: $proj-title-color;
+        }
+
+        svg {
+            transform: scaleX(1.2) scaleY(1.2);
+        }
+    }
+}
+
 .card-comp {
     padding: 0;
     margin: 0;
-    color: rgb(198, 198, 198);
     font-size: 1em;
     font-weight: 600;
-
-    a {
-        &:hover {
-            color: $proj-title-color;
-
-            svg {
-                transform: scaleX(1.2) scaleY(1.2);
-            }
-        }
-
-        color: rgb(198, 198, 198);
-        text-decoration: none;
-        height: inherit;
-
-        svg {
-            height: .8em;
-            fill: $proj-title-color;
-            padding: 1px;
-        }
-    }
 }
 
 .card-title {
