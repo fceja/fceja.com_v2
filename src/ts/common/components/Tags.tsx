@@ -2,7 +2,7 @@ import "@scss/common/components/Tags.scss"
 import { TagLinkI } from "@content/TagContent"
 
 interface TagsProps {
-    tagData: TagLinkI[],
+    tagData: (TagLinkI | undefined)[],
     parentIndex: number,
     className: string
 }
@@ -12,7 +12,9 @@ const Tags = (props: TagsProps) => {
 
     return (
         <div className={`${className}-tags-container d-flex flex-wrap`}>
-            {tagData.map((elem, i) => {
+            {tagData && tagData.map((elem, i) => {
+                if (!elem) return;
+
                 return (
                     <a
                         key={`${elem.name}-link-${i}`}

@@ -1,6 +1,16 @@
-import { tagDataMap } from "@content/TagContent"
+import { TagLinkI, tagDataMap } from "@content/TagContent"
 
-export const experienceCardsContent = [
+export type ExperienceCardEntryT = {
+    year: string
+    position: string
+    company: string
+    companyUrl: string
+    paragraph: string
+    tags?: TagLinkI[]
+    clients?: ExperienceCardEntryT[]
+}
+
+export const experienceCardsContent: ExperienceCardEntryT[] = [
     {
         year: 'NOV 2019 - JAN 2023',
         position: "Contractor / Python Developer",
@@ -26,7 +36,7 @@ export const experienceCardsContent = [
                     tagDataMap.get('sauceLabs'), tagDataMap.get('jenkins'), tagDataMap.get('flask'), tagDataMap.get('aws'), tagDataMap.get('azure'),
                     tagDataMap.get('microsoftServer'), tagDataMap.get('aem'), tagDataMap.get('magnolia'),
                     tagDataMap.get('figma'), tagDataMap.get('postman'), tagDataMap.get('agile'), tagDataMap.get('jira')
-                ],
+                ].filter(Boolean) as TagLinkI[],
             },
             {
                 year: 'AUG 2020 - SEP 2020',
@@ -39,7 +49,7 @@ export const experienceCardsContent = [
                 tags: [
                     tagDataMap.get('typescript'), tagDataMap.get('javascript'), tagDataMap.get('selenium'),
                     tagDataMap.get('sauceLabs'),
-                ],
+                ].filter(Boolean) as TagLinkI[],
             },
             {
                 year: 'MAR 2020 - DEC 2020',
@@ -54,7 +64,7 @@ export const experienceCardsContent = [
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('graphql'), tagDataMap.get('postman'),
                     tagDataMap.get('nose'), tagDataMap.get('pytest'), tagDataMap.get('theTradeDesk')
-                ],
+                ].filter(Boolean) as TagLinkI[],
             },
             {
                 year: 'NOV 2019 - FEB 2020',
@@ -69,7 +79,7 @@ export const experienceCardsContent = [
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('appium'),
                     tagDataMap.get('nose'), tagDataMap.get('agile'), tagDataMap.get('jira')
-                ],
+                ].filter(Boolean) as TagLinkI[],
             }
         ]
     },

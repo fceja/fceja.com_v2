@@ -10,7 +10,7 @@ const ExperienceCardsList = () => {
             {experienceCardsContent.map((elem, i) => {
                 {/* generate clients if they exist */ }
                 let clients = null;
-                if (elem.clients.length > 0) {
+                if (elem.clients && elem.clients.length > 0) {
                     clients = elem.clients.map((elem2, j) => {
                         return (
                             <React.Fragment key={`client-exp-card-${i}-${j}`}>

@@ -239,7 +239,19 @@ export const projectContent = [
     },
 ]
 
-export const projectsSvgData = {
+type SvgDataEntry = {
+    xmlns: string;
+    viewBox: string;
+    height: string;
+    path: string;
+};
+
+
+type ProjectsSvgT = {
+    [key: string]: SvgDataEntry
+}
+
+export const projectsSvgData: ProjectsSvgT = {
     github: {
         xmlns: "http://www.w3.org/2000/svg",
         viewBox: "-4 29 457 457",

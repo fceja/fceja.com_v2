@@ -1,16 +1,9 @@
 import "@scss/components/home/ExperienceCard.scss"
 import Tags from "@common/components/Tags"
-import { TagLinkI } from "@content/TagContent"
+import { ExperienceCardEntryT } from "@content/HomePageContent"
 
 interface ExperienceCardI {
-    cardData: {
-        year: string,
-        position: string,
-        company: string,
-        companyUrl: string,
-        paragraph: string,
-        tags: TagLinkI[]
-    }
+    cardData: ExperienceCardEntryT
     parentIndex: string
 }
 
@@ -46,7 +39,9 @@ const ExperienceCards = (props: ExperienceCardI) => {
                 </div>
                 <span className="card-position">{cardData.position}</span>
                 <p className="card-p m-0 mt-2">{cardData.paragraph}</p>
-                <Tags className="home-exp" tagData={cardData.tags} parentIndex={Number(parentIndex)} />
+                {cardData.tags &&
+                    <Tags className="home-exp" tagData={cardData.tags} parentIndex={Number(parentIndex)} />
+                }
             </div>
         </li>
     )
