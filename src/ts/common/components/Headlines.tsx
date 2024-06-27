@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import "@scss/common/components/Headlines.scss";
 import Loading from "@common/components/Loading";
@@ -46,7 +46,6 @@ const Headlines = () => {
     });
   }, [responseData]);
 
-
   const fetchData = async () => {
     try {
       const baseUrl = import.meta.env.VITE_APP_AWS_API_URL;
@@ -68,17 +67,15 @@ const Headlines = () => {
 
   return (
     <>
-      {isLoading && <Loading />}
+      {isLoading && <Loading className="headlines" />}
       {!isLoading && responseData && headlines &&
         <div className="headlines-container">
-          <ul className="link-list">
+          <ul className="headline-list">
             {headlines.map((elem, index) => {
               return (
-                <React.Fragment key={index}>
-                  <li className="headline-li">
-                    <a className="headline-link" href={`${elem.url}`} target="_blank" rel="noreferrer">{`${elem.source}`}</a>
-                  </li>
-                </React.Fragment>
+                <li key={index} className="headline-li">
+                  <a className="headline-link" href={`${elem.url}`} target="_blank" rel="noreferrer">{`${elem.source}`}</a>
+                </li>
               )
             })}
           </ul>
