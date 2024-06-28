@@ -16,7 +16,11 @@ export const projectContent = [
             { type: "github", url: "https://github.com/fceja/inventory_api" },
             { type: "github", url: "https://github.com/fceja/inventory_db" }
         ],
-        tooltipMessage: "App that manages and organizes inventory items. Involves three repositories — a frontend, backend and a database repo. Latest project, under development."
+        tooltipMessage: `
+        An inventory app. It manages and organizes inventory items, as well as providing analytical data.
+        Involves three repositories — a frontend, backend and a database repo.
+        Latest project, currently under development.
+        `
     },
     {
         year: "2024",
@@ -31,7 +35,7 @@ export const projectContent = [
             { type: "website", url: "http://dev.client.profile-app-v2.s3-website-us-west-1.amazonaws.com/" },
             { type: "github", url: "https://github.com/fceja/profile_app_V2" }
         ],
-        tooltipMessage: "Version 2 of web app that can be used for a user/company profile."
+        tooltipMessage: "Version 2 — contains a home page, gallery page and contact page. Can be used for a user or company profile."
     },
     {
         year: "2024",
@@ -46,7 +50,7 @@ export const projectContent = [
             { type: "website", url: "http://fceja.com" },
             { type: "github", url: "https://github.com/fceja/fceja.com_V2" }
         ],
-        tooltipMessage: "Version 2 of fceja.com"
+        tooltipMessage: "Version 2 - fceja.com website."
     },
     {
         year: "2023",
@@ -61,7 +65,7 @@ export const projectContent = [
             { type: "website", url: "http://dev.client.google-maps.s3-website-us-west-1.amazonaws.com/" },
             { type: "github", url: "https://github.com/fceja/google_maps_app" }
         ],
-        tooltipMessage: "After logging in, an interactive Google Map is populated."
+        tooltipMessage: "After logging-in, an interactive Google Map is populated."
     },
     {
         year: "2023",
@@ -76,7 +80,7 @@ export const projectContent = [
             { type: "website", url: "https://fceja-proj.com/" },
             { type: "github", url: "https://github.com/fceja/login_form_geolocation_ip" }
         ],
-        tooltipMessage: "After logging in, clicking a button will retrieve geo-coordinates and IP info."
+        tooltipMessage: "After logging-in, clicking a button will retrieve geo-coordinates and IP info."
     },
     {
         year: "2023",
@@ -91,7 +95,7 @@ export const projectContent = [
             { type: "website", url: "http://dev.client.fceja.s3-website-us-west-1.amazonaws.com/" },
             { type: "github", url: "https://github.com/fceja/fceja.com" }
         ],
-        tooltipMessage: "First version of fceja.com"
+        tooltipMessage: "Version 1 - fceja.com website."
     },
     {
         year: "2023",
@@ -106,7 +110,7 @@ export const projectContent = [
             { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com" },
             { type: "github", url: "https://github.com/fceja/profile_app" }
         ],
-        tooltipMessage: "First version of web app that can be used for a user/company profile."
+        tooltipMessage: "Version 1 — contains a home page, gallery page and contact page. Can be used for a user or company profile."
     },
     {
         year: "2023",
@@ -119,7 +123,10 @@ export const projectContent = [
         links: [
             { type: "github", url: "https://github.com/fceja/emailer_api" },
         ],
-        tooltipMessage: "A Node JS / Express JS API that provides an endpoint for email generation."
+        tooltipMessage: `
+            A Node JS / Express JS API that provides an endpoint for generating and sending an email.
+            It is also setup in AWS, through API Gateway and a Lambda function.
+        `
     },
     {
         year: "2023",
@@ -146,7 +153,7 @@ export const projectContent = [
         links: [
             { type: "github", url: "https://github.com/fceja/jwt_auth_api" }
         ],
-        tooltipMessage: "An API that provides endpoints for: creating, retrieving, and logging-in users using JWT authentication. Implemented in Golang."
+        tooltipMessage: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with Golang and JWT authentication."
     },
     {
         year: "2022",
@@ -162,7 +169,7 @@ export const projectContent = [
         tooltipMessage: "Features scrollable cards."
     },
     {
-        year: "2023",
+        year: "2022",
         title: "Login Auth API (Node)",
         projType: "Backend",
         tags: [
@@ -172,7 +179,7 @@ export const projectContent = [
         links: [
             { type: "github", url: "https://github.com/fceja/login_auth_jwt_session_api" }
         ],
-        tooltipMessage: "An API that provides endpoints for: creating, retrieving, and logging-in users using JWT authentication. Implemented in TypeScript."
+        tooltipMessage: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with TypeScript and JWT authentication."
     },
     {
         year: "2022",
@@ -184,7 +191,7 @@ export const projectContent = [
         links: [
             { type: "github", url: "https://github.com/fceja/econ_calendar_automation" }
         ],
-        tooltipMessage: "Uses Selenium and pytest to parse economic calendar data from investing.com. Also outputs data into a csv."
+        tooltipMessage: "Automation — parses economic calendar data from investing.com, and outputs data to a csv file."
     },
     {
         year: "2021",
@@ -202,7 +209,7 @@ export const projectContent = [
     },
     {
         year: "2020",
-        title: "User vs A.I. Agent",
+        title: "User vs AI Agent",
         projType: "Desktop",
         tags: [
             tagDataMap.get('c++'),
@@ -210,7 +217,7 @@ export const projectContent = [
         links: [
             { type: "github", url: "https://github.com/fceja/ai_agent_4_in_a_row" }
         ],
-        tooltipMessage: "A 4-in-a-row game implementation using alpha beta search with pruning."
+        tooltipMessage: "A CLI implemented 4-in-a-row game, where players compete against an AI agent. Utilizes an alpha-beta pruning search algorithm."
     },
     {
         year: "2019",

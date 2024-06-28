@@ -101,8 +101,9 @@ export const homeProjectContent = [
         ],
         projType: "Frontend",
         paragraph: `
-            A web app that can be used for a company/user profile.
-            It contains a home page, gallery page, and a contact page to submit contact information.
+            A web app that contains a home page, gallery page, and a contact page.
+            Contact page form submits contact information to a designated email setup in an AWS Lambda.
+            Web app can be used for a company or user profile.
         `
     },
     {
@@ -118,9 +119,9 @@ export const homeProjectContent = [
         ],
         projType: "Backend",
         paragraph: `
-            An API that provides an endpoint for email generation.
-            Uses Node JS, Express JS and Nodemailer library.
-            It is also setup in AWS through API Gateway and a Lambda function.
+            An API that provides an endpoint for generating and sending an email.
+            Implemented with Node JS, Express JS and the Nodemailer library.
+            It is also setup in AWS, through API Gateway and a Lambda function.
             Leveraged by the Profile App project.
         `
     },
