@@ -27,9 +27,9 @@ export const projectContent = [
         title: "Profile App (V2)",
         projType: "Frontend",
         tags: [
-            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
-            tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
-            tagDataMap.get('aws'), tagDataMap.get('babel'), tagDataMap.get('vite'),
+            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('bootstrap'),
+            tagDataMap.get('html'), tagDataMap.get('sass'), tagDataMap.get('aws'),
+            tagDataMap.get('babel'), tagDataMap.get('vite'),
         ],
         links: [
             { type: "website", url: "http://dev.client.profile-app-v2.s3-website-us-west-1.amazonaws.com/" },
@@ -65,7 +65,26 @@ export const projectContent = [
             { type: "website", url: "http://dev.client.google-maps.s3-website-us-west-1.amazonaws.com/" },
             { type: "github", url: "https://github.com/fceja/google_maps_app" }
         ],
-        tooltipMessage: "After logging-in, an interactive Google Map is populated."
+        tooltipMessage: `
+            After logging-in, an interactive Google Map is populated.
+            Demo credentials — email: fc-gmaps@email.com / password: letMeIn_gmaps!
+        `
+    },
+    {
+        year: "2023",
+        title: "Emailer API",
+        projType: "Backend",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('node'), tagDataMap.get('express'),
+            tagDataMap.get('nodemailer'), tagDataMap.get('aws'),
+        ],
+        links: [
+            { type: "github", url: "https://github.com/fceja/emailer_api" },
+        ],
+        tooltipMessage: `
+            A Node JS / Express JS API that provides an endpoint for generating and sending an email.
+            It is also setup in AWS, through API Gateway and a Lambda function.
+        `
     },
     {
         year: "2023",
@@ -80,7 +99,10 @@ export const projectContent = [
             { type: "website", url: "https://fceja-proj.com/" },
             { type: "github", url: "https://github.com/fceja/login_form_geolocation_ip" }
         ],
-        tooltipMessage: "After logging-in, clicking a button will retrieve geo-coordinates and IP info."
+        tooltipMessage: `
+            After logging-in, clicking a button will retrieve geo-coordinates and IP info.
+            Demo credentials — email: fc-geoip@email.com / password: letMeIn_geoip!
+        `
     },
     {
         year: "2023",
@@ -111,22 +133,6 @@ export const projectContent = [
             { type: "github", url: "https://github.com/fceja/profile_app" }
         ],
         tooltipMessage: "Version 1 — contains a home page, gallery page and contact page. Can be used for a user or company profile."
-    },
-    {
-        year: "2023",
-        title: "Emailer API",
-        projType: "Backend",
-        tags: [
-            tagDataMap.get('typescript'), tagDataMap.get('node'), tagDataMap.get('express'),
-            tagDataMap.get('nodemailer'), tagDataMap.get('aws'),
-        ],
-        links: [
-            { type: "github", url: "https://github.com/fceja/emailer_api" },
-        ],
-        tooltipMessage: `
-            A Node JS / Express JS API that provides an endpoint for generating and sending an email.
-            It is also setup in AWS, through API Gateway and a Lambda function.
-        `
     },
     {
         year: "2023",
