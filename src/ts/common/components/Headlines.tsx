@@ -70,7 +70,7 @@ const Headlines = () => {
       {isLoading && <Loading className="headlines" />}
       {!isLoading && responseData && headlines &&
         <div className="headlines-container">
-          <ul className="headline-list">
+          <ul className="headline-list d-flex align-items-center">
             {headlines.map((elem, index) => {
               return (
                 <li key={index} className="headline-li">

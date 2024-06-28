@@ -4,7 +4,7 @@ import ProjectLinks from "@common/components/ProjectLinks"
 import Tags from "@common/components/Tags"
 import { useHighlightJump } from "@hooks/UseHighlightJump"
 
-const COMMON_COMPENENT_CLASSNAME = 'home-proj'
+const COMMON_COMPONENT_CLASSNAME = 'home-proj'
 
 const ProjectCardsList = () => {
     const setIsTriggerElemHovered = useHighlightJump()
@@ -36,7 +36,7 @@ const ProjectCardsList = () => {
                                         <span className="me-0">{proj.title}</span>
                                     </a>
                                 </span>
-                                <span className="home-proj-header-links">
+                                <span className="home-proj-header-links d-flex align-items-center">
                                     {proj.links.map((linkData, j) => {
                                         return (
                                             <span
@@ -44,7 +44,7 @@ const ProjectCardsList = () => {
                                                 key={`home-proj-link-${i}-${j}`}
                                                 className={`home-proj-link-${i}-${j} home-proj-link`}
                                             >
-                                                <ProjectLinks className={COMMON_COMPENENT_CLASSNAME} linkData={linkData} />
+                                                <ProjectLinks className={COMMON_COMPONENT_CLASSNAME} linkData={linkData} />
                                             </span>
                                         )
                                     })}
@@ -53,7 +53,7 @@ const ProjectCardsList = () => {
                             <span className="home-proj-type">{proj.projType}</span>
                             <p className="home-proj-p m-0 mt-2">{proj.paragraph}</p>
                             <p className="home-proj-p m-0 mt-2">{proj.paragraphTwo}</p>
-                            <Tags className={COMMON_COMPENENT_CLASSNAME} tagData={proj.tags} parentIndex={i} />
+                            <Tags className={COMMON_COMPONENT_CLASSNAME} tagData={proj.tags} parentIndex={i} />
                         </div>
                         <div
                             className="home-proj-img-container mt-2 mt-md-0"

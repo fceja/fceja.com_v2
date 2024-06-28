@@ -29,8 +29,6 @@
     a {
         color: rgb(233, 233, 233);
         text-decoration: none;
-        display: flex;
-        align-items: center;
     }
 
     svg {
@@ -38,7 +36,6 @@
         fill: $proj-title-color;
         padding: 1px;
         margin-left: 10px;
-
     }
 
     &:hover {

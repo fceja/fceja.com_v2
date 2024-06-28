@@ -52,7 +52,7 @@ const ProjectsTable = () => {
                                 ><a href={proj.links[0].url} target="_blank" rel="noreferrer">{proj.title}</a>
                                 </span>
                                 <hr></hr>
-                                <span className="tr-proj-type">
+                                <span className="tr-proj-type d-flex align-items-center">
                                     {proj.projType}
                                     <InfoTooltip message={proj.tooltipMessage} />
                                 </span>

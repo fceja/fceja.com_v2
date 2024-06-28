@@ -24,7 +24,7 @@ const ExperienceCards = (props: ExperienceCardI) => {
             <div className="card-desc w-100">
                 <div className="card-comp m-0 p-0 d-flex align-items-center">
                     <span className="comp-link">
-                        <a href={cardData.companyUrl} target="_blank">
+                        <a className="d-flex align-items-center" href={cardData.companyUrl} target="_blank">
                             {cardData.company}
                             {/* <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> */}
                             <svg

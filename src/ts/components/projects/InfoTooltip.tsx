@@ -19,7 +19,7 @@ const InfoTooltip = (props: InfoTooltipI) => {
         }
     }
     return (
-        <span className="ms-2">
+        <span className="info-icon-container ms-2">
             <svg
                 xmlns={projectsSvgData.info.xmlns}
                 viewBox={projectsSvgData.info.viewBox}

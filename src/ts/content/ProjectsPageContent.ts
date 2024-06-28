@@ -16,7 +16,7 @@ export const projectContent = [
             { type: "github", url: "https://github.com/fceja/inventory_api" },
             { type: "github", url: "https://github.com/fceja/inventory_db" }
         ],
-        tooltipMessage: "App that manages and organizes inventory items, with three different repositories: frontend, backend and database. Latest project, in progress."
+        tooltipMessage: "App that manages and organizes inventory items. Involves three repositories — a frontend, backend and a database repo. Latest project, under development."
     },
     {
         year: "2024",
