@@ -142,7 +142,7 @@ export const homeProjectContent = [
         paragraph: `
             A forum-like app that allows users to create, modify or delete posts on a community home page.
             It handles account creation and login functionality.
-            Moderator users have the capability of deleting other users' posts, as well as banning them.
+            Moderators can delete other users' posts, as well as ban them.
         `,
         paragraphTwo: `
             Demo credentials — username: mary / password: LetMeIn2023$!%

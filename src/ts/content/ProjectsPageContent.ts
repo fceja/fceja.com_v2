@@ -18,7 +18,7 @@ export const projectContent = [
         ],
         tooltipMessage: `
         An inventory app. It manages and organizes inventory items, as well as providing analytical data.
-        Involves three repositories — a frontend, backend and a database repo.
+        Consists of a frontend, backend and database repo.
         Latest project, currently under development.
         `
     },
@@ -35,7 +35,7 @@ export const projectContent = [
             { type: "website", url: "http://dev.client.profile-app-v2.s3-website-us-west-1.amazonaws.com/" },
             { type: "github", url: "https://github.com/fceja/profile_app_V2" }
         ],
-        tooltipMessage: "Version 2 — contains a home page, gallery page and contact page. Can be used for a user or company profile."
+        tooltipMessage: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes."
     },
     {
         year: "2024",
@@ -50,7 +50,7 @@ export const projectContent = [
             { type: "website", url: "http://fceja.com" },
             { type: "github", url: "https://github.com/fceja/fceja.com_V2" }
         ],
-        tooltipMessage: "Version 2 - fceja.com website."
+        tooltipMessage: "fceja.com web app."
     },
     {
         year: "2023",
@@ -117,7 +117,7 @@ export const projectContent = [
             { type: "website", url: "http://dev.client.fceja.s3-website-us-west-1.amazonaws.com/" },
             { type: "github", url: "https://github.com/fceja/fceja.com" }
         ],
-        tooltipMessage: "Version 1 - fceja.com website."
+        tooltipMessage: "fceja.com web app."
     },
     {
         year: "2023",
@@ -132,7 +132,7 @@ export const projectContent = [
             { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com" },
             { type: "github", url: "https://github.com/fceja/profile_app" }
         ],
-        tooltipMessage: "Version 1 — contains a home page, gallery page and contact page. Can be used for a user or company profile."
+        tooltipMessage: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes."
     },
     {
         year: "2023",
@@ -147,7 +147,12 @@ export const projectContent = [
             { type: "website", url: "https://django-user-post-a42f5d79d28f.herokuapp.com" },
             { type: "github", url: "https://github.com/fceja/user_post" }
         ],
-        tooltipMessage: "A forum-like app were standard and moderator users can create and edit posts."
+        tooltipMessage: `
+            A forum-like app that allows users to create, modify or delete posts on a community home page.
+            It handles account creation and login functionality.
+            Moderators can delete other users' posts, as well as ban them.
+            Demo credentials — username: mary / password: LetMeIn2023$!%
+        `
     },
     {
         year: "2023",
@@ -192,7 +197,7 @@ export const projectContent = [
         title: "Economic Calendar",
         projType: "Automation",
         tags: [
-            tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('pytest')
+            tagDataMap.get('python'), tagDataMap.get('selenium')
         ],
         links: [
             { type: "github", url: "https://github.com/fceja/econ_calendar_automation" }
