@@ -13,7 +13,7 @@ export type ExperienceCardEntryT = {
 export const experienceCardsContent: ExperienceCardEntryT[] = [
     {
         year: 'NOV 2019 - JAN 2023',
-        position: "Contractor / Python Developer",
+        position: "Contractor / Developer",
         company: "Value Stream Engineering",
         companyUrl: "https://valuestreamengineering.com/",
         paragraph: `Worked as a contractor for VSE. Undertook various projects for multiple clients.
@@ -24,7 +24,7 @@ export const experienceCardsContent: ExperienceCardEntryT[] = [
             {
                 year: 'MAY 2020 - JAN 2023',
                 position: "QA / Automation Engineer",
-                company: "Viking Cruises",
+                company: "Viking",
                 companyUrl: "https://www.vikingcruises.com/",
                 paragraph: `
                     Designed and implemented frontend and backend automation solutions for the Viking Cruises product ecosystem.
@@ -36,19 +36,6 @@ export const experienceCardsContent: ExperienceCardEntryT[] = [
                     tagDataMap.get('sauceLabs'), tagDataMap.get('jenkins'), tagDataMap.get('flask'), tagDataMap.get('aws'), tagDataMap.get('azure'),
                     tagDataMap.get('microsoftServer'), tagDataMap.get('aem'), tagDataMap.get('magnolia'),
                     tagDataMap.get('figma'), tagDataMap.get('postman'), tagDataMap.get('agile'), tagDataMap.get('jira')
-                ].filter(Boolean) as TagLinkI[],
-            },
-            {
-                year: 'AUG 2020 - SEP 2020',
-                position: "Automation Engineer",
-                company: "Allē",
-                companyUrl: "https://alle.com/",
-                paragraph: `
-                    A support role, where I joined to help team implement frontend automation using TypeScript. (Remote)
-                `,
-                tags: [
-                    tagDataMap.get('typescript'), tagDataMap.get('javascript'), tagDataMap.get('selenium'),
-                    tagDataMap.get('sauceLabs'),
                 ].filter(Boolean) as TagLinkI[],
             },
             {
@@ -64,6 +51,19 @@ export const experienceCardsContent: ExperienceCardEntryT[] = [
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('graphql'), tagDataMap.get('postman'),
                     tagDataMap.get('nose'), tagDataMap.get('pytest'), tagDataMap.get('theTradeDesk')
+                ].filter(Boolean) as TagLinkI[],
+            },
+            {
+                year: 'AUG 2020 - SEP 2020',
+                position: "Automation Engineer",
+                company: "Allē",
+                companyUrl: "https://alle.com/",
+                paragraph: `
+                    A support role, where I joined to help team implement frontend automation using TypeScript. (Remote)
+                `,
+                tags: [
+                    tagDataMap.get('typescript'), tagDataMap.get('javascript'), tagDataMap.get('selenium'),
+                    tagDataMap.get('sauceLabs'),
                 ].filter(Boolean) as TagLinkI[],
             },
             {
