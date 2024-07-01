@@ -17,8 +17,7 @@ export const experienceCardsContent: ExperienceCardEntryT[] = [
         company: "Value Stream Engineering",
         companyUrl: "https://valuestreamengineering.com/",
         paragraph: `Worked as a contractor for VSE. Undertook various projects for multiple clients.
-        Responsibilities included: QA, automation, software development, product documentation, onboarding, and mentoring.
-        Client details are listed below.`,
+        Responsibilities included: QA, automation, software development, product documentation, onboarding, and mentoring. (Remote)`,
         tags: [],
         clients: [
             {
@@ -27,7 +26,7 @@ export const experienceCardsContent: ExperienceCardEntryT[] = [
                 company: "Viking",
                 companyUrl: "https://www.vikingcruises.com/",
                 paragraph: `
-                    Designed and implemented frontend and backend automation solutions for the Viking Cruises product ecosystem.
+                    Designed and implemented frontend and backend automation solutions for the Viking product ecosystem.
                     Developed frontend and backend internal tooling applications. Part of an Agile team.
                     Collaborated with Director of Engineering for special projects. (Remote)
                 `,
