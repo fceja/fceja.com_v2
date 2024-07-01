@@ -56,8 +56,8 @@ export const experienceCardsContent: ExperienceCardEntryT[] = [
             {
                 year: 'AUG 2020 - SEP 2020',
                 position: "Automation Engineer",
-                company: "Allē",
-                companyUrl: "https://alle.com/",
+                company: "Allergan Aesthetics",
+                companyUrl: "https://www.allerganaesthetics.com/",
                 paragraph: `
                     A support role, where I joined to help team implement frontend automation using TypeScript. (Remote)
                 `,
