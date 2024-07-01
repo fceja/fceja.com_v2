@@ -102,8 +102,7 @@ export const homeProjectContent = [
         projType: "Frontend",
         paragraph: `
             A web app that contains a home page, gallery page, and a contact page.
-            Contact page form submits contact information to a designated email setup in an AWS Lambda.
-            Web app can be used for a company or user profile.
+            Contact form submits contact information to a designated email setup in an AWS Lambda.
         `
     },
     {
