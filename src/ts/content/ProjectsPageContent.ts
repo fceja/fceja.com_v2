@@ -106,6 +106,18 @@ export const projectContent = [
     },
     {
         year: "2023",
+        title: "fceja.com - Automation",
+        projType: "Automation",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('Selenium'), tagDataMap.get('jest'),
+        ],
+        links: [
+            { type: "github", url: "https://github.com/fceja/fceja.com_automation/" }
+        ],
+        tooltipMessage: "Automation tests for fceja.com. Implemented with Selenium and Jest."
+    },
+    {
+        year: "2023",
         title: "fceja.com (V1)",
         projType: "Frontend",
         tags: [
@@ -133,6 +145,30 @@ export const projectContent = [
             { type: "github", url: "https://github.com/fceja/profile_app" }
         ],
         tooltipMessage: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes."
+    },
+    {
+        year: "2023",
+        title: "AWS Lambda Emailer",
+        projType: "AWS Lambda",
+        tags: [
+            tagDataMap.get('node'), tagDataMap.get('typescript'), tagDataMap.get('aws:lambda')
+        ],
+        links: [
+            { type: "github", url: "https://github.com/fceja/aws_lambda_emailer_func" }
+        ],
+        tooltipMessage: "AWS Lambda Function, for creating and sending email."
+    },
+    {
+        year: "2023",
+        title: "Image Classification",
+        projType: "Machine Learning",
+        tags: [
+            tagDataMap.get('python'), tagDataMap.get('pytorch')
+        ],
+        links: [
+            { type: "github", url: "https://github.com/fceja/Image-Classification" }
+        ],
+        tooltipMessage: "Simple neural network to classify handwritten digits from MNIST dataset."
     },
     {
         year: "2023",
@@ -229,6 +265,18 @@ export const projectContent = [
             { type: "github", url: "https://github.com/fceja/ai_agent_4_in_a_row" }
         ],
         tooltipMessage: "A CLI implemented 4-in-a-row game, where players compete against an AI agent. Utilizes an alpha-beta pruning search algorithm."
+    },
+    {
+        year: "2020",
+        title: "Estimate PI - Monte Carlo",
+        projType: "Desktop",
+        tags: [
+            tagDataMap.get('c++'),
+        ],
+        links: [
+            { type: "github", url: "https://github.com/fceja/estimate_pi_monte_carlo/blob/main/monte_thread.cpp" }
+        ],
+        tooltipMessage: "Estimate the value of PI using the Monte Carlo method. Uses multithreading to parallelize computation."
     },
     {
         year: "2019",

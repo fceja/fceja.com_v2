@@ -61,6 +61,7 @@ export const tagDataMap: Map<string, TagLinkI> = new Map([
     ["postgres", { name: "PostgreSQL", target: "_blank", url: "https://www.postgresql.org/" }],
     ["postman", { name: "Postman", target: "_blank", url: "https://www.postman.com/" }],
     ["pytest", { name: "pytest", target: "_blank", url: "https://docs.pytest.org/en/" }],
+    ["pytorch", { name: "PyTorch", target: "_blank", url: "https://pytorch.org/" }],
     ["python", { name: "Python", target: "_blank", url: "https://www.python.org/" }],
     ["react", { name: "React JS", target: "_blank", url: "https://react.dev/" }],
     ["reactBootstrap", { name: "React Bootstrap", target: "_blank", url: "https://react-bootstrap.netlify.app/" }],
