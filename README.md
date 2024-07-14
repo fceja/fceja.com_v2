@@ -9,14 +9,20 @@ You can view an implementation here -> [fceja.com](https://fceja.com)
 ## Installation
 ![](https://img.shields.io/badge/OS-Linux%20%7C%20MacOS%20%7C%20Windows-eaeaea)
 
-1. Clone repo
-2. Install Node
-   - `https://nodejs.org/en/download`
+1. Install Node
+   - ```
+     https://nodejs.org/en/download
+     ```
+2. Clone repo
 3. Install project dependencies, at project root run:
-   - `npm install`
-4. Init React development server:
-   - `npm start`
-   - App served on `http://localhost:8080/`
+   - ```
+     npm install
+     ```
+4. Start development server, run:
+   - ```
+     npm run dev
+     ```
+   - App served on http://localhost:3001/
 
 <br/>
 
@@ -41,6 +47,13 @@ You can view an implementation here -> [fceja.com](https://fceja.com)
       width="40"
       height="40"
     /></a>
+  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+    <img
+      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+      alt="html5"
+      width="40"
+      height="40"
+    /></a>
   <a href="https://sass-lang.com" target="_blank" rel="noreferrer">
     <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
@@ -52,13 +65,6 @@ You can view an implementation here -> [fceja.com](https://fceja.com)
     <img
       src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
       alt="bootstrap"
-      width="40"
-      height="40"
-    /></a>
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-      alt="html5"
       width="40"
       height="40"
     /></a>
