@@ -17,14 +17,30 @@ export const projectContent = [
             { type: "github", url: "https://github.com/fceja/inventory_db" }
         ],
         tooltipMessage: `
-        An inventory app. It manages and organizes inventory items, as well as providing analytical data.
-        Consists of a frontend, backend and database repo.
-        Latest project, currently under development.
+            An inventory app. It manages and organizes inventory items, as well as providing analytical data.
+            Consists of a frontend, backend and database repo.
+            Latest project, currently under development.
         `
     },
     {
         year: "2024",
-        title: "Profile App (V2)",
+        title: "Video Feed WebSocket",
+        projType: "Full-stack",
+        tags: [
+            tagDataMap.get('go'), tagDataMap.get('typescript'), tagDataMap.get('react'),
+            tagDataMap.get('sass'), tagDataMap.get('HTML'), tagDataMap.get('vite')
+        ],
+        links: [
+            { type: "github", url: "https://github.com/fceja/video_feed_websocket" }
+        ],
+        tooltipMessage: `
+            A Go server captures and streams webcam video through a WebSocket endpoint,
+            while a React and TypeScript front-end displays the live feed in the browser.
+        `
+    },
+    {
+        year: "2024",
+        title: "Profile App v2",
         projType: "Frontend",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('bootstrap'),
@@ -39,7 +55,7 @@ export const projectContent = [
     },
     {
         year: "2024",
-        title: "fceja.com (V2)",
+        title: "fceja.com v2",
         projType: "Frontend",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('sass'),
@@ -106,7 +122,7 @@ export const projectContent = [
     },
     {
         year: "2023",
-        title: "fceja.com - Automation",
+        title: "fceja.com",
         projType: "Automation",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('Selenium'), tagDataMap.get('jest'),
@@ -115,36 +131,6 @@ export const projectContent = [
             { type: "github", url: "https://github.com/fceja/fceja.com_automation/" }
         ],
         tooltipMessage: "Automation tests for fceja.com. Implemented with Selenium and Jest."
-    },
-    {
-        year: "2023",
-        title: "fceja.com (V1)",
-        projType: "Frontend",
-        tags: [
-            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('sass'),
-            tagDataMap.get('html'), tagDataMap.get('aws'), tagDataMap.get('anime'),
-            tagDataMap.get('jest'), tagDataMap.get('jenkins')
-        ],
-        links: [
-            { type: "website", url: "http://dev.client.fceja.s3-website-us-west-1.amazonaws.com/" },
-            { type: "github", url: "https://github.com/fceja/fceja.com" }
-        ],
-        tooltipMessage: "fceja.com web app."
-    },
-    {
-        year: "2023",
-        title: "Profile App (V1)",
-        projType: "Frontend",
-        tags: [
-            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
-            tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
-            tagDataMap.get('aws')
-        ],
-        links: [
-            { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com" },
-            { type: "github", url: "https://github.com/fceja/profile_app" }
-        ],
-        tooltipMessage: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes."
     },
     {
         year: "2023",
@@ -184,15 +170,15 @@ export const projectContent = [
             { type: "github", url: "https://github.com/fceja/user_post" }
         ],
         tooltipMessage: `
-            A forum-like app that allows users to create, modify or delete posts on a community home page.
-            It handles account creation and login functionality.
-            Moderators can delete other users' posts, as well as ban them.
-            Demo credentials — username: mary / password: LetMeIn2023$!%
+        A forum-like app that allows users to create, modify or delete posts on a community home page.
+        It handles account creation and login functionality.
+        Moderators can delete other users' posts, as well as ban them.
+        Demo credentials — username: mary / password: LetMeIn2023$!%
         `
     },
     {
         year: "2023",
-        title: "Login Auth API (Golang)",
+        title: "Login Auth API (Go)",
         projType: "Backend",
         tags: [
             tagDataMap.get('golang'), tagDataMap.get('jwt'), tagDataMap.get('postgres'),
@@ -201,6 +187,36 @@ export const projectContent = [
             { type: "github", url: "https://github.com/fceja/jwt_auth_api" }
         ],
         tooltipMessage: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with Golang and JWT authentication."
+    },
+    {
+        year: "2023",
+        title: "fceja.com",
+        projType: "Frontend",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('sass'),
+            tagDataMap.get('html'), tagDataMap.get('aws'), tagDataMap.get('anime'),
+            tagDataMap.get('jest'), tagDataMap.get('jenkins')
+        ],
+        links: [
+            { type: "website", url: "http://dev.client.fceja.s3-website-us-west-1.amazonaws.com/" },
+            { type: "github", url: "https://github.com/fceja/fceja.com" }
+        ],
+        tooltipMessage: "fceja.com web app."
+    },
+    {
+        year: "2023",
+        title: "Profile App",
+        projType: "Frontend",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
+            tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
+            tagDataMap.get('aws')
+        ],
+        links: [
+            { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com" },
+            { type: "github", url: "https://github.com/fceja/profile_app" }
+        ],
+        tooltipMessage: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes."
     },
     {
         year: "2022",
