@@ -27,7 +27,7 @@ export const projectContent = [
         title: "Video Feed WebSocket",
         projType: "Full-stack",
         tags: [
-            tagDataMap.get('go'), tagDataMap.get('typescript'), tagDataMap.get('react'),
+            tagDataMap.get('golang'), tagDataMap.get('typescript'), tagDataMap.get('react'),
             tagDataMap.get('sass'), tagDataMap.get('HTML'), tagDataMap.get('vite')
         ],
         links: [
@@ -35,7 +35,7 @@ export const projectContent = [
         ],
         tooltipMessage: `
             A Go server captures and streams webcam video through a WebSocket endpoint,
-            while a React and TypeScript front-end displays the live feed in the browser.
+            while a React and TypeScript frontend displays the live feed in the browser.
         `
     },
     {
@@ -167,7 +167,7 @@ export const projectContent = [
         ],
         links: [
             { type: "website", url: "https://django-user-post-a42f5d79d28f.herokuapp.com" },
-            { type: "github", url: "https://github.com/fceja/user_post" }
+            { type: "github", url: "https://github.com/fceja/forum_post_app" }
         ],
         tooltipMessage: `
         A forum-like app that allows users to create, modify or delete posts on a community home page.
@@ -178,13 +178,13 @@ export const projectContent = [
     },
     {
         year: "2023",
-        title: "Login Auth API (Go)",
+        title: "Login JWT Auth API",
         projType: "Backend",
         tags: [
             tagDataMap.get('golang'), tagDataMap.get('jwt'), tagDataMap.get('postgres'),
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/jwt_auth_api" }
+            { type: "github", url: "https://github.com/fceja/login_jwt_auth_api" }
         ],
         tooltipMessage: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with Golang and JWT authentication."
     },
@@ -220,29 +220,29 @@ export const projectContent = [
     },
     {
         year: "2022",
-        title: "Card Slider App",
+        title: "Card Carousel App",
         projType: "Frontend",
         tags: [
             tagDataMap.get('javascript'), tagDataMap.get('react'), tagDataMap.get('html'),
             tagDataMap.get('css')
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/card_slider" }
+            { type: "github", url: "https://github.com/fceja/card_carousel" }
         ],
-        tooltipMessage: "Features scrollable cards."
+        tooltipMessage: "Features a scrollable carousel with cards."
     },
     {
         year: "2022",
-        title: "Login Auth API (Node)",
+        title: "Login Session Cookie Auth API",
         projType: "Backend",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('node'), tagDataMap.get('express'),
             tagDataMap.get('postgres'), tagDataMap.get('jwt')
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/login_auth_jwt_session_api" }
+            { type: "github", url: "https://github.com/fceja/login_session_cookie_auth_api" }
         ],
-        tooltipMessage: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with TypeScript and JWT authentication."
+        tooltipMessage: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with TypeScript and session cookie authentication."
     },
     {
         year: "2022",
