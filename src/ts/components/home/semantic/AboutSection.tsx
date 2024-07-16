@@ -10,7 +10,7 @@ const AboutSection = () => {
             <h2 className="">ABOUT</h2>
             <p className="mt-4">
                 Hello, my name is <strong className="hover-text">Francisco</strong>. <br />
-                I am a developer with a background in QA, Automation, and Software Development.
+                I am a developer with a background in <strong className="hover-text">QA</strong>, <strong className="hover-text">Automation</strong>, and <strong className="hover-text">Software Development</strong>.
             </p>
             <p>
                 I've had the opportunity to work for a <strong><a href="https://valuestreamengineering.com/" target="_blank" className="hover-text">start-up</a></strong>, where I've had the privilege to work with multiple clients and tech stacks

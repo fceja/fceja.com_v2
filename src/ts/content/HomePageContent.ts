@@ -18,7 +18,10 @@ export const experienceCardsContent: ExperienceCardEntryT[] = [
         companyUrl: "https://valuestreamengineering.com/",
         paragraph: `Worked as a contractor for VSE. Undertook various projects for multiple clients.
         Responsibilities included: QA, automation, software development, product documentation, onboarding, and mentoring. (Remote)`,
-        tags: [],
+        tags: [
+            tagDataMap.get('python'), tagDataMap.get('typescript'), tagDataMap.get('javascript'),
+            tagDataMap.get('selenium'), tagDataMap.get('jenkins'), tagDataMap.get('flask')
+        ].filter(Boolean) as TagLinkI[],
         clients: [
             {
                 year: 'MAY 2020 - JAN 2023',
@@ -32,7 +35,7 @@ export const experienceCardsContent: ExperienceCardEntryT[] = [
                 `,
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('javascript'), tagDataMap.get('selenium'), tagDataMap.get('testRail'),
-                    tagDataMap.get('sauceLabs'), tagDataMap.get('jenkins'), tagDataMap.get('flask'), tagDataMap.get('aws'), tagDataMap.get('azure'),
+                    tagDataMap.get('sauceLabs'), tagDataMap.get('aws'), tagDataMap.get('azure'), tagDataMap.get('jenkins'),
                     tagDataMap.get('microsoftServer'), tagDataMap.get('aem'), tagDataMap.get('magnolia'),
                     tagDataMap.get('figma'), tagDataMap.get('postman'), tagDataMap.get('agile'), tagDataMap.get('jira')
                 ].filter(Boolean) as TagLinkI[],
