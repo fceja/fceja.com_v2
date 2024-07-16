@@ -152,7 +152,7 @@ export const projectContent = [
             tagDataMap.get('python'), tagDataMap.get('pytorch')
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/Image-Classification" }
+            { type: "github", url: "https://github.com/fceja/image_classification" }
         ],
         tooltipMessage: "Simple neural network to classify handwritten digits from MNIST dataset."
     },

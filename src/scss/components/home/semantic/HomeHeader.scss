@@ -1,5 +1,9 @@
 @import "@scss/Variables.scss";
 
+#header-name {
+    color: rgb(254, 228, 154);
+}
+
 @media (max-width: $breakpoint-sm) {
     .home-header {
         h1 {
