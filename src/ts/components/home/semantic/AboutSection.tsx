@@ -17,11 +17,6 @@ const AboutSection = () => {
                 — gaining invaluable knowledge and skills.
             </p>
             <p>
-                Additionally, I've been expanding my skill set by developing projects involving various
-                programming languages and frameworks.
-                At this point in my career, I am looking forward to pursuing a <strong className="hover-text">software engineering</strong> role.
-            </p>
-            <p>
                 When I'm away from the keyboard, I'm usually reading, running, hanging out
                 with friends and family, or attending to my <span className="plant-icon">plants</span>.
             </p>
