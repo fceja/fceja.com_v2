@@ -12,7 +12,7 @@ export const projectContent = [
             tagDataMap.get('bootstrap'), tagDataMap.get('docker'), tagDataMap.get('vite'),
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/inventory_front_end" },
+            { type: "github", url: "https://github.com/fceja/inventory_frontend" },
             { type: "github", url: "https://github.com/fceja/inventory_api" },
             { type: "github", url: "https://github.com/fceja/inventory_db" }
         ],
