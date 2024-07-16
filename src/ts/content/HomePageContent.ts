@@ -99,7 +99,7 @@ export const homeProjectContent = [
         ],
         links: [
             { type: "website", url: "http://dev.client.profile-app-v2.s3-website-us-west-1.amazonaws.com/" },
-            { type: "github", url: "https://github.com/fceja/profile_app_V2" }
+            { type: "github", url: "https://github.com/fceja/profile_app_v2" }
         ],
         projType: "Frontend",
         paragraph: `

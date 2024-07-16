@@ -49,7 +49,7 @@ export const projectContent = [
         ],
         links: [
             { type: "website", url: "http://dev.client.profile-app-v2.s3-website-us-west-1.amazonaws.com/" },
-            { type: "github", url: "https://github.com/fceja/profile_app_V2" }
+            { type: "github", url: "https://github.com/fceja/profile_app_v2" }
         ],
         tooltipMessage: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes."
     },
@@ -64,7 +64,7 @@ export const projectContent = [
         ],
         links: [
             { type: "website", url: "http://fceja.com" },
-            { type: "github", url: "https://github.com/fceja/fceja.com_V2" }
+            { type: "github", url: "https://github.com/fceja/fceja.com_v2" }
         ],
         tooltipMessage: "fceja.com web app."
     },
@@ -199,7 +199,7 @@ export const projectContent = [
         ],
         links: [
             { type: "website", url: "http://dev.client.fceja.s3-website-us-west-1.amazonaws.com/" },
-            { type: "github", url: "https://github.com/fceja/fceja.com" }
+            { type: "github", url: "https://github.com/fceja/fceja.com_v1" }
         ],
         tooltipMessage: "fceja.com web app."
     },
