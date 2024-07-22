@@ -8,6 +8,15 @@ const ReactCompilerConfig = {}
 // https://vitejs.dev/config/
 export default defineConfig(() => {
   return {
+    build: {
+      rollupOptions: {
+        output: {
+          entryFileNames: 'assets/[name].js',
+          chunkFileNames: 'assets/[name].js',
+          assetFileNames: 'assets/[name].[ext]',
+        },
+      },
+    },
     plugins: [
       react({
         babel: {
@@ -27,7 +36,8 @@ export default defineConfig(() => {
         "@pages": path.resolve(__dirname, "./src/ts/pages"),
         "@scss": path.resolve(__dirname, "./src/scss"),
       }
-    }, server: {
+    },
+    server: {
       port: 3001,
       watch: {
         usePolling: true
