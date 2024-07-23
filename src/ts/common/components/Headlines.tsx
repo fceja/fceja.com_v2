@@ -22,15 +22,26 @@ const Headlines = () => {
   const [responseData, setResponseData] = useState<ResponseData | null>(null);
 
   useEffect(() => {
-    // if local data exists, retrieve - otherwise fetch
-    const storedData = sessionStorage.getItem("responseData");
-    if (storedData) {
-      setResponseData(JSON.parse(storedData));
-      setIsLoading(false);
+    const fetchData = async () => {
+      try {
+        const baseUrl = import.meta.env.VITE_APP_AWS_API_URL;
+        const apiUrl = `${baseUrl}/news/top`;
 
-    } else {
-      fetchData()
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+
+        setResponseData(data);
+
+      } catch (error) {
+        console.error(error);
+
+      } finally {
+        setIsLoading(false);
+      }
     }
+
+    fetchData()
+
   }, [])
 
   useEffect(() => {
@@ -46,24 +57,6 @@ const Headlines = () => {
     });
   }, [responseData]);
 
-  const fetchData = async () => {
-    try {
-      const baseUrl = import.meta.env.VITE_APP_AWS_API_URL;
-      const apiUrl = `${baseUrl}/news/top`;
-
-      const response = await fetch(apiUrl);
-      const data = await response.json();
-
-      setResponseData(data);
-      sessionStorage.setItem("responseData", JSON.stringify(data));
-
-    } catch (error) {
-      console.error(error);
-
-    } finally {
-      setIsLoading(false);
-    }
-  }
 
   return (
     <>
