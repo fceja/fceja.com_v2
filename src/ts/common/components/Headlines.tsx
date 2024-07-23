@@ -46,6 +46,27 @@ const Headlines = () => {
     });
   }, [responseData]);
 
+  const handleMimicHover = () => {
+
+    console.log('triggered0')
+    if (isLoading || !responseData || !headlines) return;
+    console.log('triggered1')
+    const elem = document.querySelector(".headlines-container")
+    console.log('triggered2')
+
+    if (elem) {
+      const event = new MouseEvent('mouseenter', {
+        bubbles: true,
+        cancelable: true,
+        view: window
+      });
+
+      elem.dispatchEvent(event);
+      console.log('triggered3')
+    }
+
+  }
+
   const fetchData = async () => {
     try {
       const baseUrl = import.meta.env.VITE_APP_AWS_API_URL;
@@ -62,6 +83,7 @@ const Headlines = () => {
 
     } finally {
       setIsLoading(false);
+      handleMimicHover()
     }
   }
 
