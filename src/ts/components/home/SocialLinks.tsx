@@ -14,6 +14,7 @@ const SocialLinks = () => {
                             href={elem.href}
                             target={elem.target}
                             className={`social-link`}
+                            aria-label={elem.ariaLabel}
                         >
                             <svg
                                 xmlns={elem.svgData.xmlns}

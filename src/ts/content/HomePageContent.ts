@@ -91,15 +91,23 @@ export const homeProjectContent = [
     {
         title: "Profile App",
         imageUrl: "/assets/thumbnails/user-profile.png",
-        imageAlt: "user profile thumbnail image",
+        imageAlt: "Profile app project thumbnail",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
             tagDataMap.get('googlemaps'), tagDataMap.get('bootstrap'), tagDataMap.get('html'),
             tagDataMap.get('sass'), tagDataMap.get('aws:s3')
         ],
         links: [
-            { type: "website", url: "http://dev.client.profile-app-v2.s3-website-us-west-1.amazonaws.com/" },
-            { type: "github", url: "https://github.com/fceja/profile_app_v2" }
+            {
+                type: "website",
+                url: "http://dev.client.profile-app-v2.s3-website-us-west-1.amazonaws.com/",
+                ariaLabel: "Profile project web link"
+            },
+            {
+                type: "github",
+                url: "https://github.com/fceja/profile_app_v2",
+                ariaLabel: "Profile project GitHub link"
+            }
         ],
         projType: "Frontend",
         paragraph: `
@@ -110,13 +118,17 @@ export const homeProjectContent = [
     {
         title: "Emailer API",
         imageUrl: "/assets/thumbnails/email.png",
-        imageAlt: "email message thumbnail image",
+        imageAlt: "Email API project thumbnail",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('node'), tagDataMap.get('express'),
             tagDataMap.get('nodemailer'), tagDataMap.get('aws:apiGateway'), tagDataMap.get('aws:lambda')
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/emailer_api" },
+            {
+                type: "github",
+                url: "https://github.com/fceja/emailer_api",
+                ariaLabel: "Emailer API project GitHub link"
+            },
         ],
         projType: "Backend",
         paragraph: `
@@ -129,15 +141,23 @@ export const homeProjectContent = [
     {
         title: "Forum Post App",
         imageUrl: "/assets/thumbnails/message-bubbles.png",
-        imageAlt: "message bubbles thumbnail image",
+        imageAlt: "Forum Post app project thumbnail",
         tags: [
             tagDataMap.get('python'), tagDataMap.get('django'), tagDataMap.get('djangoCrispyForms'),
             tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('css'),
             tagDataMap.get('postgres'), tagDataMap.get('heroku')
         ],
         links: [
-            { type: "website", url: "https://django-user-post-a42f5d79d28f.herokuapp.com/" },
-            { type: "github", url: "https://github.com/fceja/user_post" }
+            {
+                type: "website",
+                url: "https://django-user-post-a42f5d79d28f.herokuapp.com/",
+                ariaLabel: "Forum Post app project web link"
+            },
+            {
+                type: "github",
+                url: "https://github.com/fceja/user_post",
+                ariaLabel: "Forum Post app project GitHub link"
+            }
         ],
         projType: "Full-stack",
         paragraph: `
@@ -152,7 +172,7 @@ export const homeProjectContent = [
     {
         title: "Geolocation / IP App",
         imageUrl: "/assets/thumbnails/world-magnifying-glass.png",
-        imageAlt: "world with magnifying glass thumbnail image",
+        imageAlt: "Geolocation IP app project thumbnail",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
             tagDataMap.get('bootstrap'), tagDataMap.get('reactBootstrap'), tagDataMap.get('html'),
@@ -161,8 +181,16 @@ export const homeProjectContent = [
             tagDataMap.get('aws:route53'), tagDataMap.get('webpack')
         ],
         links: [
-            { type: "website", url: "https://fceja-proj.com/" },
-            { type: "github", url: "https://github.com/fceja/login_form_geolocation_ip" }
+            {
+                type: "website",
+                url: "https://fceja-proj.com/",
+                ariaLabel: "Geolocation IP app project web link"
+            },
+            {
+                type: "github",
+                url: "https://github.com/fceja/login_form_geolocation_ip",
+                ariaLabel: "Geolocation IP app project GitHub link"
+            }
         ],
         projType: "Full-stack",
         paragraph: `
@@ -179,8 +207,9 @@ export const homeProjectContent = [
 export const socialLinksContent = [
     {
         name: "linked-in",
-        href: "https://www.linkedin.com/in/francisco-ceja-0837b158/",
+        href: "https://www.linkedin.com/in/f-ceja/",
         target: "_blank",
+        ariaLabel: "LinkedIn profile link",
         svgData: {
             xmlns: `xmlns="http://www.w3.org/2000/svg"`,
             viewBox: "1 30 450 450",
@@ -192,6 +221,7 @@ export const socialLinksContent = [
         name: "github",
         href: "https://github.com/fceja",
         target: "_blank",
+        ariaLabel: "GitHub profile link",
         svgData: {
             xmlns: `xmlns="http://www.w3.org/2000/svg"`,
             viewBox: "1 30 450 450",

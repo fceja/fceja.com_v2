@@ -6,19 +6,21 @@ export type ProjectLinksProps = {
     linkData: {
         type: string
         url: string
+        ariaLabel: string
     }
 };
 
-const ProjectLinks = (props: ProjectLinksProps) => {
+const ProjectLinks: React.FC<ProjectLinksProps> = (props) => {
     const { className, linkData } = props
     const svgData = projectsSvgData[linkData.type]
 
     return (
         <span className="icon-url-container d-flex">
             <a
+                className={`${className}-${linkData.type}-link`}
                 href={linkData.url}
                 target="_blank"
-                className={`${className}-${linkData.type}-link`}
+                aria-label={linkData.ariaLabel}
             >
                 <svg
                     xmlns={svgData.xmlns}

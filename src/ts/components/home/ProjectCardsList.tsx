@@ -30,6 +30,7 @@ const ProjectCardsList = () => {
                                         href={proj.links[0].url}
                                         target="_blank"
                                         className="home-proj-title-link hover-text me-3"
+                                        aria-label={`${proj.links[0].ariaLabel}`}
                                         onMouseEnter={() => handleHover(true, i)}
                                         onMouseLeave={() => handleHover(false, i)}
                                     >
