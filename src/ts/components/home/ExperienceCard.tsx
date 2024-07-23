@@ -7,7 +7,7 @@ interface ExperienceCardI {
     parentIndex: string
 }
 
-const ExperienceCards = (props: ExperienceCardI) => {
+const ExperienceCards: React.FC<ExperienceCardI> = (props) => {
     const { cardData, parentIndex } = props
 
     return (

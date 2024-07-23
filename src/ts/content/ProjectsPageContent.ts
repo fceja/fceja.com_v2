@@ -12,9 +12,21 @@ export const projectContent = [
             tagDataMap.get('bootstrap'), tagDataMap.get('docker'), tagDataMap.get('vite'),
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/inventory_frontend" },
-            { type: "github", url: "https://github.com/fceja/inventory_api" },
-            { type: "github", url: "https://github.com/fceja/inventory_db" }
+            {
+                type: "github",
+                url: "https://github.com/fceja/inventory_frontend",
+                ariaLabel: "Inventory frontend app project GitHub link"
+            },
+            {
+                type: "github",
+                url: "https://github.com/fceja/inventory_api",
+                ariaLabel: "Inventory api app project GitHub link"
+            },
+            {
+                type: "github",
+                url: "https://github.com/fceja/inventory_db",
+                ariaLabel: "Inventory db project GitHub link"
+            }
         ],
         tooltipMessage: `
             An inventory app. It manages and organizes inventory items, as well as providing analytical data.
@@ -31,7 +43,11 @@ export const projectContent = [
             tagDataMap.get('sass'), tagDataMap.get('HTML'), tagDataMap.get('vite')
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/video_feed_websocket" }
+            {
+                type: "github",
+                url: "https://github.com/fceja/video_feed_websocket",
+                ariaLabel: "Video Feed WebSocket project GitHub link"
+            }
         ],
         tooltipMessage: `
             A Go server captures and streams webcam video through a WebSocket endpoint,
@@ -48,8 +64,16 @@ export const projectContent = [
             tagDataMap.get('babel'), tagDataMap.get('vite'),
         ],
         links: [
-            { type: "website", url: "http://dev.client.profile-app-v2.s3-website-us-west-1.amazonaws.com/" },
-            { type: "github", url: "https://github.com/fceja/profile_app_v2" }
+            {
+                type: "website",
+                url: "http://dev.client.profile-app-v2.s3-website-us-west-1.amazonaws.com/",
+                ariaLabel: "Profile app v2 project web link"
+            },
+            {
+                type: "github",
+                url: "https://github.com/fceja/profile_app_v2",
+                ariaLabel: "Profile app v2 project GitHub link"
+            }
         ],
         tooltipMessage: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes."
     },
@@ -63,8 +87,16 @@ export const projectContent = [
             tagDataMap.get('vite'),
         ],
         links: [
-            { type: "website", url: "http://fceja.com" },
-            { type: "github", url: "https://github.com/fceja/fceja.com_v2" }
+            {
+                type: "website",
+                url: "http://fceja.com",
+                ariaLabel: "fceja.com v2 project web link"
+            },
+            {
+                type: "github",
+                url: "https://github.com/fceja/fceja.com_v2",
+                ariaLabel: "fceja.com v2 project GitHub link"
+            }
         ],
         tooltipMessage: "fceja.com web app."
     },
@@ -78,8 +110,16 @@ export const projectContent = [
             tagDataMap.get('postgres'), tagDataMap.get('aws'), tagDataMap.get('webpack')
         ],
         links: [
-            { type: "website", url: "http://dev.client.google-maps.s3-website-us-west-1.amazonaws.com/" },
-            { type: "github", url: "https://github.com/fceja/google_maps_app" }
+            {
+                type: "website",
+                url: "http://dev.client.google-maps.s3-website-us-west-1.amazonaws.com/",
+                ariaLabel: "Google Maps app project web link"
+            },
+            {
+                type: "github",
+                url: "https://github.com/fceja/google_maps_app",
+                ariaLabel: "Google Maps app project GitHub link"
+            }
         ],
         tooltipMessage: `
             After logging-in, an interactive Google Map is populated.
@@ -95,7 +135,11 @@ export const projectContent = [
             tagDataMap.get('nodemailer'), tagDataMap.get('aws'),
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/emailer_api" },
+            {
+                type: "github",
+                url: "https://github.com/fceja/emailer_api",
+                ariaLabel: "Emailer API project GitHub link"
+            },
         ],
         tooltipMessage: `
             A Node JS / Express JS API that provides an endpoint for generating and sending an email.
@@ -112,8 +156,16 @@ export const projectContent = [
             tagDataMap.get('sass'), tagDataMap.get('postgres'), tagDataMap.get('aws'), tagDataMap.get('webpack')
         ],
         links: [
-            { type: "website", url: "https://fceja-proj.com/" },
-            { type: "github", url: "https://github.com/fceja/login_form_geolocation_ip" }
+            {
+                type: "website",
+                url: "https://fceja-proj.com/",
+                ariaLabel: "Geolocation IP app project web link"
+            },
+            {
+                type: "github",
+                url: "https://github.com/fceja/login_form_geolocation_ip",
+                ariaLabel: "Geolocation IP app project GitHub link"
+            }
         ],
         tooltipMessage: `
             After logging-in, clicking a button will retrieve geo-coordinates and IP info.
@@ -128,7 +180,11 @@ export const projectContent = [
             tagDataMap.get('typescript'), tagDataMap.get('Selenium'), tagDataMap.get('jest'),
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/fceja.com_automation/" }
+            {
+                type: "github",
+                url: "https://github.com/fceja/fceja.com_automation/",
+                ariaLabel: "fceja.com Automation app project GitHub link"
+            }
         ],
         tooltipMessage: "Automation tests for fceja.com. Implemented with Selenium and Jest."
     },
@@ -140,7 +196,11 @@ export const projectContent = [
             tagDataMap.get('node'), tagDataMap.get('typescript'), tagDataMap.get('aws:lambda')
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/aws_lambda_emailer_func" }
+            {
+                type: "github",
+                url: "https://github.com/fceja/aws_lambda_emailer_func",
+                ariaLabel: "AWS Lambda Emailer Func GitHub link"
+            }
         ],
         tooltipMessage: "AWS Lambda Function, for creating and sending email."
     },
@@ -152,7 +212,11 @@ export const projectContent = [
             tagDataMap.get('python'), tagDataMap.get('pytorch')
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/image_classification" }
+            {
+                type: "github",
+                url: "https://github.com/fceja/image_classification",
+                ariaLabel: "Machine Learning project GitHub link"
+            }
         ],
         tooltipMessage: "Simple neural network to classify handwritten digits from MNIST dataset."
     },
@@ -166,8 +230,16 @@ export const projectContent = [
             tagDataMap.get('postgres'), tagDataMap.get('heroku'), tagDataMap.get('css')
         ],
         links: [
-            { type: "website", url: "https://django-user-post-a42f5d79d28f.herokuapp.com" },
-            { type: "github", url: "https://github.com/fceja/forum_post_app" }
+            {
+                type: "website",
+                url: "https://django-user-post-a42f5d79d28f.herokuapp.com",
+                ariaLabel: "Forum Post app project web link"
+            },
+            {
+                type: "github",
+                url: "https://github.com/fceja/forum_post_app",
+                ariaLabel: "Forum Post app project GitHub link"
+            }
         ],
         tooltipMessage: `
         A forum-like app that allows users to create, modify or delete posts on a community home page.
@@ -184,7 +256,11 @@ export const projectContent = [
             tagDataMap.get('golang'), tagDataMap.get('jwt'), tagDataMap.get('postgres'),
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/login_jwt_auth_api" }
+            {
+                type: "github",
+                url: "https://github.com/fceja/login_jwt_auth_api",
+                ariaLabel: "Login JWT Auth API app project GitHub link"
+            }
         ],
         tooltipMessage: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with Golang and JWT authentication."
     },
@@ -198,8 +274,16 @@ export const projectContent = [
             tagDataMap.get('jest'), tagDataMap.get('jenkins')
         ],
         links: [
-            { type: "website", url: "http://dev.client.fceja.s3-website-us-west-1.amazonaws.com/" },
-            { type: "github", url: "https://github.com/fceja/fceja.com_v1" }
+            {
+                type: "website",
+                url: "http://dev.client.fceja.s3-website-us-west-1.amazonaws.com/",
+                ariaLabel: "fceja.com app project web link"
+            },
+            {
+                type: "github",
+                url: "https://github.com/fceja/fceja.com_v1",
+                ariaLabel: "fceja.com app project GitHub link"
+            }
         ],
         tooltipMessage: "fceja.com web app."
     },
@@ -213,8 +297,16 @@ export const projectContent = [
             tagDataMap.get('aws')
         ],
         links: [
-            { type: "website", url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com" },
-            { type: "github", url: "https://github.com/fceja/profile_app" }
+            {
+                type: "website",
+                url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com",
+                ariaLabel: "Profile app project web link"
+            },
+            {
+                type: "github",
+                url: "https://github.com/fceja/profile_app",
+                ariaLabel: "Profile app project GitHub link"
+            }
         ],
         tooltipMessage: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes."
     },
@@ -227,7 +319,11 @@ export const projectContent = [
             tagDataMap.get('css')
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/card_carousel" }
+            {
+                type: "github",
+                url: "https://github.com/fceja/card_carousel",
+                ariaLabel: "Card Carousel app project GitHub link"
+            }
         ],
         tooltipMessage: "Features a scrollable carousel with cards."
     },
@@ -240,7 +336,11 @@ export const projectContent = [
             tagDataMap.get('postgres'), tagDataMap.get('jwt')
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/login_session_cookie_auth_api" }
+            {
+                type: "github",
+                url: "https://github.com/fceja/login_session_cookie_auth_api",
+                ariaLabel: "Login Session Cookie Auth API app project link"
+            }
         ],
         tooltipMessage: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with TypeScript and session cookie authentication."
     },
@@ -252,7 +352,11 @@ export const projectContent = [
             tagDataMap.get('python'), tagDataMap.get('selenium')
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/econ_calendar_automation" }
+            {
+                type: "github",
+                url: "https://github.com/fceja/econ_calendar_automation",
+                ariaLabel: "Economic Calender Automation project GitHub link"
+            }
         ],
         tooltipMessage: "Automation — parses economic calendar data from investing.com, and outputs data to a csv file."
     },
@@ -265,8 +369,16 @@ export const projectContent = [
             tagDataMap.get('aws')
         ],
         links: [
-            { type: "website", url: "http://dev.frontend.bingo.s3-website-us-west-1.amazonaws.com" },
-            { type: "github", url: "https://github.com/fceja/bingo_game" }
+            {
+                type: "website",
+                url: "http://dev.frontend.bingo.s3-website-us-west-1.amazonaws.com",
+                ariaLabel: "Bingo Card Game app project web link"
+            },
+            {
+                type: "github",
+                url: "https://github.com/fceja/bingo_game",
+                ariaLabel: "Bingo Card Game app project GitHub link"
+            }
         ],
         tooltipMessage: "Imitation of card game, where the game is won when a pre-determined pattern is selected."
     },
@@ -278,7 +390,11 @@ export const projectContent = [
             tagDataMap.get('c++'),
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/ai_agent_4_in_a_row" }
+            {
+                type: "github",
+                url: "https://github.com/fceja/ai_agent_4_in_a_row",
+                ariaLabel: "User vs AI Agent project GitHub link"
+            }
         ],
         tooltipMessage: "A CLI implemented 4-in-a-row game, where players compete against an AI agent. Utilizes an alpha-beta pruning search algorithm."
     },
@@ -290,7 +406,11 @@ export const projectContent = [
             tagDataMap.get('c++'),
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/estimate_pi_monte_carlo/blob/main/monte_thread.cpp" }
+            {
+                type: "github",
+                url: "https://github.com/fceja/estimate_pi_monte_carlo/blob/main/monte_thread.cpp",
+                ariaLabel: "Estimate PI Monte Carlo project GitHub link"
+            }
         ],
         tooltipMessage: "Estimate the value of PI using the Monte Carlo method. Uses multithreading to parallelize computation."
     },
@@ -302,7 +422,11 @@ export const projectContent = [
             tagDataMap.get('java'), tagDataMap.get('javaFX'), tagDataMap.get('maven'),
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/dice_game" }
+            {
+                type: "github",
+                url: "https://github.com/fceja/dice_game",
+                ariaLabel: "Dice Game app project GitHub link"
+            }
         ],
         tooltipMessage: "A poker style game with dice."
     },
@@ -315,7 +439,11 @@ export const projectContent = [
             tagDataMap.get('css')
         ],
         links: [
-            { type: "github", url: "https://github.com/fceja/chipotle_mock" }
+            {
+                type: "github",
+                url: "https://github.com/fceja/chipotle_mock",
+                ariaLabel: "Chipotle Mock app project GitHub link"
+            }
         ],
         tooltipMessage: "Mock webpage for Chipotle."
     },

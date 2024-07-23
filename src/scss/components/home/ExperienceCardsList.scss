@@ -5,11 +5,12 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    color: rgb(255, 255, 255);
 }
 
 .clients {
     font-size: .875em;
-    color: rgb(178, 178, 178);
+    color: rgb(255, 255, 255);
     font-weight: none;
 
     &+li {

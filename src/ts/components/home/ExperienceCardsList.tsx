@@ -14,7 +14,7 @@ const ExperienceCardsList = () => {
                     clients = elem.clients.map((elem2, j) => {
                         return (
                             <React.Fragment key={`client-exp-card-${i}-${j}`}>
-                                < ExperienceCard cardData={elem2} parentIndex={`${i}-${j}`} />)
+                                < ExperienceCard cardData={elem2} parentIndex={`${i}-${j}`} />
                             </React.Fragment>
                         )
                     })

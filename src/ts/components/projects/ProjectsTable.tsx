@@ -49,7 +49,15 @@ const ProjectsTable = () => {
                                     className="tr-proj-title hover-text me-4"
                                     onMouseEnter={() => { handleHover(true, i) }}
                                     onMouseLeave={() => { handleHover(false, i) }}
-                                ><a href={proj.links[0].url} target="_blank" rel="noreferrer">{proj.title}</a>
+                                >
+                                    <a
+                                        href={proj.links[0].url}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        aria-label={proj.links[0].ariaLabel}
+                                    >
+                                        {proj.title}
+                                    </a>
                                 </span>
                                 <hr></hr>
                                 <span className="tr-proj-type d-flex align-items-center">
