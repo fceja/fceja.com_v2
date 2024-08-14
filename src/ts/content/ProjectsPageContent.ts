@@ -36,6 +36,24 @@ export const projectContent = [
     },
     {
         year: "2024",
+        title: "Skills API",
+        projType: "Backend",
+        tags: [
+            tagDataMap.get('python'), tagDataMap.get('fastapi')
+        ],
+        links: [
+            {
+                type: "github",
+                url: "https://github.com/fceja/skills_api",
+                ariaLabel: "Skill API project GitHub link"
+            },
+        ],
+        tooltipMessage: `
+            A FastAPI Python project. Provides endpoints to add records and relations to database. Returns a user with linked technology skills.
+        `
+    },
+    {
+        year: "2024",
         title: "Video Feed WebSocket",
         projType: "Full-stack",
         tags: [

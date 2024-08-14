@@ -26,6 +26,7 @@ export const tagDataMap: Map<string, TagLinkI> = new Map([
     ["djangoCrispyForms", { name: "DJango Crispy Forms", target: "_blank", url: "https://django-crispy-forms.readthedocs.io/en/latest/" }],
     ["docker", { name: "Docker", target: "_blank", url: "https://www.docker.com/" }],
     ["express", { name: "Express JS", target: "_blank", url: "https://expressjs.com/" }],
+    ["fastapi", { name: "FastAPI", target: "_blank", url: "https://fastapi.tiangolo.com/" }],
     ["figma", { name: "Figma", target: "_blank", url: "https://www.figma.com/" }],
     ["flask", { name: "Flask", target: "_blank", url: "https://flask.palletsprojects.com/en/latest/#" }],
     ["git", { name: "Git", target: "_blank", url: "https://git-scm.com/" }],
