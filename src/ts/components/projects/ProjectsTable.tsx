@@ -1,3 +1,4 @@
+import React from "react"
 import "@scss/components/projects/ProjectsTable.scss"
 import { projectContent } from "@content/ProjectsPageContent"
 import ProjectLinks from "@common/components/ProjectLinks"
@@ -11,9 +12,9 @@ const ProjectsList = () => {
             <span>PROJECTS</span>
             {projectContent.map((proj, i) => {
                 return (
-                    <>
+                    <React.Fragment key={i}>
                         <hr />
-                        <div key={i} className="proj-card">
+                        <div className={`proj-card-${i} proj-card`}>
                             <div className="proj-info">
                                 {proj.videoPath &&
                                     <div className="video-container"
@@ -86,7 +87,7 @@ const ProjectsList = () => {
                                 </div>
                             </div>
                         </div>
-                    </>
+                    </React.Fragment>
                 )
             })}
         </div>

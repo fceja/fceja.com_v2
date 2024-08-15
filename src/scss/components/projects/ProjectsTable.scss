@@ -9,83 +9,21 @@ hr {
     margin: 25px 0;
 }
 
-a.proj-title {
-    text-decoration: none;
-    color: rgb(238, 238, 238);
-    letter-spacing: 2px;
-    font-weight: 700;
-    font-size: 1.2em;
-}
+div.video-container {
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    background-color: black;
 
-
-@media(max-width: $breakpoint-lg) {
-    div.proj-card {
-        margin: 10px 0;
-        margin: 10px auto;
-        max-width: 600px;
-    }
-}
-
-@media (min-width: $breakpoint-lg) {
-    div.proj-info {
-        display: flex;
-    }
-}
-
-div.proj-type {
-    letter-spacing: .8px;
-    font-weight: 100;
-    font-size: .8em;
-}
-
-@media (min-width: $breakpoint-lg) {
-    .proj-img {
-        max-width: 500px;
-        width: 350px;
-        max-height: 250px;
-        height: auto;
-        object-fit: contain;
-    }
-}
-
-@media (max-width: $breakpoint-lg) {
-    .proj-img {
+    video {
+        height: 100%;
         width: 100%;
-        max-height: 250px;
         object-fit: contain;
-        background-color: black;
     }
-}
 
-@media(min-width: $breakpoint-lg) {
-    div.video-container {
-        max-width: 500px;
-        max-height: 300px;
-        background-color: black;
-        object-fit: contain;
-
-        video {
-            height: 100%;
-            width: 100%;
-        }
+    &:hover video {
+        pointer-events: auto;
     }
-}
-
-@media(max-width: $breakpoint-lg) {
-    div.video-container {
-        margin: 0 auto;
-        max-width: 500px;
-        background-color: black;
-
-        video {
-            height: 300px;
-            width: 100%;
-        }
-    }
-}
-
-div.video-container:hover video {
-    pointer-events: auto;
 }
 
 video:fullscreen,
@@ -94,18 +32,42 @@ video:-ms-fullscreen {
     pointer-events: auto;
 }
 
+@media(max-width: $breakpoint-lg) {
+    div.proj-card {
+        margin: 10px 0;
+        margin: 10px auto;
+        max-width: 600px;
+    }
+
+    div.proj-content {
+        margin: 10px 0 0 0;
+    }
+}
+
 @media (min-width: $breakpoint-lg) {
     div.proj-content {
         margin: 0 auto 0 auto;
         align-content: center;
         max-width: 400px;
     }
+
+    div.proj-info {
+        display: flex;
+    }
 }
 
-@media (max-width: $breakpoint-lg) {
-    div.proj-content {
-        margin: 10px 0 0 0;
-    }
+a.proj-title {
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+div.proj-type {
+    letter-spacing: .8px;
+    font-weight: 100;
+    font-size: .8em;
 }
 
 span.proj-link {
