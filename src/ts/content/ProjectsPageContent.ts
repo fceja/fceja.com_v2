@@ -3,7 +3,7 @@ import { tagDataMap } from "@content/TagContent"
 export const projectContent = [
     {
         year: "2024",
-        title: "Inventory App - *Current*",
+        title: "Inventory App · *Current*",
         projType: "Full-stack",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),

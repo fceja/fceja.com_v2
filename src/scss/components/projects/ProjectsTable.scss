@@ -3,16 +3,17 @@
 div.projects-list {
     color: rgb(238, 238, 238);
     text-align: center;
+}
 
-    div.proj-title {
-        letter-spacing: 2px;
-        font-weight: 500;
-    }
+hr {
+    margin: 5px;
+}
 
-    hr {
-        margin: 5px;
-    }
-
+a.proj-title {
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    letter-spacing: 2px;
+    font-weight: 700;
 }
 
 div.proj-card {
@@ -23,6 +24,12 @@ div.proj-card {
     div.proj-info {
         display: flex;
     }
+}
+
+div.proj-type {
+    letter-spacing: .8px;
+    font-weight: 100;
+    font-size: .8em;
 }
 
 @media (min-width: $breakpoint-lg) {
@@ -42,6 +49,18 @@ div.proj-card {
         object-fit: contain;
         background-color: black;
     }
+}
+
+div.video-container {
+    video {
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+    }
+}
+
+div.video-container:hover video {
+    pointer-events: auto;
 }
 
 @media (min-width: $breakpoint-lg) {
