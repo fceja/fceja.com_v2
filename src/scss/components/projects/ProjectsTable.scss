@@ -32,6 +32,30 @@ video:-ms-fullscreen {
     pointer-events: auto;
 }
 
+.mobile-play-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: black;
+    cursor: pointer;
+
+    .play-icon-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        color: white;
+        z-index: 2;
+    }
+
+    video {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
 @media(max-width: $breakpoint-lg) {
     div.proj-card {
         margin: 10px 0;
