@@ -1,0 +1,37 @@
+div.video-container {
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    background-color: black;
+    border: solid .5px rgba(190, 190, 190, 0.578);
+
+    video {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    &:hover video {
+        pointer-events: auto;
+    }
+}
+
+video:fullscreen,
+video:-webkit-full-screen,
+video:-ms-fullscreen {
+    pointer-events: auto;
+}
+
+.mobile-play-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: black;
+    cursor: pointer;
+
+    video {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}

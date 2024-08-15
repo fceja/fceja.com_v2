@@ -12,6 +12,7 @@ export const projectContent = [
             tagDataMap.get('bootstrap'), tagDataMap.get('docker'), tagDataMap.get('vite'),
         ],
         videoPath: "/assets/videos/inventory.mp4",
+        videoThumbnailPath: "/assets/thumbnails/videos/inventory_thumbnail.png",
         links: [
             {
                 type: "github",
@@ -29,6 +30,7 @@ export const projectContent = [
         title: "Skills API",
         projType: "Backend",
         videoPath: "/assets/videos/skills_api.mp4",
+        videoThumbnailPath: "/assets/thumbnails/videos/skills_api_thumbnail.png",
         tags: [
             tagDataMap.get('python'), tagDataMap.get('fastapi')
         ],
@@ -68,6 +70,7 @@ export const projectContent = [
         title: "Profile App v2",
         projType: "Frontend",
         videoPath: "/assets/videos/profile_v2.mp4",
+        videoThumbnailPath: "/assets/thumbnails/videos/profile_v2_thumbnail.png",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('bootstrap'),
             tagDataMap.get('html'), tagDataMap.get('sass'), tagDataMap.get('aws'),
