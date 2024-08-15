@@ -11,7 +11,7 @@ export const projectContent = [
             tagDataMap.get('express'), tagDataMap.get('postgres'), tagDataMap.get('knex'),
             tagDataMap.get('bootstrap'), tagDataMap.get('docker'), tagDataMap.get('vite'),
         ],
-        videoPath: "/assets/video/sample1.mp4",
+        videoPath: "/assets/video/inventory.mp4",
         links: [
             {
                 type: "github",
@@ -28,6 +28,7 @@ export const projectContent = [
         year: "2024",
         title: "Skills API",
         projType: "Backend",
+        videoPath: "/assets/video/skills_api.mp4",
         tags: [
             tagDataMap.get('python'), tagDataMap.get('fastapi')
         ],
@@ -66,6 +67,7 @@ export const projectContent = [
         year: "2024",
         title: "Profile App v2",
         projType: "Frontend",
+        videoPath: "/assets/video/profile_v2.mp4",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('bootstrap'),
             tagDataMap.get('html'), tagDataMap.get('sass'), tagDataMap.get('aws'),
