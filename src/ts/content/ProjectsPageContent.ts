@@ -3,7 +3,7 @@ import { tagDataMap } from "@content/TagContent"
 export const projectContent = [
     {
         year: "2024",
-        title: "Inventory App · *Current*",
+        title: "Inventory App",
         projType: "Full-stack",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
@@ -11,26 +11,16 @@ export const projectContent = [
             tagDataMap.get('express'), tagDataMap.get('postgres'), tagDataMap.get('knex'),
             tagDataMap.get('bootstrap'), tagDataMap.get('docker'), tagDataMap.get('vite'),
         ],
+        videoPath: "/assets/video/sample1.mp4",
         links: [
             {
                 type: "github",
                 url: "https://github.com/fceja/inventory_frontend",
                 ariaLabel: "Inventory frontend app project GitHub link"
             },
-            {
-                type: "github",
-                url: "https://github.com/fceja/inventory_api",
-                ariaLabel: "Inventory api app project GitHub link"
-            },
-            {
-                type: "github",
-                url: "https://github.com/fceja/inventory_db",
-                ariaLabel: "Inventory db project GitHub link"
-            }
         ],
-        tooltipMessage: `
+        description: `
             An inventory app. It manages and organizes inventory items, as well as providing analytical data.
-            Consists of a frontend, backend and database repo.
             Latest project, currently under development.
         `
     },
@@ -48,7 +38,7 @@ export const projectContent = [
                 ariaLabel: "Skill API project GitHub link"
             },
         ],
-        tooltipMessage: `
+        description: `
             A FastAPI Python project. Provides endpoints to add records and relations to database. Returns a user with linked technology skills.
         `
     },
@@ -67,7 +57,7 @@ export const projectContent = [
                 ariaLabel: "Video Feed WebSocket project GitHub link"
             }
         ],
-        tooltipMessage: `
+        description: `
             A Go server captures and streams webcam video through a WebSocket endpoint,
             while a React and TypeScript frontend displays the live feed in the browser.
         `
@@ -93,7 +83,7 @@ export const projectContent = [
                 ariaLabel: "Profile app v2 project GitHub link"
             }
         ],
-        tooltipMessage: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes."
+        description: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes."
     },
     {
         year: "2024",
@@ -116,7 +106,7 @@ export const projectContent = [
                 ariaLabel: "fceja.com v2 project GitHub link"
             }
         ],
-        tooltipMessage: "fceja.com web app."
+        description: "fceja.com web app."
     },
     {
         year: "2023",
@@ -127,6 +117,7 @@ export const projectContent = [
             tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
             tagDataMap.get('postgres'), tagDataMap.get('aws'), tagDataMap.get('webpack')
         ],
+        demoCreds: { email: "fc-gmaps@email.com", pass: "letMeIn_gmaps!" },
         links: [
             {
                 type: "website",
@@ -139,9 +130,8 @@ export const projectContent = [
                 ariaLabel: "Google Maps app project GitHub link"
             }
         ],
-        tooltipMessage: `
+        description: `
             After logging-in, an interactive Google Map is populated.
-            Demo credentials — email: fc-gmaps@email.com / password: letMeIn_gmaps!
         `
     },
     {
@@ -159,7 +149,7 @@ export const projectContent = [
                 ariaLabel: "Emailer API project GitHub link"
             },
         ],
-        tooltipMessage: `
+        description: `
             A Node JS / Express JS API that provides an endpoint for generating and sending an email.
             It is also setup in AWS, through API Gateway and a Lambda function.
         `
@@ -173,6 +163,7 @@ export const projectContent = [
             tagDataMap.get('bootstrap'), tagDataMap.get('reactBootstrap'), tagDataMap.get('html'),
             tagDataMap.get('sass'), tagDataMap.get('postgres'), tagDataMap.get('aws'), tagDataMap.get('webpack')
         ],
+        demoCreds: { email: "fc-geoip@email.com", pass: "letMeIn_geoip!" },
         links: [
             {
                 type: "website",
@@ -185,9 +176,8 @@ export const projectContent = [
                 ariaLabel: "Geolocation IP app project GitHub link"
             }
         ],
-        tooltipMessage: `
+        description: `
             After logging-in, clicking a button will retrieve geo-coordinates and IP info.
-            Demo credentials — email: fc-geoip@email.com / password: letMeIn_geoip!
         `
     },
     {
@@ -204,7 +194,7 @@ export const projectContent = [
                 ariaLabel: "fceja.com Automation app project GitHub link"
             }
         ],
-        tooltipMessage: "Automation tests for fceja.com. Implemented with Selenium and Jest."
+        description: "Automation tests for fceja.com. Implemented with Selenium and Jest."
     },
     {
         year: "2023",
@@ -220,7 +210,7 @@ export const projectContent = [
                 ariaLabel: "AWS Lambda Emailer Func GitHub link"
             }
         ],
-        tooltipMessage: "AWS Lambda Function, for creating and sending email."
+        description: "AWS Lambda Function, for creating and sending email."
     },
     {
         year: "2023",
@@ -236,7 +226,7 @@ export const projectContent = [
                 ariaLabel: "Machine Learning project GitHub link"
             }
         ],
-        tooltipMessage: "Simple neural network to classify handwritten digits from MNIST dataset."
+        description: "Simple neural network to classify handwritten digits from MNIST dataset."
     },
     {
         year: "2023",
@@ -259,11 +249,11 @@ export const projectContent = [
                 ariaLabel: "Forum Post app project GitHub link"
             }
         ],
-        tooltipMessage: `
+        demoCreds: { email: "mary", pass: "LetMeIn2023$!%" },
+        description: `
         A forum-like app that allows users to create, modify or delete posts on a community home page.
         It handles account creation and login functionality.
         Moderators can delete other users' posts, as well as ban them.
-        Demo credentials — username: mary / password: LetMeIn2023$!%
         `
     },
     {
@@ -280,7 +270,7 @@ export const projectContent = [
                 ariaLabel: "Login JWT Auth API app project GitHub link"
             }
         ],
-        tooltipMessage: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with Golang and JWT authentication."
+        description: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with Golang and JWT authentication."
     },
     {
         year: "2023",
@@ -303,7 +293,7 @@ export const projectContent = [
                 ariaLabel: "fceja.com app project GitHub link"
             }
         ],
-        tooltipMessage: "fceja.com web app."
+        description: "fceja.com web app."
     },
     {
         year: "2023",
@@ -326,7 +316,7 @@ export const projectContent = [
                 ariaLabel: "Profile app project GitHub link"
             }
         ],
-        tooltipMessage: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes."
+        description: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes."
     },
     {
         year: "2022",
@@ -343,7 +333,7 @@ export const projectContent = [
                 ariaLabel: "Card Carousel app project GitHub link"
             }
         ],
-        tooltipMessage: "Features a scrollable carousel with cards."
+        description: "Features a scrollable carousel with cards."
     },
     {
         year: "2022",
@@ -360,7 +350,7 @@ export const projectContent = [
                 ariaLabel: "Login Session Cookie Auth API app project link"
             }
         ],
-        tooltipMessage: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with TypeScript and session cookie authentication."
+        description: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with TypeScript and session cookie authentication."
     },
     {
         year: "2022",
@@ -376,7 +366,7 @@ export const projectContent = [
                 ariaLabel: "Economic Calender Automation project GitHub link"
             }
         ],
-        tooltipMessage: "Automation — parses economic calendar data from investing.com, and outputs data to a csv file."
+        description: "Automation — parses economic calendar data from investing.com, and outputs data to a csv file."
     },
     {
         year: "2021",
@@ -398,7 +388,7 @@ export const projectContent = [
                 ariaLabel: "Bingo Card Game app project GitHub link"
             }
         ],
-        tooltipMessage: "Imitation of card game, where the game is won when a pre-determined pattern is selected."
+        description: "Imitation of card game, where the game is won when a pre-determined pattern is selected."
     },
     {
         year: "2020",
@@ -414,7 +404,7 @@ export const projectContent = [
                 ariaLabel: "User vs AI Agent project GitHub link"
             }
         ],
-        tooltipMessage: "A CLI implemented 4-in-a-row game, where players compete against an AI agent. Utilizes an alpha-beta pruning search algorithm."
+        description: "A CLI implemented 4-in-a-row game, where players compete against an AI agent. Utilizes an alpha-beta pruning search algorithm."
     },
     {
         year: "2020",
@@ -430,7 +420,7 @@ export const projectContent = [
                 ariaLabel: "Estimate PI Monte Carlo project GitHub link"
             }
         ],
-        tooltipMessage: "Estimate the value of PI using the Monte Carlo method. Uses multithreading to parallelize computation."
+        description: "Estimate the value of PI using the Monte Carlo method. Uses multithreading to parallelize computation."
     },
     {
         year: "2019",
@@ -446,7 +436,7 @@ export const projectContent = [
                 ariaLabel: "Dice Game app project GitHub link"
             }
         ],
-        tooltipMessage: "A poker style game with dice."
+        description: "A poker style game with dice."
     },
     {
         year: "2019",
@@ -463,7 +453,7 @@ export const projectContent = [
                 ariaLabel: "Chipotle Mock app project GitHub link"
             }
         ],
-        tooltipMessage: "Mock webpage for Chipotle."
+        description: "Mock webpage for Chipotle."
     },
 ]
 

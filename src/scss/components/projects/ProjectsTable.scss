@@ -6,7 +6,7 @@ div.projects-list {
 }
 
 hr {
-    margin: 5px;
+    margin: 25px 0;
 }
 
 a.proj-title {
@@ -14,10 +14,16 @@ a.proj-title {
     color: rgb(238, 238, 238);
     letter-spacing: 2px;
     font-weight: 700;
+    font-size: 1.2em;
 }
 
-div.proj-card {
-    margin: 10px 0;
+
+@media(max-width: $breakpoint-lg) {
+    div.proj-card {
+        margin: 10px 0;
+        margin: 10px auto;
+        max-width: 600px;
+    }
 }
 
 @media (min-width: $breakpoint-lg) {
@@ -51,11 +57,26 @@ div.proj-type {
     }
 }
 
-div.video-container {
-    video {
-        height: 100%;
-        width: 100%;
-        pointer-events: none;
+@media(min-width: $breakpoint-lg) {
+    div.video-container {
+        max-width: 500px;
+
+        video {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: $breakpoint-lg) {
+    div.video-container {
+        margin: 0 auto;
+        max-width: 500px;
+
+        video {
+            height: 100%;
+            width: 100%;
+        }
     }
 }
 
@@ -63,9 +84,17 @@ div.video-container:hover video {
     pointer-events: auto;
 }
 
+video:fullscreen,
+video:-webkit-full-screen,
+video:-ms-fullscreen {
+    pointer-events: auto;
+}
+
 @media (min-width: $breakpoint-lg) {
     div.proj-content {
-        margin: 0 0 0 50px;
+        margin: 0 auto 0 auto;
+        align-content: center;
+        max-width: 400px;
     }
 }
 
@@ -87,8 +116,12 @@ div.proj-desc {
 
 div.demo {
     margin: 20px 0 0 0;
+
+    .underline {
+        border-bottom: .5px solid;
+    }
 }
 
 div.proj-tags {
-    margin: 10px 0 0 0;
+    margin: 15px 0 0 0;
 }
