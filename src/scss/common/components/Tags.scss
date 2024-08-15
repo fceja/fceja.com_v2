@@ -37,6 +37,11 @@ $tag-font-weight: 500;
 
 
 /* projects page styles */
+.projects-proj-tags-container {
+    display: flex;
+    justify-content: center;
+}
+
 .projects-proj-tag-link {
     border-radius: $tag-border-radius;
     text-decoration: none;
