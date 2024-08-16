@@ -1,94 +1,69 @@
-import "@scss/components/projects/ProjectsTable.scss"
-import InfoTooltip from "@components/projects/InfoTooltip"
-import { projectContent } from "@content/ProjectsPageContent"
-import ProjectLinks from "@common/components/ProjectLinks"
-import Tags from "@common/components/Tags"
-import { useHighlightJump } from "@hooks/UseHighlightJump"
+import React from "react";
+import "@scss/components/projects/ProjectsTable.scss";
+import { projectContent } from "@content/ProjectsPageContent";
+import ProjectLinks from "@common/components/ProjectLinks";
+import Tags from "@common/components/Tags";
+import Video from "@components/projects/Video"
 
-const COMMON_COMPONENT_CLASSNAME = 'projects-proj'
+const COMMON_COMPONENT_CLASSNAME = "projects-proj";
 
-const ProjectsTable = () => {
-    const setIsTriggerElemHovered = useHighlightJump()
-
-    const handleHover = (isHovered: boolean, rowI: number) => {
-        const targetLink = document.querySelector(`.tr-proj-link-${rowI}-0`)
-        setIsTriggerElemHovered({ isHovered: isHovered, targetElem: targetLink })
-    }
-
+const ProjectsList = () => {
     return (
-        <table className="table-data w-100">
-            <thead className="th-row">
-                <tr>
-                    <th className="th-year">Year</th>
-                    <th
-                        className="th-proj"
-                        style={{ minWidth: "150px" }}
-                    >
-                        Project
-                    </th>
-                    <th
-                        className="th-built d-none d-md-table-cell  me-5"
-                        style={{ maxWidth: "500px" }}
-                    >
-                        Built With
-                    </th>
-                    <th className="th-link">Link</th>
-                </tr>
-            </thead>
-            <tbody>
-                {projectContent.map((proj, i) => {
-                    return (
-                        <tr
-                            id={`tr-${i}`}
-                            key={`tr-${i}`}
-                            className={`tr tr-${i}`}
-                        >
-                            <td className="tr-year pe-4 py-2">{proj.year}</td>
-                            <td className="tr-proj pe-2 py-2 ">
-                                <span
-                                    className="tr-proj-title hover-text me-4"
-                                    onMouseEnter={() => { handleHover(true, i) }}
-                                    onMouseLeave={() => { handleHover(false, i) }}
+        <div className="projects-list">
+            {projectContent.map((proj, i) => (
+                <React.Fragment key={i}>
+                    <hr />
+                    <div className={`proj-card-${i} proj-card`}>
+                        <div className="proj-info">
+                            {proj.videoPath && (
+                                <Video projectData={proj} />
+                            )}
+                            <div className="proj-content m-w-max">
+                                <a
+                                    href={proj.links[0].url}
+                                    className="proj-title hover-text"
+                                    target="_blank"
                                 >
-                                    <a
-                                        href={proj.links[0].url}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                        aria-label={proj.links[0].ariaLabel}
-                                    >
-                                        {proj.title}
-                                    </a>
-                                </span>
-                                <hr></hr>
-                                <span className="tr-proj-type d-flex align-items-center">
-                                    {proj.projType}
-                                    <InfoTooltip message={proj.tooltipMessage} />
-                                </span>
-                            </td>
-                            <td className="tr-built d-none d-md-table-cell py-2">
-                                <Tags className={COMMON_COMPONENT_CLASSNAME} tagData={proj.tags} parentIndex={i} />
-                            </td>
-                            <td
-                                id="tr-links"
-                                className="tr-links pe-2 py-2"
-                            >
-                                {proj.links.map((linkData, j) => {
-                                    return (
-                                        <div
+                                    {proj.title}
+                                </a>
+                                <div className="proj-type">{proj.projType}</div>
+                                <div className="proj-links">
+                                    {proj.links.map((linkData, j) => (
+                                        <span
                                             key={`link-${i}-${j}`}
-                                            className={`tr-proj-link-${i}-${j} tr-proj-link d-flex`}
+                                            className={`proj-link-${i}-${j} proj-link`}
                                         >
-                                            <ProjectLinks className={COMMON_COMPONENT_CLASSNAME} linkData={linkData} />
+                                            <ProjectLinks
+                                                className={COMMON_COMPONENT_CLASSNAME}
+                                                linkData={linkData}
+                                            />
+                                        </span>
+                                    ))}
+                                </div>
+                                <div className="proj-desc">{proj.description}</div>
+                                {proj.demoCreds && proj.demoCreds.email && (
+                                    <div className="demo">
+                                        <span className="underline">Demo credentials</span>
+                                        <div>
+                                            email: {proj.demoCreds.email} / pass:{" "}
+                                            {proj.demoCreds.pass}
                                         </div>
-                                    )
-                                })}
-                            </td>
-                        </tr>
-                    )
-                })}
-            </tbody>
-        </table>
-    )
-}
+                                    </div>
+                                )}
+                                <div className="proj-tags">
+                                    <Tags
+                                        className={COMMON_COMPONENT_CLASSNAME}
+                                        tagData={proj.tags}
+                                        parentIndex={i}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </React.Fragment>
+            ))}
+        </div>
+    );
+};
 
-export default ProjectsTable
+export default ProjectsList;

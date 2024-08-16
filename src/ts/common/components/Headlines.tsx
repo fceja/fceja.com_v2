@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import "@scss/common/components/Headlines.scss";
-import Loading from "@common/components/Loading";
+import LoadingSquare from "@common/components/LoadingSquare";
 
 type ResponseData = {
   statusCode: number;
@@ -60,7 +60,7 @@ const Headlines = () => {
 
   return (
     <>
-      {isLoading && <Loading className="headlines" />}
+      {isLoading && <LoadingSquare className="headlines" />}
       {!isLoading && responseData && headlines &&
         <div className="headlines-container">
           <ul className="headline-list d-flex align-items-center">

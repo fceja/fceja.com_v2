@@ -15,7 +15,7 @@ const ProjectLinks: React.FC<ProjectLinksProps> = (props) => {
     const svgData = projectsSvgData[linkData.type]
 
     return (
-        <span className="icon-url-container d-flex">
+        <span className="icon-url-container">
             <a
                 className={`${className}-${linkData.type}-link`}
                 href={linkData.url}
@@ -31,8 +31,6 @@ const ProjectLinks: React.FC<ProjectLinksProps> = (props) => {
                     <path d={svgData.path} />
                 </svg>
             </a>
-            <span className={`${className}-hyphen`}>-</span>
-            <span className={`${className}-url-link`}>{linkData.url}</span>
         </span>
     )
 };

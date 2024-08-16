@@ -1,10 +1,10 @@
-import "@scss/common/components/Loading.scss";
+import "@scss/common/components/LoadingSquare.scss";
 
 interface LoadingI {
   className?: string
 }
 
-const Loading = (props: LoadingI) => {
+const LoadingSquare = (props: LoadingI) => {
   const { className } = props
 
   return (
@@ -22,4 +22,4 @@ const Loading = (props: LoadingI) => {
   );
 };
 
-export default Loading;
+export default LoadingSquare;

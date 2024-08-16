@@ -1,0 +1,28 @@
+@import "@scss/Variables.scss";
+
+.loading-video {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* spinner styles */
+.loading-spinner {
+    width: 60px;
+    height: 60px;
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid $app-text-color;
+    border-radius: 50%;
+    animation: spin .3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
