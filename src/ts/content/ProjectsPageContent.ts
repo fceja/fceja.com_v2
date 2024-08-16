@@ -11,8 +11,8 @@ export const projectContent = [
             tagDataMap.get('express'), tagDataMap.get('postgres'), tagDataMap.get('knex'),
             tagDataMap.get('bootstrap'), tagDataMap.get('docker'), tagDataMap.get('vite'),
         ],
-        videoPath: "/assets/videos/inventory.mp4",
-        videoThumbnailPath: "/assets/thumbnails/videos/inventory_thumbnail.png",
+        videoPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/inventory.mp4",
+        videoThumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/videos/inventory_thumbnail.png",
         links: [
             {
                 type: "github",
@@ -21,7 +21,8 @@ export const projectContent = [
             },
         ],
         description: `
-            An inventory app. It manages and organizes inventory items, as well as providing analytical data.
+            An inventory app. It manages and organizes inventory items in a hierarchical folder structure.
+            It also provides analytics.
             Latest project, currently under development.
         `
     },
