@@ -119,6 +119,30 @@ const Video: React.FC<VideoI> = (props) => {
         checkVideo(0)
     }
 
+    const handleDesktopEvent = (e: React.MouseEvent<HTMLVideoElement>, eventType: string) => {
+        const video = e.currentTarget;
+
+        switch (eventType) {
+            case 'mouseEnter':
+                video.play();
+                break
+            case 'mouseLeave':
+                video.pause();
+                break
+            case 'click':
+                if (video.requestFullscreen) {
+                    video.requestFullscreen();
+                } else if ((video as any).webkitRequestFullscreen) {
+                    (video as any).webkitRequestFullscreen();
+                } else if ((video as any).msRequestFullscreen) {
+                    (video as any).msRequestFullscreen();
+                }
+                break
+            default:
+                throw new Error('Invalid eventType.')
+        }
+    }
+
     return (
         <>
             <div className="video-container">
@@ -141,24 +165,9 @@ const Video: React.FC<VideoI> = (props) => {
                     <video
                         muted
                         loop
-                        onMouseEnter={(e) => {
-                            const video = e.currentTarget as HTMLVideoElement;
-                            video.play();
-                        }}
-                        onMouseLeave={(e) => {
-                            const video = e.currentTarget as HTMLVideoElement;
-                            video.pause();
-                        }}
-                        onClick={(e) => {
-                            const video = e.currentTarget as HTMLVideoElement;
-                            if (video.requestFullscreen) {
-                                video.requestFullscreen();
-                            } else if ((video as any).webkitRequestFullscreen) {
-                                (video as any).webkitRequestFullscreen();
-                            } else if ((video as any).msRequestFullscreen) {
-                                (video as any).msRequestFullscreen();
-                            }
-                        }}
+                        onMouseEnter={(e) => { handleDesktopEvent(e, 'mouseEnter') }}
+                        onMouseLeave={(e) => { handleDesktopEvent(e, 'mouseLeave') }}
+                        onClick={(e) => { handleDesktopEvent(e, 'click') }}
                     >
                         <source src={videoBlobUrl} type="video/mp4" />
                         Your browser does not support the video.
