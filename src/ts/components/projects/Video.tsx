@@ -99,8 +99,8 @@ const Video: React.FC<VideoI> = (props) => {
     }
 
     const waitVideoLoad = () => {
-        const video = videoRef.current;
         const checkVideo = (count: number) => {
+            const video = videoRef.current;
             if (video) {
                 video.play();
                 requestFullscreen(video)
