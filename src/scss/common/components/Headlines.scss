@@ -1,6 +1,5 @@
 @import "@scss/Variables.scss";
 
-/* chrome and firefox support */
 .headlines-container {
   width: 100vw;
   color: white;
@@ -21,65 +20,8 @@
   list-style: none;
   width: max-content;
 
-  animation-name: scrollLeft;
-  animation-duration: 200s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  will-change: transform;
-  -webkit-animation-name: scrollLeft;
-  -webkit-animation-duration: 200s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-play-state: running;
-
   &:hover {
     overflow-x: auto;
-
-    animation-play-state: paused;
-    -webkit-animation-play-state: paused;
-
-    cursor: pointer;
-  }
-}
-
-/* safari support */
-.headlines-container-safari {
-  width: 100vw;
-  color: white;
-  white-space: nowrap;
-  position: fixed;
-  bottom: 0;
-  background: rgba(71, 67, 67, 0.552);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-}
-
-.headline-list-safari {
-  height: 70px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  width: max-content;
-
-  animation-name: scrollLeft;
-  animation-duration: 200s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  will-change: transform;
-  -webkit-animation-name: scrollLeft;
-  -webkit-animation-duration: 200s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-play-state: running;
-
-  &:hover {
-    overflow-x: auto;
-
-    animation-play-state: paused;
-    -webkit-animation-play-state: paused;
-
     cursor: pointer;
   }
 }
