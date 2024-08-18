@@ -69,25 +69,24 @@ const Video: React.FC<VideoI> = (props) => {
 
         const videoBlobUrl = URL.createObjectURL(blob)
         setVideoBlobUrl(videoBlobUrl)
-
     }
 
     const handleThumbnailClick = () => {
         if (isMobile) {
             setThumbnailBlobUrl("")
             fetchVideo()
-            waitVideoLoad()
+            triggerVideoPlay()
         }
     }
 
-    const handleMouseEnter = () => {
+    const handleThumbnailMouseEnter = () => {
         if (!isMobile) {
             setThumbnailBlobUrl("")
             fetchVideo()
         }
     }
 
-    const requestFullscreen = (video: HTMLVideoElement) => {
+    const requestFullscreenAndPlay = (video: HTMLVideoElement) => {
         if (video.requestFullscreen) {
             video.requestFullscreen();
         } else if ((video as any).webkitRequestFullscreen) {
@@ -96,14 +95,14 @@ const Video: React.FC<VideoI> = (props) => {
             (video as any).msRequestFullscreen();
         }
 
+        video.play();
     }
 
-    const waitVideoLoad = () => {
+    const triggerVideoPlay = () => {
         const checkVideo = (count: number) => {
             const video = videoRef.current;
             if (video) {
-                video.play();
-                requestFullscreen(video)
+                requestFullscreenAndPlay(video)
                 return;
             }
 
@@ -113,7 +112,6 @@ const Video: React.FC<VideoI> = (props) => {
             } else {
                 setIsVideoPlaybackError(true)
             }
-
         }
 
         checkVideo(0)
@@ -130,13 +128,7 @@ const Video: React.FC<VideoI> = (props) => {
                 video.pause();
                 break
             case 'click':
-                if (video.requestFullscreen) {
-                    video.requestFullscreen();
-                } else if ((video as any).webkitRequestFullscreen) {
-                    (video as any).webkitRequestFullscreen();
-                } else if ((video as any).msRequestFullscreen) {
-                    (video as any).msRequestFullscreen();
-                }
+                triggerVideoPlay()
                 break
             default:
                 throw new Error('Invalid eventType.')
@@ -156,13 +148,14 @@ const Video: React.FC<VideoI> = (props) => {
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                         }}
-                        onMouseEnter={handleMouseEnter}
-                        onClick={handleThumbnailClick}
+                        onMouseEnter={handleThumbnailMouseEnter} // for desktop mouse entering
+                        onClick={handleThumbnailClick} // for mobile & tablet touch
                     >
                     </div>
                 }
                 {videoBlobUrl && !isMobile &&
                     <video
+                        ref={videoRef}
                         muted
                         loop
                         onMouseEnter={(e) => { handleDesktopEvent(e, 'mouseEnter') }}
@@ -174,11 +167,15 @@ const Video: React.FC<VideoI> = (props) => {
                     </video>
                 }
                 {videoBlobUrl && isMobile && (
-                    <video ref={videoRef} muted controls>
+                    <video
+                        ref={videoRef}
+                        muted
+                        controls
+                        loop
+                    >
                         <source src={videoBlobUrl} type="video/mp4" />
                         Your browser does not support the video.
                     </video>
-
                 )}
             </div>
         </>
