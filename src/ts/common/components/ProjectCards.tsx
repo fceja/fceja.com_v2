@@ -1,17 +1,28 @@
 import React from "react";
 
 import "@scss/common/components/ProjectCards.scss";
-import { projectContent } from "@content/ProjectsPageContent";
+import { projectCardsContent, projectCardT } from "@content/ProjectsPageContent";
 import ProjectLinks from "@common/components/ProjectLinks";
 import Tags from "@common/components/Tags";
 import Video from "@components/projects/Video"
 
 const COMMON_COMPONENT_CLASSNAME = "projects-proj";
 
-const ProjectsCards = () => {
+interface ProjectCardsI {
+    onlyHomePinned?: boolean
+}
+
+const ProjectsCards: React.FC<ProjectCardsI> = (props) => {
+    const { onlyHomePinned } = props
+
+    /* determined if we return all project cards, or only the ones pinned for home page */
+    const projectCards: projectCardT[] = onlyHomePinned ?
+        projectCardsContent.filter((card) => card.homePinned)
+        : projectCardsContent
+
     return (
         <div className="projects-list">
-            {projectContent.map((proj, i) => (
+            {projectCards.map((proj, i) => (
                 <React.Fragment key={i}>
                     <hr />
                     <div className={`proj-card-${i} proj-card`}>
