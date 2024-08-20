@@ -25,7 +25,7 @@ export const experienceCardsContent: ExperienceCardEntryT[] = [
         clients: [
             {
                 year: 'MAY 2020 - JAN 2023',
-                position: "QA / Automation Engineer",
+                position: "QA / Automation Engineer / Developer",
                 company: "Viking",
                 companyUrl: "https://www.vikingcruises.com/",
                 paragraph: `
@@ -70,7 +70,7 @@ export const experienceCardsContent: ExperienceCardEntryT[] = [
             },
             {
                 year: 'NOV 2019 - FEB 2020',
-                position: "QA Engineer (Internship)",
+                position: "Intern - QA / Automation Engineer",
                 company: "Hallmark Labs",
                 companyUrl: "https://www.hallmarklabs.com/",
                 paragraph: `
