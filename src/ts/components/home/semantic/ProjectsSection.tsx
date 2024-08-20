@@ -1,11 +1,11 @@
 import "@scss/components/home/semantic/ProjectsSection.scss"
-import ProjectCardsList from "@components/home/ProjectCardsList"
+import ProjectsCards from "@common/components/ProjectCards"
 
 const ProjectsSection = () => {
     return (
         <section className="home-projects mt-5">
             <h2 className="m-0 pb-2">PROJECTS</h2>
-            <ProjectCardsList />
+            < ProjectsCards />
         </section >
     )
 }

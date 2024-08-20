@@ -1,9 +1,9 @@
-import ProjectsList from "@components/projects/ProjectsTable"
+import ProjectCards from "@common/components/ProjectCards"
 
 const ProjectsMain = () => {
     return (
         <main>
-            < ProjectsList />
+            < ProjectCards />
         </main>
     )
 }

@@ -1,5 +1,6 @@
 import React from "react";
-import "@scss/components/projects/ProjectsTable.scss";
+
+import "@scss/common/components/ProjectCards.scss";
 import { projectContent } from "@content/ProjectsPageContent";
 import ProjectLinks from "@common/components/ProjectLinks";
 import Tags from "@common/components/Tags";
@@ -7,7 +8,7 @@ import Video from "@components/projects/Video"
 
 const COMMON_COMPONENT_CLASSNAME = "projects-proj";
 
-const ProjectsList = () => {
+const ProjectsCards = () => {
     return (
         <div className="projects-list">
             {projectContent.map((proj, i) => (
@@ -66,4 +67,4 @@ const ProjectsList = () => {
     );
 };
 
-export default ProjectsList;
+export default ProjectsCards;
