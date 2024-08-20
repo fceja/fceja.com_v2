@@ -11,8 +11,8 @@ export const projectContent = [
             tagDataMap.get('express'), tagDataMap.get('postgres'), tagDataMap.get('knex'),
             tagDataMap.get('bootstrap'), tagDataMap.get('docker'), tagDataMap.get('vite'),
         ],
-        videoPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/inventory.mp4",
-        videoThumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/videos/inventory_thumbnail.png",
+        videoPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/inventory_app.mp4",
+        videoThumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/inventory_app_thumbnail.png",
         links: [
             {
                 type: "github",
@@ -30,8 +30,8 @@ export const projectContent = [
         year: "2024",
         title: "Skills API",
         projType: "Backend",
-        videoPath: "/assets/videos/skills_api.mp4",
-        videoThumbnailPath: "/assets/thumbnails/videos/skills_api_thumbnail.png",
+        videoPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/skills_api.mp4",
+        videoThumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/skills_api_thumbnail.png",
         tags: [
             tagDataMap.get('python'), tagDataMap.get('fastapi')
         ],
@@ -70,8 +70,8 @@ export const projectContent = [
         year: "2024",
         title: "Profile App v2",
         projType: "Frontend",
-        videoPath: "/assets/videos/profile_v2.mp4",
-        videoThumbnailPath: "/assets/thumbnails/videos/profile_v2_thumbnail.png",
+        videoPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/profile_app_v2.mp4",
+        videoThumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/profile_app_v2_thumbnail.png",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('bootstrap'),
             tagDataMap.get('html'), tagDataMap.get('sass'), tagDataMap.get('aws'),
@@ -118,6 +118,8 @@ export const projectContent = [
         year: "2023",
         title: "Google Maps App",
         projType: "Full-stack",
+        videoPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/google_maps_app.mp4",
+        videoThumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/google_maps_app_thumbnail.png",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
             tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
@@ -164,6 +166,8 @@ export const projectContent = [
         year: "2023",
         title: "Geolocation-IP App",
         projType: "Full-stack",
+        videoPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/geolocation_ip_app.mp4",
+        videoThumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/geolocation_ip_app_thumbnail.png",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
             tagDataMap.get('bootstrap'), tagDataMap.get('reactBootstrap'), tagDataMap.get('html'),
@@ -238,6 +242,8 @@ export const projectContent = [
         year: "2023",
         title: "Forum Post App",
         projType: "Full-stack",
+        videoPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/forum_post_app.mp4",
+        videoThumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/forum_post_app_thumbnail.png",
         tags: [
             tagDataMap.get('python'), tagDataMap.get('django'), tagDataMap.get('djangoCrispyForms'),
             tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('css'),
@@ -246,7 +252,7 @@ export const projectContent = [
         links: [
             {
                 type: "website",
-                url: "https://django-user-post-a42f5d79d28f.herokuapp.com",
+                url: "https://django-forum-post-660c391dbe52.herokuapp.com",
                 ariaLabel: "Forum Post app project web link"
             },
             {
@@ -255,7 +261,7 @@ export const projectContent = [
                 ariaLabel: "Forum Post app project GitHub link"
             }
         ],
-        demoCreds: { email: "mary", pass: "LetMeIn2023$!%" },
+        demoCreds: { email: "maryFairy", pass: "fairyDust$!%" },
         description: `
         A forum-like app that allows users to create, modify or delete posts on a community home page.
         It handles account creation and login functionality.

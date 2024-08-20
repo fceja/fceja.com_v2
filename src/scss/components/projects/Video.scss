@@ -36,12 +36,6 @@ video:-ms-fullscreen {
     aspect-ratio: 16/9;
     background-color: black;
     cursor: pointer;
-
-    video {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-    }
 }
 
 .mobile-play-container {
@@ -59,7 +53,7 @@ video:-ms-fullscreen {
 }
 
 div.video-playback-error {
-    color: red;
+    color: rgb(154, 0, 0);
     position: absolute;
     background-color: transparent;
     top: 50%;

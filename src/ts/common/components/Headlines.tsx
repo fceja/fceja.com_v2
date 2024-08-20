@@ -98,7 +98,7 @@ const Headlines = () => {
 
         setTimeout(() => {
           startAnimation();
-        }, 2000);
+        }, 1250);
       });
     } else {
       headlineList.addEventListener('mouseenter', pauseAnimation);
