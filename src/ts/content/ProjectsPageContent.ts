@@ -9,6 +9,7 @@ type linksT = {
 export type projectCardT = {
     demoCreds: { email: string, pass: string } | null
     description: string
+    description2: string
     homePinned: boolean
     links: linksT[]
     projType: string
@@ -26,8 +27,8 @@ export const projectCardsContent: projectCardT[] = [
         description: `
         An inventory app. It manages and organizes inventory items in a hierarchical folder structure, while
         providing analytics.
-        Latest project, currently under development.
         `,
+        description2: "* Latest project, under development. *",
         homePinned: true,
         links: [
             {
@@ -54,6 +55,7 @@ export const projectCardsContent: projectCardT[] = [
         description: `
         A FastAPI Python project. Provides endpoints to add records and relations to database. Returns a user with linked technology skills.
         `,
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -78,6 +80,7 @@ export const projectCardsContent: projectCardT[] = [
         A Go server captures and streams webcam video through a WebSocket endpoint,
         while a React and TypeScript frontend displays the live feed in the browser.
         `,
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -99,8 +102,13 @@ export const projectCardsContent: projectCardT[] = [
     {
         /* Profile App v2 */
         demoCreds: null,
-        description: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes.",
-        homePinned: false,
+        description: `
+        Web app that contains a home, gallery and contact page.
+        The contact page gathers user information for communication purposes.
+        Version 2.
+        `,
+        description2: null,
+        homePinned: true,
         links: [
             {
                 type: "website",
@@ -119,7 +127,7 @@ export const projectCardsContent: projectCardT[] = [
             tagDataMap.get('html'), tagDataMap.get('sass'), tagDataMap.get('aws'),
             tagDataMap.get('babel'), tagDataMap.get('vite'),
         ],
-        title: "Profile App v2",
+        title: "Profile App",
         videoPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/profile_app_v2.mp4",
         videoThumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/profile_app_v2_thumbnail.png",
         year: "2024",
@@ -127,7 +135,8 @@ export const projectCardsContent: projectCardT[] = [
     {
         /* fceja.com v2 */
         demoCreds: null,
-        description: "fceja.com web app.",
+        description: "fceja.com web app. Version 2.",
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -147,7 +156,7 @@ export const projectCardsContent: projectCardT[] = [
             tagDataMap.get('html'), tagDataMap.get('aws'), tagDataMap.get('bootstrap'),
             tagDataMap.get('vite'),
         ],
-        title: "fceja.com v2",
+        title: "fceja.com",
         videoPath: null,
         videoThumbnailPath: null,
         year: "2024",
@@ -158,6 +167,7 @@ export const projectCardsContent: projectCardT[] = [
         description: `
         After logging-in, an interactive Google Map is populated.
         `,
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -189,6 +199,7 @@ export const projectCardsContent: projectCardT[] = [
         A Node JS / Express JS API that provides an endpoint for generating and sending an email.
         It is also setup in AWS, through API Gateway and a Lambda function.
         `,
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -212,6 +223,7 @@ export const projectCardsContent: projectCardT[] = [
         description: `
         After logging-in, clicking a button will retrieve geo-coordinates and IP info.
         `,
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -240,6 +252,7 @@ export const projectCardsContent: projectCardT[] = [
         /* fceja.com Automation */
         demoCreds: null,
         description: "Automation tests for fceja.com. Implemented with Selenium and Jest.",
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -261,6 +274,7 @@ export const projectCardsContent: projectCardT[] = [
         /* AWS Lambda Emailer */
         demoCreds: null,
         description: "AWS Lambda Function, for creating and sending email.",
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -283,6 +297,7 @@ export const projectCardsContent: projectCardT[] = [
         demoCreds: null,
         homePinned: false,
         description: "Simple neural network to classify handwritten digits from MNIST dataset.",
+        description2: null,
         links: [
             {
                 type: "github",
@@ -307,7 +322,8 @@ export const projectCardsContent: projectCardT[] = [
         It handles account creation and login functionality.
         Moderators can delete other users' posts, as well as ban them.
         `,
-        homePinned: false,
+        description2: null,
+        homePinned: true,
         links: [
             {
                 type: "website",
@@ -335,6 +351,7 @@ export const projectCardsContent: projectCardT[] = [
         /* Login JWT Auth API */
         demoCreds: null,
         description: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with Golang and JWT authentication.",
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -356,6 +373,7 @@ export const projectCardsContent: projectCardT[] = [
         /* fceja.com v1 */
         demoCreds: null,
         description: "fceja.com web app.",
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -384,6 +402,7 @@ export const projectCardsContent: projectCardT[] = [
         /* Profile App v1 */
         demoCreds: null,
         description: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes.",
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -412,6 +431,7 @@ export const projectCardsContent: projectCardT[] = [
         /* Card Carousel App */
         demoCreds: null,
         description: "Features a scrollable carousel with cards.",
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -434,6 +454,7 @@ export const projectCardsContent: projectCardT[] = [
         /* Login Auth Cookie Session API */
         demoCreds: null,
         description: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with TypeScript and session cookie authentication.",
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -456,6 +477,7 @@ export const projectCardsContent: projectCardT[] = [
         /* Economic Calender */
         demoCreds: null,
         description: "Parses economic calendar data from investing.com, and outputs data to a csv file.",
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -477,6 +499,7 @@ export const projectCardsContent: projectCardT[] = [
         /* Bingo Card Game */
         demoCreds: null,
         description: "Imitation of card game, where the game is won when a pre-determined pattern is selected.",
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -504,6 +527,7 @@ export const projectCardsContent: projectCardT[] = [
         /* AI Agent vs User */
         demoCreds: null,
         description: "A CLI implemented 4-in-a-row game, where players compete against an AI agent. Utilizes an alpha-beta pruning search algorithm.",
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -525,6 +549,7 @@ export const projectCardsContent: projectCardT[] = [
         /* Estimate Pi - Monte Carlo */
         demoCreds: null,
         description: "Estimate the value of PI using the Monte Carlo method. Uses multithreading to parallelize computation.",
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -546,6 +571,7 @@ export const projectCardsContent: projectCardT[] = [
         /* Dice Game */
         demoCreds: null,
         description: "A poker style game with dice.",
+        description2: null,
         homePinned: false,
         links: [
             {
@@ -567,6 +593,7 @@ export const projectCardsContent: projectCardT[] = [
         /* Chipotle Mock */
         demoCreds: null,
         description: "Mock webpage for Chipotle.",
+        description2: null,
         homePinned: false,
         links: [
             {

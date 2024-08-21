@@ -5,7 +5,7 @@ const ProjectsSection = () => {
     return (
         <section className="home-projects mt-5">
             <h2 className="m-0 pb-2">PROJECTS</h2>
-            < ProjectsCards onlyHomePinned={true} />
+            < ProjectsCards className={'home'} onlyHomePinned={true} />
         </section >
     )
 }

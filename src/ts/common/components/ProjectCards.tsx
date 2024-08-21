@@ -9,15 +9,16 @@ import Video from "@components/projects/Video"
 const COMMON_COMPONENT_CLASSNAME = "projects-proj";
 
 interface ProjectCardsI {
+    className?: string
     onlyHomePinned?: boolean
 }
 
 const ProjectsCards: React.FC<ProjectCardsI> = (props) => {
-    const { onlyHomePinned } = props
+    const { className, onlyHomePinned } = props
 
     /* determined if we return all project cards, or only the ones pinned for home page */
     const projectCards: projectCardT[] = onlyHomePinned ?
-        projectCardsContent.filter((card) => card.homePinned)
+        projectCardsContent.filter((card) => card.homePinned).reverse()
         : projectCardsContent
 
     return (
@@ -26,7 +27,7 @@ const ProjectsCards: React.FC<ProjectCardsI> = (props) => {
                 <React.Fragment key={i}>
                     <hr />
                     <div className={`proj-card-${i} proj-card`}>
-                        <div className="proj-info">
+                        <div className={`${!className ? 'proj-info' : `${className}-proj-info`}`}>
                             {proj.videoPath && (
                                 <Video projectData={proj} />
                             )}
@@ -53,6 +54,7 @@ const ProjectsCards: React.FC<ProjectCardsI> = (props) => {
                                     ))}
                                 </div>
                                 <div className="proj-desc">{proj.description}</div>
+                                <div className="proj-desc">{proj.description2}</div>
                                 {proj.demoCreds && proj.demoCreds.email && (
                                     <div className="demo">
                                         <span className="underline">Demo credentials</span>
