@@ -1,6 +1,7 @@
 import "@scss/components/home/ExperienceCard.scss"
-import Tags from "@common/components/Tags"
+import Collapsible from "@common/components/Collapsible"
 import { ExperienceCardEntryT } from "@content/HomePageContent"
+import Tags from "@common/components/Tags"
 
 interface ExperienceCardI {
     cardData: ExperienceCardEntryT
@@ -36,7 +37,9 @@ const ExperienceCards: React.FC<ExperienceCardI> = (props) => {
                     </span>
                 </div>
                 <span className="card-position">{cardData.position}</span>
-                <p className="card-p m-0 mt-2">{cardData.paragraph}</p>
+                <Collapsible>
+                    <p className="card-p p-1">{cardData.paragraph}</p>
+                </Collapsible>
                 {cardData.tags &&
                     <Tags className="home-exp" tagData={cardData.tags} parentIndex={Number(parentIndex)} />
                 }

@@ -1,20 +1,33 @@
 import React from "react";
-import "@scss/components/projects/ProjectsTable.scss";
-import { projectContent } from "@content/ProjectsPageContent";
+
+import "@scss/common/components/ProjectCards.scss";
+import { projectCardsContent, projectCardT } from "@content/ProjectsPageContent";
 import ProjectLinks from "@common/components/ProjectLinks";
 import Tags from "@common/components/Tags";
 import Video from "@components/projects/Video"
 
 const COMMON_COMPONENT_CLASSNAME = "projects-proj";
 
-const ProjectsList = () => {
+interface ProjectCardsI {
+    className?: string
+    onlyHomePinned?: boolean
+}
+
+const ProjectsCards: React.FC<ProjectCardsI> = (props) => {
+    const { className, onlyHomePinned } = props
+
+    /* determined if we return all project cards, or only the ones pinned for home page */
+    const projectCards: projectCardT[] = onlyHomePinned ?
+        projectCardsContent.filter((card) => card.homePinned).reverse()
+        : projectCardsContent
+
     return (
         <div className="projects-list">
-            {projectContent.map((proj, i) => (
+            {projectCards.map((proj, i) => (
                 <React.Fragment key={i}>
                     <hr />
                     <div className={`proj-card-${i} proj-card`}>
-                        <div className="proj-info">
+                        <div className={`${!className ? 'proj-info' : `${className}-proj-info`}`}>
                             {proj.videoPath && (
                                 <Video projectData={proj} />
                             )}
@@ -41,6 +54,7 @@ const ProjectsList = () => {
                                     ))}
                                 </div>
                                 <div className="proj-desc">{proj.description}</div>
+                                <div className="proj-desc">{proj.description2}</div>
                                 {proj.demoCreds && proj.demoCreds.email && (
                                     <div className="demo">
                                         <span className="underline">Demo credentials</span>
@@ -66,4 +80,4 @@ const ProjectsList = () => {
     );
 };
 
-export default ProjectsList;
+export default ProjectsCards;

@@ -1,9 +1,44 @@
 import { tagDataMap } from "@content/TagContent"
 
-export const projectContent = [
+type linksT = {
+    type: string
+    label: string
+    url: string
+    ariaLabel: string
+}
+
+export type projectCardT = {
+    demoCreds: { email: string, pass: string } | null
+    description: string
+    description2: string
+    homePinned: boolean
+    links: linksT[]
+    projType: string
+    tags: any[]
+    title: string
+    videoPath: string
+    videoThumbnailPath: string,
+    year: string
+}
+
+export const projectCardsContent: projectCardT[] = [
     {
-        year: "2024",
-        title: "Inventory App",
+        /* Inventory App */
+        demoCreds: null,
+        description: `
+        An inventory app. It manages and organizes inventory items in a hierarchical folder structure, while
+        providing analytics.
+        `,
+        description2: "* Latest project, under development. *",
+        homePinned: true,
+        links: [
+            {
+                type: "github",
+                label: "Code",
+                url: "https://github.com/fceja/inventory_frontend",
+                ariaLabel: "Inventory frontend app project GitHub link"
+            },
+        ],
         projType: "Full-stack",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
@@ -11,454 +46,608 @@ export const projectContent = [
             tagDataMap.get('express'), tagDataMap.get('postgres'), tagDataMap.get('knex'),
             tagDataMap.get('bootstrap'), tagDataMap.get('docker'), tagDataMap.get('vite'),
         ],
-        videoPath: "/assets/videos/inventory.mp4",
-        videoThumbnailPath: "/assets/thumbnails/videos/inventory_thumbnail.png",
-        links: [
-            {
-                type: "github",
-                url: "https://github.com/fceja/inventory_frontend",
-                ariaLabel: "Inventory frontend app project GitHub link"
-            },
-        ],
-        description: `
-            An inventory app. It manages and organizes inventory items, as well as providing analytical data.
-            Latest project, currently under development.
-        `
+        title: "Inventory App",
+        videoPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/inventory_app.mp4",
+        videoThumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/inventory_app_thumbnail.png",
+        year: "2024"
     },
     {
-        year: "2024",
-        title: "Skills API",
-        projType: "Backend",
-        videoPath: "/assets/videos/skills_api.mp4",
-        videoThumbnailPath: "/assets/thumbnails/videos/skills_api_thumbnail.png",
-        tags: [
-            tagDataMap.get('python'), tagDataMap.get('fastapi')
-        ],
+        /* Skills API */
+        demoCreds: null,
+        description: `
+        A FastAPI Python project. Provides endpoints to add records and relations to database. Returns a user with linked technology skills.
+        `,
+        description2: null,
+        homePinned: false,
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/skills_api",
                 ariaLabel: "Skill API project GitHub link"
             },
         ],
-        description: `
-            A FastAPI Python project. Provides endpoints to add records and relations to database. Returns a user with linked technology skills.
-        `
+        projType: "Backend",
+        tags: [
+            tagDataMap.get('python'), tagDataMap.get('fastapi')
+        ],
+        title: "Skills API",
+        videoPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/skills_api.mp4",
+        videoThumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/skills_api_thumbnail.png",
+        year: "2024",
     },
     {
-        year: "2024",
-        title: "Video Feed WebSocket",
+        /* Video Feed WebSocket */
+        demoCreds: null,
+        description: `
+        A Go server captures and streams webcam video through a WebSocket endpoint,
+        while a React and TypeScript frontend displays the live feed in the browser.
+        `,
+        description2: null,
+        homePinned: false,
+        links: [
+            {
+                type: "github",
+                label: "Code",
+                url: "https://github.com/fceja/video_feed_websocket",
+                ariaLabel: "Video Feed WebSocket project GitHub link"
+            }
+        ],
         projType: "Full-stack",
         tags: [
             tagDataMap.get('golang'), tagDataMap.get('typescript'), tagDataMap.get('react'),
             tagDataMap.get('sass'), tagDataMap.get('HTML'), tagDataMap.get('vite')
         ],
-        links: [
-            {
-                type: "github",
-                url: "https://github.com/fceja/video_feed_websocket",
-                ariaLabel: "Video Feed WebSocket project GitHub link"
-            }
-        ],
-        description: `
-            A Go server captures and streams webcam video through a WebSocket endpoint,
-            while a React and TypeScript frontend displays the live feed in the browser.
-        `
+        title: "Video Feed WebSocket",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2024",
     },
     {
-        year: "2024",
-        title: "Profile App v2",
-        projType: "Frontend",
-        videoPath: "/assets/videos/profile_v2.mp4",
-        videoThumbnailPath: "/assets/thumbnails/videos/profile_v2_thumbnail.png",
-        tags: [
-            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('bootstrap'),
-            tagDataMap.get('html'), tagDataMap.get('sass'), tagDataMap.get('aws'),
-            tagDataMap.get('babel'), tagDataMap.get('vite'),
-        ],
+        /* Profile App v2 */
+        demoCreds: null,
+        description: `
+        Web app that contains a home, gallery and contact page.
+        The contact page gathers user information for communication purposes.
+        Version 2.
+        `,
+        description2: null,
+        homePinned: true,
         links: [
             {
                 type: "website",
+                label: "Website",
                 url: "http://dev.client.profile-app-v2.s3-website-us-west-1.amazonaws.com/",
                 ariaLabel: "Profile app v2 project web link"
             },
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/profile_app_v2",
                 ariaLabel: "Profile app v2 project GitHub link"
             }
         ],
-        description: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes."
+        projType: "Frontend",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('bootstrap'),
+            tagDataMap.get('html'), tagDataMap.get('sass'), tagDataMap.get('aws'),
+            tagDataMap.get('babel'), tagDataMap.get('vite'),
+        ],
+        title: "Profile App",
+        videoPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/profile_app_v2.mp4",
+        videoThumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/profile_app_v2_thumbnail.png",
+        year: "2024",
     },
     {
-        year: "2024",
-        title: "fceja.com v2",
+        /* fceja.com v2 */
+        demoCreds: null,
+        description: "fceja.com web app. Version 2.",
+        description2: null,
+        homePinned: false,
+        links: [
+            {
+                type: "website",
+                label: "Website",
+                url: "http://fceja.com",
+                ariaLabel: "fceja.com v2 project web link"
+            },
+            {
+                type: "github",
+                label: "Code",
+                url: "https://github.com/fceja/fceja.com_v2",
+                ariaLabel: "fceja.com v2 project GitHub link"
+            }
+        ],
         projType: "Frontend",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('sass'),
             tagDataMap.get('html'), tagDataMap.get('aws'), tagDataMap.get('bootstrap'),
             tagDataMap.get('vite'),
         ],
+        title: "fceja.com",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2024",
+    },
+    {
+        /* Google Maps App */
+        demoCreds: { email: "fc-gmaps@email.com", pass: "letMeIn_gmaps!" },
+        description: `
+        After logging-in, an interactive Google Map is populated.
+        `,
+        description2: null,
+        homePinned: false,
         links: [
             {
                 type: "website",
-                url: "http://fceja.com",
-                ariaLabel: "fceja.com v2 project web link"
+                label: "Website",
+                url: "http://dev.client.google-maps.s3-website-us-west-1.amazonaws.com/",
+                ariaLabel: "Google Maps app project web link"
             },
             {
                 type: "github",
-                url: "https://github.com/fceja/fceja.com_v2",
-                ariaLabel: "fceja.com v2 project GitHub link"
+                label: "Code",
+                url: "https://github.com/fceja/google_maps_app",
+                ariaLabel: "Google Maps app project GitHub link"
             }
         ],
-        description: "fceja.com web app."
-    },
-    {
-        year: "2023",
-        title: "Google Maps App",
         projType: "Full-stack",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
             tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
             tagDataMap.get('postgres'), tagDataMap.get('aws'), tagDataMap.get('webpack')
         ],
-        demoCreds: { email: "fc-gmaps@email.com", pass: "letMeIn_gmaps!" },
-        links: [
-            {
-                type: "website",
-                url: "http://dev.client.google-maps.s3-website-us-west-1.amazonaws.com/",
-                ariaLabel: "Google Maps app project web link"
-            },
-            {
-                type: "github",
-                url: "https://github.com/fceja/google_maps_app",
-                ariaLabel: "Google Maps app project GitHub link"
-            }
-        ],
-        description: `
-            After logging-in, an interactive Google Map is populated.
-        `
+        title: "Google Maps App",
+        videoPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/google_maps_app.mp4",
+        videoThumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/google_maps_app_thumbnail.png",
+        year: "2023",
     },
     {
-        year: "2023",
-        title: "Emailer API",
+        /* Emailer API */
+        demoCreds: null,
+        description: `
+        A Node JS / Express JS API that provides an endpoint for generating and sending an email.
+        It is also setup in AWS, through API Gateway and a Lambda function.
+        `,
+        description2: null,
+        homePinned: false,
+        links: [
+            {
+                type: "github",
+                label: "Code",
+                url: "https://github.com/fceja/emailer_api",
+                ariaLabel: "Emailer API project GitHub link"
+            },
+        ],
         projType: "Backend",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('node'), tagDataMap.get('express'),
             tagDataMap.get('nodemailer'), tagDataMap.get('aws'),
         ],
-        links: [
-            {
-                type: "github",
-                url: "https://github.com/fceja/emailer_api",
-                ariaLabel: "Emailer API project GitHub link"
-            },
-        ],
-        description: `
-            A Node JS / Express JS API that provides an endpoint for generating and sending an email.
-            It is also setup in AWS, through API Gateway and a Lambda function.
-        `
+        title: "Emailer API",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2023",
     },
     {
-        year: "2023",
-        title: "Geolocation-IP App",
+        /* Geolocation IP App */
+        demoCreds: { email: "fc-geoip@email.com", pass: "letMeIn_geoip!" },
+        description: `
+        After logging-in, clicking a button will retrieve geo-coordinates and IP info.
+        `,
+        description2: null,
+        homePinned: false,
+        links: [
+            {
+                type: "website",
+                label: "Website",
+                url: "https://fceja-proj.com/",
+                ariaLabel: "Geolocation IP app project web link"
+            },
+            {
+                type: "github",
+                label: "Code",
+                url: "https://github.com/fceja/login_form_geolocation_ip",
+                ariaLabel: "Geolocation IP app project GitHub link"
+            }
+        ],
         projType: "Full-stack",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
             tagDataMap.get('bootstrap'), tagDataMap.get('reactBootstrap'), tagDataMap.get('html'),
             tagDataMap.get('sass'), tagDataMap.get('postgres'), tagDataMap.get('aws'), tagDataMap.get('webpack')
         ],
-        demoCreds: { email: "fc-geoip@email.com", pass: "letMeIn_geoip!" },
-        links: [
-            {
-                type: "website",
-                url: "https://fceja-proj.com/",
-                ariaLabel: "Geolocation IP app project web link"
-            },
-            {
-                type: "github",
-                url: "https://github.com/fceja/login_form_geolocation_ip",
-                ariaLabel: "Geolocation IP app project GitHub link"
-            }
-        ],
-        description: `
-            After logging-in, clicking a button will retrieve geo-coordinates and IP info.
-        `
+        title: "Geolocation-IP App",
+        videoPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/geolocation_ip_app.mp4",
+        videoThumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/geolocation_ip_app_thumbnail.png",
+        year: "2023",
     },
     {
-        year: "2023",
-        title: "fceja.com",
-        projType: "Automation",
-        tags: [
-            tagDataMap.get('typescript'), tagDataMap.get('Selenium'), tagDataMap.get('jest'),
-        ],
+        /* fceja.com Automation */
+        demoCreds: null,
+        description: "Automation tests for fceja.com. Implemented with Selenium and Jest.",
+        description2: null,
+        homePinned: false,
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/fceja.com_automation/",
                 ariaLabel: "fceja.com Automation app project GitHub link"
             }
         ],
-        description: "Automation tests for fceja.com. Implemented with Selenium and Jest."
+        projType: "Automation",
+        tags: [
+            tagDataMap.get('typescript'), tagDataMap.get('Selenium'), tagDataMap.get('jest'),
+        ],
+        title: "fceja.com",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2023",
     },
     {
-        year: "2023",
-        title: "AWS Lambda Emailer",
-        projType: "AWS Lambda",
-        tags: [
-            tagDataMap.get('node'), tagDataMap.get('typescript'), tagDataMap.get('aws:lambda')
-        ],
+        /* AWS Lambda Emailer */
+        demoCreds: null,
+        description: "AWS Lambda Function, for creating and sending email.",
+        description2: null,
+        homePinned: false,
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/aws_lambda_emailer_func",
                 ariaLabel: "AWS Lambda Emailer Func GitHub link"
             }
         ],
-        description: "AWS Lambda Function, for creating and sending email."
+        projType: "AWS Lambda",
+        tags: [
+            tagDataMap.get('node'), tagDataMap.get('typescript'), tagDataMap.get('aws:lambda')
+        ],
+        title: "AWS Lambda Emailer",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2023",
     },
     {
-        year: "2023",
-        title: "Image Classification",
-        projType: "Machine Learning",
-        tags: [
-            tagDataMap.get('python'), tagDataMap.get('pytorch')
-        ],
+        /* Image Classification */
+        demoCreds: null,
+        homePinned: false,
+        description: "Simple neural network to classify handwritten digits from MNIST dataset.",
+        description2: null,
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/image_classification",
                 ariaLabel: "Machine Learning project GitHub link"
             }
         ],
-        description: "Simple neural network to classify handwritten digits from MNIST dataset."
+        projType: "Machine Learning",
+        tags: [
+            tagDataMap.get('python'), tagDataMap.get('pytorch')
+        ],
+        title: "Image Classification",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2023",
     },
     {
-        year: "2023",
-        title: "Forum Post App",
+        /* Forum Post App */
+        demoCreds: { email: "maryFairy", pass: "fairyDust$!%" },
+        description: `
+        A forum-like app that allows users to create, modify or delete posts on a community home page.
+        It handles account creation and login functionality.
+        Moderators can delete other users' posts, as well as ban them.
+        `,
+        description2: null,
+        homePinned: true,
+        links: [
+            {
+                type: "website",
+                label: "Website",
+                url: "https://django-forum-post-660c391dbe52.herokuapp.com",
+                ariaLabel: "Forum Post app project web link"
+            },
+            {
+                type: "github",
+                label: "Code",
+                url: "https://github.com/fceja/forum_post_app",
+                ariaLabel: "Forum Post app project GitHub link"
+            }
+        ],
         projType: "Full-stack",
         tags: [
             tagDataMap.get('python'), tagDataMap.get('django'), tagDataMap.get('djangoCrispyForms'),
             tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('css'),
             tagDataMap.get('postgres'), tagDataMap.get('heroku'), tagDataMap.get('css')
         ],
-        links: [
-            {
-                type: "website",
-                url: "https://django-user-post-a42f5d79d28f.herokuapp.com",
-                ariaLabel: "Forum Post app project web link"
-            },
-            {
-                type: "github",
-                url: "https://github.com/fceja/forum_post_app",
-                ariaLabel: "Forum Post app project GitHub link"
-            }
-        ],
-        demoCreds: { email: "mary", pass: "LetMeIn2023$!%" },
-        description: `
-        A forum-like app that allows users to create, modify or delete posts on a community home page.
-        It handles account creation and login functionality.
-        Moderators can delete other users' posts, as well as ban them.
-        `
+        title: "Forum Post App",
+        videoPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/forum_post_app.mp4",
+        videoThumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/forum_post_app_thumbnail.png",
+        year: "2023",
     },
     {
-        year: "2023",
-        title: "Login JWT Auth API",
-        projType: "Backend",
-        tags: [
-            tagDataMap.get('golang'), tagDataMap.get('jwt'), tagDataMap.get('postgres'),
-        ],
+        /* Login JWT Auth API */
+        demoCreds: null,
+        description: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with Golang and JWT authentication.",
+        description2: null,
+        homePinned: false,
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/login_jwt_auth_api",
                 ariaLabel: "Login JWT Auth API app project GitHub link"
             }
         ],
-        description: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with Golang and JWT authentication."
+        projType: "Backend",
+        tags: [
+            tagDataMap.get('golang'), tagDataMap.get('jwt'), tagDataMap.get('postgres'),
+        ],
+        title: "Login JWT Auth API",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2023",
     },
     {
-        year: "2023",
-        title: "fceja.com",
+        /* fceja.com v1 */
+        demoCreds: null,
+        description: "fceja.com web app. Version 1.",
+        description2: null,
+        homePinned: false,
+        links: [
+            {
+                type: "website",
+                label: "Website",
+                url: "http://dev.client.fceja.s3-website-us-west-1.amazonaws.com/",
+                ariaLabel: "fceja.com app project web link"
+            },
+            {
+                type: "github",
+                label: "Code",
+                url: "https://github.com/fceja/fceja.com_v1",
+                ariaLabel: "fceja.com app project GitHub link"
+            }
+        ],
         projType: "Frontend",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('sass'),
             tagDataMap.get('html'), tagDataMap.get('aws'), tagDataMap.get('anime'),
             tagDataMap.get('jest'), tagDataMap.get('jenkins')
         ],
+        title: "fceja.com",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2023",
+    },
+    {
+        /* Profile App v1 */
+        demoCreds: null,
+        description: `
+            Web app that contains a home, gallery and contact page.
+            The contact page gathers user information for communication purposes.
+            Version 1.
+        `,
+        description2: null,
+        homePinned: false,
         links: [
             {
                 type: "website",
-                url: "http://dev.client.fceja.s3-website-us-west-1.amazonaws.com/",
-                ariaLabel: "fceja.com app project web link"
+                label: "Website",
+                url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com",
+                ariaLabel: "Profile app project web link"
             },
             {
                 type: "github",
-                url: "https://github.com/fceja/fceja.com_v1",
-                ariaLabel: "fceja.com app project GitHub link"
+                label: "Code",
+                url: "https://github.com/fceja/profile_app",
+                ariaLabel: "Profile app project GitHub link"
             }
         ],
-        description: "fceja.com web app."
-    },
-    {
-        year: "2023",
-        title: "Profile App",
         projType: "Frontend",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
             tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('sass'),
             tagDataMap.get('aws')
         ],
-        links: [
-            {
-                type: "website",
-                url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com",
-                ariaLabel: "Profile app project web link"
-            },
-            {
-                type: "github",
-                url: "https://github.com/fceja/profile_app",
-                ariaLabel: "Profile app project GitHub link"
-            }
-        ],
-        description: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes."
+        title: "Profile App",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2023",
     },
     {
-        year: "2022",
-        title: "Card Carousel App",
+        /* Card Carousel App */
+        demoCreds: null,
+        description: "Features a scrollable carousel with cards.",
+        description2: null,
+        homePinned: false,
+        links: [
+            {
+                type: "github",
+                label: "Code",
+                url: "https://github.com/fceja/card_carousel",
+                ariaLabel: "Card Carousel app project GitHub link"
+            }
+        ],
         projType: "Frontend",
         tags: [
             tagDataMap.get('javascript'), tagDataMap.get('react'), tagDataMap.get('html'),
             tagDataMap.get('css')
         ],
+        title: "Card Carousel App",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2022",
+    },
+    {
+        /* Login Auth Cookie Session API */
+        demoCreds: null,
+        description: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with TypeScript and session cookie authentication.",
+        description2: null,
+        homePinned: false,
         links: [
             {
                 type: "github",
-                url: "https://github.com/fceja/card_carousel",
-                ariaLabel: "Card Carousel app project GitHub link"
+                label: "Code",
+                url: "https://github.com/fceja/login_session_cookie_auth_api",
+                ariaLabel: "Login Session Cookie Auth API app project link"
             }
         ],
-        description: "Features a scrollable carousel with cards."
-    },
-    {
-        year: "2022",
-        title: "Login Session Cookie Auth API",
         projType: "Backend",
         tags: [
             tagDataMap.get('typescript'), tagDataMap.get('node'), tagDataMap.get('express'),
             tagDataMap.get('postgres'), tagDataMap.get('jwt')
         ],
-        links: [
-            {
-                type: "github",
-                url: "https://github.com/fceja/login_session_cookie_auth_api",
-                ariaLabel: "Login Session Cookie Auth API app project link"
-            }
-        ],
-        description: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with TypeScript and session cookie authentication."
+        title: "Login Auth Cookie Session API",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2022",
     },
     {
-        year: "2022",
-        title: "Economic Calendar",
-        projType: "Automation",
-        tags: [
-            tagDataMap.get('python'), tagDataMap.get('selenium')
-        ],
+        /* Economic Calender */
+        demoCreds: null,
+        description: "Parses economic calendar data from investing.com, and outputs data to a csv file.",
+        description2: null,
+        homePinned: false,
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/econ_calendar_automation",
                 ariaLabel: "Economic Calender Automation project GitHub link"
             }
         ],
-        description: "Parses economic calendar data from investing.com, and outputs data to a csv file."
+        projType: "Automation",
+        tags: [
+            tagDataMap.get('python'), tagDataMap.get('selenium')
+        ],
+        title: "Economic Calendar",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2022",
     },
     {
-        year: "2021",
-        title: "Bingo Card Game",
-        projType: "Frontend",
-        tags: [
-            tagDataMap.get('javascript'), tagDataMap.get('html'), tagDataMap.get('css'),
-            tagDataMap.get('aws')
-        ],
+        /* Bingo Card Game */
+        demoCreds: null,
+        description: "Imitation of card game, where the game is won when a pre-determined pattern is selected.",
+        description2: null,
+        homePinned: false,
         links: [
             {
                 type: "website",
+                label: "Website",
                 url: "http://dev.frontend.bingo.s3-website-us-west-1.amazonaws.com",
                 ariaLabel: "Bingo Card Game app project web link"
             },
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/bingo_game",
                 ariaLabel: "Bingo Card Game app project GitHub link"
             }
         ],
-        description: "Imitation of card game, where the game is won when a pre-determined pattern is selected."
+        projType: "Frontend",
+        tags: [
+            tagDataMap.get('javascript'), tagDataMap.get('html'), tagDataMap.get('css'),
+            tagDataMap.get('aws')
+        ],
+        title: "Bingo Card Game",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2018",
     },
     {
-        year: "2020",
-        title: "User vs AI Agent",
-        projType: "Desktop",
-        tags: [
-            tagDataMap.get('c++'),
-        ],
+        /* AI Agent vs User */
+        demoCreds: null,
+        description: "A CLI implemented 4-in-a-row game, where players compete against an AI agent. Utilizes an alpha-beta pruning search algorithm.",
+        description2: null,
+        homePinned: false,
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/ai_agent_4_in_a_row",
                 ariaLabel: "User vs AI Agent project GitHub link"
             }
         ],
-        description: "A CLI implemented 4-in-a-row game, where players compete against an AI agent. Utilizes an alpha-beta pruning search algorithm."
-    },
-    {
-        year: "2020",
-        title: "Estimate PI - Monte Carlo",
         projType: "Desktop",
         tags: [
             tagDataMap.get('c++'),
         ],
+        title: "AI Agent vs User",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2020",
+    },
+    {
+        /* Estimate Pi - Monte Carlo */
+        demoCreds: null,
+        description: "Estimate the value of PI using the Monte Carlo method. Uses multithreading to parallelize computation.",
+        description2: null,
+        homePinned: false,
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/estimate_pi_monte_carlo/blob/main/monte_thread.cpp",
                 ariaLabel: "Estimate PI Monte Carlo project GitHub link"
             }
         ],
-        description: "Estimate the value of PI using the Monte Carlo method. Uses multithreading to parallelize computation."
-    },
-    {
-        year: "2019",
-        title: "Dice Game",
         projType: "Desktop",
         tags: [
-            tagDataMap.get('java'), tagDataMap.get('javaFX'), tagDataMap.get('maven'),
+            tagDataMap.get('c++'),
         ],
+        title: "Estimate PI - Monte Carlo",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2020",
+    },
+    {
+        /* Dice Game */
+        demoCreds: null,
+        description: "A poker style game with dice.",
+        description2: null,
+        homePinned: false,
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/dice_game",
                 ariaLabel: "Dice Game app project GitHub link"
             }
         ],
-        description: "A poker style game with dice."
+        projType: "Desktop",
+        tags: [
+            tagDataMap.get('java'), tagDataMap.get('javaFX'), tagDataMap.get('maven'),
+        ],
+        title: "Dice Game",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2019",
     },
     {
-        year: "2019",
-        title: "Chipotle Mock",
+        /* Chipotle Mock */
+        demoCreds: null,
+        description: "Mock webpage for Chipotle.",
+        description2: null,
+        homePinned: false,
+        links: [
+            {
+                type: "github",
+                label: "Code",
+                url: "https://github.com/fceja/chipotle_mock",
+                ariaLabel: "Chipotle Mock app project GitHub link"
+            }
+        ],
         projType: "Frontend",
         tags: [
             tagDataMap.get('javascript'), tagDataMap.get('jquery'), tagDataMap.get('html'),
             tagDataMap.get('css')
         ],
-        links: [
-            {
-                type: "github",
-                url: "https://github.com/fceja/chipotle_mock",
-                ariaLabel: "Chipotle Mock app project GitHub link"
-            }
-        ],
-        description: "Mock webpage for Chipotle."
+        title: "Chipotle Mock",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2019",
     },
 ]
 

@@ -20,24 +20,8 @@
   list-style: none;
   width: max-content;
 
-  animation-name: scrollLeft;
-  animation-duration: 200s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  will-change: transform;
-  -webkit-animation-name: scrollLeft;
-  -webkit-animation-duration: 200s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-play-state: running;
-
   &:hover {
     overflow-x: auto;
-
-    animation-play-state: paused;
-    -webkit-animation-play-state: paused;
-
     cursor: pointer;
   }
 }

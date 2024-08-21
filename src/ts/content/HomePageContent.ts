@@ -25,13 +25,12 @@ export const experienceCardsContent: ExperienceCardEntryT[] = [
         clients: [
             {
                 year: 'MAY 2020 - JAN 2023',
-                position: "QA / Automation Engineer",
+                position: "QA / Automation Engineer / Developer",
                 company: "Viking",
                 companyUrl: "https://www.vikingcruises.com/",
                 paragraph: `
                     Designed and implemented frontend and backend automation solutions for the Viking product ecosystem.
-                    Developed frontend and backend internal tooling applications. Part of an Agile team.
-                    Collaborated with Director of Engineering for special projects. (Remote)
+                    Developed frontend and backend internal tooling applications. Part of an Agile team. (Remote)
                 `,
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('javascript'), tagDataMap.get('selenium'), tagDataMap.get('testRail'),
@@ -70,7 +69,7 @@ export const experienceCardsContent: ExperienceCardEntryT[] = [
             },
             {
                 year: 'NOV 2019 - FEB 2020',
-                position: "QA Engineer (Internship)",
+                position: "Intern - QA / Automation Engineer",
                 company: "Hallmark Labs",
                 companyUrl: "https://www.hallmarklabs.com/",
                 paragraph: `
@@ -85,123 +84,6 @@ export const experienceCardsContent: ExperienceCardEntryT[] = [
             }
         ]
     },
-]
-
-export const homeProjectContent = [
-    {
-        title: "Profile App",
-        imageUrl: "/assets/thumbnails/user-profile.png",
-        imageAlt: "Profile app project thumbnail",
-        tags: [
-            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('redux'),
-            tagDataMap.get('googlemaps'), tagDataMap.get('bootstrap'), tagDataMap.get('html'),
-            tagDataMap.get('sass'), tagDataMap.get('aws:s3')
-        ],
-        links: [
-            {
-                type: "website",
-                url: "http://dev.client.profile-app-v2.s3-website-us-west-1.amazonaws.com/",
-                ariaLabel: "Profile project web link"
-            },
-            {
-                type: "github",
-                url: "https://github.com/fceja/profile_app_v2",
-                ariaLabel: "Profile project GitHub link"
-            }
-        ],
-        projType: "Frontend",
-        paragraph: `
-            A web app that contains a home page, gallery page, and a contact page.
-            Contact form submits contact information to a designated email setup in an AWS Lambda.
-        `
-    },
-    {
-        title: "Emailer API",
-        imageUrl: "/assets/thumbnails/email.png",
-        imageAlt: "Email API project thumbnail",
-        tags: [
-            tagDataMap.get('typescript'), tagDataMap.get('node'), tagDataMap.get('express'),
-            tagDataMap.get('nodemailer'), tagDataMap.get('aws:apiGateway'), tagDataMap.get('aws:lambda')
-        ],
-        links: [
-            {
-                type: "github",
-                url: "https://github.com/fceja/emailer_api",
-                ariaLabel: "Emailer API project GitHub link"
-            },
-        ],
-        projType: "Backend",
-        paragraph: `
-            An API that provides an endpoint for generating and sending an email.
-            Implemented with Node JS, Express JS and the Nodemailer library.
-            It is also setup in AWS, through API Gateway and a Lambda function.
-            Leveraged by the Profile App project.
-        `
-    },
-    {
-        title: "Forum Post App",
-        imageUrl: "/assets/thumbnails/message-bubbles.png",
-        imageAlt: "Forum Post app project thumbnail",
-        tags: [
-            tagDataMap.get('python'), tagDataMap.get('django'), tagDataMap.get('djangoCrispyForms'),
-            tagDataMap.get('bootstrap'), tagDataMap.get('html'), tagDataMap.get('css'),
-            tagDataMap.get('postgres'), tagDataMap.get('heroku')
-        ],
-        links: [
-            {
-                type: "website",
-                url: "https://django-user-post-a42f5d79d28f.herokuapp.com/",
-                ariaLabel: "Forum Post app project web link"
-            },
-            {
-                type: "github",
-                url: "https://github.com/fceja/user_post",
-                ariaLabel: "Forum Post app project GitHub link"
-            }
-        ],
-        projType: "Full-stack",
-        paragraph: `
-            A forum-like app that allows users to create, modify or delete posts on a community home page.
-            It handles account creation and login functionality.
-            Moderators can delete other users' posts, as well as ban them.
-        `,
-        paragraphTwo: `
-            Demo credentials — username: mary / password: LetMeIn2023$!%
-        `
-    },
-    {
-        title: "Geolocation / IP App",
-        imageUrl: "/assets/thumbnails/world-magnifying-glass.png",
-        imageAlt: "Geolocation IP app project thumbnail",
-        tags: [
-            tagDataMap.get('typescript'), tagDataMap.get('react'), tagDataMap.get('googlemaps'),
-            tagDataMap.get('bootstrap'), tagDataMap.get('reactBootstrap'), tagDataMap.get('html'),
-            tagDataMap.get('sass'), tagDataMap.get('postgres'), tagDataMap.get('aws:apiGateway'),
-            tagDataMap.get('aws:lambda'), tagDataMap.get('aws:rds'), tagDataMap.get('aws:cloudfront'),
-            tagDataMap.get('aws:route53'), tagDataMap.get('webpack')
-        ],
-        links: [
-            {
-                type: "website",
-                url: "https://fceja-proj.com/",
-                ariaLabel: "Geolocation IP app project web link"
-            },
-            {
-                type: "github",
-                url: "https://github.com/fceja/login_form_geolocation_ip",
-                ariaLabel: "Geolocation IP app project GitHub link"
-            }
-        ],
-        projType: "Full-stack",
-        paragraph: `
-            An app that uses the browser's API and a third-party service.
-            After logging in, clicking the button will ask for user permission to retrieve geo-coordinates and IP info.
-            The login was implemented to prevent overuse, since third-party endpoint is throttled.
-        `,
-        paragraphTwo: `
-            Demo credentials — email: fc-geoip@email.com / password: letMeIn_geoip!
-        `
-    }
 ]
 
 export const socialLinksContent = [

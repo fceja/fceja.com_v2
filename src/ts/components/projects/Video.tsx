@@ -69,25 +69,24 @@ const Video: React.FC<VideoI> = (props) => {
 
         const videoBlobUrl = URL.createObjectURL(blob)
         setVideoBlobUrl(videoBlobUrl)
-
     }
 
     const handleThumbnailClick = () => {
         if (isMobile) {
             setThumbnailBlobUrl("")
             fetchVideo()
-            waitVideoLoad()
+            triggerVideoPlay()
         }
     }
 
-    const handleMouseEnter = () => {
+    const handleThumbnailMouseEnter = () => {
         if (!isMobile) {
             setThumbnailBlobUrl("")
             fetchVideo()
         }
     }
 
-    const requestFullscreen = (video: HTMLVideoElement) => {
+    const requestFullscreenAndPlay = (video: HTMLVideoElement) => {
         if (video.requestFullscreen) {
             video.requestFullscreen();
         } else if ((video as any).webkitRequestFullscreen) {
@@ -96,14 +95,14 @@ const Video: React.FC<VideoI> = (props) => {
             (video as any).msRequestFullscreen();
         }
 
+        video.play();
     }
 
-    const waitVideoLoad = () => {
-        const video = videoRef.current;
+    const triggerVideoPlay = () => {
         const checkVideo = (count: number) => {
+            const video = videoRef.current;
             if (video) {
-                video.play();
-                requestFullscreen(video)
+                requestFullscreenAndPlay(video)
                 return;
             }
 
@@ -113,10 +112,27 @@ const Video: React.FC<VideoI> = (props) => {
             } else {
                 setIsVideoPlaybackError(true)
             }
-
         }
 
         checkVideo(0)
+    }
+
+    const handleDesktopEvent = (e: React.MouseEvent<HTMLVideoElement>, eventType: string) => {
+        const video = e.currentTarget;
+
+        switch (eventType) {
+            case 'mouseEnter':
+                video.play();
+                break
+            case 'mouseLeave':
+                video.pause();
+                break
+            case 'click':
+                triggerVideoPlay()
+                break
+            default:
+                throw new Error('Invalid eventType.')
+        }
     }
 
     return (
@@ -132,44 +148,34 @@ const Video: React.FC<VideoI> = (props) => {
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                         }}
-                        onMouseEnter={handleMouseEnter}
-                        onClick={handleThumbnailClick}
+                        onMouseEnter={handleThumbnailMouseEnter} // for desktop mouse entering
+                        onClick={handleThumbnailClick} // for mobile & tablet touch
                     >
                     </div>
                 }
                 {videoBlobUrl && !isMobile &&
                     <video
+                        ref={videoRef}
                         muted
                         loop
-                        onMouseEnter={(e) => {
-                            const video = e.currentTarget as HTMLVideoElement;
-                            video.play();
-                        }}
-                        onMouseLeave={(e) => {
-                            const video = e.currentTarget as HTMLVideoElement;
-                            video.pause();
-                        }}
-                        onClick={(e) => {
-                            const video = e.currentTarget as HTMLVideoElement;
-                            if (video.requestFullscreen) {
-                                video.requestFullscreen();
-                            } else if ((video as any).webkitRequestFullscreen) {
-                                (video as any).webkitRequestFullscreen();
-                            } else if ((video as any).msRequestFullscreen) {
-                                (video as any).msRequestFullscreen();
-                            }
-                        }}
+                        onMouseEnter={(e) => { handleDesktopEvent(e, 'mouseEnter') }}
+                        onMouseLeave={(e) => { handleDesktopEvent(e, 'mouseLeave') }}
+                        onClick={(e) => { handleDesktopEvent(e, 'click') }}
                     >
                         <source src={videoBlobUrl} type="video/mp4" />
                         Your browser does not support the video.
                     </video>
                 }
                 {videoBlobUrl && isMobile && (
-                    <video ref={videoRef} muted controls>
+                    <video
+                        ref={videoRef}
+                        muted
+                        controls
+                        loop
+                    >
                         <source src={videoBlobUrl} type="video/mp4" />
                         Your browser does not support the video.
                     </video>
-
                 )}
             </div>
         </>

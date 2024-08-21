@@ -10,36 +10,6 @@ hr {
     margin: 25px 0;
 }
 
-
-@media(max-width: $breakpoint-lg) {
-    div.proj-card {
-        margin: 50px auto;
-        max-width: 600px;
-    }
-
-    div.proj-content {
-        margin: 10px 0 0 0;
-        padding: 15px;
-    }
-}
-
-@media (min-width: $breakpoint-lg) {
-    div.proj-card {
-        margin: 50px 0;
-    }
-
-    div.proj-content {
-        margin: 0 auto;
-        align-content: center;
-        max-width: 400px;
-        padding: 15px;
-    }
-
-    div.proj-info {
-        display: flex;
-    }
-}
-
 a.proj-title {
     text-decoration: none;
     color: rgb(238, 238, 238);
@@ -74,4 +44,38 @@ div.demo {
 
 div.proj-tags {
     margin: 15px 0 0 0;
+}
+
+@media(max-width: $breakpoint-lg) {
+    div.proj-card {
+        margin: 50px auto;
+        max-width: 600px;
+    }
+
+    div.proj-content {
+        margin: 10px 0 0 0;
+        padding: 15px;
+    }
+}
+
+@media (min-width: $breakpoint-lg) {
+    div.proj-card {
+        margin: 50px 0;
+    }
+
+    div.proj-content {
+        margin: 0 auto;
+        align-content: center;
+        max-width: 400px;
+        padding: 15px;
+    }
+
+    div.proj-info {
+        display: flex;
+    }
+}
+
+/* home page styles*/
+div.home-proj-info {
+    display: block;
 }

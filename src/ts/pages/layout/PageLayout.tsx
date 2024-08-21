@@ -9,9 +9,8 @@ interface LayoutI {
 }
 
 const Layout: React.FC<LayoutI> = (props) => {
-    const location = useLocation();
-
     const { children } = props;
+    const location = useLocation();
 
     /* scroll to top when navigating to new page */
     useEffect(() => {
