@@ -10,14 +10,14 @@ type linksT = {
 export type projectCardT = {
     demoCreds: { email: string, pass: string } | null
     description: string
-    description2: string
+    description2: string | null
     homePinned: boolean
     links: linksT[]
     projType: string
     tags: any[]
     title: string
-    videoPath: string
-    videoThumbnailPath: string,
+    videoPath: string | null
+    videoThumbnailPath: string | null,
     year: string
 }
 
