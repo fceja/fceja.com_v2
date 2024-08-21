@@ -1,0 +1,18 @@
+.collapsible-div {
+    border: solid 1px white;
+    transition: transform 1s;
+}
+
+.stationary-content {
+    display: inline-block;
+    transition: transform 1s;
+}
+
+.spin-clockwise {
+    background-color: rgba(0, 0, 255, 0.16);
+    transform: rotate(360deg);
+}
+
+.spin-counter-clockwise {
+    background-color: rgba(255, 64, 0, 0.16);
+}
