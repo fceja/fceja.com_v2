@@ -2,6 +2,7 @@ import { tagDataMap } from "@content/TagContent"
 
 type linksT = {
     type: string
+    label: string
     url: string
     ariaLabel: string
 }
@@ -33,6 +34,7 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/inventory_frontend",
                 ariaLabel: "Inventory frontend app project GitHub link"
             },
@@ -60,6 +62,7 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/skills_api",
                 ariaLabel: "Skill API project GitHub link"
             },
@@ -85,6 +88,7 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/video_feed_websocket",
                 ariaLabel: "Video Feed WebSocket project GitHub link"
             }
@@ -112,11 +116,13 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "website",
+                label: "Website",
                 url: "http://dev.client.profile-app-v2.s3-website-us-west-1.amazonaws.com/",
                 ariaLabel: "Profile app v2 project web link"
             },
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/profile_app_v2",
                 ariaLabel: "Profile app v2 project GitHub link"
             }
@@ -141,11 +147,13 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "website",
+                label: "Website",
                 url: "http://fceja.com",
                 ariaLabel: "fceja.com v2 project web link"
             },
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/fceja.com_v2",
                 ariaLabel: "fceja.com v2 project GitHub link"
             }
@@ -172,11 +180,13 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "website",
+                label: "Website",
                 url: "http://dev.client.google-maps.s3-website-us-west-1.amazonaws.com/",
                 ariaLabel: "Google Maps app project web link"
             },
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/google_maps_app",
                 ariaLabel: "Google Maps app project GitHub link"
             }
@@ -204,6 +214,7 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/emailer_api",
                 ariaLabel: "Emailer API project GitHub link"
             },
@@ -219,6 +230,7 @@ export const projectCardsContent: projectCardT[] = [
         year: "2023",
     },
     {
+        /* Geolocation IP App */
         demoCreds: { email: "fc-geoip@email.com", pass: "letMeIn_geoip!" },
         description: `
         After logging-in, clicking a button will retrieve geo-coordinates and IP info.
@@ -228,11 +240,13 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "website",
+                label: "Website",
                 url: "https://fceja-proj.com/",
                 ariaLabel: "Geolocation IP app project web link"
             },
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/login_form_geolocation_ip",
                 ariaLabel: "Geolocation IP app project GitHub link"
             }
@@ -257,6 +271,7 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/fceja.com_automation/",
                 ariaLabel: "fceja.com Automation app project GitHub link"
             }
@@ -279,6 +294,7 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/aws_lambda_emailer_func",
                 ariaLabel: "AWS Lambda Emailer Func GitHub link"
             }
@@ -301,6 +317,7 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/image_classification",
                 ariaLabel: "Machine Learning project GitHub link"
             }
@@ -327,11 +344,13 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "website",
+                label: "Website",
                 url: "https://django-forum-post-660c391dbe52.herokuapp.com",
                 ariaLabel: "Forum Post app project web link"
             },
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/forum_post_app",
                 ariaLabel: "Forum Post app project GitHub link"
             }
@@ -356,6 +375,7 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/login_jwt_auth_api",
                 ariaLabel: "Login JWT Auth API app project GitHub link"
             }
@@ -372,17 +392,19 @@ export const projectCardsContent: projectCardT[] = [
     {
         /* fceja.com v1 */
         demoCreds: null,
-        description: "fceja.com web app.",
+        description: "fceja.com web app. Version 1.",
         description2: null,
         homePinned: false,
         links: [
             {
                 type: "website",
+                label: "Website",
                 url: "http://dev.client.fceja.s3-website-us-west-1.amazonaws.com/",
                 ariaLabel: "fceja.com app project web link"
             },
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/fceja.com_v1",
                 ariaLabel: "fceja.com app project GitHub link"
             }
@@ -401,17 +423,23 @@ export const projectCardsContent: projectCardT[] = [
     {
         /* Profile App v1 */
         demoCreds: null,
-        description: "Web app that contains a home, gallery and contact page. The contact page gathers user information for communication purposes.",
+        description: `
+            Web app that contains a home, gallery and contact page.
+            The contact page gathers user information for communication purposes.
+            Version 1.
+        `,
         description2: null,
         homePinned: false,
         links: [
             {
                 type: "website",
+                label: "Website",
                 url: "http://dev.client.profile-app.s3-website-us-west-1.amazonaws.com",
                 ariaLabel: "Profile app project web link"
             },
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/profile_app",
                 ariaLabel: "Profile app project GitHub link"
             }
@@ -436,6 +464,7 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/card_carousel",
                 ariaLabel: "Card Carousel app project GitHub link"
             }
@@ -459,6 +488,7 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/login_session_cookie_auth_api",
                 ariaLabel: "Login Session Cookie Auth API app project link"
             }
@@ -482,6 +512,7 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/econ_calendar_automation",
                 ariaLabel: "Economic Calender Automation project GitHub link"
             }
@@ -504,11 +535,13 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "website",
+                label: "Website",
                 url: "http://dev.frontend.bingo.s3-website-us-west-1.amazonaws.com",
                 ariaLabel: "Bingo Card Game app project web link"
             },
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/bingo_game",
                 ariaLabel: "Bingo Card Game app project GitHub link"
             }
@@ -532,6 +565,7 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/ai_agent_4_in_a_row",
                 ariaLabel: "User vs AI Agent project GitHub link"
             }
@@ -554,6 +588,7 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/estimate_pi_monte_carlo/blob/main/monte_thread.cpp",
                 ariaLabel: "Estimate PI Monte Carlo project GitHub link"
             }
@@ -576,6 +611,7 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/dice_game",
                 ariaLabel: "Dice Game app project GitHub link"
             }
@@ -598,6 +634,7 @@ export const projectCardsContent: projectCardT[] = [
         links: [
             {
                 type: "github",
+                label: "Code",
                 url: "https://github.com/fceja/chipotle_mock",
                 ariaLabel: "Chipotle Mock app project GitHub link"
             }

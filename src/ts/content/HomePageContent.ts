@@ -30,8 +30,7 @@ export const experienceCardsContent: ExperienceCardEntryT[] = [
                 companyUrl: "https://www.vikingcruises.com/",
                 paragraph: `
                     Designed and implemented frontend and backend automation solutions for the Viking product ecosystem.
-                    Developed frontend and backend internal tooling applications. Part of an Agile team.
-                    Collaborated with Director of Engineering for special projects. (Remote)
+                    Developed frontend and backend internal tooling applications. Part of an Agile team. (Remote)
                 `,
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('javascript'), tagDataMap.get('selenium'), tagDataMap.get('testRail'),

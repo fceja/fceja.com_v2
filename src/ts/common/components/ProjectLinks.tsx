@@ -5,6 +5,7 @@ export type ProjectLinksProps = {
     className: string | null;
     linkData: {
         type: string
+        label: string
         url: string
         ariaLabel: string
     }
@@ -17,11 +18,17 @@ const ProjectLinks: React.FC<ProjectLinksProps> = (props) => {
     return (
         <span className="icon-url-container">
             <a
-                className={`${className}-${linkData.type}-link`}
+                className={`${className}-${linkData.type}-link proj-link`}
                 href={linkData.url}
                 target="_blank"
                 aria-label={linkData.ariaLabel}
             >
+                {linkData.label &&
+
+                    <span className="link-label">
+                        {linkData.label}:
+                    </span>
+                }
                 <svg
                     xmlns={svgData.xmlns}
                     viewBox={svgData.viewBox}
