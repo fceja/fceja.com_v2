@@ -9,19 +9,41 @@ interface CollapsibleI {
 const Collapsible: React.FC<CollapsibleI> = (props) => {
     const { children } = props
     const [isCollapsed, setIsCollapsed] = useState(true)
-    const [lastSpunDirection, setLastSpunDirection] = useState(false)
 
     useEffect(() => {
-        console.log(`isCollapsed -> ${isCollapsed}`)
+        if (isCollapsed) {
+            console.log('collapsed')
+            const div = document.querySelector(".outer-container-collapsed") as HTMLElement
+
+            function checkOpacity() {
+                const opacity = window.getComputedStyle(div).opacity;
+
+                if (Number(opacity) < 0.15) {
+                    div.style.position = "absolute";
+                    div.style.visibility = "hidden";
+                } else {
+                    requestAnimationFrame(checkOpacity);
+                }
+            }
+
+            requestAnimationFrame(checkOpacity);
+
+        } else {
+            console.log('expanded')
+            const div = document.querySelector(".outer-container-expanded") as HTMLElement
+            div.style.position = "static"
+            div.style.visibility = "visible"
+        }
+
     }, [isCollapsed])
 
-    const handleClick = () => {
-        setIsCollapsed(!isCollapsed)
-        setLastSpunDirection(!lastSpunDirection)
-    }
+    const handleClick = () => { setIsCollapsed(!isCollapsed) }
 
     return (
         <>
+            {isCollapsed &&
+                <div className="icon" onClick={handleClick}>+</div>
+            }
             <div
                 className={`outer-container${isCollapsed ? "-collapsed" : "-expanded"}`}
                 onClick={handleClick}
