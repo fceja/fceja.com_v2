@@ -12,10 +12,9 @@ const Collapsible: React.FC<CollapsibleI> = (props) => {
 
     useEffect(() => {
         if (isCollapsed) {
-            console.log('collapsed')
             const div = document.querySelector(".outer-container-collapsed") as HTMLElement
 
-            function checkOpacity() {
+            const checkOpacity = () => {
                 const opacity = window.getComputedStyle(div).opacity;
 
                 if (Number(opacity) < 0.15) {
@@ -29,7 +28,6 @@ const Collapsible: React.FC<CollapsibleI> = (props) => {
             requestAnimationFrame(checkOpacity);
 
         } else {
-            console.log('expanded')
             const div = document.querySelector(".outer-container-expanded") as HTMLElement
             div.style.position = "static"
             div.style.visibility = "visible"
@@ -37,17 +35,16 @@ const Collapsible: React.FC<CollapsibleI> = (props) => {
 
     }, [isCollapsed])
 
-    const handleClick = () => { setIsCollapsed(!isCollapsed) }
+    const handlePlusOrMinusClick = () => { setIsCollapsed(!isCollapsed) }
 
     return (
         <>
-            {isCollapsed &&
-                <div className="icon" onClick={handleClick}>+</div>
+            {isCollapsed ?
+                <div className="icon-plus" onClick={handlePlusOrMinusClick}>+</div>
+                :
+                <div className="icon-minus" onClick={handlePlusOrMinusClick}>-</div>
             }
-            <div
-                className={`outer-container${isCollapsed ? "-collapsed" : "-expanded"}`}
-                onClick={handleClick}
-            >
+            <div className={`outer-container${isCollapsed ? "-collapsed" : "-expanded"}`}>
                 <div className={`stationary-content${isCollapsed ? "-collapsed" : "-expanded"}`}>
                     {children}
                 </div>
