@@ -8,11 +8,21 @@
     transition: transform 1s;
 }
 
-.spin-clockwise {
-    background-color: rgba(0, 0, 255, 0.16);
+.spun-clockwise {
     transform: rotate(360deg);
 }
 
-.spin-counter-clockwise {
-    background-color: rgba(255, 64, 0, 0.16);
+.spun-counter-clockwise {}
+
+
+.collapsible-div.collapsed {}
+
+.stationary-content.collapsed {
+    opacity: 0;
+}
+
+.collapsible-div.expanded {}
+
+.stationary-content.expanded {
+    opacity: 1;
 }

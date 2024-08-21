@@ -9,30 +9,25 @@ interface CollapsibleI {
 const Collapsible: React.FC<CollapsibleI> = (props) => {
     const { children } = props
     const [isCollapsed, setIsCollapsed] = useState(true)
-    const [isSpinning, setIsSpinning] = useState(false)
+    const [lastSpunDirection, setLastSpunDirection] = useState(false)
 
     useEffect(() => {
+        console.log(`isCollapsed -> ${isCollapsed}`)
     }, [isCollapsed])
 
     const handleClick = () => {
         setIsCollapsed(!isCollapsed)
-        setIsSpinning(!isSpinning)
+        setLastSpunDirection(!lastSpunDirection)
     }
 
     return (
         <>
             <div
-                className={`
-                collapsible-div ${isCollapsed ? "collapsed" : "expanded"}
-                ${isSpinning ? "spin-clockwise" : "spin-counter-clockwise"}
-                `}
+                className={`collapsible-div ${isCollapsed ? "collapsed" : "expanded"} ${lastSpunDirection ? "spun-clockwise" : "spun-counter-clockwise"}`}
                 onClick={handleClick}
             >
                 <div
-                    className={`
-                    stationary-content
-                    ${isSpinning ? "spin-counter-clockwise" : "spin-clockwise"}
-                    `}
+                    className={`stationary-content ${isCollapsed ? "collapsed" : "expanded"} ${lastSpunDirection ? "spun-counter-clockwise" : "spun-clockwise"}`}
                 >
                     {children}
                 </div>
