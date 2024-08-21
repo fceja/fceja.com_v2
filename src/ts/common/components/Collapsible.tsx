@@ -23,12 +23,10 @@ const Collapsible: React.FC<CollapsibleI> = (props) => {
     return (
         <>
             <div
-                className={`collapsible-div ${isCollapsed ? "collapsed" : "expanded"} ${lastSpunDirection ? "spun-clockwise" : "spun-counter-clockwise"}`}
+                className={`outer-container${isCollapsed ? "-collapsed" : "-expanded"}`}
                 onClick={handleClick}
             >
-                <div
-                    className={`stationary-content ${isCollapsed ? "collapsed" : "expanded"} ${lastSpunDirection ? "spun-counter-clockwise" : "spun-clockwise"}`}
-                >
+                <div className={`stationary-content${isCollapsed ? "-collapsed" : "-expanded"}`}>
                     {children}
                 </div>
             </div>

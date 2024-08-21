@@ -1,28 +1,17 @@
-.collapsible-div {
+div[class^="outer-container-"] {
     border: solid 1px white;
     transition: transform 1s;
 }
 
-.stationary-content {
+div[class^="stationary-content-"] {
     display: inline-block;
     transition: transform 1s;
 }
 
-.spun-clockwise {
-    transform: rotate(360deg);
+.outer-container-collapsed {
+    transform: rotate(360deg) scale(0.1);
 }
 
-.spun-counter-clockwise {}
-
-
-.collapsible-div.collapsed {}
-
-.stationary-content.collapsed {
-    opacity: 0;
-}
-
-.collapsible-div.expanded {}
-
-.stationary-content.expanded {
-    opacity: 1;
+.stationary-content-collapsed {
+    transform: rotate(-360deg);
 }
