@@ -63,7 +63,6 @@ const Collapsible: React.FC<CollapsibleI> = (props) => {
                     divOuter.removeEventListener('transitionend', collapseEventHandler);
                     divOuter.style.position = "absolute";
                     divOuter.style.visibility = "hidden";
-                    console.log('resolved - handleCollapse');
                     setIsTransitioning(false)
                     resolve();
                 }
@@ -94,7 +93,6 @@ const Collapsible: React.FC<CollapsibleI> = (props) => {
                     divOuter.removeEventListener('transitionend', expandEventHandler);
                     divOuter.style.transition = 'border-color 1s';
                     divOuter.style.borderColor = 'rgba(255, 255, 255, 0)';
-                    console.log('resolved - handleExpand');
                     resolve(setIsTransitioning(false));
                 }
             });
