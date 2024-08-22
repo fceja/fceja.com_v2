@@ -13,10 +13,13 @@ const Collapsible: React.FC<CollapsibleI> = (props) => {
     const stationaryContainerRef = useRef<HTMLDivElement | null>(null);
     const [firstMount, setFirstMount] = useState(true);
 
+    /* apply first mount props */
     useEffect(() => {
         setFirstMount(false);
     }, []);
 
+
+    /* determines which transition to run, expand or collapse */
     useEffect(() => {
         const divOuter = outerContainerRef.current;
         const divStationary = stationaryContainerRef.current;
@@ -37,8 +40,8 @@ const Collapsible: React.FC<CollapsibleI> = (props) => {
     }, [isCollapsed]);
 
 
+    /* handle collapse animation */
     const handleCollapse = async () => {
-        console.log('starting - handleCollapse');
         setIsTransitioning(true)
         const divOuter = outerContainerRef.current;
         const divStationary = stationaryContainerRef.current;
@@ -48,8 +51,9 @@ const Collapsible: React.FC<CollapsibleI> = (props) => {
         divOuter.style.border = 'solid 1px rgba(255, 255, 255, 1)';
 
         await new Promise<void>((resolve) => {
-            divOuter.style.transition = "transform 1s";
+            divOuter.style.transition = "transform 1s, opacity 1s";
             divOuter.style.transform = "scale(0.05)";
+            divOuter.style.opacity = "0";
 
             divStationary.style.transition = "transform 1s";
             divStationary.style.transform = "rotate(0deg)";
@@ -67,8 +71,8 @@ const Collapsible: React.FC<CollapsibleI> = (props) => {
         });
     };
 
+    /* handle expand animation */
     const handleExpand = async () => {
-        console.log('starting - handleExpand');
         setIsTransitioning(true)
         const divOuter = outerContainerRef.current;
         const divStationary = stationaryContainerRef.current;
@@ -76,9 +80,10 @@ const Collapsible: React.FC<CollapsibleI> = (props) => {
 
         divOuter.style.position = "relative";
         divOuter.style.visibility = "visible";
-        divOuter.style.transition = 'border 1s, transform 1s';
+        divOuter.style.transition = 'border 1s, transform 1s, opacity 1s';
         divOuter.style.border = 'solid 1px rgba(255, 255, 255, 1)';
         divOuter.style.transform = 'scale(1) rotate(180deg)';
+        divOuter.style.opacity = "1";
 
         divStationary.style.transition = "transform 1s";
         divStationary.style.transform = "rotate(-180deg)";
@@ -96,6 +101,7 @@ const Collapsible: React.FC<CollapsibleI> = (props) => {
         });
     };
 
+    /* applies initial css styles on mount */
     const handleFirstMount = () => {
         const divOuter = outerContainerRef.current;
         const divStationary = stationaryContainerRef.current;
@@ -103,11 +109,13 @@ const Collapsible: React.FC<CollapsibleI> = (props) => {
 
         divOuter.style.position = "absolute";
         divOuter.style.visibility = "hidden";
+        divOuter.style.opacity = "0";
         divOuter.style.transform = "scale(0.1)";
 
         divStationary.style.display = "inline-block";
     };
 
+    /* if transition not already running, trigger expand or collapse */
     const handlePlusOrMinusClick = () => {
         if (isTransitioning) { return }
         setIsCollapsed(!isCollapsed);
