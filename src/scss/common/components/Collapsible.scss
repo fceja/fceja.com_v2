@@ -1,39 +1,5 @@
 @import "@scss/Variables.scss";
 
-div[class^="outer-container-"] {
-    border: solid 1px rgba(255, 255, 255, 0.5);
-    transition: transform 1s, opacity 1s;
-}
-
-div[class^="stationary-content-"] {
-    display: inline-block;
-    transition: transform 1s, opacity 1s;
-}
-
-/* container invisible */
-.outer-container-collapsed {
-    transform: rotate(360deg) scale(0.1);
-    opacity: 0;
-}
-
-/* container visible */
-.outer-container-expanded {
-    transform: rotate(0deg) scale(1);
-    opacity: 1;
-    position: relative;
-}
-
-/* content invisible */
-.stationary-content-collapsed {
-    transform: rotate(-360deg);
-    opacity: 0;
-}
-
-/* content visible */
-.stationary-content-expanded {
-    opacity: 1;
-}
-
 div.icon-plus,
 div.icon-minus {
     color: white;
