@@ -89,9 +89,13 @@ const Collapsible: React.FC<CollapsibleI> = (props) => {
         const divStationary = stationaryContainerRef.current
         if (!divOuter || !divStationary) { return };
 
+        /* outer div */
         divOuter.style.position = "absolute"
         divOuter.style.visibility = "hidden"
         divOuter.style.transform = "scale(0.1)"
+
+        /* inner stationary div */
+        divStationary.style.display = "inline-block"
     }
 
     const handlePlusOrMinusClick = () => { setIsCollapsed(!isCollapsed) }
