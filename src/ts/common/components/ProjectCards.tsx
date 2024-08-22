@@ -25,7 +25,7 @@ const ProjectsCards: React.FC<ProjectCardsI> = (props) => {
         <div className="projects-list">
             {projectCards.map((proj, i) => (
                 <React.Fragment key={i}>
-                    <hr />
+                    {i !== 0 && <hr className="hr-project" />}
                     <div className={`proj-card-${i} proj-card`}>
                         <div className={`${!className ? 'proj-info' : `${className}-proj-info`}`}>
                             {proj.videoPath && (

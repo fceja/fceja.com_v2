@@ -143,11 +143,7 @@ const Video: React.FC<VideoI> = (props) => {
                 {thumbnailBlobUrl &&
                     <div
                         className="thumbnail-img"
-                        style={{
-                            backgroundImage: `url(${thumbnailBlobUrl})`,
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
-                        }}
+                        style={{ backgroundImage: `url(${thumbnailBlobUrl})` }}
                         onMouseEnter={handleThumbnailMouseEnter} // for desktop mouse entering
                         onClick={handleThumbnailClick} // for mobile & tablet touch
                     >

@@ -2,14 +2,11 @@ import { Link } from "react-router-dom"
 
 import "@scss/components/home/AllProjectsLink.scss"
 
-const ArchivedProjectsLink = () => {
+const AllProjectsLink = () => {
     return (
         <span
             className="archived-proj-link-container d-flex"
-            style={{
-                height: "50px",
-                margin: "50px 0 0 0"
-            }}
+            style={{ height: "50px" }}
         >
             <Link
                 to="/projects"
@@ -31,4 +28,4 @@ const ArchivedProjectsLink = () => {
 
     )
 }
-export default ArchivedProjectsLink
+export default AllProjectsLink
