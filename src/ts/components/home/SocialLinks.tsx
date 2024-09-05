@@ -9,23 +9,20 @@ const SocialLinks = () => {
         >
             {socialLinksContent.map((elem, i) => {
                 return (
-                    <li key={`${elem.name}-${i}`}>
-                        <a
-                            href={elem.href}
-                            target={elem.target}
-                            className={`social-link`}
-                            aria-label={elem.ariaLabel}
+                    <a key={`${elem.name}-${i}`}
+                        href={elem.href}
+                        target={elem.target}
+                        className={`social-link`}
+                        aria-label={elem.ariaLabel}
+                    >
+                        <svg
+                            xmlns={elem.svgData.xmlns}
+                            viewBox={elem.svgData.viewBox}
+                            className={`social-link-svg social-link-svg-${elem.name}`}
                         >
-                            <svg
-                                xmlns={elem.svgData.xmlns}
-                                viewBox={elem.svgData.viewBox}
-                                className={`social-link-svg-${elem.name}`}
-                                height={`${elem.svgData.height}`}
-                            >
-                                <path d={`${elem.svgData.dPath}`} />
-                            </svg>
-                        </a>
-                    </li>
+                            <path d={`${elem.svgData.dPath}`} />
+                        </svg>
+                    </a>
                 )
             })}
         </ul>

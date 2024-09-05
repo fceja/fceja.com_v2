@@ -1,29 +1,21 @@
 @import "@scss/Variables.scss";
 
-$icon-height: 50px;
+a.social-link {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
 
-.social-links {
-    margin: 50px 0 0 0;
-    // padding: 0;
-    height: $icon-height;
-
-    li {
-        list-style: none;
-
-        &:first-child {
-            margin: 0 10px 0 0;
-        }
-
-        a {
-            display: inline-block;
-            height: 100%;
-        }
-
-        svg {
-            width: $icon-height;
-            fill: rgb(178, 178, 178);
-        }
+    &:not(:last-child) {
+        margin: 0 15px 0 0;
     }
+}
+
+svg.social-link-svg {
+    width: 100%;
+    height: 100%;
+    fill: rgb(178, 178, 178);
 }
 
 .social-link-svg-linked-in:hover {
@@ -32,4 +24,12 @@ $icon-height: 50px;
 
 .social-link-svg-github:hover {
     fill: $github-purple-profile;
+}
+
+.social-link-svg-codesandbox:hover {
+    fill: $codesandbox-light-yellow-profile;
+}
+
+.social-link-svg-dockerhub:hover {
+    fill: $docker-blue-profile;
 }
