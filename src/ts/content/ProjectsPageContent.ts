@@ -12,6 +12,7 @@ export type projectCardT = {
     description: string
     description2: string | null
     homePinned: boolean
+    id: string
     links: linksT[]
     projType: string
     tags: any[]
@@ -31,6 +32,7 @@ export const projectCardsContent: projectCardT[] = [
         `,
         description2: "* Latest project, under development. *",
         homePinned: true,
+        id: "inventory-app",
         links: [
             {
                 type: "github",
@@ -59,6 +61,7 @@ export const projectCardsContent: projectCardT[] = [
         `,
         description2: null,
         homePinned: false,
+        id: "skills-api",
         links: [
             {
                 type: "github",
@@ -85,6 +88,7 @@ export const projectCardsContent: projectCardT[] = [
         `,
         description2: null,
         homePinned: false,
+        id: "video-feed-websocket-app",
         links: [
             {
                 type: "github",
@@ -113,6 +117,7 @@ export const projectCardsContent: projectCardT[] = [
         `,
         description2: null,
         homePinned: true,
+        id: "profile-app-v2",
         links: [
             {
                 type: "website",
@@ -144,6 +149,7 @@ export const projectCardsContent: projectCardT[] = [
         description: "fceja.com web app. Version 2.",
         description2: null,
         homePinned: false,
+        id: "fceja.com-app-v2",
         links: [
             {
                 type: "website",
@@ -177,6 +183,7 @@ export const projectCardsContent: projectCardT[] = [
         `,
         description2: null,
         homePinned: false,
+        id: "google-maps-app",
         links: [
             {
                 type: "website",
@@ -211,6 +218,7 @@ export const projectCardsContent: projectCardT[] = [
         `,
         description2: null,
         homePinned: false,
+        id: "emailer-api",
         links: [
             {
                 type: "github",
@@ -237,6 +245,7 @@ export const projectCardsContent: projectCardT[] = [
         `,
         description2: null,
         homePinned: false,
+        id: "geolocation-ip-app",
         links: [
             {
                 type: "website",
@@ -268,6 +277,7 @@ export const projectCardsContent: projectCardT[] = [
         description: "Automation tests for fceja.com. Implemented with Selenium and Jest.",
         description2: null,
         homePinned: false,
+        id: "fceja.com-automation",
         links: [
             {
                 type: "github",
@@ -291,6 +301,7 @@ export const projectCardsContent: projectCardT[] = [
         description: "AWS Lambda Function, for creating and sending email.",
         description2: null,
         homePinned: false,
+        id: "aws-lambda-emailer",
         links: [
             {
                 type: "github",
@@ -314,6 +325,7 @@ export const projectCardsContent: projectCardT[] = [
         homePinned: false,
         description: "Simple neural network to classify handwritten digits from MNIST dataset.",
         description2: null,
+        id: "image-classification",
         links: [
             {
                 type: "github",
@@ -341,6 +353,7 @@ export const projectCardsContent: projectCardT[] = [
         `,
         description2: null,
         homePinned: true,
+        id: "forum-post-app",
         links: [
             {
                 type: "website",
@@ -372,6 +385,7 @@ export const projectCardsContent: projectCardT[] = [
         description: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with Golang and JWT authentication.",
         description2: null,
         homePinned: false,
+        id: "login-jwt-auth-api",
         links: [
             {
                 type: "github",
@@ -395,6 +409,7 @@ export const projectCardsContent: projectCardT[] = [
         description: "fceja.com web app. Version 1.",
         description2: null,
         homePinned: false,
+        id: "fceja.com-app-v1",
         links: [
             {
                 type: "website",
@@ -430,6 +445,7 @@ export const projectCardsContent: projectCardT[] = [
         `,
         description2: null,
         homePinned: false,
+        id: "profile-app-v1",
         links: [
             {
                 type: "website",
@@ -461,6 +477,7 @@ export const projectCardsContent: projectCardT[] = [
         description: "Features a scrollable carousel with cards.",
         description2: null,
         homePinned: false,
+        id: "card-carousel-app",
         links: [
             {
                 type: "github",
@@ -485,6 +502,7 @@ export const projectCardsContent: projectCardT[] = [
         description: "An API that provides endpoints for creating, retrieving, and logging-in users. Implemented with TypeScript and session cookie authentication.",
         description2: null,
         homePinned: false,
+        id: "login-auth-cookie-session",
         links: [
             {
                 type: "github",
@@ -509,6 +527,7 @@ export const projectCardsContent: projectCardT[] = [
         description: "Parses economic calendar data from investing.com, and outputs data to a csv file.",
         description2: null,
         homePinned: false,
+        id: "economic-calendar-automation",
         links: [
             {
                 type: "github",
@@ -532,6 +551,7 @@ export const projectCardsContent: projectCardT[] = [
         description: "Imitation of card game, where the game is won when a pre-determined pattern is selected.",
         description2: null,
         homePinned: false,
+        id: "bingo-card-game",
         links: [
             {
                 type: "website",
@@ -562,6 +582,7 @@ export const projectCardsContent: projectCardT[] = [
         description: "A CLI implemented 4-in-a-row game, where players compete against an AI agent. Utilizes an alpha-beta pruning search algorithm.",
         description2: null,
         homePinned: false,
+        id: "ai-agent-vs-user",
         links: [
             {
                 type: "github",
@@ -585,6 +606,7 @@ export const projectCardsContent: projectCardT[] = [
         description: "Estimate the value of PI using the Monte Carlo method. Uses multithreading to parallelize computation.",
         description2: null,
         homePinned: false,
+        id: "estimate-pi-monte-carlo",
         links: [
             {
                 type: "github",
@@ -608,6 +630,7 @@ export const projectCardsContent: projectCardT[] = [
         description: "A poker style game with dice.",
         description2: null,
         homePinned: false,
+        id: "dice-game",
         links: [
             {
                 type: "github",
@@ -631,6 +654,7 @@ export const projectCardsContent: projectCardT[] = [
         description: "Mock webpage for Chipotle.",
         description2: null,
         homePinned: false,
+        id: "chipotle-mock",
         links: [
             {
                 type: "github",
