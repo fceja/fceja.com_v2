@@ -1,41 +1,61 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
-/* Wait for page elements to load, then scroll to element */
 export const useScrollToMiddle = () => {
     const { hash } = useLocation();
+    const [isFirstLoad, setIsFirstLoad] = useState(true);
 
-    useEffect(() => {
-        if (!hash) { return }
-
-        // parse elementId to scroll to
+    /* scrolls element to middle of viewport */
+    const scrollToElement = () => {
         const elementId = hash.replace("#", "");
 
-        // scroll element to middle of page
-        const scrollToElement = () => {
-            const element = document.getElementById(elementId);
+        const element = document.getElementById(elementId);
+        if (!element) return;
 
-            if (!element) { return }
-            // get  element's top offset relative to document
-            const elementRect = element.getBoundingClientRect();
-            const absoluteElementTop = elementRect.top + window.pageYOffset;
+        // get element's top offset relative to document
+        const elementRect = element.getBoundingClientRect();
+        const absoluteElementTop = elementRect.top + window.scrollY;
 
-            // calc middle of viewport
-            const middlePosition =
-                absoluteElementTop - window.innerHeight / 2 + elementRect.height / 2;
+        // calc middle position of viewport
+        const middlePosition =
+            absoluteElementTop - window.innerHeight / 2 + elementRect.height / 2;
 
-            // scroll to middle
-            window.scrollTo({
-                top: middlePosition,
-                behavior: "smooth",
-            });
+        // scroll to middle
+        window.scrollTo({
+            top: middlePosition,
+            behavior: "smooth",
+        });
+    };
+
+    /* handles hash in url */
+    useEffect(() => {
+        if (!hash) return;
+
+        const handleHashChange = () => {
+            /*
+            defers execution until after the current stack is cleared
+            and pending rendering tasks are completed.
+            */
+            setTimeout(scrollToElement, 0);
         };
 
-        // delay scrolling, allow for components to load
-        const timeoutId = setTimeout(scrollToElement, 1000);
+        if (isFirstLoad) {
+            // handle initial page load
+            window.addEventListener("load", handleHashChange);
 
-        // cleanup
-        return () => clearTimeout(timeoutId);
+            setIsFirstLoad(false);
 
-    }, [hash]);
-}
+            return () => {
+                window.removeEventListener("load", handleHashChange);
+            };
+
+        } else {
+            // handle hash change after initial page load
+            handleHashChange();
+
+            return
+        }
+
+
+    }, [hash, isFirstLoad]);
+};
