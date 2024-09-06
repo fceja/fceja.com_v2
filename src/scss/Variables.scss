@@ -10,11 +10,17 @@ $breakpoint-xxl: 1400px;
 $app-font-family: Arial, sans-serif, ui-sans-serif, Arial, Helvetica, system-ui, Helvetica;
 $app-font-size: 16px;
 
-/* colors */
+/* colors - app */
 $app-background-color: rgb(33, 33, 33);
 $app-text-color: rgb(254, 228, 154);
-$github-purple-profile: rgb(198, 148, 251);
 $hover-text-color: $app-text-color;
-$linked-in-blue: rgb(67, 169, 224);
+
+/* colors - project links */
 $proj-title-color: $app-text-color;
 $web-url-light-blue: rgb(162, 229, 255);
+
+/* colors - profile links */
+$codesandbox-light-yellow-profile: rgb(237, 255, 165);
+$docker-blue-profile: rgb(67, 64, 230);
+$github-purple-profile: rgb(198, 148, 251);
+$linked-in-blue: rgb(67, 169, 224);

@@ -4,6 +4,7 @@ const CertificationsSection = () => {
     return (
         <section className="certifications mt-5">
             <h2 className="m-0">CERTIFICATIONS</h2>
+            <hr className="hr-section" />
             <a
                 className="badge-link"
                 href="https://www.credly.com/badges/cdcd048e-e528-404f-8733-809e3b4db607/public_url"

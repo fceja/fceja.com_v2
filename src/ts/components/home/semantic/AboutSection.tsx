@@ -9,6 +9,7 @@ const AboutSection = () => {
     return (
         <section className="about">
             <h2 className="">ABOUT</h2>
+            <hr className="hr-section" />
             <Collapsible>
                 <div className="about-content p-1">
                     <p>

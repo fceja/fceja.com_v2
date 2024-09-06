@@ -4,6 +4,7 @@ import "@scss/common/components/ProjectCards.scss";
 import { projectCardsContent, projectCardT } from "@content/ProjectsPageContent";
 import ProjectLinks from "@common/components/ProjectLinks";
 import Tags from "@common/components/Tags";
+import { useScrollToMiddle } from "@hooks/UseScrollToMiddle"
 import Video from "@components/projects/Video"
 
 const COMMON_COMPONENT_CLASSNAME = "projects-proj";
@@ -15,8 +16,9 @@ interface ProjectCardsI {
 
 const ProjectsCards: React.FC<ProjectCardsI> = (props) => {
     const { className, onlyHomePinned } = props
+    useScrollToMiddle()
 
-    /* determined if we return all project cards, or only the ones pinned for home page */
+    /* determine if we return all project cards, or only the ones pinned for home page */
     const projectCards: projectCardT[] = onlyHomePinned ?
         projectCardsContent.filter((card) => card.homePinned).reverse()
         : projectCardsContent
@@ -25,9 +27,9 @@ const ProjectsCards: React.FC<ProjectCardsI> = (props) => {
         <div className="projects-list">
             {projectCards.map((proj, i) => (
                 <React.Fragment key={i}>
-                    <hr />
+                    {i !== 0 && <hr className="hr-project" />}
                     <div className={`proj-card-${i} proj-card`}>
-                        <div className={`${!className ? 'proj-info' : `${className}-proj-info`}`}>
+                        <div id={proj.id} className={`${!className ? 'proj-info' : `${className}-proj-info`}`}>
                             {proj.videoPath && (
                                 <Video projectData={proj} />
                             )}

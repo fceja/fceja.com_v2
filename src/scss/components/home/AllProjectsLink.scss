@@ -1,10 +1,18 @@
 @import "@scss/Variables.scss";
 
+.archived-proj-link-container {
+    margin: 70px 0;
+}
+
 .archived-projects-link {
     text-decoration: none;
     color: rgb(198, 198, 198);
-    font-size: 1em;
+    font-size: 2em;
     font-weight: 500;
+
+    .view-more-link {
+        border-bottom: dashed;
+    }
 
     &:hover {
         .view-more-link {
