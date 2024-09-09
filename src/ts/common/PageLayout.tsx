@@ -4,12 +4,11 @@ import { useLocation } from "react-router-dom";
 import Footer from "@common/components/semantic/Footer";
 import Spotlight from "@common/components/Spotlight";
 
-interface LayoutI {
+interface ILayout {
     children: React.ReactNode;
 }
 
-const Layout: React.FC<LayoutI> = (props) => {
-    const { children } = props;
+const Layout: React.FC<ILayout> = ({ children }) => {
     const location = useLocation();
 
     /* scroll to top when navigating to new page */

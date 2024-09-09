@@ -5,22 +5,14 @@ import "@scss/Global.scss"
 import { PAGE_PATHS } from "@common/Constants"
 import HomePage from "@pages/HomePage";
 import ProjectsPage from "@pages/ProjectsPage";
-import PageLayout from "@pages/layout/PageLayout";
+import PageLayout from "@common/PageLayout";
 
 function App() {
   return (
     <Routes>
       <Route path="/*" element={<Navigate to={`${PAGE_PATHS.HOME}`} />} />
-      <Route path={PAGE_PATHS.HOME} element={
-        < PageLayout>
-          <HomePage />
-        </ PageLayout>
-      } />
-      <Route path={PAGE_PATHS.PROJECTS} element={
-        < PageLayout>
-          <ProjectsPage />
-        </ PageLayout>
-      } />
+      <Route path={PAGE_PATHS.HOME} element={< PageLayout children={<HomePage />} />} />
+      <Route path={PAGE_PATHS.PROJECTS} element={< PageLayout children={<ProjectsPage />} />} />
     </Routes>
   );
 }
