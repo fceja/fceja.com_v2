@@ -1,13 +1,13 @@
-import "@scss/components/home/SocialLinks.scss";
-import { socialLinksContent } from "@content/HomePageContent"
+import "@scss/components/home/SocialProfileLinks.scss";
+import { socialProfileLinksContent } from "@content/HomePageContent"
 
-const SocialLinks = () => {
+const SocialProfileLinks = () => {
     return (
         <ul
             className="social-links d-flex"
             style={{ padding: "0" }}
         >
-            {socialLinksContent.map((elem, i) => {
+            {socialProfileLinksContent.map((elem, i) => {
                 return (
                     <a key={`${elem.name}-${i}`}
                         href={elem.href}
@@ -28,4 +28,4 @@ const SocialLinks = () => {
         </ul>
     );
 };
-export default SocialLinks;
+export default SocialProfileLinks;

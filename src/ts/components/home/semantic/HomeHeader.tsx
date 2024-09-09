@@ -1,5 +1,5 @@
 import "@scss/components/home/semantic/HomeHeader.scss"
-import SocialLinks from "@components/home/SocialLinks"
+import SocialProfileLinks from "@components/home/SocialProfileLinks"
 
 const HomeHeader = () => {
     return (
@@ -8,7 +8,7 @@ const HomeHeader = () => {
                 <h1 id="header-name">Francisco Ceja</h1>
                 <h2>Automater / Developer</h2>
                 <p>I like to code apps and stuff.</p>
-                <SocialLinks />
+                <SocialProfileLinks />
             </div>
         </header>
     )

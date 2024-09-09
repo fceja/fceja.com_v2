@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 
-import "@scss/components/home/AllProjectsLink.scss"
+import "@scss/components/home/ViewMoreProjectsLink.scss"
 
-const AllProjectsLink = () => {
+const ViewMoreProjectsLink = () => {
     return (
         <span
             className="archived-proj-link-container d-flex"
@@ -28,4 +28,4 @@ const AllProjectsLink = () => {
 
     )
 }
-export default AllProjectsLink
+export default ViewMoreProjectsLink

@@ -86,7 +86,7 @@ export const experienceCardsContent: ExperienceCardEntryT[] = [
     },
 ]
 
-export const socialLinksContent = [
+export const socialProfileLinksContent = [
     {
         name: "linked-in",
         href: "https://www.linkedin.com/in/f-ceja/",
