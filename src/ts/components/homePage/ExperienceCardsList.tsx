@@ -1,8 +1,8 @@
 import React from "react"
 
-import "@scss/components/home/ExperienceCardsList.scss"
-import ExperienceCard from "@components/home/ExperienceCard"
-import { experienceCardsContent } from "@content/HomePageContent"
+import "@scss/components/homePage/ExperienceCardsList.scss"
+import ExperienceCard from "@components/homePage/ExperienceCard"
+import { experienceCardsContent } from "@content/homePage/ExperienceCardsContent"
 
 const ExperienceCardsList = () => {
     return (

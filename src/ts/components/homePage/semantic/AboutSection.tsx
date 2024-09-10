@@ -1,4 +1,4 @@
-import "@scss/components/home/semantic/AboutSection.scss"
+import "@scss/components/homePage/semantic/AboutSection.scss"
 import Collapsible from "@common/components/Collapsible"
 
 // pre-load cursor image to reduce delay

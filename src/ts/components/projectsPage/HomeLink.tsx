@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-import "@scss/components/projects/HomeLink.scss"
+import "@scss/components/projectsPage/HomeLink.scss"
 
 const HomeLink = () => {
     return (

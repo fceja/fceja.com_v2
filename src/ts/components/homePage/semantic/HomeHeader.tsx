@@ -1,5 +1,5 @@
-import "@scss/components/home/semantic/HomeHeader.scss"
-import SocialProfileLinks from "@components/home/SocialProfileLinks"
+import "@scss/components/homePage/semantic/HomeHeader.scss"
+import SocialProfileLinks from "@components/homePage/SocialProfileLinks"
 
 const HomeHeader = () => {
     return (

@@ -1,5 +1,5 @@
-import ProjectsHeader from "@components/projects/semantic/ProjectsHeader"
-import ProjectsMain from "@components/projects/semantic/ProjectsMain"
+import ProjectsHeader from "@components/projectsPage/semantic/ProjectsHeader"
+import ProjectsMain from "@components/projectsPage/semantic/ProjectsMain"
 
 const ProjectsPage = () => {
     return (

@@ -1,6 +1,6 @@
-import HomeLink from "@components/projects/HomeLink"
+import HomeLink from "@components/projectsPage/HomeLink"
 
-import "@scss/components/projects/semantic/ProjectsHeader.scss"
+import "@scss/components/projectsPage/semantic/ProjectsHeader.scss"
 const ProjectsHeader = () => {
     return (
         <header className="projects-header">

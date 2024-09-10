@@ -1,5 +1,5 @@
-import HomeHeader from "@components/home/semantic/HomeHeader";
-import HomeMain from "@components/home/semantic/HomeMain";
+import HomeHeader from "@components/homePage/semantic/HomeHeader";
+import HomeMain from "@components/homePage/semantic/HomeMain";
 
 const HomePage = () => {
     return (

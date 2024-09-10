@@ -1,5 +1,5 @@
 import "@scss/common/components/Tags.scss"
-import { TagLinkI } from "@content/TagContent"
+import { TagLinkI } from "@content/common/TagContent"
 
 interface TagsProps {
     tagData: (TagLinkI | undefined)[],

@@ -1,4 +1,4 @@
-import "@scss/components/home/semantic/ProjectsSection.scss"
+import "@scss/components/homePage/semantic/ProjectsSection.scss"
 import ProjectsCards from "@common/components/ProjectCards"
 
 const ProjectsSection = () => {

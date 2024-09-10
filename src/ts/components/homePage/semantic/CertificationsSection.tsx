@@ -1,4 +1,4 @@
-import "@scss/components/home/semantic/CertificationsSection.scss"
+import "@scss/components/homePage/semantic/CertificationsSection.scss"
 
 const CertificationsSection = () => {
     return (

@@ -1,11 +1,11 @@
 import React from "react";
 
 import "@scss/common/components/ProjectCards.scss";
-import { projectCardsContent, projectCardT } from "@content/ProjectsPageContent";
+import { projectCardsContent, projectCardT } from "@content/common/ProjectCardsContent";
 import ProjectLinks from "@common/components/ProjectLinks";
 import Tags from "@common/components/Tags";
 import { useScrollToMiddle } from "@hooks/UseScrollToMiddle"
-import Video from "@components/projects/Video"
+import Video from "@components/projectsPage/Video"
 
 const COMMON_COMPONENT_CLASSNAME = "projects-proj";
 

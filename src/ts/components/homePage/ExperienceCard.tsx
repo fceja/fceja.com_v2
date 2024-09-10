@@ -1,6 +1,6 @@
-import "@scss/components/home/ExperienceCard.scss"
+import "@scss/components/homePage/ExperienceCard.scss"
 import Collapsible from "@common/components/Collapsible"
-import { ExperienceCardEntryT } from "@content/HomePageContent"
+import { ExperienceCardEntryT } from "@content/homePage/ExperienceCardsContent"
 import Tags from "@common/components/Tags"
 
 interface ExperienceCardI {
