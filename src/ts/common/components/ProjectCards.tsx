@@ -5,7 +5,7 @@ import { projectCardsContent, projectCardT } from "@content/common/ProjectCardsC
 import ProjectLinks from "@common/components/ProjectLinks";
 import Tags from "@common/components/Tags";
 import { useScrollToMiddle } from "@hooks/UseScrollToMiddle"
-import Video from "@components/projectsPage/Video"
+import Video from "@components/projectsPage/video/Video"
 
 const COMMON_COMPONENT_CLASSNAME = "projects-proj";
 

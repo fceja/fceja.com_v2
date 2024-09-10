@@ -2,7 +2,7 @@ import AboutSection from "@components/homePage/semantic/AboutSection"
 import CertificationsSection from "@components/homePage/semantic/CertificationsSection"
 import ExperienceSection from "@components/homePage/semantic/ExperienceSection"
 import ProjectsSection from "@components/homePage/semantic/ProjectsSection"
-import ViewMoreProjectsLink from "@components/homePage/ViewMoreProjectsLink"
+import ViewMoreProjectsLink from "@components/homePage/viewMoreProjectsLink/ViewMoreProjectsLink"
 
 const HomeMain = () => {
     return (

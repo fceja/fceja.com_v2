@@ -1,4 +1,4 @@
-import HomeLink from "@components/projectsPage/HomeLink"
+import HomeLink from "@components/projectsPage/homeLink/HomeLink"
 
 import "@scss/components/projectsPage/semantic/ProjectsHeader.scss"
 const ProjectsHeader = () => {

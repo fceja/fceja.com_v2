@@ -3,12 +3,11 @@ import React, { useEffect, useRef, useState } from "react";
 import "@scss/components/projectsPage/Video.scss"
 import LoadingSpinner from "@common/components/LoadingSpinner"
 
-interface VideoI {
+interface IVideo {
     projectData: any;
 }
 
-const Video: React.FC<VideoI> = (props) => {
-    const { projectData } = props;
+const Video: React.FC<IVideo> = ({ projectData }) => {
     const [isMobile, setIsMobile] = useState(false);
     const [isVideoPlaybackError, setIsVideoPlaybackError] = useState(false)
     const [thumbnailBlobUrl, setThumbnailBlobUrl] = useState<string>("")

@@ -1,5 +1,5 @@
 import "@scss/components/homePage/semantic/ExperienceSection.scss"
-import ExperienceCardsList from "@components/homePage/ExperienceCardsList"
+import ExperienceCardsList from "@components/homePage/experienceCardList/ExperienceCardList"
 
 const ExperienceSection = () => {
     return (

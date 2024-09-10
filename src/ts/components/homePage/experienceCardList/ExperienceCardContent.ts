@@ -1,16 +1,6 @@
 import { TagLinkI, tagDataMap } from "@content/common/TagContent"
 
-export type ExperienceCardEntryT = {
-    year: string
-    position: string
-    company: string
-    companyUrl: string
-    paragraph: string
-    tags?: TagLinkI[]
-    clients?: ExperienceCardEntryT[]
-}
-
-export const experienceCardsContent: ExperienceCardEntryT[] = [
+export const experienceCardsContent = [
     {
         year: 'NOV 2019 - JAN 2023',
         position: "Contractor / Developer",

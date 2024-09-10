@@ -1,5 +1,5 @@
 import "@scss/components/homePage/SocialProfileLinks.scss";
-import { socialProfileLinksContent } from "@content/homePage/SocialProfileLinksContent"
+import { socialProfileLinksContent } from "./SocialProfileLinksContent"
 
 const SocialProfileLinks = () => {
     return (

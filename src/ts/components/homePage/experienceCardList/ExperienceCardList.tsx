@@ -1,8 +1,8 @@
 import React from "react"
 
 import "@scss/components/homePage/ExperienceCardsList.scss"
-import ExperienceCard from "@components/homePage/ExperienceCard"
-import { experienceCardsContent } from "@content/homePage/ExperienceCardsContent"
+import ExperienceCard from "@components/homePage/experienceCard/ExperienceCard"
+import { experienceCardsContent } from "./ExperienceCardContent"
 
 const ExperienceCardsList = () => {
     return (
@@ -19,7 +19,6 @@ const ExperienceCardsList = () => {
                         )
                     })
                 }
-
                 return (
                     <React.Fragment key={`exp-cards-${i}`}>
                         < ExperienceCard cardData={elem} parentIndex={`${i}`} />

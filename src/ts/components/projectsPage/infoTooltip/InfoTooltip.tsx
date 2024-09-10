@@ -3,13 +3,12 @@ import { useState } from "react";
 import "@scss/components/projectsPage/InfoTooltip.scss"
 import { projectsSvgContent } from "@content/common/ProjectSvgContent"
 
-interface InfoTooltipI {
+interface IInfoTooltip {
     message: string
 }
 
-const InfoTooltip = (props: InfoTooltipI) => {
+const InfoTooltip: React.FC<IInfoTooltip> = ({ message }) => {
     const [isHover, setIsHover] = useState(false)
-    const { message } = props
 
     const handleHover = (isHovering: boolean) => {
         if (isHovering) {

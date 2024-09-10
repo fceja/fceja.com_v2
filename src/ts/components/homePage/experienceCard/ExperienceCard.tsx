@@ -1,16 +1,24 @@
 import "@scss/components/homePage/ExperienceCard.scss"
 import Collapsible from "@common/components/Collapsible"
-import { ExperienceCardEntryT } from "@content/homePage/ExperienceCardsContent"
+import { TagLinkI } from "@content/common/TagContent"
 import Tags from "@common/components/Tags"
 
-interface ExperienceCardI {
-    cardData: ExperienceCardEntryT
+type TExperienceCard = {
+    year: string
+    position: string
+    company: string
+    companyUrl: string
+    paragraph: string
+    tags?: TagLinkI[]
+    clients?: TExperienceCard[]
+}
+
+interface IExperienceCards {
+    cardData: TExperienceCard
     parentIndex: string
 }
 
-const ExperienceCards: React.FC<ExperienceCardI> = (props) => {
-    const { cardData, parentIndex } = props
-
+const ExperienceCards: React.FC<IExperienceCards> = ({ cardData, parentIndex }) => {
     return (
         <li
             key={`li-${parentIndex}`}
