@@ -1,7 +1,7 @@
-import "@scss/common/components/ProjectLinks.scss";
-import { projectsSvgContent } from "@content/common/ProjectSvgContent"
+import "@scss/common/components/projectLinks/ProjectLinks.scss";
+import { projectsLinksSvgContent } from "./ProjectLinksSvgContent"
 
-export type ProjectLinksProps = {
+export interface IProjectLinks {
     className: string | null;
     linkData: {
         type: string
@@ -11,9 +11,8 @@ export type ProjectLinksProps = {
     }
 };
 
-const ProjectLinks: React.FC<ProjectLinksProps> = (props) => {
-    const { className, linkData } = props
-    const svgData = projectsSvgContent[linkData.type]
+const ProjectLinks: React.FC<IProjectLinks> = ({ className, linkData }) => {
+    const svgData = projectsLinksSvgContent[linkData.type]
 
     return (
         <span className="icon-url-container">

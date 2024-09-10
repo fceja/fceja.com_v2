@@ -1,4 +1,4 @@
-import ProjectCards from "@common/components/ProjectCards"
+import ProjectCards from "@common/components/projectCards/ProjectCards"
 
 const ProjectsMain = () => {
     return (

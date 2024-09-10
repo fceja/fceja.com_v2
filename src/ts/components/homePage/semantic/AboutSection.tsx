@@ -1,5 +1,5 @@
 import "@scss/components/homePage/semantic/AboutSection.scss"
-import Collapsible from "@common/components/Collapsible"
+import Collapsible from "@common/components/collapsible/Collapsible"
 
 // pre-load cursor image to reduce delay
 const preLoadCursorImage = new Image()

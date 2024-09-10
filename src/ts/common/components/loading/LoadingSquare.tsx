@@ -1,4 +1,4 @@
-import "@scss/common/components/LoadingSquare.scss";
+import "@scss/common/components/loading/LoadingSquare.scss";
 
 interface LoadingI {
   className?: string

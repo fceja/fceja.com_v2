@@ -1,12 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import "@scss/common/components/Collapsible.scss";
+import "@scss/common/components/collapsible/Collapsible.scss";
 
 interface CollapsibleI {
     children: React.ReactNode;
 }
 
-const Collapsible: React.FC<CollapsibleI> = (props) => {
-    const { children } = props;
+const Collapsible: React.FC<CollapsibleI> = ({ children }) => {
     const [isCollapsed, setIsCollapsed] = useState(true);
     const [isTransitioning, setIsTransitioning] = useState(false);
     const outerContainerRef = useRef<HTMLDivElement | null>(null);

@@ -1,4 +1,5 @@
-import { TagLinkI, tagDataMap } from "@content/common/TagContent"
+import { tagDataMap } from "@common/components/tags/TagContent"
+import { ITagLink } from "@common/components/tags/Tags"
 
 export const experienceCardsContent = [
     {
@@ -11,7 +12,7 @@ export const experienceCardsContent = [
         tags: [
             tagDataMap.get('python'), tagDataMap.get('typescript'), tagDataMap.get('javascript'),
             tagDataMap.get('selenium'), tagDataMap.get('jenkins'), tagDataMap.get('flask')
-        ].filter(Boolean) as TagLinkI[],
+        ].filter(Boolean) as ITagLink[],
         clients: [
             {
                 year: 'MAY 2020 - JAN 2023',
@@ -27,7 +28,7 @@ export const experienceCardsContent = [
                     tagDataMap.get('sauceLabs'), tagDataMap.get('aws'), tagDataMap.get('azure'), tagDataMap.get('jenkins'),
                     tagDataMap.get('microsoftServer'), tagDataMap.get('aem'), tagDataMap.get('magnolia'),
                     tagDataMap.get('figma'), tagDataMap.get('postman'), tagDataMap.get('agile'), tagDataMap.get('jira')
-                ].filter(Boolean) as TagLinkI[],
+                ].filter(Boolean) as ITagLink[],
             },
             {
                 year: 'MAR 2020 - DEC 2020',
@@ -42,7 +43,7 @@ export const experienceCardsContent = [
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('graphql'), tagDataMap.get('postman'),
                     tagDataMap.get('nose'), tagDataMap.get('pytest'), tagDataMap.get('theTradeDesk')
-                ].filter(Boolean) as TagLinkI[],
+                ].filter(Boolean) as ITagLink[],
             },
             {
                 year: 'AUG 2020 - SEP 2020',
@@ -55,7 +56,7 @@ export const experienceCardsContent = [
                 tags: [
                     tagDataMap.get('typescript'), tagDataMap.get('javascript'), tagDataMap.get('selenium'),
                     tagDataMap.get('sauceLabs'),
-                ].filter(Boolean) as TagLinkI[],
+                ].filter(Boolean) as ITagLink[],
             },
             {
                 year: 'NOV 2019 - FEB 2020',
@@ -70,7 +71,7 @@ export const experienceCardsContent = [
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('appium'),
                     tagDataMap.get('nose'), tagDataMap.get('agile'), tagDataMap.get('jira')
-                ].filter(Boolean) as TagLinkI[],
+                ].filter(Boolean) as ITagLink[],
             }
         ]
     },

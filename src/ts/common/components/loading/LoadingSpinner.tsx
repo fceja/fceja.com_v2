@@ -1,4 +1,4 @@
-import "@scss/common/components/LoadingSpinner.scss";
+import "@scss/common/components/loading/LoadingSpinner.scss";
 
 interface LoadingI {
     className?: string

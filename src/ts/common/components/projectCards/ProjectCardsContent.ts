@@ -1,28 +1,6 @@
-import { tagDataMap } from "@content/common/TagContent"
+import { tagDataMap } from "@common/components/tags/TagContent"
 
-type linksT = {
-    type: string
-    label: string
-    url: string
-    ariaLabel: string
-}
-
-export type projectCardT = {
-    demoCreds: { email: string, pass: string } | null
-    description: string
-    description2: string | null
-    homePinned: boolean
-    id: string
-    links: linksT[]
-    projType: string
-    tags: any[]
-    title: string
-    videoPath: string | null
-    videoThumbnailPath: string | null,
-    year: string
-}
-
-export const projectCardsContent: projectCardT[] = [
+export const projectCardsContent = [
     {
         /* Inventory App */
         demoCreds: null,

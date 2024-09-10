@@ -1,6 +1,6 @@
 import React from "react"
 
-import "@scss/components/homePage/ExperienceCardsList.scss"
+import "@scss/components/homePage/experienceCardList/ExperienceCardsList.scss"
 import ExperienceCard from "@components/homePage/experienceCard/ExperienceCard"
 import { experienceCardsContent } from "./ExperienceCardContent"
 

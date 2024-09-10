@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import "@scss/components/projectsPage/InfoTooltip.scss"
-import { projectsSvgContent } from "@content/common/ProjectSvgContent"
+import "@scss/components/projectsPage/infoTooltip/InfoTooltip.scss"
+import { projectsLinksSvgContent } from "@common/components/projectLinks/ProjectLinksSvgContent"
 
 interface IInfoTooltip {
     message: string
@@ -20,14 +20,14 @@ const InfoTooltip: React.FC<IInfoTooltip> = ({ message }) => {
     return (
         <span className="info-icon-container ms-2">
             <svg
-                xmlns={projectsSvgContent.info.xmlns}
-                viewBox={projectsSvgContent.info.viewBox}
-                height={projectsSvgContent.info.height}
+                xmlns={projectsLinksSvgContent.info.xmlns}
+                viewBox={projectsLinksSvgContent.info.viewBox}
+                height={projectsLinksSvgContent.info.height}
                 className="info-svg d-flex"
                 onMouseEnter={() => handleHover(true)}
                 onMouseLeave={() => handleHover(false)}
             >
-                <path d={projectsSvgContent.info.path} />
+                <path d={projectsLinksSvgContent.info.path} />
 
             </svg>
             <span className={`info-tooltip ${isHover ? '' : 'hidden'}`}>{message}</span>

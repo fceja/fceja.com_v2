@@ -1,16 +1,15 @@
-type SvgDataEntry = {
+type TSvgDataEntry = {
     xmlns: string;
     viewBox: string;
     height: string;
     path: string;
 };
 
-
-type ProjectsSvgT = {
-    [key: string]: SvgDataEntry
+type TProjectsSvg = {
+    [key: string]: TSvgDataEntry
 }
 
-export const projectsSvgContent: ProjectsSvgT = {
+export const projectsLinksSvgContent: TProjectsSvg = {
     github: {
         xmlns: "http://www.w3.org/2000/svg",
         viewBox: "-4 29 457 457",

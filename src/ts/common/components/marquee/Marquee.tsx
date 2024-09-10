@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
-import "@scss/common/components/Headlines.scss";
-import LoadingSquare from "@common/components/LoadingSquare";
+import "@scss/common/components/marquee/Marquee.scss";
+import LoadingSquare from "@common/components/loading/LoadingSquare";
 
 type ResponseData = {
   statusCode: number;
@@ -16,7 +16,7 @@ type ResponseData = {
   };
 };
 
-const Headlines = () => {
+const Marquee = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [headlines, setHeadlines] = useState<{ source: string; url: string }[]>([]);
   const [responseData, setResponseData] = useState<ResponseData | null>(null);
@@ -121,7 +121,7 @@ const Headlines = () => {
     <>
       {isLoading && <LoadingSquare className="headlines" />}
       {!isLoading && responseData && headlines &&
-        <div className="headlines-container">
+        <div className="marquee-container">
           <ul className="headline-list d-flex align-items-center">
             {headlines.map((elem, index) => {
               return (
@@ -137,4 +137,4 @@ const Headlines = () => {
   );
 };
 
-export default Headlines;
+export default Marquee;

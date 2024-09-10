@@ -1,5 +1,5 @@
 import "@scss/common/components/semantic/Footer.scss"
-import Headlines from "@common/components/Headlines"
+import Marquee from "@common/components/marquee/Marquee"
 
 const Footer = () => {
     return (
@@ -17,7 +17,7 @@ const Footer = () => {
                     view code on <a href="https://github.com/fceja/fceja.com_V2" target="_blank">GitHub</a>.
                 </i>
             </p>
-            <Headlines />
+            <Marquee />
         </footer>
     )
 }

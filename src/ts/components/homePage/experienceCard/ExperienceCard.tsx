@@ -1,7 +1,7 @@
-import "@scss/components/homePage/ExperienceCard.scss"
-import Collapsible from "@common/components/Collapsible"
-import { TagLinkI } from "@content/common/TagContent"
-import Tags from "@common/components/Tags"
+import "@scss/components/homePage/experienceCard/ExperienceCard.scss"
+import Collapsible from "@common/components/collapsible/Collapsible"
+import { ITagLink } from "@common/components/tags/Tags"
+import Tags from "@common/components/tags/Tags"
 
 type TExperienceCard = {
     year: string
@@ -9,7 +9,7 @@ type TExperienceCard = {
     company: string
     companyUrl: string
     paragraph: string
-    tags?: TagLinkI[]
+    tags?: ITagLink[]
     clients?: TExperienceCard[]
 }
 

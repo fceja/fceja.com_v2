@@ -1,5 +1,5 @@
 import "@scss/components/homePage/semantic/ProjectsSection.scss"
-import ProjectsCards from "@common/components/ProjectCards"
+import ProjectsCards from "@common/components/projectCards/ProjectCards"
 
 const ProjectsSection = () => {
     return (

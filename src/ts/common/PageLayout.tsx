@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import Footer from "@common/components/semantic/Footer";
-import Spotlight from "@common/components/Spotlight";
+import Spotlight from "@common/components/spotlight/Spotlight";
 
 interface ILayout {
     children: React.ReactNode;

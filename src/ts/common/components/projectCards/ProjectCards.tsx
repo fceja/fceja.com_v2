@@ -1,25 +1,46 @@
 import React from "react";
 
-import "@scss/common/components/ProjectCards.scss";
-import { projectCardsContent, projectCardT } from "@content/common/ProjectCardsContent";
-import ProjectLinks from "@common/components/ProjectLinks";
-import Tags from "@common/components/Tags";
+import "@scss/common/components/projectCards/ProjectCards.scss";
+import { projectCardsContent } from "./ProjectCardsContent";
+import ProjectLinks from "@common/components/projectLinks/ProjectLinks";
+import Tags from "@common/components/tags/Tags";
 import { useScrollToMiddle } from "@hooks/UseScrollToMiddle"
 import Video from "@components/projectsPage/video/Video"
 
 const COMMON_COMPONENT_CLASSNAME = "projects-proj";
 
-interface ProjectCardsI {
+type TLink = {
+    type: string
+    label: string
+    url: string
+    ariaLabel: string
+}
+
+type TProjectCard = {
+    demoCreds: { email: string, pass: string } | null
+    description: string
+    description2: string | null
+    homePinned: boolean
+    id: string
+    links: TLink[]
+    projType: string
+    tags: any[]
+    title: string
+    videoPath: string | null
+    videoThumbnailPath: string | null,
+    year: string
+}
+
+interface IProjectCards {
     className?: string
     onlyHomePinned?: boolean
 }
 
-const ProjectsCards: React.FC<ProjectCardsI> = (props) => {
-    const { className, onlyHomePinned } = props
+const ProjectsCards: React.FC<IProjectCards> = ({ className, onlyHomePinned }) => {
     useScrollToMiddle()
 
     /* determine if we return all project cards, or only the ones pinned for home page */
-    const projectCards: projectCardT[] = onlyHomePinned ?
+    const projectCards: TProjectCard[] = onlyHomePinned ?
         projectCardsContent.filter((card) => card.homePinned).reverse()
         : projectCardsContent
 

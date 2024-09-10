@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 
-import '@scss/common/components/Spotlight.scss';
+import '@scss/common/components/spotlight/Spotlight.scss';
 
-interface Position {
+type TPosition = {
     x: number;
     y: number;
 }
 
 const Spotlight: React.FC = () => {
-    const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
+    const [position, setPosition] = useState<TPosition>({ x: 0, y: 0 });
     const [visible, setVisible] = useState<boolean>(false);
 
     const handleMouseMove = (e: MouseEvent) => {

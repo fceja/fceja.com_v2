@@ -1,15 +1,18 @@
-import "@scss/common/components/Tags.scss"
-import { TagLinkI } from "@content/common/TagContent"
+import "@scss/common/components/tags/Tags.scss"
 
-interface TagsProps {
-    tagData: (TagLinkI | undefined)[],
+export interface ITagLink {
+    name: string
+    target: string
+    url: string
+}
+
+interface ITags {
+    tagData: (ITagLink | undefined)[],
     parentIndex: number,
     className: string
 }
 
-const Tags = (props: TagsProps) => {
-    const { className, tagData, parentIndex } = props
-
+const Tags: React.FC<ITags> = ({ className, tagData, parentIndex }) => {
     return (
         <div className={`${className}-tags-container d-flex flex-wrap`}>
             {tagData && tagData.map((elem, i) => {

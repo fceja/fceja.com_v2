@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import "@scss/components/projectsPage/Video.scss"
-import LoadingSpinner from "@common/components/LoadingSpinner"
+import "@scss/components/projectsPage/video/Video.scss"
+import LoadingSpinner from "@common/components/loading/LoadingSpinner"
 
 interface IVideo {
     projectData: any;
