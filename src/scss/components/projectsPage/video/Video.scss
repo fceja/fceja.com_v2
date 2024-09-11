@@ -47,6 +47,15 @@ video:-ms-fullscreen {
     aspect-ratio: 16/9;
 }
 
+.thumbnail-play-overlay {
+    position: relative;
+
+    svg {
+        height: 75px;
+        fill: $app-text-color;
+    }
+}
+
 .mobile-play-container {
     position: relative;
     width: 100%;

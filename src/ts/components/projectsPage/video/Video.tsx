@@ -8,6 +8,7 @@ interface IVideo {
 }
 
 const Video: React.FC<IVideo> = ({ projectData }) => {
+    let enterTimeout: NodeJS.Timeout;
     const [isMobile, setIsMobile] = useState(false);
     const [isVideoPlaybackError, setIsVideoPlaybackError] = useState(false)
     const [thumbnailBlobUrl, setThumbnailBlobUrl] = useState<string>("")
@@ -80,9 +81,16 @@ const Video: React.FC<IVideo> = ({ projectData }) => {
 
     const handleThumbnailMouseEnter = () => {
         if (!isMobile) {
-            setThumbnailBlobUrl("")
-            fetchVideo()
+            // we delay video play for a couple ms
+            enterTimeout = setTimeout(() => {
+                setThumbnailBlobUrl("")
+                fetchVideo()
+            }, 750)
         }
+    }
+
+    const handleThumbnailMouseLeave = () => {
+        clearTimeout(enterTimeout);
     }
 
     const requestFullscreenAndPlay = (video: HTMLVideoElement) => {
@@ -140,13 +148,20 @@ const Video: React.FC<IVideo> = ({ projectData }) => {
                 {isVideoPlaybackError && <div className="video-playback-error">Error playing video.</div>}
                 {!thumbnailBlobUrl && !videoBlobUrl && <LoadingSpinner className="video" />}
                 {thumbnailBlobUrl &&
-                    <div
-                        className="thumbnail-img"
-                        style={{ backgroundImage: `url(${thumbnailBlobUrl})` }}
-                        onMouseEnter={handleThumbnailMouseEnter} // for desktop mouse entering
-                        onClick={handleThumbnailClick} // for mobile & tablet touch
-                    >
-                    </div>
+                    <>
+                        <div
+                            className="thumbnail-img"
+                            style={{ backgroundImage: `url(${thumbnailBlobUrl})` }}
+                            onMouseEnter={handleThumbnailMouseEnter} // for desktop mouse entering
+                            onMouseLeave={handleThumbnailMouseLeave} // for desktop mouse leaving
+                            onClick={handleThumbnailClick} // for mobile & tablet touch
+                        >
+                        </div>
+                        <div className="thumbnail-play-overlay">
+                            {/* <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> */}
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9l0-176c0-8.7 4.7-16.7 12.3-20.9z" /></svg>
+                        </div>
+                    </>
                 }
                 {videoBlobUrl && !isMobile &&
                     <video
