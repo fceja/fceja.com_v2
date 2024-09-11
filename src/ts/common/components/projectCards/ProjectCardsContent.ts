@@ -32,6 +32,33 @@ export const projectCardsContent = [
         year: "2024"
     },
     {
+        /* Kubernetes Kafka Sim */
+        demoCreds: null,
+        description: `
+        A project that uses Kubernetes to simulate auto-scaling of a Kafka service with producers and consumers,
+        implemented in Go and a few Bash scripts.
+        `,
+        description2: null,
+        homePinned: false,
+        id: "kubernetes-kafka-sim",
+        links: [
+            {
+                type: "github",
+                label: "Code",
+                url: "https://github.com/fceja/kubernetes_kafka_sim",
+                ariaLabel: "Kubernetes Kafka Sim project GitHub link"
+            },
+        ],
+        projType: "Backend",
+        tags: [
+            tagDataMap.get('golang'), tagDataMap.get('bash'), tagDataMap.get('docker'), tagDataMap.get('kubernetes')
+        ],
+        title: "Kubernetes Kafka Sim",
+        videoPath: null,
+        videoThumbnailPath: null,
+        year: "2024",
+    },
+    {
         /* Skills API */
         demoCreds: null,
         description: `
