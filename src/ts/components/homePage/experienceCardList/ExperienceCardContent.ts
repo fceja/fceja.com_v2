@@ -7,11 +7,16 @@ export const experienceCardsContent = [
         position: "Contractor / Developer",
         company: "Value Stream Engineering",
         companyUrl: "https://valuestreamengineering.com/",
-        paragraph: `Worked as a contractor for VSE. Undertook various projects for multiple clients.
-        Responsibilities included: QA, automation, software development, product documentation, onboarding, and mentoring. (Remote)`,
+        paragraph: `As a contractor for VSE, I developed and maintained full-stack applications using Python, FastAPI,
+         JavaScript, Node.js, and SQLite. I designed, implemented and maintained a proprietary automation framework using
+         Python, TypeScript, Selenium, and Appium. I managed CI/CD workflows, integrated third-party APIs,
+         and contributed to AWS cloud development. Additionally, I handled product documentation, onboarding,
+         and mentoring. (Remote)`,
         tags: [
-            tagDataMap.get('python'), tagDataMap.get('typescript'), tagDataMap.get('javascript'),
-            tagDataMap.get('selenium'), tagDataMap.get('jenkins'), tagDataMap.get('flask')
+            tagDataMap.get('python'), tagDataMap.get('typescript'), tagDataMap.get('javascript'), tagDataMap.get('bash'), tagDataMap.get('linux'),
+            tagDataMap.get('selenium'), tagDataMap.get('aws'), tagDataMap.get('jenkins'), tagDataMap.get('flask'), tagDataMap.get('git'),
+            tagDataMap.get('appium'), tagDataMap.get('sql'), tagDataMap.get('sauceLabs'), tagDataMap.get('testRail'),
+            tagDataMap.get('pytest'), tagDataMap.get('nose'), tagDataMap.get('mocha')
         ].filter(Boolean) as ITagLink[],
         clients: [
             {
@@ -20,8 +25,9 @@ export const experienceCardsContent = [
                 company: "Viking",
                 companyUrl: "https://www.vikingcruises.com/",
                 paragraph: `
-                    Designed and implemented frontend and backend automation solutions for the Viking product ecosystem.
-                    Developed frontend and backend internal tooling applications. Part of an Agile team. (Remote)
+                    Developed frontend and backend internal tooling applications, designed and implemented frontend and backend automation solutions
+                    for the Viking product ecosystem. Wrote custom scripts for performance testing, engaged in headless CMS migrations,
+                    conducted A/B testing, and participated in Agile ceremonies and daily stand-ups using Jira for project management. (Remote)
                 `,
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('javascript'), tagDataMap.get('selenium'), tagDataMap.get('testRail'),
@@ -36,9 +42,8 @@ export const experienceCardsContent = [
                 company: "MNTN ",
                 companyUrl: "https://mountain.com/",
                 paragraph: `
-                    Refined and optimized existing automation procedures.
-                    Developed automation for primary frontend product,
-                    GraphQL backend product, and validating analytics synchronization to The Trade Desk. (Remote)
+                    Developed custom scripts to validate database synchronization with The Trade Desk via API, automated frontend and GraphQL backend
+                    products using Python and Selenium, and refined existing automation procedures to enhance efficiency. (Remote)
                 `,
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('graphql'), tagDataMap.get('postman'),
@@ -51,11 +56,11 @@ export const experienceCardsContent = [
                 company: "Allergan Aesthetics",
                 companyUrl: "https://www.allerganaesthetics.com/",
                 paragraph: `
-                    A support role, where I joined to help team implement frontend automation using TypeScript. (Remote)
+                    Supported the team in implementing frontend automation using TypeScript and Selenium. (Remote)
                 `,
                 tags: [
                     tagDataMap.get('typescript'), tagDataMap.get('javascript'), tagDataMap.get('selenium'),
-                    tagDataMap.get('sauceLabs'),
+                    tagDataMap.get('sauceLabs'), tagDataMap.get('mocha')
                 ].filter(Boolean) as ITagLink[],
             },
             {
@@ -64,9 +69,8 @@ export const experienceCardsContent = [
                 company: "Hallmark Labs",
                 companyUrl: "https://www.hallmarklabs.com/",
                 paragraph: `
-                    Part of an Agile team with daily stand ups, collaborating closely with project team members.
-                    Performed frontend, mobile, and physical device testing, and used Jira for issue tracking. Worked on mobile automation
-                    for Android builds using Selenium WebDriver and Appium. (Onsite)
+                    As part of an Agile team, I conducted frontend, mobile, and device testing, automated Android builds using Python, Selenium,
+                    and Appium, and used Jira for issue tracking while participating in daily stand-ups and Agile ceremonies. (Onsite)
                 `,
                 tags: [
                     tagDataMap.get('python'), tagDataMap.get('selenium'), tagDataMap.get('appium'),

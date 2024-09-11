@@ -1,10 +1,10 @@
 import "@scss/common/components/loading/LoadingSpinner.scss";
 
-interface LoadingI {
+interface ILoading {
     className?: string
 }
-const LoadingSpinner = (props: LoadingI) => {
-    const { className } = props
+const LoadingSpinner: React.FC<ILoading> = ({ className }) => {
+
     return (
         <div className={className ? `loading-${className}` : 'loading'}>
             <div className="loading-spinner"></div>

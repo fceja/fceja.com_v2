@@ -23,7 +23,6 @@ const ProjectLinks: React.FC<IProjectLinks> = ({ className, linkData }) => {
                 aria-label={linkData.ariaLabel}
             >
                 {linkData.label &&
-
                     <span className="link-label">
                         {linkData.label}:
                     </span>

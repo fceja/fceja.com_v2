@@ -1,11 +1,10 @@
 import "@scss/common/components/loading/LoadingSquare.scss";
 
-interface LoadingI {
+interface ILoading {
   className?: string
 }
 
-const LoadingSquare = (props: LoadingI) => {
-  const { className } = props
+const LoadingSquare: React.FC<ILoading> = ({ className }) => {
 
   return (
     <div className={`loading-div ${className ? `loading-${className}` : ""}`}>
