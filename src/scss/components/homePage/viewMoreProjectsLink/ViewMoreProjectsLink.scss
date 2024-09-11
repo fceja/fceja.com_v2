@@ -1,10 +1,10 @@
 @import "@scss/Variables.scss";
 
-.archived-proj-link-container {
+.more-projects-container {
     margin: 70px 0;
 }
 
-.archived-projects-link {
+.more-projects-link {
     text-decoration: none;
     color: rgb(198, 198, 198);
     font-size: 2em;
@@ -19,14 +19,18 @@
             border-bottom: 1px solid $proj-title-color;
         }
 
-        .archived-projects-arrow-svg {
+        .more-projects-arrow-svg {
             fill: $proj-title-color;
             transform: translateX(10px);
         }
     }
+
+    &:active {
+        transform: translateY(2px)
+    }
 }
 
-.archived-projects-arrow-svg {
+.more-projects-arrow-svg {
     transition: transform 0.2s ease-in-out, fill 0.2s ease-in-out;
     fill: rgb(238, 238, 238);
 }

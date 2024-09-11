@@ -67,7 +67,7 @@ const ProjectsCards: React.FC<IProjectCards> = ({ className, onlyHomePinned }) =
                                     {proj.links.map((linkData, j) => (
                                         <span
                                             key={`link-${i}-${j}`}
-                                            className={`proj-link-${i}-${j} proj-link`}
+                                            className={`proj-link-${i}-${j}`}
                                         >
                                             <ProjectLinks
                                                 className={COMMON_COMPONENT_CLASSNAME}

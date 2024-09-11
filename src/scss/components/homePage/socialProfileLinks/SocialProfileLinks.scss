@@ -10,6 +10,10 @@ a.social-link {
     &:not(:last-child) {
         margin: 0 15px 0 0;
     }
+
+    &:active {
+        transform: translateY(2px)
+    }
 }
 
 svg.social-link-svg {

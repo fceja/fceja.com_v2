@@ -5,18 +5,18 @@ import "@scss/components/homePage/viewMoreProjectsLink/ViewMoreProjectsLink.scss
 const ViewMoreProjectsLink = () => {
     return (
         <span
-            className="archived-proj-link-container d-flex"
+            className="more-projects-container d-flex"
             style={{ height: "50px" }}
         >
             <Link
                 to="/projects"
-                className="archived-projects-link d-flex align-items-center mx-auto"
+                className="more-projects-link d-flex align-items-center mx-auto"
             >
                 <span className="view-more-link">View More Projects</span>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
-                    className="archived-projects-arrow-svg ms-3"
+                    className="more-projects-arrow-svg ms-3"
                     style={{ height: "30px" }}
                 >
                     {/* <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> */}

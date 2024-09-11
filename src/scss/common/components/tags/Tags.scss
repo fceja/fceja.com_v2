@@ -33,6 +33,10 @@ $tag-font-weight: 500;
     &:hover {
         border-color: $tag-border-color-hover;
     }
+
+    &:active {
+        transform: translateY(2px)
+    }
 }
 
 
@@ -62,4 +66,7 @@ $tag-font-weight: 500;
         border-color: $tag-border-color-hover;
     }
 
+    &:active {
+        transform: translateY(2px)
+    }
 }
