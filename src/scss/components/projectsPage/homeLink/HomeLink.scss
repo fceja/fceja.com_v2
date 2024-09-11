@@ -6,11 +6,20 @@
     text-decoration: none;
 }
 
+.home-page-link:hover {
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.1)
+}
+
+.home-page-link:active {
+    transform: scale(1.1) translateY(2px)
+}
+
 .home-page-link:hover .home-page-link-arrow-svg {
     transform: translateX(-10px);
+    transition: transform 0.2s ease-in-out;
 }
 
 .home-page-link-arrow-svg {
     fill: $app-text-color;
-    transition: transform 0.2s ease-in-out;
 }
