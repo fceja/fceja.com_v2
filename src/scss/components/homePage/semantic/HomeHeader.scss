@@ -5,7 +5,7 @@
 }
 
 @media (max-width: $breakpoint-sm) {
-    .home-header {
+    header.home-header {
         h1 {
             color: rgb(255, 255, 255);
             font-size: 2.25em;
@@ -29,7 +29,7 @@
 @media (min-width: #{$breakpoint-sm}) and (max-width: #{calc(#{$breakpoint-lg} - 1px)
 
 }) {
-    .home-header {
+    header.home-header {
         h1 {
             color: rgb(255, 255, 255);
             font-size: 3em;
@@ -52,7 +52,11 @@
 
 
 @media (min-width: $breakpoint-lg) {
-    .home-header {
+    header.home-header {
+        position: sticky;
+        top: 30px;
+        height: max-content;
+
         h1 {
             color: rgb(255, 255, 255);
             font-size: 3em;

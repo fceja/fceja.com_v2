@@ -7,7 +7,7 @@ const HomeHeader = () => {
             <div className="mx-auto">
                 <h1 id="header-name">Francisco Ceja</h1>
                 <h2>Automater / Developer</h2>
-                <p>I like to code apps and stuff.</p>
+                <p>I like to build apps and stuff.</p>
                 <SocialProfileLinks />
             </div>
         </header>
