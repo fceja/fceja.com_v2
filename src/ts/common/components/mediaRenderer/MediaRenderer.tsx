@@ -1,27 +1,25 @@
-import MP4VideoPlayer from "@common/components/videoPlayer/MP4VideoPlayer"
+import Mp4VideoPlayer, { TMp4VideoPlayer } from "@common/components/mp4VideoPlayer/Mp4VideoPlayer"
+import PngThumbnail, { TPngThumbnail } from "@common/components/pngThumbnail/PngThumbnail"
 
 interface IMediaRenderer {
-    hiResPath: string
-    thumbnailPath: string
-    type: string
+    media: TMp4VideoPlayer | TPngThumbnail | null
 }
 
-const SUPPORTED_MEDIA_TYPES = [".mp4", ".svg"]
+const SUPPORTED_MEDIA_TYPES = [".mp4", ".png"]
 
-const MediaRenderer: React.FC<IMediaRenderer> = ({ hiResPath, thumbnailPath, type }) => {
-    if (!SUPPORTED_MEDIA_TYPES.includes(type)) {
+const MediaRenderer: React.FC<IMediaRenderer> = ({ media }) => {
+    if (!media || !SUPPORTED_MEDIA_TYPES.includes(media.type)) {
         console.warn("Media type not supported.")
 
         return null;
     }
-
     return (
         <>
-            {type === ".svg" &&
-                <div>Todo - SVG </div>
+            {media && media.type === ".mp4" &&
+                <Mp4VideoPlayer videoData={media as TMp4VideoPlayer} />
             }
-            {type === ".mp4" &&
-                <MP4VideoPlayer hiResPath={hiResPath} thumbnailPath={thumbnailPath} />
+            {media && media.type === ".png" &&
+                <PngThumbnail pngData={media as TPngThumbnail} />
             }
         </>
     )

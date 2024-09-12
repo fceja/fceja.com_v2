@@ -54,9 +54,7 @@ export const projectCardsContent = [
             },
         ],
         media: {
-            type: ".svg",
-            // TODO - update to use actual link
-            hiResPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/inventory_app_thumbnail.png",
+            type: ".png",
             thumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/inventory_app_thumbnail.png",
 
         },

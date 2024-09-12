@@ -1,14 +1,20 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import "@scss/common/components/videoPlayer/VideoPlayer.scss"
+import "@scss/common/components/mp4VideoPlayer/Mp4VideoPlayer.scss"
 import LoadingSpinner from "@common/components/loading/LoadingSpinner"
 
-interface IMP4VideoPlayer {
+export type TMp4VideoPlayer = {
     hiResPath: string
     thumbnailPath: string
+    type: string
+
 }
 
-const MP4VideoPlayer: React.FC<IMP4VideoPlayer> = ({ hiResPath, thumbnailPath }) => {
+interface IMp4VideoPlayer {
+    videoData: TMp4VideoPlayer
+}
+
+const Mp4VideoPlayer: React.FC<IMp4VideoPlayer> = ({ videoData }) => {
     let enterTimeout: NodeJS.Timeout;
     const [isMobile, setIsMobile] = useState(false);
     const [isVideoPlaybackError, setIsVideoPlaybackError] = useState(false)
@@ -17,7 +23,8 @@ const MP4VideoPlayer: React.FC<IMP4VideoPlayer> = ({ hiResPath, thumbnailPath })
     const videoRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
-        fetchThumbnail(thumbnailPath)
+        // fetchThumbnail(thumbnailPath)
+        fetchThumbnail(videoData.thumbnailPath)
 
         const detectDeviceType = () => {
             /* check if mobile or tablet */
@@ -65,7 +72,8 @@ const MP4VideoPlayer: React.FC<IMP4VideoPlayer> = ({ hiResPath, thumbnailPath })
     }
 
     const fetchVideo = async () => {
-        const response = await fetch(hiResPath)
+        // const response = await fetch(hiResPath)
+        const response = await fetch(videoData.hiResPath)
         const blob = await response.blob()
 
         const videoBlobUrl = URL.createObjectURL(blob)
@@ -195,4 +203,4 @@ const MP4VideoPlayer: React.FC<IMP4VideoPlayer> = ({ hiResPath, thumbnailPath })
     );
 };
 // }
-export default MP4VideoPlayer
+export default Mp4VideoPlayer

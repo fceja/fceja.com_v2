@@ -1,11 +1,13 @@
 import React from "react";
 
 import "@scss/common/components/projectCards/ProjectCards.scss";
+import MediaRenderer from "@common/components/mediaRenderer/MediaRenderer"
+import { TMp4VideoPlayer } from "@common/components/mp4VideoPlayer/Mp4VideoPlayer"
+import { TPngThumbnail } from "@common/components/pngThumbnail/PngThumbnail"
 import { projectCardsContent } from "./ProjectCardsContent";
 import ProjectLinks from "@common/components/projectLinks/ProjectLinks";
 import Tags from "@common/components/tags/Tags";
 import { useScrollToMiddle } from "@hooks/UseScrollToMiddle"
-import MediaRenderer from "@common/components/mediaRenderer/MediaRenderer"
 
 const COMMON_COMPONENT_CLASSNAME = "projects-proj";
 
@@ -21,12 +23,6 @@ type TLink = {
     ariaLabel: string
 }
 
-type TMedia = {
-    hiResPath: string
-    thumbnailPath: string
-    type: string
-}
-
 type TProjectCard = {
     demoCreds: TDemoCreds | null
     description: string
@@ -34,7 +30,7 @@ type TProjectCard = {
     homePinned: boolean
     id: string
     links: TLink[]
-    media: TMedia | null
+    media: TMp4VideoPlayer | TPngThumbnail | null
     projType: string
     tags: any[]
     title: string
@@ -62,7 +58,7 @@ const ProjectsCards: React.FC<IProjectCards> = ({ className, onlyHomePinned }) =
                     <div className={`proj-card-${i} proj-card`}>
                         <div id={proj.id} className={`${!className ? 'proj-info' : `${className}-proj-info`}`}>
                             {proj.media &&
-                                <MediaRenderer hiResPath={proj.media.hiResPath} thumbnailPath={proj.media.thumbnailPath} type={proj.media.type} />
+                                <MediaRenderer media={proj.media} />
                             }
                             <div className="proj-content m-w-max">
                                 <a
