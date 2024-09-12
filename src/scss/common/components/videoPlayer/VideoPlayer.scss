@@ -35,7 +35,7 @@ video:-ms-fullscreen {
     pointer-events: auto;
 }
 
-.thumbnail-img {
+.video-thumbnail-img {
     position: relative;
     background-color: black;
     cursor: pointer;
@@ -47,7 +47,7 @@ video:-ms-fullscreen {
     aspect-ratio: 16/9;
 }
 
-.thumbnail-play-overlay {
+.video-thumbnail-play-overlay {
     position: relative;
 
     svg {

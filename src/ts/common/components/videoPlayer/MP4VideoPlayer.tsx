@@ -1,13 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import "@scss/components/projectsPage/video/Video.scss"
+import "@scss/common/components/videoPlayer/VideoPlayer.scss"
 import LoadingSpinner from "@common/components/loading/LoadingSpinner"
 
-interface IVideo {
-    projectData: any;
+interface IMP4VideoPlayer {
+    hiResPath: string
+    thumbnailPath: string
 }
 
-const Video: React.FC<IVideo> = ({ projectData }) => {
+const MP4VideoPlayer: React.FC<IMP4VideoPlayer> = ({ hiResPath, thumbnailPath }) => {
     let enterTimeout: NodeJS.Timeout;
     const [isMobile, setIsMobile] = useState(false);
     const [isVideoPlaybackError, setIsVideoPlaybackError] = useState(false)
@@ -16,7 +17,7 @@ const Video: React.FC<IVideo> = ({ projectData }) => {
     const videoRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
-        fetchImage()
+        fetchThumbnail(thumbnailPath)
 
         const detectDeviceType = () => {
             /* check if mobile or tablet */
@@ -49,9 +50,9 @@ const Video: React.FC<IVideo> = ({ projectData }) => {
         };
     }, [videoBlobUrl])
 
-    const fetchImage = async () => {
+    const fetchThumbnail = async (thumbnailPath: string) => {
         try {
-            const response = await fetch(projectData.videoThumbnailPath)
+            const response = await fetch(thumbnailPath)
             if (!response.ok) { throw new Error("Error fetching image.") }
 
             const blob = await response.blob()
@@ -64,7 +65,7 @@ const Video: React.FC<IVideo> = ({ projectData }) => {
     }
 
     const fetchVideo = async () => {
-        const response = await fetch(projectData.videoPath)
+        const response = await fetch(hiResPath)
         const blob = await response.blob()
 
         const videoBlobUrl = URL.createObjectURL(blob)
@@ -150,16 +151,18 @@ const Video: React.FC<IVideo> = ({ projectData }) => {
                 {thumbnailBlobUrl &&
                     <>
                         <div
-                            className="thumbnail-img"
+                            className="video-thumbnail-img"
                             style={{ backgroundImage: `url(${thumbnailBlobUrl})` }}
                             onMouseEnter={handleThumbnailMouseEnter} // for desktop mouse entering
                             onMouseLeave={handleThumbnailMouseLeave} // for desktop mouse leaving
                             onClick={handleThumbnailClick} // for mobile & tablet touch
                         >
                         </div>
-                        <div className="thumbnail-play-overlay">
+                        <div className="video-thumbnail-play-overlay">
                             {/* <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> */}
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9l0-176c0-8.7 4.7-16.7 12.3-20.9z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9l0-176c0-8.7 4.7-16.7 12.3-20.9z" />
+                            </svg>
                         </div>
                     </>
                 }
@@ -191,5 +194,5 @@ const Video: React.FC<IVideo> = ({ projectData }) => {
         </>
     );
 };
-
-export default Video;
+// }
+export default MP4VideoPlayer
