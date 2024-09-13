@@ -142,58 +142,16 @@ const Mp4VideoPlayer: React.FC<IMp4VideoPlayer> = ({ videoData }) => {
         checkVideo(0)
     }
 
-    // const handleDesktopEvent = (e: React.MouseEvent<HTMLVideoElement>, eventType: string) => {
-    //     const video = e.currentTarget;
-
-    //     switch (eventType) {
-    //         case 'mouseEnter':
-    //             try {
-    //                 const getVideo = async () => {
-    //                     console.log(`getVideo`)
-    //                     await video.play();
-    //                 }
-    //                 getVideo()
-    //             } catch (error) {
-    //                 console.error(error)
-    //             } finally {
-    //                 break
-    //             }
-
-    //         case 'mouseLeave':
-    //             video.pause();
-    //             break
-    //         case 'click':
-    //             triggerVideoPlay()
-    //             break
-    //         default:
-    //             throw new Error('Invalid eventType.')
-    //     }
-    // }
     const handleDesktopEvent = async (e: React.MouseEvent<HTMLVideoElement>, eventType: string) => {
         const video = e.currentTarget;
 
         switch (eventType) {
             case 'mouseEnter':
-                try {
-                    // Using await to handle the play promise
-                    await video.play();
-                } catch (error) {
-                    // Catch and log the error but do not break functionality
-                    console.error("Error playing video:", error);
-                }
+                video.play();
                 break;
-
             case 'mouseLeave':
-                // Pause the video, which may interrupt the play promise
-                // video.pause();
-                try {
-                    await video.pause();
-                } catch (error) {
-                    console.error("Error playing video:", error);
-
-                }
+                video.pause();
                 break;
-
             case 'click':
                 triggerVideoPlay();
                 break;
