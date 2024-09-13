@@ -58,7 +58,8 @@ export const projectCardsContent = [
         },
         projType: "Backend",
         tags: [
-            tagDataMap.get('golang'), tagDataMap.get('bash'), tagDataMap.get('docker'), tagDataMap.get('kubernetes')
+            tagDataMap.get('golang'), tagDataMap.get('bash'), tagDataMap.get('docker'), tagDataMap.get('kubernetes'),
+            tagDataMap.get('kafka')
         ],
         title: "Kubernetes Kafka Sim",
         year: "2024",
