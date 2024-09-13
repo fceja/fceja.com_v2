@@ -3,6 +3,7 @@
 div.mp4-container {
     position: relative;
     width: 100%;
+    height: max-content;
     overflow: hidden;
     background-color: black;
     border: solid .5px rgba(190, 190, 190, 0.578);
