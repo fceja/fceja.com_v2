@@ -52,7 +52,10 @@ export const projectCardsContent = [
                 ariaLabel: "Kubernetes Kafka Sim project GitHub link"
             },
         ],
-        media: null,
+        media: {
+            type: ".png",
+            thumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/kubernetes_cluster_sim_thumbnail.png",
+        },
         projType: "Backend",
         tags: [
             tagDataMap.get('golang'), tagDataMap.get('bash'), tagDataMap.get('docker'), tagDataMap.get('kubernetes')
