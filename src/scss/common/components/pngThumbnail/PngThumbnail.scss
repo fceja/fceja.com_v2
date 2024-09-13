@@ -22,10 +22,3 @@ div.png-thumbnail-container {
     position: absolute;
     aspect-ratio: 16/9;
 }
-
-
-@media (min-width: $breakpoint-lg) {
-    .png-thumbnail-container {
-        margin-right: 50px;
-    }
-}

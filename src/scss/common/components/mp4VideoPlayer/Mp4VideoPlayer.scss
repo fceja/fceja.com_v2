@@ -84,9 +84,3 @@ div.video-playback-error {
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
 }
-
-@media (min-width: $breakpoint-lg) {
-    .video-container {
-        margin-right: 50px;
-    }
-}

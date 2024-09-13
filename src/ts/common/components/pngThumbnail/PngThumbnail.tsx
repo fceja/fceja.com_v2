@@ -36,12 +36,6 @@ const PngThumbnail: React.FC<IPngThumbnail> = ({ pngData }) => {
 
     }, [])
 
-    useEffect(() => {
-        console.log(`thumbnailBlobUrl`)
-        console.log(thumbnailBlobUrl)
-
-    }, [thumbnailBlobUrl])
-
     return (
         <div className="png-thumbnail-container">
             {!thumbnailBlobUrl && <LoadingSpinner className="png-thumbnail" />}
