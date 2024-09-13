@@ -1,6 +1,6 @@
 @import "@scss/Variables.scss";
 
-div.video-container {
+div.mp4-container {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -35,7 +35,7 @@ video:-ms-fullscreen {
     pointer-events: auto;
 }
 
-.video-thumbnail-img {
+.mp4-video-thumbnail-img {
     position: relative;
     background-color: black;
     cursor: pointer;
@@ -47,7 +47,7 @@ video:-ms-fullscreen {
     aspect-ratio: 16/9;
 }
 
-.video-thumbnail-play-overlay {
+.mp4-video-thumbnail-play-overlay {
     position: relative;
 
     svg {

@@ -21,9 +21,8 @@ export const projectCardsContent = [
         ],
         media: {
             type: ".mp4",
-            hiResPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/inventory_app.mp4",
+            mp4FilePath: "https://d2866cjnfd516.cloudfront.net/assets/videos/inventory_app.mp4",
             thumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/inventory_app_thumbnail.png",
-
         },
         projType: "Full-stack",
         tags: [

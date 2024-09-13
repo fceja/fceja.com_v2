@@ -4,7 +4,7 @@ import "@scss/common/components/mp4VideoPlayer/Mp4VideoPlayer.scss"
 import LoadingSpinner from "@common/components/loading/LoadingSpinner"
 
 export type TMp4VideoPlayer = {
-    hiResPath: string
+    mp4FilePath: string
     thumbnailPath: string
     type: string
 
@@ -15,7 +15,7 @@ interface IMp4VideoPlayer {
 }
 
 const Mp4VideoPlayer: React.FC<IMp4VideoPlayer> = ({ videoData }) => {
-    let enterTimeout: NodeJS.Timeout;
+    const enterTimeoutRef = useRef<NodeJS.Timeout | null>(null);
     const [isMobile, setIsMobile] = useState(false);
     const [isVideoPlaybackError, setIsVideoPlaybackError] = useState(false)
     const [thumbnailBlobUrl, setThumbnailBlobUrl] = useState<string>("")
@@ -23,7 +23,6 @@ const Mp4VideoPlayer: React.FC<IMp4VideoPlayer> = ({ videoData }) => {
     const videoRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
-        // fetchThumbnail(thumbnailPath)
         fetchThumbnail(videoData.thumbnailPath)
 
         const detectDeviceType = () => {
@@ -57,6 +56,7 @@ const Mp4VideoPlayer: React.FC<IMp4VideoPlayer> = ({ videoData }) => {
         };
     }, [videoBlobUrl])
 
+
     const fetchThumbnail = async (thumbnailPath: string) => {
         try {
             const response = await fetch(thumbnailPath)
@@ -64,6 +64,7 @@ const Mp4VideoPlayer: React.FC<IMp4VideoPlayer> = ({ videoData }) => {
 
             const blob = await response.blob()
             const imageUrl = URL.createObjectURL(blob)
+
             setThumbnailBlobUrl(imageUrl)
 
         } catch (error) {
@@ -72,12 +73,18 @@ const Mp4VideoPlayer: React.FC<IMp4VideoPlayer> = ({ videoData }) => {
     }
 
     const fetchVideo = async () => {
-        // const response = await fetch(hiResPath)
-        const response = await fetch(videoData.hiResPath)
-        const blob = await response.blob()
+        try {
+            const response = await fetch(videoData.mp4FilePath)
+            if (!response.ok) { throw new Error("Error fetching video.") }
 
-        const videoBlobUrl = URL.createObjectURL(blob)
-        setVideoBlobUrl(videoBlobUrl)
+            const blob = await response.blob()
+            const videoBlobUrl = URL.createObjectURL(blob)
+
+            setVideoBlobUrl(videoBlobUrl)
+
+        } catch (error) {
+            console.error(error)
+        }
     }
 
     const handleThumbnailClick = () => {
@@ -88,35 +95,37 @@ const Mp4VideoPlayer: React.FC<IMp4VideoPlayer> = ({ videoData }) => {
         }
     }
 
+
     const handleThumbnailMouseEnter = () => {
         if (!isMobile) {
-            // we delay video play for a couple ms
-            enterTimeout = setTimeout(() => {
-                setThumbnailBlobUrl("")
-                fetchVideo()
-            }, 750)
+            enterTimeoutRef.current = setTimeout(() => {
+                setThumbnailBlobUrl("");
+                fetchVideo();
+            }, 750);
         }
-    }
+    };
 
     const handleThumbnailMouseLeave = () => {
-        clearTimeout(enterTimeout);
-    }
+        if (enterTimeoutRef.current) {
+            clearTimeout(enterTimeoutRef.current);
+        }
+    };
 
     const requestFullscreenAndPlay = (video: HTMLVideoElement) => {
         if (video.requestFullscreen) {
             video.requestFullscreen();
-        } else if ((video as any).webkitRequestFullscreen) {
+        } else if ('webkitRequestFullscreen' in video) {
             (video as any).webkitRequestFullscreen();
-        } else if ((video as any).msRequestFullscreen) {
+        } else if ('msRequestFullscreen' in video) {
             (video as any).msRequestFullscreen();
         }
-
         video.play();
-    }
+    };
 
     const triggerVideoPlay = () => {
         const checkVideo = (count: number) => {
             const video = videoRef.current;
+
             if (video) {
                 requestFullscreenAndPlay(video)
                 return;
@@ -133,40 +142,84 @@ const Mp4VideoPlayer: React.FC<IMp4VideoPlayer> = ({ videoData }) => {
         checkVideo(0)
     }
 
-    const handleDesktopEvent = (e: React.MouseEvent<HTMLVideoElement>, eventType: string) => {
+    // const handleDesktopEvent = (e: React.MouseEvent<HTMLVideoElement>, eventType: string) => {
+    //     const video = e.currentTarget;
+
+    //     switch (eventType) {
+    //         case 'mouseEnter':
+    //             try {
+    //                 const getVideo = async () => {
+    //                     console.log(`getVideo`)
+    //                     await video.play();
+    //                 }
+    //                 getVideo()
+    //             } catch (error) {
+    //                 console.error(error)
+    //             } finally {
+    //                 break
+    //             }
+
+    //         case 'mouseLeave':
+    //             video.pause();
+    //             break
+    //         case 'click':
+    //             triggerVideoPlay()
+    //             break
+    //         default:
+    //             throw new Error('Invalid eventType.')
+    //     }
+    // }
+    const handleDesktopEvent = async (e: React.MouseEvent<HTMLVideoElement>, eventType: string) => {
         const video = e.currentTarget;
 
         switch (eventType) {
             case 'mouseEnter':
-                video.play();
-                break
+                try {
+                    // Using await to handle the play promise
+                    await video.play();
+                } catch (error) {
+                    // Catch and log the error but do not break functionality
+                    console.error("Error playing video:", error);
+                }
+                break;
+
             case 'mouseLeave':
-                video.pause();
-                break
+                // Pause the video, which may interrupt the play promise
+                // video.pause();
+                try {
+                    await video.pause();
+                } catch (error) {
+                    console.error("Error playing video:", error);
+
+                }
+                break;
+
             case 'click':
-                triggerVideoPlay()
-                break
+                triggerVideoPlay();
+                break;
+
             default:
-                throw new Error('Invalid eventType.')
+                throw new Error('Invalid eventType.');
         }
-    }
+    };
+
 
     return (
         <>
-            <div className="video-container">
+            <div className="mp4-container">
                 {isVideoPlaybackError && <div className="video-playback-error">Error playing video.</div>}
                 {!thumbnailBlobUrl && !videoBlobUrl && <LoadingSpinner className="video" />}
                 {thumbnailBlobUrl &&
                     <>
                         <div
-                            className="video-thumbnail-img"
+                            className="mp4-video-thumbnail-img"
                             style={{ backgroundImage: `url(${thumbnailBlobUrl})` }}
                             onMouseEnter={handleThumbnailMouseEnter} // for desktop mouse entering
                             onMouseLeave={handleThumbnailMouseLeave} // for desktop mouse leaving
                             onClick={handleThumbnailClick} // for mobile & tablet touch
                         >
                         </div>
-                        <div className="video-thumbnail-play-overlay">
+                        <div className="mp4-video-thumbnail-play-overlay">
                             {/* <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> */}
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9l0-176c0-8.7 4.7-16.7 12.3-20.9z" />

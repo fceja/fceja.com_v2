@@ -13,6 +13,7 @@ const MediaRenderer: React.FC<IMediaRenderer> = ({ media }) => {
 
         return null;
     }
+
     return (
         <>
             {media && media.type === ".mp4" &&
