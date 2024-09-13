@@ -79,7 +79,7 @@ export const projectCardsContent = [
         ],
         media: {
             type: ".mp4",
-            hiResPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/skills_api.mp4",
+            mp4FilePath: "https://d2866cjnfd516.cloudfront.net/assets/videos/skills_api.mp4",
             thumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/skills_api_thumbnail.png",
 
         },
@@ -144,7 +144,7 @@ export const projectCardsContent = [
         ],
         media: {
             type: ".mp4",
-            hiResPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/profile_app_v2.mp4",
+            mp4FilePath: "https://d2866cjnfd516.cloudfront.net/assets/videos/profile_app_v2.mp4",
             thumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/profile_app_v2_thumbnail.png",
 
         },
@@ -213,7 +213,7 @@ export const projectCardsContent = [
         ],
         media: {
             type: ".mp4",
-            hiResPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/google_maps_app.mp4",
+            mp4FilePath: "https://d2866cjnfd516.cloudfront.net/assets/videos/google_maps_app.mp4",
             thumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/google_maps_app_thumbnail.png",
 
         },
@@ -278,7 +278,7 @@ export const projectCardsContent = [
         ],
         media: {
             type: ".mp4",
-            hiResPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/geolocation_ip_app.mp4",
+            mp4FilePath: "https://d2866cjnfd516.cloudfront.net/assets/videos/geolocation_ip_app.mp4",
             thumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/geolocation_ip_app_thumbnail.png",
 
         },
@@ -387,7 +387,7 @@ export const projectCardsContent = [
         ],
         media: {
             type: ".mp4",
-            hiResPath: "https://d2866cjnfd516.cloudfront.net/assets/videos/forum_post_app.mp4",
+            mp4FilePath: "https://d2866cjnfd516.cloudfront.net/assets/videos/forum_post_app.mp4",
             thumbnailPath: "https://d2866cjnfd516.cloudfront.net/assets/thumbnails/forum_post_app_thumbnail.png",
 
         },
